@@ -34,7 +34,7 @@
     "href": "concept.html#formtechnology",
     "title": "1  Course concept",
     "section": "1.2 Form/Technology",
-    "text": "1.2 Form/Technology\n\nJupyter notebooks + markdown =&gt; cross compilation to\n\nHTML (Blog/Webpage) -&gt; hosted on Github.io\nPDF (handout/book, typst) -&gt; hosted on Github.io for download\nPresentation (reveal.js) -&gt; hosted on Github.io\nOpenEdx course: markdown -&gt; OLX (mu), to openedx course format\n\nfigure out how to customize compilation to different targets in Quarto.",
+    "text": "1.2 Form/Technology\n\nLecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.\n\n\nJupyter notebooks + markdown =&gt; cross compilation to\n\nHTML (Blog/Webpage) -&gt; hosted on github.io\nPDF (handout/book, typst) -&gt; hosted on github.io for download\nPresentation (reveal.js) -&gt; hosted on Github.io; necessary to render to a different target; see https://github.com/quarto-dev/quarto-cli/discussions/1433; see https://github.com/quarto-dev/quarto-cli/issues/2200. By using different profiles these information can be combined.\n\n\n\nShort presentations\n\n[~] currently the presentations are in google slides; motivational content; short; 5-15 min\nvideos of the presentations;\n\nOpenEdx course: markdown -&gt; OLX (mu), to openedx course format\n\n\nfigure out how to customize compilation to different targets in Quarto; I.e. special behavior for book vs. slides.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -215,6 +215,16 @@
     "title": "1  Course concept",
     "section": "4.3 Text to speech",
     "text": "4.3 Text to speech\n\n4.3.1 Whisper AI\n\nhttps://openai.com/index/whisper/\n\n\n\n4.3.2 ElevenLabs\n\nhttps://elevenlabs.io/",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#quatro-document-creation",
+    "href": "concept.html#quatro-document-creation",
+    "title": "1  Course concept",
+    "section": "4.4 Quatro document creation",
+    "text": "4.4 Quatro document creation\nOne can update the notebooks in their favourite environment, e.g. jupyterlab\njupyter lab notebooks/hello.ipynb\nThe content can be rendered to the respective output format using the render command.\nquarto render notebooks/hello.ipynb --to html\nquarto render notebooks/hello.ipynb --to pdf\nquarto render notebooks/hello.ipynb --to revealjs\nquarto render notebooks/hello.ipynb --to pptx\nTo execute the notebooks use the execute flag\nquarto frender notebook.ipynb --execute\nTo preview the HTML use the preview command.\nquarto preview notebooks/hello.ipynb",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
     ]

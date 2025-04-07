@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -40,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-22e089467d54a974d5ff65692a3c0858.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a34d670291f06f286357e447776a572a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -191,6 +225,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#whisper-ai" id="toc-whisper-ai" class="nav-link" data-scroll-target="#whisper-ai"><span class="header-section-number">4.3.1</span> Whisper AI</a></li>
   <li><a href="#elevenlabs" id="toc-elevenlabs" class="nav-link" data-scroll-target="#elevenlabs"><span class="header-section-number">4.3.2</span> ElevenLabs</a></li>
   </ul></li>
+  <li><a href="#quatro-document-creation" id="toc-quatro-document-creation" class="nav-link" data-scroll-target="#quatro-document-creation"><span class="header-section-number">4.4</span> Quatro document creation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -234,15 +269,27 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="formtechnology" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="formtechnology"><span class="header-section-number">1.2</span> Form/Technology</h2>
+<ol type="1">
+<li>Lecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.</li>
+</ol>
 <ul>
 <li>Jupyter notebooks + markdown =&gt; cross compilation to
-<ul>
-<li>HTML (Blog/Webpage) -&gt; hosted on Github.io</li>
-<li>PDF (handout/book, typst) -&gt; hosted on Github.io for download</li>
-<li>Presentation (reveal.js) -&gt; hosted on Github.io</li>
-<li>OpenEdx course: markdown -&gt; OLX (mu), to openedx course format</li>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">HTML (Blog/Webpage) -&gt; hosted on github.io</label></li>
+<li><label><input type="checkbox" checked="">PDF (handout/book, typst) -&gt; hosted on github.io for download</label></li>
+<li><label><input type="checkbox">Presentation (reveal.js) -&gt; hosted on Github.io; necessary to render to a different target; see <a href="https://github.com/quarto-dev/quarto-cli/discussions/1433" class="uri">https://github.com/quarto-dev/quarto-cli/discussions/1433</a>; see <a href="https://github.com/quarto-dev/quarto-cli/issues/2200" class="uri">https://github.com/quarto-dev/quarto-cli/issues/2200</a>. By using different profiles these information can be combined.</label></li>
 </ul></li>
-<li>figure out how to customize compilation to different targets in Quarto.</li>
+</ul>
+<ol start="2" type="1">
+<li>Short presentations
+<ul>
+<li>[~] currently the presentations are in google slides; motivational content; short; 5-15 min</li>
+<li><label><input type="checkbox">videos of the presentations;</label></li>
+</ul></li>
+<li>OpenEdx course: markdown -&gt; OLX (mu), to openedx course format</li>
+</ol>
+<ul>
+<li>figure out how to customize compilation to different targets in Quarto; I.e. special behavior for book vs.&nbsp;slides.</li>
 </ul>
 </section>
 <section id="different-classes" class="level2" data-number="1.3">
@@ -470,9 +517,23 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>https://elevenlabs.io/</li>
 </ul>
-
-
 </section>
+</section>
+<section id="quatro-document-creation" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="quatro-document-creation"><span class="header-section-number">4.4</span> Quatro document creation</h2>
+<p>One can update the notebooks in their favourite environment, e.g.&nbsp;jupyterlab</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> lab notebooks/hello.ipynb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The content can be rendered to the respective output format using the <code>render</code> command.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render notebooks/hello.ipynb <span class="at">--to</span> html</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render notebooks/hello.ipynb <span class="at">--to</span> pdf</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render notebooks/hello.ipynb <span class="at">--to</span> revealjs</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render notebooks/hello.ipynb <span class="at">--to</span> pptx</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To execute the notebooks use the <code>execute</code> flag</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> frender notebook.ipynb <span class="at">--execute</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To preview the HTML use the <code>preview</code> command.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview notebooks/hello.ipynb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
 </section>
 </section>
 
