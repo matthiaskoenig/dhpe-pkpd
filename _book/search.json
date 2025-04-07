@@ -1,15 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Pharmacokinetics/Pharmacodynamics Modelling",
-    "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto visit https://quarto.org/docs/books/.",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
     "objectID": "concept.html",
     "href": "concept.html",
     "title": "1  Course concept",
@@ -34,7 +24,7 @@
     "href": "concept.html#formtechnology",
     "title": "1  Course concept",
     "section": "1.2 Form/Technology",
-    "text": "1.2 Form/Technology\n\nJupyter notebooks + markdown =&gt; cross compilation to\n\nHTML (Blog/Webpage) -&gt; hosted on Github.io\nPDF (handout/book, typst) -&gt; hosted on Github.io for download\nPresentation (reveal.js) -&gt; hosted on Github.io\nOpenEdx course: markdown -&gt; OLX (mu), to openedx course format\n\nfigure out how to customize compilation to different targets in Quarto.",
+    "text": "1.2 Form/Technology\n\nLecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.\n\n\nJupyter notebooks + markdown =&gt; cross compilation to\n\nHTML (Blog/Webpage) -&gt; hosted on github.io\nPDF (handout/book, typst) -&gt; hosted on github.io for download\nPresentation (reveal.js) -&gt; hosted on Github.io; necessary to render to a different target; see https://github.com/quarto-dev/quarto-cli/discussions/1433\n\n\n\nShort presentations\n\n[~] currently the presentations are in google slides; motivational content; short; 5-15 min\nvideos of the presentations;\nOpenEdx course: markdown -&gt; OLX (mu), to openedx course format\n\n\n\nfigure out how to customize compilation to different targets in Quarto.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -217,36 +207,6 @@
     "text": "4.3 Text to speech\n\n4.3.1 Whisper AI\n\nhttps://openai.com/index/whisper/\n\n\n\n4.3.2 ElevenLabs\n\nhttps://elevenlabs.io/",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "content.html",
-    "href": "content.html",
-    "title": "2  Content",
-    "section": "",
-    "text": "Pharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: https://livermetabolism.com\nThe course is structured in sections, subsections and units.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Content</span>"
-    ]
-  },
-  {
-    "objectID": "notebooks/hello.html",
-    "href": "notebooks/hello.html",
-    "title": "3  Pharmacokinetic Modeling Basics",
-    "section": "",
-    "text": "3.1 Polar Axis\nFor a demonstration of a line plot on a polar axis, see Figure 3.1.\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 3.1: A line plot on a polar axis",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pharmacokinetic Modeling Basics</span>"
-    ]
-  },
-  {
-    "objectID": "notebooks/hello.html#references",
-    "href": "notebooks/hello.html#references",
-    "title": "3  Pharmacokinetic Modeling Basics",
-    "section": "4.1 References",
-    "text": "4.1 References\n\n\nHernandez-Sanchez, Sergio, Victor Moreno-Perez, Jonatan Garcia-Campos,\nJavier Marco-Lledó, Eva Maria Navarrete-Muñoz, and Carlos\nLozano-Quijada. 2021. “Twelve Tips to Make Successful Medical\nInfographics.” Medical Teacher 43 (12): 1353–59. https://doi.org/10.1080/0142159X.2020.1855323.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pharmacokinetic Modeling Basics</span>"
     ]
   }
 ]

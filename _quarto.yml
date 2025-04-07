@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: _book
 
 book:
   title: "Pharmacokinetics/Pharmacodynamics Modelling"
@@ -21,4 +22,6 @@ format:
     documentclass: scrreprt
     cover-image: images/banner.png
   epub:
+    cover-image: images/banner.png
+  revealjs:
     cover-image: images/banner.png

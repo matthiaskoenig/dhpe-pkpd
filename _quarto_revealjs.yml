@@ -1,0 +1,14 @@
+project:
+  output-dir: _slides
+  render:
+    - index.qmd
+    - concept.qmd
+    - content.qmd
+    - notebooks/hello.ipynb
+
+title: "test"
+author: "Jane Doe"
+date: "25/07/2022"
+bibliography: references.json
+
+format: revealjs

@@ -17,13 +17,24 @@ Figure 1: Course writing workflow, starting from plain text (narrative, code and
 - AI tutor
 
 ## Form/Technology
+
+1. Lecture scripts
+This is the complete reference information to learn; minimal interactivity; supports studying the
+content.
 - Jupyter notebooks + markdown => cross compilation to 
-    - HTML (Blog/Webpage) -> hosted on Github.io
-    - PDF (handout/book, typst) -> hosted on Github.io for download
-    - Presentation (reveal.js) -> hosted on Github.io
-    - OpenEdx course: markdown -> OLX (mu), to openedx course format
+    - [x] HTML (Blog/Webpage) -> hosted on github.io
+    - [x] PDF (handout/book, typst) -> hosted on github.io for download
+    - [ ] Presentation (reveal.js) -> hosted on Github.io; necessary to render to a different target;
+          see <https://github.com/quarto-dev/quarto-cli/discussions/1433>; see <https://github.com/quarto-dev/quarto-cli/issues/2200>.
+          By using different profiles these information can be combined.
+
+2. Short presentations
+    - [~] currently the presentations are in google slides; motivational content; short; 5-15 min
+    - [ ] videos of the presentations;
+
+3. OpenEdx course: markdown -> OLX (mu), to openedx course format
   
-- figure out how to customize compilation to different targets in Quarto.
+- figure out how to customize compilation to different targets in Quarto; I.e. special behavior for book vs. slides.
 
 ## Different classes
 - teaching notebooks => rendered to content
