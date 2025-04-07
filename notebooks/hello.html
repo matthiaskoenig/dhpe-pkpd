@@ -9,7 +9,7 @@
 <meta name="dcterms.date" content="2025-04-07">
 <meta name="description" content="A first introduction to pharmacokinetic modelling">
 
-<title>3&nbsp; Pharmacokinetic Modeling Basics – Pharmacokinetics/Pharmacodynamics Modelling</title>
+<title>5&nbsp; Pharmacokinetic Modeling Basics – Pharmacokinetics/Pharmacodynamics Modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,7 +86,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content.html" rel="prev">
+<link href="../mu.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -136,7 +136,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/hello.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/hello.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -181,8 +181,20 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../install.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Installation information</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mu</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../notebooks/hello.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></span></a>
   </div>
 </li>
     </ul>
@@ -195,10 +207,10 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#polar-axis" id="toc-polar-axis" class="nav-link active" data-scroll-target="#polar-axis"><span class="header-section-number">3.1</span> Polar Axis</a></li>
-  <li><a href="#new-section" id="toc-new-section" class="nav-link" data-scroll-target="#new-section"><span class="header-section-number">4</span> New Section</a>
+  <li><a href="#polar-axis" id="toc-polar-axis" class="nav-link active" data-scroll-target="#polar-axis"><span class="header-section-number">5.1</span> Polar Axis</a></li>
+  <li><a href="#new-section" id="toc-new-section" class="nav-link" data-scroll-target="#new-section"><span class="header-section-number">6</span> New Section</a>
   <ul class="collapse">
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.1</span> References</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.1</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -208,7 +220,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></h1>
 </div>
 
 
@@ -231,9 +243,9 @@ div.csl-indent {
 </header>
 
 
-<section id="polar-axis" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="polar-axis"><span class="header-section-number">3.1</span> Polar Axis</h2>
-<p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>.</p>
+<section id="polar-axis" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="polar-axis"><span class="header-section-number">5.1</span> Polar Axis</h2>
+<p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>.</p>
 <div id="cell-fig-polar" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
@@ -257,15 +269,15 @@ div.csl-indent {
 <img src="hello_files/figure-html/fig-polar-output-1.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.1: A line plot on a polar axis
+Figure&nbsp;5.1: A line plot on a polar axis
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="new-section" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> New Section</h1>
+<section id="new-section" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> New Section</h1>
 <p>Testing additional content. Here a citation <span class="citation" data-cites="Hernandez-Sanchez2021">(<a href="hello.html#ref-Hernandez-Sanchez2021" role="doc-biblioref">Hernandez-Sanchez et al. 2021</a>)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -280,8 +292,8 @@ Note
 <p>Note that there are five types of callouts, including: <code>note</code>, <code>tip</code>, <code>warning</code>, <code>caution</code> and <code>important</code>.</p>
 </div>
 </div>
-<section id="references" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="references"><span class="header-section-number">4.1</span> References</h2>
+<section id="references" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="references"><span class="header-section-number">6.1</span> References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-Hernandez-Sanchez2021" class="csl-entry" role="listitem">
 Hernandez-Sanchez, Sergio, Victor Moreno-Perez, Jonatan Garcia-Campos,
@@ -715,8 +727,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content.html" class="pagination-link" aria-label="Content">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Content</span></span>
+      <a href="../mu.html" class="pagination-link" aria-label="Mu">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mu</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

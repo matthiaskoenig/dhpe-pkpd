@@ -240,23 +240,93 @@
     ]
   },
   {
+    "objectID": "install.html",
+    "href": "install.html",
+    "title": "3  Installation information",
+    "section": "",
+    "text": "3.1 Quatro\nInformation about installation is available from https://quarto.org/docs/get-started/.\nThis documents were created with the prerelease version quarto-1.7.21-linux-amd64.deb available from https://quarto.org/docs/download/prerelease.html.\nDocumentation for the pre-release is available at https://prerelease.quarto.org/.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+    ]
+  },
+  {
+    "objectID": "install.html#quatro",
+    "href": "install.html#quatro",
+    "title": "3  Installation information",
+    "section": "",
+    "text": "3.1.1 VS Code Plugin\nInformation on the visual studio code integration is available here: https://quarto.org/docs/tools/vscode.html\nFor executing the python code the python interpreter must be set and the jupyter plugin must be installed.\n\n\n3.1.2 Github actions for publishing\nThe output can be automatically generated using github actions. https://quarto.org/docs/publishing/github-pages.html#github-action",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+    ]
+  },
+  {
+    "objectID": "install.html#uv",
+    "href": "install.html#uv",
+    "title": "3  Installation information",
+    "section": "3.2 uv",
+    "text": "3.2 uv\nPython dependencies are managed with uv and can be installed via:\nuv venv\nuv sync\nTo activate the virtual environment use\nsource .venv/bin/activate\nor the corresponding command for your operating system.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+    ]
+  },
+  {
+    "objectID": "install.html#open-edx",
+    "href": "install.html#open-edx",
+    "title": "3  Installation information",
+    "section": "3.3 Open edX",
+    "text": "3.3 Open edX\nOpen edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.\nA local installation of OpenEdx can be setup with tutor: https://docs.tutor.edly.io/index.html. This requires a working docker installation: https://docs.docker.com/engine/install/.\nsource .venv/bin/activate\ntutor local launch\nThis results in\nAll services initialised.\nThe platform is now running and can be accessed at the following urls:\n\n    http://local.openedx.io\n    http://studio.local.openedx.io\n    http://meilisearch.local.openedx.io\n    http://apps.local.openedx.io\n\n3.3.1 Creating a new user with staff and admin rights\nYou will most certainly need to create a user to administer the platform. Just run:\ntutor local do createuser --staff --superuser matthiaskoenig konigmatt@googlemail.com\n\n\n3.3.2 Importing the demo course\nAfter a fresh installation, your platform will not have a single course. To import the Open edX demo course, run:\ntutor local do importdemocourse\n\n\n3.3.3 Status\nYou can view your platform’s containers:\ntutor local status",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+    ]
+  },
+  {
+    "objectID": "install.html#open-edx-jupyter-integration",
+    "href": "install.html#open-edx-jupyter-integration",
+    "title": "3  Installation information",
+    "section": "3.4 Open edX Jupyter integration",
+    "text": "3.4 Open edX Jupyter integration\nTutor plugin for running Jupyter notebooks.\n- name: jupyter\n  src: tutor-jupyter&gt;=19.0.0,&lt;20.0.0\n  url: https://github.com/overhangio/tutor-jupyter\n  author: Edly &lt;hello@edly.io&gt;\n  maintainer: Edly &lt;abdul.muqadim@arbisoft.com&gt;\n  description: |\n    Run Jupyter notebooks right in your LMS.\n\n    Launch a JupyterHub single-node cluster and install the Jupyter XBlock in the Open\n    edX LMS/CMS. This makes it very easy to launch student-editable code editors rights\n    in your courses.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+    ]
+  },
+  {
+    "objectID": "mu.html",
+    "href": "mu.html",
+    "title": "4  Mu",
+    "section": "",
+    "text": "4.1 Installation\nSee also markdown xblock! https://github.com/citynetwork/markdown-xblock\nWriting courses in markdown.\nMu Course authoring for humans https://discuss.openedx.org/t/introducing-mu-course-authoring-for-humans/9314\nIn a nutshell, Mu allows you to write your courses in Markdown or HTML5, and then convert them to OLX, and vice-versa.\nhttps://github.com/overhangio/mu\npip install mu-courses\nInstall up to date pandoc version https://github.com/jgm/pandoc/releases/ pandoc 3.6.4\nmkdir olx mu ./course.md ./olx/\nPackage the course",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mu</span>"
+    ]
+  },
+  {
+    "objectID": "mu.html#installation",
+    "href": "mu.html#installation",
+    "title": "4  Mu",
+    "section": "",
+    "text": "tar -czf mycourse.tar.gz ./olx",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Mu</span>"
+    ]
+  },
+  {
     "objectID": "notebooks/hello.html",
     "href": "notebooks/hello.html",
-    "title": "3  Pharmacokinetic Modeling Basics",
+    "title": "5  Pharmacokinetic Modeling Basics",
     "section": "",
-    "text": "3.1 Polar Axis\nFor a demonstration of a line plot on a polar axis, see Figure 3.1.\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 3.1: A line plot on a polar axis",
+    "text": "5.1 Polar Axis\nFor a demonstration of a line plot on a polar axis, see Figure 5.1.\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 5.1: A line plot on a polar axis",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pharmacokinetic Modeling Basics</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Pharmacokinetic Modeling Basics</span>"
     ]
   },
   {
     "objectID": "notebooks/hello.html#references",
     "href": "notebooks/hello.html#references",
-    "title": "3  Pharmacokinetic Modeling Basics",
-    "section": "4.1 References",
-    "text": "4.1 References\n\n\nHernandez-Sanchez, Sergio, Victor Moreno-Perez, Jonatan Garcia-Campos,\nJavier Marco-Lledó, Eva Maria Navarrete-Muñoz, and Carlos\nLozano-Quijada. 2021. “Twelve Tips to Make Successful Medical\nInfographics.” Medical Teacher 43 (12): 1353–59. https://doi.org/10.1080/0142159X.2020.1855323.",
+    "title": "5  Pharmacokinetic Modeling Basics",
+    "section": "6.1 References",
+    "text": "6.1 References\n\n\nHernandez-Sanchez, Sergio, Victor Moreno-Perez, Jonatan Garcia-Campos,\nJavier Marco-Lledó, Eva Maria Navarrete-Muñoz, and Carlos\nLozano-Quijada. 2021. “Twelve Tips to Make Successful Medical\nInfographics.” Medical Teacher 43 (12): 1353–59. https://doi.org/10.1080/0142159X.2020.1855323.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pharmacokinetic Modeling Basics</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Pharmacokinetic Modeling Basics</span>"
     ]
   }
 ]
