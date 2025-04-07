@@ -10,6 +10,8 @@ book:
     - index.qmd
     - concept.qmd
     - content.qmd
+    - install.qmd
+    - mu.qmd
     - notebooks/hello.ipynb
 
 bibliography: references.json
