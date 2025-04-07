@@ -191,3 +191,27 @@ This handbook is for any educator teaching a topic that includes data analysis o
 
 ### ElevenLabs
 - https://elevenlabs.io/
+
+## Quatro document creation
+
+One can update the notebooks in their favourite environment, e.g. jupyterlab
+```bash
+jupyter lab notebooks/hello.ipynb
+```
+The content can be rendered to the respective output format using the `render` command.
+```bash
+quarto render notebooks/hello.ipynb --to html
+quarto render notebooks/hello.ipynb --to pdf
+quarto render notebooks/hello.ipynb --to revealjs
+quarto render notebooks/hello.ipynb --to pptx
+```
+
+To execute the notebooks use the `execute` flag
+```bash
+quarto frender notebook.ipynb --execute
+```
+
+To preview the HTML use the `preview` command.
+```bash
+quarto preview notebooks/hello.ipynb
+```

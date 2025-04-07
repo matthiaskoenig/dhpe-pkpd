@@ -1,0 +1,31 @@
+# Mu
+
+See also markdown xblock!
+https://github.com/citynetwork/markdown-xblock
+
+
+Writing courses in markdown.
+
+
+Mu Course authoring for humans
+https://discuss.openedx.org/t/introducing-mu-course-authoring-for-humans/9314
+
+In a nutshell, Mu allows you to write your courses in Markdown or HTML5, and then convert them to OLX, and vice-versa.
+
+https://github.com/overhangio/mu
+
+## Installation
+
+pip install mu-courses
+
+Install up to date pandoc version
+https://github.com/jgm/pandoc/releases/
+pandoc 3.6.4
+
+mkdir olx
+mu ./course.md ./olx/
+
+Package the course
+```
+tar -czf mycourse.tar.gz ./olx
+```

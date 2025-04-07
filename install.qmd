@@ -15,46 +15,24 @@ Information on the visual studio code integration is available here:
 
 For executing the python code the python interpreter must be set and the jupyter plugin must be installed.
 
+### Github actions for publishing
+The output can be automatically generated using github actions.
+<https://quarto.org/docs/publishing/github-pages.html#github-action>
+
 
 ## uv
 Python dependencies are managed with uv and can be installed via:
 ```bash
+uv venv
 uv sync
 ```
 
-#### activate virtual environment
+To activate the virtual environment use
 ```bash
 source .venv/bin/activate
 ```
+or the corresponding command for your operating system.
 
-# workon notebooks
-```bash
-jupyter lab notebooks/hello.ipynb
-```
-
-# render notebooks
-```bash
-quarto render notebooks/hello.ipynb --to html
-quarto render notebooks/hello.ipynb --to pdf
-quarto render notebooks/hello.ipynb --to revealjs
-quarto render notebooks/hello.ipynb --to pptx
-```
-
-
-# render content
-quarto preview notebooks/hello.ipynb
-
-
-# How to combine multiple documents to a single output?
-# How to get the book with all chapters? And TOC?
-
-# How to customize rendering to different targets in Quarto?
-
-# execute the notebook cells
-quarto render notebook.ipynb --execute
-
-# Publishing via github actions
-https://quarto.org/docs/publishing/github-pages.html#github-action
 
 
 ## Open edX
@@ -77,7 +55,6 @@ The platform is now running and can be accessed at the following urls:
     http://apps.local.openedx.io
 ```
 
-
 ### Creating a new user with staff and admin rights
 You will most certainly need to create a user to administer the platform. Just run:
 ```bash
@@ -90,7 +67,7 @@ After a fresh installation, your platform will not have a single course. To impo
 tutor local do importdemocourse
 ```
 
-### Status
+### Status
 You can view your platform’s containers:
 ```bash
 tutor local status

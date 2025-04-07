@@ -9,5 +9,6 @@ dependencies = [
     "jupyterlab>=4.4.0",
     "matplotlib",
     "plotly",
-    "tutor[full]"
+    "tutor[full]",
+    "mu-courses",
 ]
