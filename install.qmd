@@ -32,3 +32,6 @@ quarto preview notebooks/hello.ipynb
 
 # execute the notebook cells
 quarto render notebook.ipynb --execute
+
+# Publishing via github actions
+https://quarto.org/docs/publishing/github-pages.html#github-action

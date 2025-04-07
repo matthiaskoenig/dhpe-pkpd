@@ -1,0 +1,252 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Pharmacokinetics/Pharmacodynamics Modelling",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto visit https://quarto.org/docs/books/.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "concept.html",
+    "href": "concept.html",
+    "title": "1  Course concept",
+    "section": "",
+    "text": "1.1 Content\nAll course content is managed in github. On changes locally the complete content is updated.\nChapter 1. What is the technology behind this course.\nFigure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#content",
+    "href": "concept.html#content",
+    "title": "1  Course concept",
+    "section": "",
+    "text": "simple lectures about pharmacokinetics\nshort videos\nslides\nsimple apps for exploration\ninteractive notebook for exploration\nquizzes\nAI tutor",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#formtechnology",
+    "href": "concept.html#formtechnology",
+    "title": "1  Course concept",
+    "section": "1.2 Form/Technology",
+    "text": "1.2 Form/Technology\n\nJupyter notebooks + markdown =&gt; cross compilation to\n\nHTML (Blog/Webpage) -&gt; hosted on Github.io\nPDF (handout/book, typst) -&gt; hosted on Github.io for download\nPresentation (reveal.js) -&gt; hosted on Github.io\nOpenEdx course: markdown -&gt; OLX (mu), to openedx course format\n\nfigure out how to customize compilation to different targets in Quarto.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#different-classes",
+    "href": "concept.html#different-classes",
+    "title": "1  Course concept",
+    "section": "1.3 Different classes",
+    "text": "1.3 Different classes\n\nteaching notebooks =&gt; rendered to content\nexercise notebooks\nsolution notebooks/material",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#version-control",
+    "href": "concept.html#version-control",
+    "title": "1  Course concept",
+    "section": "1.4 Version control",
+    "text": "1.4 Version control\n\nCourse content is managed in a GitHub repository (version control)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#continous-integration-and-deployment",
+    "href": "concept.html#continous-integration-and-deployment",
+    "title": "1  Course concept",
+    "section": "1.5 Continous integration and deployment",
+    "text": "1.5 Continous integration and deployment\n\nCI via GitHub actions is used to automatically build and deploy the course content.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#software-and-tools",
+    "href": "concept.html#software-and-tools",
+    "title": "1  Course concept",
+    "section": "1.6 Software and tools",
+    "text": "1.6 Software and tools\n\nquatro for conversion;\nopenedx (docker container)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#ai-support-for-writing-text",
+    "href": "concept.html#ai-support-for-writing-text",
+    "title": "1  Course concept",
+    "section": "1.7 AI support for writing text",
+    "text": "1.7 AI support for writing text\n\nAll text creation is supported by ChatGPT.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#corporate-styling-for-the-course",
+    "href": "concept.html#corporate-styling-for-the-course",
+    "title": "1  Course concept",
+    "section": "1.8 Corporate Styling for the course",
+    "text": "1.8 Corporate Styling for the course\n\nuse consistent colorschema and logos",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#hosting",
+    "href": "concept.html#hosting",
+    "title": "1  Course concept",
+    "section": "1.9 Hosting",
+    "text": "1.9 Hosting\n\nOpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#notebook-and-markdown-based-publishing-tools",
+    "href": "concept.html#notebook-and-markdown-based-publishing-tools",
+    "title": "1  Course concept",
+    "section": "1.10 Notebook and markdown based publishing tools",
+    "text": "1.10 Notebook and markdown based publishing tools\n\n1.10.1 Quarto\n\nAn open-source scientific and technical publishing system\nhttps://quarto.org/\nPublish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nsee: https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html\n\n\n1.10.1.1 Interactivity\n\nhttps://quarto.org/docs/interactive/\nCreate custom JavaScript visualizations using Observable JS: https://quarto.org/docs/interactive/ojs/\nIncorporate Jupyter Widgets: https://ipywidgets.readthedocs.io/en/latest/\nShiny for Python integration: https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html; https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html\n\n\n\n\n1.10.2 jupyterbook\n\nhttps://jupyterbook.org/en/stable/intro.html\nBuild beautiful, publication-quality books and documents from computational content.\nSimilar goal as quarto, but more focused on books.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#presentations",
+    "href": "concept.html#presentations",
+    "title": "1  Course concept",
+    "section": "1.11 Presentations",
+    "text": "1.11 Presentations\n\n1.11.1 reveal.js\n\nreveal.js is an open source HTML presentation framework. It’s a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.\nPresentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an iframe or add your own custom behavior using our JavaScript API.\nThe framework comes with a broad range of features including nested slides, Markdown support, Auto-Animate, PDF export, speaker notes, LaTeX support and syntax highlighted code.\nhttps://revealjs.com/course/\nnice integration with Quarto; https://quarto.org/docs/presentations/revealjs/demo/#/title-slide\nhttps://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#interactive-plots",
+    "href": "concept.html#interactive-plots",
+    "title": "1  Course concept",
+    "section": "1.12 Interactive plots",
+    "text": "1.12 Interactive plots\n\n1.12.1 plotly\n\nhttps://plotly.com/python/ ### altair\nhttps://altair-viz.github.io/",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#interactive-webapps",
+    "href": "concept.html#interactive-webapps",
+    "title": "1  Course concept",
+    "section": "1.13 Interactive webapps",
+    "text": "1.13 Interactive webapps\n\n1.13.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n1.13.2 Voila\n\nvoila notebooks: https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n1.13.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n1.13.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n1.13.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n1.13.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#deployment-of-notebooks",
+    "href": "concept.html#deployment-of-notebooks",
+    "title": "1  Course concept",
+    "section": "1.14 Deployment of notebooks",
+    "text": "1.14 Deployment of notebooks\n\n1.14.1 binderhub\n\nvery slow\nhttps://binderhub.readthedocs.io/en/latest/\n1.14.2 jupyterhub\nJupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.\nhttps://jupyter.org/hub\nhttps://tljh.jupyter.org/en/latest/howto/index.html\n\nhttps://education.github.com/globalcampus/teacher?email_referrer=true\nnbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader & gradescope",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#openedx-deployment",
+    "href": "concept.html#openedx-deployment",
+    "title": "1  Course concept",
+    "section": "2.1 OpenEdx Deployment",
+    "text": "2.1 OpenEdx Deployment\n\ndeployment with tutor: https://docs.tutor.edly.io/index.html",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#h5p",
+    "href": "concept.html#h5p",
+    "title": "1  Course concept",
+    "section": "2.2 H5P",
+    "text": "2.2 H5P\n\nPlay H5P content in Open edX using h5pxblock\nhttps://github.com/edly-io/h5pxblock",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#openedx-notebook-integration",
+    "href": "concept.html#openedx-notebook-integration",
+    "title": "1  Course concept",
+    "section": "2.3 OpenEdx Notebook Integration",
+    "text": "2.3 OpenEdx Notebook Integration\n\nopenedx notebook integration: https://github.com/parmentelat/nbhosting ?!\nhttps://github.com/overhangio/jupyter-xblock JupyterHub hosts Jupyter instances with authentication (e.g. OAuth; IDK about using edX users as JupyterHub users with individual Docker image instance containers with nbgrader/xblock) The new jupyter-viewer-xblock (https://github.com/ibleducation/jupyter-viewer-xblock) allows to embed notebooks dynamically from a public URL. Demo here! https://www.youtube.com/watch?v=K8jhWgQnxvI\nhttps://github.com/overhangio/tutor-jupyter; This is a plugin for Tutor that makes it easy to integrate Jupyter notebooks in Open edX. It achieves the following: 1. Install the official jupyter-xblock in the Open edX LMS and Studio. 2. Run a Docker-based JupyterHub instance with a Docker spawner.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#teaching-and-learning-with-jupyter",
+    "href": "concept.html#teaching-and-learning-with-jupyter",
+    "title": "1  Course concept",
+    "section": "4.1 Teaching and Learning with Jupyter",
+    "text": "4.1 Teaching and Learning with Jupyter\nThis handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - https://jupyter4edu.github.io/jupyter-edu-book/",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#open-edx-educators",
+    "href": "concept.html#open-edx-educators",
+    "title": "1  Course concept",
+    "section": "4.2 Open edX Educators",
+    "text": "4.2 Open edX Educators\n\nMaterial on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html\nInstructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "concept.html#text-to-speech",
+    "href": "concept.html#text-to-speech",
+    "title": "1  Course concept",
+    "section": "4.3 Text to speech",
+    "text": "4.3 Text to speech\n\n4.3.1 Whisper AI\n\nhttps://openai.com/index/whisper/\n\n\n\n4.3.2 ElevenLabs\n\nhttps://elevenlabs.io/",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "2  Content",
+    "section": "",
+    "text": "Pharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: https://livermetabolism.com\nThe course is structured in sections, subsections and units.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Content</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/hello.html",
+    "href": "notebooks/hello.html",
+    "title": "3  Pharmacokinetic Modeling Basics",
+    "section": "",
+    "text": "3.1 Polar Axis\nFor a demonstration of a line plot on a polar axis, see Figure 3.1.\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 3.1: A line plot on a polar axis",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pharmacokinetic Modeling Basics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/hello.html#references",
+    "href": "notebooks/hello.html#references",
+    "title": "3  Pharmacokinetic Modeling Basics",
+    "section": "4.1 References",
+    "text": "4.1 References\n\n\nHernandez-Sanchez, Sergio, Victor Moreno-Perez, Jonatan Garcia-Campos,\nJavier Marco-Lledó, Eva Maria Navarrete-Muñoz, and Carlos\nLozano-Quijada. 2021. “Twelve Tips to Make Successful Medical\nInfographics.” Medical Teacher 43 (12): 1353–59. https://doi.org/10.1080/0142159X.2020.1855323.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pharmacokinetic Modeling Basics</span>"
+    ]
+  }
+]
