@@ -1,0 +1,75 @@
+[
+	{
+		"id": "Gent",
+		"type": "article-journal",
+		"language": "en",
+		"source": "Zotero",
+		"title": "School of Design, University of Leeds, UK",
+		"author": [
+			{
+				"family": "Gent",
+				"given": "Dr Mike"
+			}
+		]
+	},
+	{
+		"id": "Hernandez-Sanchez2021",
+		"type": "article-journal",
+		"abstract": "In the health sciences, professionals must keep up to date to conduct their evidence-based practise. Hence, there is a growing need to share medical knowledge efficiently among healthcare professionals, patients, and undergraduate health science students. Infographics (text and image) are a hybrid element that serves to represent information in an attractive and meaningful visual format. Actually, with the use of the Internet and social networks, infographics have become a popular format for sharing medical information around the world.",
+		"container-title": "Medical Teacher",
+		"DOI": "10.1080/0142159X.2020.1855323",
+		"ISSN": "0142-159X, 1466-187X",
+		"issue": "12",
+		"journalAbbreviation": "Medical Teacher",
+		"language": "en",
+		"page": "1353-1359",
+		"source": "DOI.org (Crossref)",
+		"title": "Twelve tips to make successful medical infographics",
+		"URL": "https://www.tandfonline.com/doi/full/10.1080/0142159X.2020.1855323",
+		"volume": "43",
+		"author": [
+			{
+				"family": "Hernandez-Sanchez",
+				"given": "Sergio"
+			},
+			{
+				"family": "Moreno-Perez",
+				"given": "Victor"
+			},
+			{
+				"family": "Garcia-Campos",
+				"given": "Jonatan"
+			},
+			{
+				"family": "Marco-Lledó",
+				"given": "Javier"
+			},
+			{
+				"family": "Navarrete-Muñoz",
+				"given": "Eva Maria"
+			},
+			{
+				"family": "Lozano-Quijada",
+				"given": "Carlos"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					1,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					12,
+					2
+				]
+			]
+		}
+	}
+]

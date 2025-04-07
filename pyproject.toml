@@ -1,0 +1,12 @@
+[project]
+name = "dhpe-pkpd"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter",
+    "jupyterlab>=4.4.0",
+    "matplotlib",
+    "plotly",
+]

@@ -1,0 +1,34 @@
+# Quarto
+https://quarto.org/docs/get-started/
+
+# uv
+```
+uv venv
+uv sync
+```
+
+# activate virtual env
+source .venv/bin/activate
+
+# workon notebooks
+```bash
+jupyter lab notebooks/hello.ipynb
+```
+
+# render notebooks
+quarto render notebooks/hello.ipynb --to html
+quarto render notebooks/hello.ipynb --to pdf
+quarto render notebooks/hello.ipynb --to revealjs
+quarto render notebooks/hello.ipynb --to pptx
+
+# render content
+quarto preview notebooks/hello.ipynb
+
+
+# How to combine multiple documents to a single output?
+# How to get the book with all chapters? And TOC?
+
+# How to customize rendering to different targets in Quarto?
+
+# execute the notebook cells
+quarto render notebook.ipynb --execute
