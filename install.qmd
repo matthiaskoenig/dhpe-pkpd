@@ -1,21 +1,31 @@
-# Quarto
-https://quarto.org/docs/get-started/
+# Installation information
+## Quatro
+Information about installation is available from
+<https://quarto.org/docs/get-started/>.
 
-Install the prerelease version:
-https://quarto.org/docs/download/prerelease.html
-quarto-1.7.21-linux-amd64.deb
-https://prerelease.quarto.org/
-https://prerelease.quarto.org/docs/prerelease/1.7/
+This documents were created with the prerelease version `quarto-1.7.21-linux-amd64.deb` available from 
+<https://quarto.org/docs/download/prerelease.html>.
+
+Documentation for the pre-release is available at 
+<https://prerelease.quarto.org/>.
+
+### VS Code Plugin
+Information on the visual studio code integration is available here:
+<https://quarto.org/docs/tools/vscode.html>
+
+For executing the python code the python interpreter must be set and the jupyter plugin must be installed.
 
 
-# uv
-```
-uv venv
+## uv
+Python dependencies are managed with uv and can be installed via:
+```bash
 uv sync
 ```
 
-# activate virtual env
+#### activate virtual environment
+```bash
 source .venv/bin/activate
+```
 
 # workon notebooks
 ```bash
@@ -46,10 +56,59 @@ quarto render notebook.ipynb --execute
 # Publishing via github actions
 https://quarto.org/docs/publishing/github-pages.html#github-action
 
-# OpenEdx
-tutor: https://docs.tutor.edly.io/index.html
+
+## Open edX
+Open edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.
+
+A local installation of OpenEdx can be setup with tutor: <https://docs.tutor.edly.io/index.html>. This requires a working docker installation: <https://docs.docker.com/engine/install/>.
+
 ```bash
-pip install "tutor[full]"
 source .venv/bin/activate
 tutor local launch
+```
+This results in 
+```bash
+All services initialised.
+The platform is now running and can be accessed at the following urls:
+
+    http://local.openedx.io
+    http://studio.local.openedx.io
+    http://meilisearch.local.openedx.io
+    http://apps.local.openedx.io
+```
+
+
+### Creating a new user with staff and admin rights
+You will most certainly need to create a user to administer the platform. Just run:
+```bash
+tutor local do createuser --staff --superuser matthiaskoenig konigmatt@googlemail.com
+```
+
+### Importing the demo course
+After a fresh installation, your platform will not have a single course. To import the Open edX demo course, run:
+```bash
+tutor local do importdemocourse
+```
+
+### Status
+You can view your platform’s containers:
+```bash
+tutor local status
+```
+
+## Open edX Jupyter integration
+
+Tutor plugin for running Jupyter notebooks.
+```
+- name: jupyter
+  src: tutor-jupyter>=19.0.0,<20.0.0
+  url: https://github.com/overhangio/tutor-jupyter
+  author: Edly <hello@edly.io>
+  maintainer: Edly <abdul.muqadim@arbisoft.com>
+  description: |
+    Run Jupyter notebooks right in your LMS.
+
+    Launch a JupyterHub single-node cluster and install the Jupyter XBlock in the Open
+    edX LMS/CMS. This makes it very easy to launch student-editable code editors rights
+    in your courses.
 ```

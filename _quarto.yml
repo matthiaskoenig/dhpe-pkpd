@@ -23,5 +23,3 @@ format:
     cover-image: images/banner.png
   epub:
     cover-image: images/banner.png
-  revealjs:
-    cover-image: images/banner.png
