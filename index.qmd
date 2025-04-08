@@ -1,5 +1,42 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+This documents provides an overview of the DHPE2025 teaching project on pharmacokinetics/pharmacodynamics modeling.
 
-To learn more about Quarto visit <https://quarto.org/docs/books/>.
+
+## PK/PD course
+
+PK/PD course overview
+
+- [ ] overview course content: `content.qmd`. Sections and modules; keywords; high level summary; teaching goals.
+- [ ] create workflow picture
+
+## DHPE course
+
+DHPE teaching project overview.
+
+- [ ] write short summary of teaching project: `concept.qmd`
+- [ ] create workflow picture 
+
+
+## Proof of principle implementation
+
+Create a proof of principle for a first lecture: **pharmacokinetic parameters**.
+
+### Course: WebBook + EPub + PDF
+
+- [ ] Create script/text + teaching notebook (for visualization)
+- [ ] Create slides 5-15 min
+- [ ] Create video of slides
+- [ ] Create teaser videos
+- [ ] interactive tutorial notebook --> reveal.js
+- [ ] interactive tutorial notebook solutions --> reveals.js
+
+### OpenEdX
+
+Create course section Open edX (from script content).
+    
+- [ ] create initial course
+- [ ] test content from script (import course content; qmd -> OLX(mu) -> course format?; other options? xmarkdown))
+- [ ] test interactivity
+- [ ] test quizz
+- [ ] test h5p integration

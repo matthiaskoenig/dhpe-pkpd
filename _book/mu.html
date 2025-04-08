@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Matthias König">
-<meta name="dcterms.date" content="2025-04-07">
 
-<title>Pharmacokinetics/Pharmacodynamics Modelling</title>
+<title>4&nbsp; Mu – Pharmacokinetics/Pharmacodynamics Modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./course_content.html" rel="next">
+<link href="./notebooks/hello.html" rel="next">
+<link href="./install.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mu.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mu</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -110,26 +109,38 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course_content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Content</span></span></a>
+  <a href="./concept.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./teaching_concept.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Course concept</span></span></a>
+  <a href="./content.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Content</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./install.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Installation information</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mu.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mu</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/hello.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></span></a>
   </div>
 </li>
     </ul>
@@ -142,16 +153,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#pkpd-course" id="toc-pkpd-course" class="nav-link" data-scroll-target="#pkpd-course">PK/PD course</a></li>
-  <li><a href="#dhpe-course" id="toc-dhpe-course" class="nav-link" data-scroll-target="#dhpe-course">DHPE course</a></li>
-  <li><a href="#proof-of-principle-implementation" id="toc-proof-of-principle-implementation" class="nav-link" data-scroll-target="#proof-of-principle-implementation">Proof of principle implementation</a>
-  <ul class="collapse">
-  <li><a href="#course-webbook-epub-pdf" id="toc-course-webbook-epub-pdf" class="nav-link" data-scroll-target="#course-webbook-epub-pdf">Course: WebBook + EPub + PDF</a></li>
-  <li><a href="#openedx" id="toc-openedx" class="nav-link" data-scroll-target="#openedx">OpenEdX</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation"><span class="header-section-number">4.1</span> Installation</a></li>
   </ul>
 </nav>
     </div>
@@ -160,26 +162,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pharmacokinetics/Pharmacodynamics Modelling</h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mu</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Matthias König </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 7, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -189,53 +179,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This documents provides an overview of the DHPE2025 teaching project on pharmacokinetics/pharmacodynamics modeling.</p>
-<section id="pkpd-course" class="level2">
-<h2 class="anchored" data-anchor-id="pkpd-course">PK/PD course</h2>
-<p>PK/PD course overview</p>
-<ul class="task-list">
-<li><label><input type="checkbox">overview course content: <code>content.qmd</code>. Sections and modules; keywords; high level summary; teaching goals.</label></li>
-<li><label><input type="checkbox">create workflow picture</label></li>
-</ul>
-</section>
-<section id="dhpe-course" class="level2">
-<h2 class="anchored" data-anchor-id="dhpe-course">DHPE course</h2>
-<p>DHPE teaching project overview.</p>
-<ul class="task-list">
-<li><label><input type="checkbox">write short summary of teaching project: <code>concept.qmd</code></label></li>
-<li><label><input type="checkbox">create workflow picture</label></li>
-</ul>
-</section>
-<section id="proof-of-principle-implementation" class="level2">
-<h2 class="anchored" data-anchor-id="proof-of-principle-implementation">Proof of principle implementation</h2>
-<p>Create a proof of principle for a first lecture: <strong>pharmacokinetic parameters</strong>.</p>
-<section id="course-webbook-epub-pdf" class="level3">
-<h3 class="anchored" data-anchor-id="course-webbook-epub-pdf">Course: WebBook + EPub + PDF</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Create script/text + teaching notebook (for visualization)</label></li>
-<li><label><input type="checkbox">Create slides 5-15 min</label></li>
-<li><label><input type="checkbox">Create video of slides</label></li>
-<li><label><input type="checkbox">Create teaser videos</label></li>
-<li><label><input type="checkbox">interactive tutorial notebook –&gt; reveal.js</label></li>
-<li><label><input type="checkbox">interactive tutorial notebook solutions –&gt; reveals.js</label></li>
-</ul>
-</section>
-<section id="openedx" class="level3">
-<h3 class="anchored" data-anchor-id="openedx">OpenEdX</h3>
-<p>Create course section Open edX (from script content).</p>
-<ul class="task-list">
-<li><label><input type="checkbox">create initial course</label></li>
-<li><label><input type="checkbox">test content from script (import course content; qmd -&gt; OLX(mu) -&gt; course format?; other options? xmarkdown))</label></li>
-<li><label><input type="checkbox">test interactivity</label></li>
-<li><label><input type="checkbox">test quizz</label></li>
-<li><label><input type="checkbox">test h5p integration</label></li>
-</ul>
+<p>See also markdown xblock! https://github.com/citynetwork/markdown-xblock</p>
+<p>Writing courses in markdown.</p>
+<p>Mu Course authoring for humans https://discuss.openedx.org/t/introducing-mu-course-authoring-for-humans/9314</p>
+<p>In a nutshell, Mu allows you to write your courses in Markdown or HTML5, and then convert them to OLX, and vice-versa.</p>
+<p>https://github.com/overhangio/mu</p>
+<section id="installation" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="installation"><span class="header-section-number">4.1</span> Installation</h2>
+<p>pip install mu-courses</p>
+<p>Install up to date pandoc version https://github.com/jgm/pandoc/releases/ pandoc 3.6.4</p>
+<p>mkdir olx mu ./course.md ./olx/</p>
+<p>Package the course</p>
+<pre><code>tar -czf mycourse.tar.gz ./olx</code></pre>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -640,10 +597,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./install.html" class="pagination-link" aria-label="Installation information">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Installation information</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./course_content.html" class="pagination-link" aria-label="Content">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Content</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./notebooks/hello.html" class="pagination-link" aria-label="Pharmacokinetic Modeling Basics">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Matthias König">
 <meta name="dcterms.date" content="2025-04-07">
+<meta name="description" content="A first introduction to pharmacokinetic modelling">
 
-<title>Pharmacokinetics/Pharmacodynamics Modelling</title>
+<title>5&nbsp; Pharmacokinetic Modeling Basics – Pharmacokinetics/Pharmacodynamics Modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,82 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./course_content.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-b2bd955b7378b94aa8c2ba4fafa553c9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1960fbccac74ec23a5c333d38695c7f1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../mu.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-b2bd955b7378b94aa8c2ba4fafa553c9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1960fbccac74ec23a5c333d38695c7f1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -83,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/hello.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -98,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Pharmacokinetics/Pharmacodynamics Modelling</a> 
+      <a href="../">Pharmacokinetics/Pharmacodynamics Modelling</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -110,26 +165,38 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course_content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Content</span></span></a>
+  <a href="../concept.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./teaching_concept.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Course concept</span></span></a>
+  <a href="../content.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Content</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./install.html" class="sidebar-item-text sidebar-link">
+  <a href="../install.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Installation information</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mu</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/hello.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></span></a>
   </div>
 </li>
     </ul>
@@ -142,15 +209,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <li><a href="#polar-axis" id="toc-polar-axis" class="nav-link active" data-scroll-target="#polar-axis"><span class="header-section-number">5.1</span> Polar Axis</a></li>
+  <li><a href="#new-section" id="toc-new-section" class="nav-link" data-scroll-target="#new-section"><span class="header-section-number">6</span> New Section</a>
   <ul class="collapse">
-  <li><a href="#pkpd-course" id="toc-pkpd-course" class="nav-link" data-scroll-target="#pkpd-course">PK/PD course</a></li>
-  <li><a href="#dhpe-course" id="toc-dhpe-course" class="nav-link" data-scroll-target="#dhpe-course">DHPE course</a></li>
-  <li><a href="#proof-of-principle-implementation" id="toc-proof-of-principle-implementation" class="nav-link" data-scroll-target="#proof-of-principle-implementation">Proof of principle implementation</a>
-  <ul class="collapse">
-  <li><a href="#course-webbook-epub-pdf" id="toc-course-webbook-epub-pdf" class="nav-link" data-scroll-target="#course-webbook-epub-pdf">Course: WebBook + EPub + PDF</a></li>
-  <li><a href="#openedx" id="toc-openedx" class="nav-link" data-scroll-target="#openedx">OpenEdX</a></li>
-  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.1</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -160,19 +222,13 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pharmacokinetics/Pharmacodynamics Modelling</h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pharmacokinetic Modeling Basics</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Matthias König </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -189,52 +245,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This documents provides an overview of the DHPE2025 teaching project on pharmacokinetics/pharmacodynamics modeling.</p>
-<section id="pkpd-course" class="level2">
-<h2 class="anchored" data-anchor-id="pkpd-course">PK/PD course</h2>
-<p>PK/PD course overview</p>
-<ul class="task-list">
-<li><label><input type="checkbox">overview course content: <code>content.qmd</code>. Sections and modules; keywords; high level summary; teaching goals.</label></li>
-<li><label><input type="checkbox">create workflow picture</label></li>
-</ul>
+<section id="polar-axis" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="polar-axis"><span class="header-section-number">5.1</span> Polar Axis</h2>
+<p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>.</p>
+<div id="cell-fig-polar" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-polar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="hello_files/figure-html/fig-polar-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: A line plot on a polar axis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="dhpe-course" class="level2">
-<h2 class="anchored" data-anchor-id="dhpe-course">DHPE course</h2>
-<p>DHPE teaching project overview.</p>
-<ul class="task-list">
-<li><label><input type="checkbox">write short summary of teaching project: <code>concept.qmd</code></label></li>
-<li><label><input type="checkbox">create workflow picture</label></li>
-</ul>
-</section>
-<section id="proof-of-principle-implementation" class="level2">
-<h2 class="anchored" data-anchor-id="proof-of-principle-implementation">Proof of principle implementation</h2>
-<p>Create a proof of principle for a first lecture: <strong>pharmacokinetic parameters</strong>.</p>
-<section id="course-webbook-epub-pdf" class="level3">
-<h3 class="anchored" data-anchor-id="course-webbook-epub-pdf">Course: WebBook + EPub + PDF</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Create script/text + teaching notebook (for visualization)</label></li>
-<li><label><input type="checkbox">Create slides 5-15 min</label></li>
-<li><label><input type="checkbox">Create video of slides</label></li>
-<li><label><input type="checkbox">Create teaser videos</label></li>
-<li><label><input type="checkbox">interactive tutorial notebook –&gt; reveal.js</label></li>
-<li><label><input type="checkbox">interactive tutorial notebook solutions –&gt; reveals.js</label></li>
-</ul>
-</section>
-<section id="openedx" class="level3">
-<h3 class="anchored" data-anchor-id="openedx">OpenEdX</h3>
-<p>Create course section Open edX (from script content).</p>
-<ul class="task-list">
-<li><label><input type="checkbox">create initial course</label></li>
-<li><label><input type="checkbox">test content from script (import course content; qmd -&gt; OLX(mu) -&gt; course format?; other options? xmarkdown))</label></li>
-<li><label><input type="checkbox">test interactivity</label></li>
-<li><label><input type="checkbox">test quizz</label></li>
-<li><label><input type="checkbox">test h5p integration</label></li>
-</ul>
+<section id="new-section" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> New Section</h1>
+<p>Testing additional content. Here a citation <span class="citation" data-cites="Hernandez-Sanchez2021">(<a href="hello.html#ref-Hernandez-Sanchez2021" role="doc-biblioref">Hernandez-Sanchez et al. 2021</a>)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that there are five types of callouts, including: <code>note</code>, <code>tip</code>, <code>warning</code>, <code>caution</code> and <code>important</code>.</p>
+</div>
+</div>
+<section id="references" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="references"><span class="header-section-number">6.1</span> References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Hernandez-Sanchez2021" class="csl-entry" role="listitem">
+Hernandez-Sanchez, Sergio, Victor Moreno-Perez, Jonatan Garcia-Campos,
+Javier Marco-Lledó, Eva Maria Navarrete-Muñoz, and Carlos
+Lozano-Quijada. 2021. <span>“Twelve Tips to Make Successful Medical
+Infographics.”</span> <em>Medical Teacher</em> 43 (12): 1353–59. <a href="https://doi.org/10.1080/0142159X.2020.1855323">https://doi.org/10.1080/0142159X.2020.1855323</a>.
+</div>
+</div>
 
 
-</section>
 </section>
 </section>
 
@@ -640,11 +711,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../mu.html" class="pagination-link" aria-label="Mu">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mu</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./course_content.html" class="pagination-link" aria-label="Content">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Content</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

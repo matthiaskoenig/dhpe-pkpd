@@ -8,18 +8,16 @@ book:
   date: "4/7/2025"
   chapters:
     - index.qmd
-    - concept.qmd
-    - content.qmd
+    - course_content.qmd
+    - teaching_concept.qmd
     - install.qmd
-    - mu.qmd
-    - notebooks/hello.ipynb
 
 bibliography: references.json
 
 format:
   html:
     theme: cosmo
-    cover-image: images/banner.png
+    # cover-image: images/banner.png
 #   pdf:
 #    documentclass: scrreprt
 #    cover-image: images/banner.png
