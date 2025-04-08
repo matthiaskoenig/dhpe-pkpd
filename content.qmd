@@ -4,3 +4,11 @@ Pharmacokinetic modelling is the study of how drugs are absorbed, distributed, m
 
 The course is structured in sections, subsections and units.
 ![images/course_structure.png](images/course_structure.png)
+
+<!-- Create a figure with the actual content structure; use the meridian  -->
+
+## Lectures/Units
+
+- structural models
+- ordinary differential equations
+- compartment models
