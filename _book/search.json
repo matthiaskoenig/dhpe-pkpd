@@ -242,51 +242,51 @@
   {
     "objectID": "install.html",
     "href": "install.html",
-    "title": "3  Installation information",
+    "title": "3  Installation",
     "section": "",
-    "text": "3.1 Quatro\nInformation about installation is available from https://quarto.org/docs/get-started/.\nThis documents were created with the prerelease version quarto-1.7.21-linux-amd64.deb available from https://quarto.org/docs/download/prerelease.html.\nDocumentation for the pre-release is available at https://prerelease.quarto.org/.",
+    "text": "3.1 uv\nThis section provides information on how to setup the different parts of the course. This is a working document to keep track of the technology stack and how to configure the parts.\nAs part of the course python code has to be executed. All requirements are managed via virtual environments. The dependencies are managed using uv. For installation information see: https://docs.astral.sh/uv/getting-started/installation/\nThe virtual environment can be setup via:\nTo activate the virtual environment use\nor the corresponding command for your operating system. The environment should be set as python interpreter in vscode and pycharm.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
   {
     "objectID": "install.html#quatro",
     "href": "install.html#quatro",
-    "title": "3  Installation information",
-    "section": "",
-    "text": "3.1.1 VS Code Plugin\nInformation on the visual studio code integration is available here: https://quarto.org/docs/tools/vscode.html\nFor executing the python code the python interpreter must be set and the jupyter plugin must be installed.\n\n\n3.1.2 Github actions for publishing\nThe output can be automatically generated using github actions. https://quarto.org/docs/publishing/github-pages.html#github-action",
+    "title": "3  Installation",
+    "section": "3.2 Quatro",
+    "text": "3.2 Quatro\nInformation about installation is available from https://quarto.org/docs/get-started/.\nThis documents were created with the prerelease version quarto-1.7.21-linux-amd64.deb available from https://quarto.org/docs/download/prerelease.html.\nDocumentation for the pre-release is available at https://prerelease.quarto.org/.\n\n3.2.1 VS Code Plugin\nInformation on the visual studio code integration is available here: https://quarto.org/docs/tools/vscode.html\nFor executing the python code the python interpreter must be set and the jupyter plugin must be installed.\n\n\n3.2.2 Github actions for publishing\nThe output can be automatically generated using github actions. https://quarto.org/docs/publishing/github-pages.html#github-action",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
   {
     "objectID": "install.html#uv",
     "href": "install.html#uv",
-    "title": "3  Installation information",
-    "section": "3.2 uv",
-    "text": "3.2 uv\nPython dependencies are managed with uv and can be installed via:\nuv venv\nuv sync\nTo activate the virtual environment use\nsource .venv/bin/activate\nor the corresponding command for your operating system.",
+    "title": "3  Installation",
+    "section": "",
+    "text": "uv venv\nuv sync\n\nsource .venv/bin/activate",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
   {
     "objectID": "install.html#open-edx",
     "href": "install.html#open-edx",
-    "title": "3  Installation information",
+    "title": "3  Installation",
     "section": "3.3 Open edX",
-    "text": "3.3 Open edX\nOpen edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.\nA local installation of OpenEdx can be setup with tutor: https://docs.tutor.edly.io/index.html. This requires a working docker installation: https://docs.docker.com/engine/install/.\nsource .venv/bin/activate\ntutor local launch\nThis results in\nAll services initialised.\nThe platform is now running and can be accessed at the following urls:\n\n    http://local.openedx.io\n    http://studio.local.openedx.io\n    http://meilisearch.local.openedx.io\n    http://apps.local.openedx.io\n\n3.3.1 Creating a new user with staff and admin rights\nYou will most certainly need to create a user to administer the platform. Just run:\ntutor local do createuser --staff --superuser matthiaskoenig konigmatt@googlemail.com\n\n\n3.3.2 Importing the demo course\nAfter a fresh installation, your platform will not have a single course. To import the Open edX demo course, run:\ntutor local do importdemocourse\n\n\n3.3.3 Status\nYou can view your platform’s containers:\ntutor local status",
+    "text": "3.3 Open edX\nOpen edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.\nA local installation of OpenEdx can be setup with tutor: https://docs.tutor.edly.io/index.html. This requires a working docker installation: https://docs.docker.com/engine/install/.\nsource .venv/bin/activate\ntutor local launch\nThis results in\nAll services initialised.\nThe platform is now running and can be accessed at the following urls:\n\n    http://local.openedx.io\n    http://studio.local.openedx.io\n    http://meilisearch.local.openedx.io\n    http://apps.local.openedx.io\n\n3.3.1 Creating a new user with staff and admin rights\nYou will most certainly need to create a user to administer the platform. Just run:\ntutor local do createuser --staff --superuser matthiaskoenig konigmatt@googlemail.com\n\n\n3.3.2 Importing the demo course\nAfter a fresh installation, your platform will not have a single course. To import the Open edX demo course, run:\ntutor local do importdemocourse\n\n\n3.3.3 View status of containers\nYou can view your platform’s containers:\ntutor local status\n\n\n3.3.4 Open edX Jupyter integration\nTutor plugin for running Jupyter notebooks.\n- name: jupyter\n  src: tutor-jupyter&gt;=19.0.0,&lt;20.0.0\n  url: &lt;https://github.com/overhangio/tutor-jupyter&gt;\n  author: Edly &lt;hello@edly.io&gt;\n  maintainer: Edly &lt;abdul.muqadim@arbisoft.com&gt;\n  description: |\n    Run Jupyter notebooks right in your LMS.\n\n    Launch a JupyterHub single-node cluster and install the Jupyter XBlock in the Open\n    edX LMS/CMS. This makes it very easy to launch student-editable code editors rights\n    in your courses.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
   {
     "objectID": "install.html#open-edx-jupyter-integration",
     "href": "install.html#open-edx-jupyter-integration",
-    "title": "3  Installation information",
+    "title": "3  Installation",
     "section": "3.4 Open edX Jupyter integration",
     "text": "3.4 Open edX Jupyter integration\nTutor plugin for running Jupyter notebooks.\n- name: jupyter\n  src: tutor-jupyter&gt;=19.0.0,&lt;20.0.0\n  url: https://github.com/overhangio/tutor-jupyter\n  author: Edly &lt;hello@edly.io&gt;\n  maintainer: Edly &lt;abdul.muqadim@arbisoft.com&gt;\n  description: |\n    Run Jupyter notebooks right in your LMS.\n\n    Launch a JupyterHub single-node cluster and install the Jupyter XBlock in the Open\n    edX LMS/CMS. This makes it very easy to launch student-editable code editors rights\n    in your courses.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation information</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
     ]
   },
   {
@@ -444,7 +444,7 @@
     "href": "teaching_concept.html",
     "title": "2  Course concept",
     "section": "",
-    "text": "2.1 Content\nAll course content is managed in github. On changes locally the complete content is updated.\nChapter 1. What is the technology behind this course.\nFigure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility.",
+    "text": "2.1 Form/Technology\nAll course content is managed in github. On changes locally the complete content is updated.\nChapter 1. What is the technology behind this course.\nFigure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility.\nThe course consists of the following complementary parts which should allow as much offline studying as possible:",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -463,8 +463,8 @@
     "objectID": "teaching_concept.html#formtechnology",
     "href": "teaching_concept.html#formtechnology",
     "title": "2  Course concept",
-    "section": "2.2 Form/Technology",
-    "text": "2.2 Form/Technology\n\nLecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.\n\n\nJupyter notebooks + markdown =&gt; cross compilation to\n\nHTML (Blog/Webpage) -&gt; hosted on github.io\nPDF (handout/book, typst) -&gt; hosted on github.io for download\nPresentation (reveal.js) -&gt; hosted on Github.io; necessary to render to a different target; see https://github.com/quarto-dev/quarto-cli/discussions/1433; see https://github.com/quarto-dev/quarto-cli/issues/2200. By using different profiles these information can be combined.\n\n\n\nShort presentations\n\n[~] currently the presentations are in google slides; motivational content; short; 5-15 min\nvideos of the presentations;\n\nOpenEdx course: markdown -&gt; OLX (mu), to openedx course format\n\n\nfigure out how to customize compilation to different targets in Quarto; I.e. special behavior for book vs. slides.",
+    "section": "",
+    "text": "Lecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.\n\n\nJupyter notebooks + markdown =&gt; cross compilation to\n\nHTML (Blog/Webpage) -&gt; hosted on github.io\nPDF (handout/book, typst) -&gt; hosted on github.io for download\nPresentation (reveal.js) -&gt; hosted on Github.io; necessary to render to a different target; see https://github.com/quarto-dev/quarto-cli/discussions/1433; see https://github.com/quarto-dev/quarto-cli/issues/2200. By using different profiles these information can be combined.\n\n\n\nShort presentations\n\n[~] currently the presentations are in google slides; motivational content; short; 5-15 min\nvideos of the presentations;\n\nOpenEdx course: markdown -&gt; OLX (mu), to openedx course format\n\n\nfigure out how to customize compilation to different targets in Quarto; I.e. special behavior for book vs. slides.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -473,8 +473,8 @@
     "objectID": "teaching_concept.html#different-classes",
     "href": "teaching_concept.html#different-classes",
     "title": "2  Course concept",
-    "section": "2.3 Different classes",
-    "text": "2.3 Different classes\n\nteaching notebooks =&gt; rendered to content\nexercise notebooks\nsolution notebooks/material",
+    "section": "2.2 Different classes",
+    "text": "2.2 Different classes\n\nteaching notebooks =&gt; rendered to content\nexercise notebooks\nsolution notebooks/material",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -483,8 +483,8 @@
     "objectID": "teaching_concept.html#version-control",
     "href": "teaching_concept.html#version-control",
     "title": "2  Course concept",
-    "section": "2.4 Version control",
-    "text": "2.4 Version control\n\nCourse content is managed in a GitHub repository (version control)",
+    "section": "2.3 Version control",
+    "text": "2.3 Version control\n\nCourse content is managed in a GitHub repository (version control)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -493,8 +493,8 @@
     "objectID": "teaching_concept.html#continous-integration-and-deployment",
     "href": "teaching_concept.html#continous-integration-and-deployment",
     "title": "2  Course concept",
-    "section": "2.5 Continous integration and deployment",
-    "text": "2.5 Continous integration and deployment\n\nCI via GitHub actions is used to automatically build and deploy the course content.",
+    "section": "2.4 Continous integration and deployment",
+    "text": "2.4 Continous integration and deployment\n\nCI via GitHub actions is used to automatically build and deploy the course content.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -503,8 +503,8 @@
     "objectID": "teaching_concept.html#software-and-tools",
     "href": "teaching_concept.html#software-and-tools",
     "title": "2  Course concept",
-    "section": "2.6 Software and tools",
-    "text": "2.6 Software and tools\n\nquatro for conversion;\nopenedx (docker container)",
+    "section": "2.5 Software and tools",
+    "text": "2.5 Software and tools\n\nquatro for conversion;\nopenedx (docker container)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -513,8 +513,8 @@
     "objectID": "teaching_concept.html#ai-support-for-writing-text",
     "href": "teaching_concept.html#ai-support-for-writing-text",
     "title": "2  Course concept",
-    "section": "2.7 AI support for writing text",
-    "text": "2.7 AI support for writing text\n\nAll text creation is supported by ChatGPT.",
+    "section": "2.6 AI support for writing text",
+    "text": "2.6 AI support for writing text\n\nAll text creation is supported by ChatGPT.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -523,8 +523,8 @@
     "objectID": "teaching_concept.html#corporate-styling-for-the-course",
     "href": "teaching_concept.html#corporate-styling-for-the-course",
     "title": "2  Course concept",
-    "section": "2.8 Corporate Styling for the course",
-    "text": "2.8 Corporate Styling for the course\n\nuse consistent colorschema and logos",
+    "section": "2.7 Corporate Styling for the course",
+    "text": "2.7 Corporate Styling for the course\n\nuse consistent colorschema and logos",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -533,8 +533,8 @@
     "objectID": "teaching_concept.html#hosting",
     "href": "teaching_concept.html#hosting",
     "title": "2  Course concept",
-    "section": "2.9 Hosting",
-    "text": "2.9 Hosting\n\nOpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack",
+    "section": "2.8 Hosting",
+    "text": "2.8 Hosting\n\nOpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -543,8 +543,8 @@
     "objectID": "teaching_concept.html#notebook-and-markdown-based-publishing-tools",
     "href": "teaching_concept.html#notebook-and-markdown-based-publishing-tools",
     "title": "2  Course concept",
-    "section": "2.10 Notebook and markdown based publishing tools",
-    "text": "2.10 Notebook and markdown based publishing tools\n\n2.10.1 Quarto\n\nAn open-source scientific and technical publishing system\nhttps://quarto.org/\nPublish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nsee: https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html\n\n\n2.10.1.1 Interactivity\n\nhttps://quarto.org/docs/interactive/\nCreate custom JavaScript visualizations using Observable JS: https://quarto.org/docs/interactive/ojs/\nIncorporate Jupyter Widgets: https://ipywidgets.readthedocs.io/en/latest/\nShiny for Python integration: https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html; https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html\n\n\n\n\n2.10.2 jupyterbook\n\nhttps://jupyterbook.org/en/stable/intro.html\nBuild beautiful, publication-quality books and documents from computational content.\nSimilar goal as quarto, but more focused on books.",
+    "section": "2.9 Notebook and markdown based publishing tools",
+    "text": "2.9 Notebook and markdown based publishing tools\n\n2.9.1 Quarto\n\nQuarto is an open-source scientific and technical publishing system available from https://quarto.org/.\nPublish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nFor a nice introduction to the features see: https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html\n\n\n2.9.1.1 Interactivity\n\nQuarto supports interactivity via different methods: https://quarto.org/docs/interactive/\nCreate custom JavaScript visualizations using Observable JS: https://quarto.org/docs/interactive/ojs/\nIncorporate Jupyter Widgets: https://ipywidgets.readthedocs.io/en/latest/\nShiny for Python integration: https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html\n\n\n\n\n2.9.2 Jupyterbook\n\nJupyterbool is an alternative to Quarto with some overlapping functionality: https://jupyterbook.org/en/stable/intro.html\nBuild beautiful, publication-quality books and documents from computational content.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -553,8 +553,8 @@
     "objectID": "teaching_concept.html#presentations",
     "href": "teaching_concept.html#presentations",
     "title": "2  Course concept",
-    "section": "2.11 Presentations",
-    "text": "2.11 Presentations\n\n2.11.1 reveal.js\n\nreveal.js is an open source HTML presentation framework. It’s a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.\nPresentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an iframe or add your own custom behavior using our JavaScript API.\nThe framework comes with a broad range of features including nested slides, Markdown support, Auto-Animate, PDF export, speaker notes, LaTeX support and syntax highlighted code.\nhttps://revealjs.com/course/\nnice integration with Quarto; https://quarto.org/docs/presentations/revealjs/demo/#/title-slide\nhttps://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd",
+    "section": "2.10 Presentations",
+    "text": "2.10 Presentations\n\n2.10.1 reveal.js\n\nreveal.js is an open source HTML presentation framework. It’s a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.\nPresentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an iframe or add your own custom behavior using our JavaScript API.\nThe framework comes with a broad range of features including nested slides, Markdown support, Auto-Animate, PDF export, speaker notes, LaTeX support and syntax highlighted code.\nhttps://revealjs.com/course/\nnice integration with Quarto; https://quarto.org/docs/presentations/revealjs/demo/#/title-slide\nhttps://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -563,8 +563,8 @@
     "objectID": "teaching_concept.html#interactive-plots",
     "href": "teaching_concept.html#interactive-plots",
     "title": "2  Course concept",
-    "section": "2.12 Interactive plots",
-    "text": "2.12 Interactive plots\n\n2.12.1 plotly\n\nhttps://plotly.com/python/ ### altair\nhttps://altair-viz.github.io/",
+    "section": "2.11 Interactive plots",
+    "text": "2.11 Interactive plots\n\n2.11.1 plotly\n\nhttps://plotly.com/python/ ### altair\nhttps://altair-viz.github.io/",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -573,8 +573,8 @@
     "objectID": "teaching_concept.html#interactive-webapps",
     "href": "teaching_concept.html#interactive-webapps",
     "title": "2  Course concept",
-    "section": "2.13 Interactive webapps",
-    "text": "2.13 Interactive webapps\n\n2.13.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n2.13.2 Voila\n\nvoila notebooks: https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n2.13.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n2.13.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n2.13.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n2.13.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
+    "section": "2.12 Interactive webapps",
+    "text": "2.12 Interactive webapps\n\n2.12.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n2.12.2 Voila\n\nvoila notebooks: https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n2.12.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n2.12.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n2.12.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n2.12.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -583,8 +583,8 @@
     "objectID": "teaching_concept.html#deployment-of-notebooks",
     "href": "teaching_concept.html#deployment-of-notebooks",
     "title": "2  Course concept",
-    "section": "2.14 Deployment of notebooks",
-    "text": "2.14 Deployment of notebooks\n\n2.14.1 binderhub\n\nvery slow\nhttps://binderhub.readthedocs.io/en/latest/\n2.14.2 jupyterhub\nJupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.\nhttps://jupyter.org/hub\nhttps://tljh.jupyter.org/en/latest/howto/index.html\n\nhttps://education.github.com/globalcampus/teacher?email_referrer=true\nnbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader & gradescope",
+    "section": "2.13 Deployment of notebooks",
+    "text": "2.13 Deployment of notebooks\n\n2.13.1 binderhub\n\nvery slow\nhttps://binderhub.readthedocs.io/en/latest/\n2.13.2 jupyterhub\nJupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.\nhttps://jupyter.org/hub\nhttps://tljh.jupyter.org/en/latest/howto/index.html\n\nhttps://education.github.com/globalcampus/teacher?email_referrer=true\nnbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader & gradescope",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
     ]
@@ -657,6 +657,46 @@
     "text": "5.4 Quatro document creation\nOne can update the notebooks in their favourite environment, e.g. jupyterlab\njupyter lab notebooks/hello.ipynb\nThe content can be rendered to the respective output format using the render command.\nquarto render notebooks/hello.ipynb --to html\nquarto render notebooks/hello.ipynb --to pdf\nquarto render notebooks/hello.ipynb --to revealjs\nquarto render notebooks/hello.ipynb --to pptx\nTo execute the notebooks use the execute flag\nquarto frender notebook.ipynb --execute\nTo preview the HTML use the preview command.\nquarto preview notebooks/hello.ipynb",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "install.html#section",
+    "href": "install.html#section",
+    "title": "3  Installation",
+    "section": "3.4 ",
+    "text": "3.4",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "install.html#edx-c",
+    "href": "install.html#edx-c",
+    "title": "3  Installation",
+    "section": "3.4 edX C",
+    "text": "3.4 edX C",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "install.html#edx-course",
+    "href": "install.html#edx-course",
+    "title": "3  Installation",
+    "section": "3.4 edX Course",
+    "text": "3.4 edX Course",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
+    ]
+  },
+  {
+    "objectID": "install.html#edx-course-creation",
+    "href": "install.html#edx-course-creation",
+    "title": "3  Installation",
+    "section": "3.4 edX course creation",
+    "text": "3.4 edX course creation\n\n3.4.1 HarvardX Course Template Builder\nAllows to create some template structure of the course https://harvardx.github.io/edx_course_templater/index.html\nA while ago I created the HarvardX Course Template Builder for our project leads. You answer some questions about your course (length, structure, desired template) and it builds you a blank course that you can import to Studio. It really speeds up the process of clicking “New Unit” over and over.\nYou are welcome to use it as much as you like. My bosses have ok’d releasing this into the wild, including our usual boilerplate (intro pages and a few sample items). The code is available on a GitHub repo if you want to make your own custom version or just see how it works.\n\n\n3.4.2 XNF conversion\nhttps://git.upv.es/serpucga/xnf2edx_cli/-/tree/master https://discuss.openedx.org/t/script-to-create-complete-open-edx-courses-from-a-template-in-an-excel-file/8520\nhttps://discuss.openedx.org/t/programmatically-create-courses-including-all-xblock-children/9206\n\n\n3.4.3 Mu\n\n\n3.4.4 Common Cartrige (CC)\nhttps://github.com/openedx/cc2olx",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
     ]
   }
 ]

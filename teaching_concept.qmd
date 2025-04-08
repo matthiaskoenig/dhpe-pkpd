@@ -7,14 +7,14 @@ Chapter 1. What is the technology behind this course.
 ![images/workflow.png](images/workflow.png)
 Figure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility. 
 
-## Content
-- simple lectures about pharmacokinetics
-- short videos
+The course consists of the following complementary parts which should allow as much offline studying as possible:
+
+- short lectures about pharmacokinetics in the form of a chapter with content
 - slides
+- short videos of the slides
 - simple apps for exploration
 - interactive notebook for exploration
 - quizzes
-- AI tutor
 
 ## Form/Technology
 
@@ -61,27 +61,23 @@ content.
 ## Hosting
 - OpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack
 
----
 
 ## Notebook and markdown based publishing tools
 ### Quarto
-- An open-source scientific and technical publishing system
-- https://quarto.org/
+- Quarto is an open-source scientific and technical publishing system available from <https://quarto.org/>.
 - Publish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
-- see: https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html
+- For a nice introduction to the features see: <https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html>
 
 #### Interactivity
-- https://quarto.org/docs/interactive/
-- Create custom JavaScript visualizations using Observable JS: https://quarto.org/docs/interactive/ojs/
-- Incorporate Jupyter Widgets: https://ipywidgets.readthedocs.io/en/latest/
-- Shiny for Python integration: https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html; https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html
+- Quarto supports interactivity via different methods: <https://quarto.org/docs/interactive/>
+- Create custom JavaScript visualizations using Observable JS: <https://quarto.org/docs/interactive/ojs/>
+- Incorporate Jupyter Widgets: <https://ipywidgets.readthedocs.io/en/latest/>
+- Shiny for Python integration: <https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html>
 
-### jupyterbook
-- https://jupyterbook.org/en/stable/intro.html
+### Jupyterbook
+- Jupyterbool is an alternative to Quarto with some overlapping functionality: https://jupyterbook.org/en/stable/intro.html
 - Build beautiful, publication-quality books and documents from computational content.
-- Similar goal as quarto, but more focused on books.
 
----
 
 ## Presentations
 ### reveal.js

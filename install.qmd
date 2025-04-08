@@ -1,4 +1,22 @@
-# Installation information
+# Installation
+This section provides information on how to setup the different parts of the course. This is a working document to keep track of the technology stack and how to configure the parts.
+
+## uv
+As part of the course python code has to be executed. All requirements are managed via virtual environments. The dependencies are managed using [uv](https://docs.astral.sh/uv/). For installation information see: <https://docs.astral.sh/uv/getting-started/installation/> 
+
+The virtual environment can be setup via:
+```bash
+uv venv
+uv sync
+```
+
+To activate the virtual environment use
+```bash
+source .venv/bin/activate
+```
+or the corresponding command for your operating system. The environment should be set as python interpreter in vscode and pycharm.
+
+
 ## Quatro
 Information about installation is available from
 <https://quarto.org/docs/get-started/>.
@@ -20,18 +38,7 @@ The output can be automatically generated using github actions.
 <https://quarto.org/docs/publishing/github-pages.html#github-action>
 
 
-## uv
-Python dependencies are managed with uv and can be installed via:
-```bash
-uv venv
-uv sync
-```
 
-To activate the virtual environment use
-```bash
-source .venv/bin/activate
-```
-or the corresponding command for your operating system.
 
 
 
@@ -67,19 +74,19 @@ After a fresh installation, your platform will not have a single course. To impo
 tutor local do importdemocourse
 ```
 
-### Status
+### View status of containers
 You can view your platform’s containers:
 ```bash
 tutor local status
 ```
 
-## Open edX Jupyter integration
+### Open edX Jupyter integration
 
 Tutor plugin for running Jupyter notebooks.
 ```
 - name: jupyter
   src: tutor-jupyter>=19.0.0,<20.0.0
-  url: https://github.com/overhangio/tutor-jupyter
+  url: <https://github.com/overhangio/tutor-jupyter>
   author: Edly <hello@edly.io>
   maintainer: Edly <abdul.muqadim@arbisoft.com>
   description: |
@@ -89,3 +96,24 @@ Tutor plugin for running Jupyter notebooks.
     edX LMS/CMS. This makes it very easy to launch student-editable code editors rights
     in your courses.
 ```
+
+## edX course creation
+### HarvardX Course Template Builder 
+Allows to create some template structure of the course
+<https://harvardx.github.io/edx_course_templater/index.html>
+
+A while ago I created the HarvardX Course Template Builder for our project leads. You answer some questions about your course (length, structure, desired template) and it builds you a blank course that you can import to Studio. It really speeds up the process of clicking “New Unit” over and over.
+
+You are welcome to use it as much as you like. My bosses have ok’d releasing this into the wild, including our usual boilerplate (intro pages and a few sample items). The code is available on a [GitHub repo](https://github.com/HarvardX/edx_course_templater) if you want to make your own custom version or just see how it works.
+
+### XNF conversion
+https://git.upv.es/serpucga/xnf2edx_cli/-/tree/master
+https://discuss.openedx.org/t/script-to-create-complete-open-edx-courses-from-a-template-in-an-excel-file/8520
+
+https://discuss.openedx.org/t/programmatically-create-courses-including-all-xblock-children/9206
+
+### Mu
+
+
+### Common Cartrige (CC)
+https://github.com/openedx/cc2olx
