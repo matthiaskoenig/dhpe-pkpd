@@ -2,15 +2,47 @@ project:
   type: book
   output-dir: _book
 
+# number-depth: 0
+
 book:
-  title: "Pharmacokinetics/Pharmacodynamics Modelling"
+  title: "Pharmacokinetic & pharmacodynamic modelling"
   author: "Matthias König"
-  date: "4/7/2025"
+  date: "4/9/2025"
   chapters:
     - index.qmd
-    - course_content.qmd
-    - teaching_concept.qmd
-    - install.qmd
+    - part: "Concept"
+      chapters:
+      - course_concept.qmd
+    - part: "Course"
+      chapters:
+      - course_overview.qmd
+      - lecture_pkparameters.qmd
+    - part: "Technology"
+      chapters:
+      - install.qmd
+      - todo.qmd
+      - technology_review.qmd
+  favicon: ./images/pkpd.png
+  twitter-card: true
+  repo-url: https://github.com/matthiaskoenig/dhpe-pkpd.git
+  site-url: https://livermetabolism.com
+  downloads: [pdf]
+  
+  # navbar:
+  #   background: primary
+  #   search: false
+  #   title: PK/PD modelling
+
+
+  sidebar:
+    contents: auto
+    style: "floating"
+    logo: ./images/pkpd.png
+    collapse-level: 3
+    search: true
+
+# comments:
+#  hypothesis: true
 
 bibliography: references.json
 
@@ -18,8 +50,11 @@ format:
   html:
     theme: cosmo
     # cover-image: images/banner.png
-#   pdf:
-#    documentclass: scrreprt
-#    cover-image: images/banner.png
-#  epub:
-#    cover-image: images/banner.png
+  pdf:
+    documentclass: scrreprt
+    cover-image: images/banner.png
+  # typst:
+  #   default
+  # epub:
+  #   default
+    # cover-image: images/banner.png

@@ -1,0 +1,123 @@
+# Course concept
+
+## General idea
+This open, practice-oriented course introduces the fundamentals of pharmacokinetic (PK) and pharmacodynamic (PD) modelling, with a strong emphasis on reproducible research, open science, and digital competencies in health professions education. Leveraging best practices from software development—such as version control via Git and GitHub, continuous integration (CI) for automated course building, and open formats like Markdown—the course is designed as a fully open educational resource. Hosted on the Open edX platform, it combines theoretical foundations with interactive, hands-on learning to equip participants with the skills needed to understand, simulate, and critically assess PK/PD models in clinical and research contexts.
+
+The course consists of the following complementary parts which should allow as much offline studying as possible:
+
+1. **Short lectures** about pharmacokinetics in the form of a book chapter providing the content. The book is available as HTML webpage, PDF, Epub and HTML slideshow. [Quarto](https://quarto.org) is used to render high quality books with professional figures, layouts, full text search, cross references, references, citation, and the possibiliy to compile to multiple output formats.
+
+2. **Short presentations** for motivation and providing up to date use cases in the form of short videos and accompanying slides.
+3. An **Open edX course** for the respective chapter with interactive content (quizzes, H5P components).
+4. **Interactive Jupyter notebooks and simple apps** for active exploration of the course content.
+
+::: {layout-ncol=2}
+![Overview of the Digital Health Professions Educator (DHPE) program.](./images/dhpe_poster.jpg "Title: Digital Health Professions Educator"){#fig-dhpe width=100% fig-cap-location="bottom"}
+
+The course was developed as part of the [Digital Health Professions Educator](https://lernzentrum.charite.de/projekte/heds/digital_health_professions_educator) 2024/2025. The course is the digital teaching project of phase III (see @fig-dhpe.)
+:::
+
+
+
+## Technology
+In this section we provide an overview of the technology behind the course.
+
+The following figure provides an overview of the workflow of the course.
+
+![images/workflow.png](images/workflow.png)
+Figure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility. 
+
+
+### Version control
+Course content is managed in a GitHub repository <https://github.com/matthiaskoenig/dhpe-pkpd/> (version control). Content is managed in quarto QMD markdown files. 
+
+All course content is managed in github. On changes locally the complete content is updated.
+
+
+### Continous integration and deployment
+
+- CI via GitHub actions is used to automatically build and deploy the course content.
+
+
+### Jupyter notebooks
+
+## Different classes
+- teaching notebooks => rendered to content
+- exercise notebooks
+- solution notebooks/material
+
+
+1. Lecture scripts
+This is the complete reference information to learn; minimal interactivity; supports studying the
+content.
+- Jupyter notebooks + markdown => cross compilation to 
+    - [x] HTML (Blog/Webpage) -> hosted on github.io
+    - [x] PDF (handout/book, typst) -> hosted on github.io for download
+    - [ ] 
+
+
+
+# Open Broadcast study
+
+
+## Software and tools
+- quatro for conversion; 
+- openedx (docker container)
+
+## AI support for writing text
+- All text creation is supported by ChatGPT.
+
+## Corporate Styling for the course
+- use consistent colorschema and logos 
+
+## Hosting
+- OpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack
+
+
+## Notebook and markdown based publishing tools
+### Quarto
+- Quarto is an open-source scientific and technical publishing system available from <https://quarto.org/>.
+- Publish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
+- For a nice introduction to the features see: <https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html>
+
+#### Interactivity
+- Quarto supports interactivity via different methods: <https://quarto.org/docs/interactive/>
+- Create custom JavaScript visualizations using Observable JS: <https://quarto.org/docs/interactive/ojs/>
+- Incorporate Jupyter Widgets: <https://ipywidgets.readthedocs.io/en/latest/>
+- Shiny for Python integration: <https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html>
+
+### Jupyterbook
+- Jupyterbool is an alternative to Quarto with some overlapping functionality: https://jupyterbook.org/en/stable/intro.html
+- Build beautiful, publication-quality books and documents from computational content.
+
+
+## Presentations
+### reveal.js
+- reveal.js is an open source HTML presentation framework. It's a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.
+- Presentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an `iframe` or add your own custom behavior using our JavaScript API.
+- The framework comes with a broad range of features including nested slides, Markdown support, Auto-Animate, PDF export, speaker notes, LaTeX support and syntax highlighted code.
+- https://revealjs.com/course/
+- nice integration with Quarto; https://quarto.org/docs/presentations/revealjs/demo/#/title-slide
+- https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd
+
+---
+
+
+
+# OpenEdx
+- https://openedx.org/
+- Enable online campuses, instructor-led courses, degree programs, and self-paced courses using a single platform.
+- Open edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.
+
+Allows integration of jupyter notebooks, H5P, ...
+
+## Course structure
+The course is structured in sections, subsections and units.
+![images/course_structure.png](images/course_structure.png)
+
+<!-- Create a figure with the actual content structure; use the meridian  -->
+
+
+
+
+

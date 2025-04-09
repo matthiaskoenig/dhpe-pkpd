@@ -1,4 +1,4 @@
-# Installation
+# Installation and basic usage
 This section provides information on how to setup the different parts of the course. This is a working document to keep track of the technology stack and how to configure the parts.
 
 ## uv
@@ -38,8 +38,30 @@ The output can be automatically generated using github actions.
 <https://quarto.org/docs/publishing/github-pages.html#github-action>
 
 
+### Rendering and preview
+The content can be rendered to the respective output format using the `render` command.
+```bash
+quarto render notebooks/hello.ipynb --to html
+quarto render notebooks/hello.ipynb --to pdf
+quarto render notebooks/hello.ipynb --to revealjs
+quarto render notebooks/hello.ipynb --to pptx
+```
 
+To execute the notebooks use the `execute` flag
+```bash
+quarto frender notebook.ipynb --execute
+```
 
+To preview the HTML use the `preview` command.
+```bash
+quarto preview notebooks/hello.ipynb
+```
+
+### Render to reveal.js and book
+Necessary to render to different target types:
+Presentation (reveal.js) -> hosted on Github.io; necessary to render to a different target;
+  see <https://github.com/quarto-dev/quarto-cli/discussions/1433>; see <https://github.com/quarto-dev/quarto-cli/issues/2200>.
+  By using different profiles these information can be combined.
 
 
 ## Open edX
@@ -80,7 +102,7 @@ You can view your platform’s containers:
 tutor local status
 ```
 
-### Open edX Jupyter integration
+### Open edX notebook/jupyter integration
 
 Tutor plugin for running Jupyter notebooks.
 ```
@@ -96,6 +118,19 @@ Tutor plugin for running Jupyter notebooks.
     edX LMS/CMS. This makes it very easy to launch student-editable code editors rights
     in your courses.
 ```
+
+- openedx notebook integration: https://github.com/parmentelat/nbhosting ?!
+- https://github.com/overhangio/jupyter-xblock 
+JupyterHub hosts Jupyter instances with authentication (e.g. OAuth; IDK about using edX users as JupyterHub users with individual Docker image instance containers with nbgrader/xblock)
+The new jupyter-viewer-xblock (https://github.com/ibleducation/jupyter-viewer-xblock) allows to embed notebooks dynamically from a public URL.
+Demo here! https://www.youtube.com/watch?v=K8jhWgQnxvI
+- https://github.com/overhangio/tutor-jupyter; This is a plugin for Tutor that makes it easy to integrate Jupyter notebooks in Open edX. It achieves the following: 1. Install the official jupyter-xblock in the Open edX LMS and Studio. 2. Run a Docker-based JupyterHub instance with a Docker spawner.
+
+### H5P
+Open edX supports integration of H5P.
+- Play H5P content in Open edX using h5pxblock
+- https://github.com/edly-io/h5pxblock
+
 
 ## edX course creation
 ### HarvardX Course Template Builder 
@@ -117,3 +152,8 @@ https://discuss.openedx.org/t/programmatically-create-courses-including-all-xblo
 
 ### Common Cartrige (CC)
 https://github.com/openedx/cc2olx
+
+
+### OBS
+- add video source
+- add filter (chroma key green)

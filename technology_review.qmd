@@ -1,0 +1,109 @@
+# Technology review
+Overview of technology relevant for the course.
+
+## Interactive plots
+### plotly
+- https://plotly.com/python/
+### altair
+- https://altair-viz.github.io/
+
+
+## Interactive webapps
+### Shiny for python 
+- possible integration with Quarto
+
+### Voila
+- voila notebooks: https://voila.readthedocs.io/en/stable/
+- Voilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.
+
+### Streamlit
+- https://streamlit.io/
+- Turn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.
+
+### Dash
+- Developed by Plotly, Dash is ideal for creating complex, interactive web applications using Python.
+- Supports multi-page apps and scales well for large datasets and multiple users.
+- Requires knowledge of HTML, CSS, and JavaScript for advanced customization
+
+### Panel
+- https://panel.holoviz.org/
+- Panel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python. 
+
+### Framework
+- https://github.com/observablehq/framework
+- Observable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.
+
+
+
+## Deployment of notebooks
+
+### binderhub
+- very slow
+- https://binderhub.readthedocs.io/en/latest/
+- 
+### jupyterhub
+- JupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.
+- https://jupyter.org/hub
+- https://tljh.jupyter.org/en/latest/howto/index.html 
+
+https://education.github.com/globalcampus/teacher?email_referrer=true 
+
+nbgrader: https://nbgrader.readthedocs.io/en/stable/ 
+https://www.youtube.com/watch?v=bEcxnR2V-_8 
+Otter grader & gradescope
+
+# GitHub Global Campus
+Focus on teaching with GitHub Classroom
+Managing and organizing your class is easy with GitHub Classroom. Track and manage assignments, automate grading, and help students when they get stuck— all while using GitHub. 
+
+
+## Educational resources
+Resources on building a digital course,  Course structure and best practise
+
+## Teaching and Learning with Jupyter
+This handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning.
+- https://jupyter4edu.github.io/jupyter-edu-book/
+
+## Open edX Educators
+- Material on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html
+- Instructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts
+
+## Text to speech
+### Whisper AI
+- https://openai.com/index/whisper/
+
+### ElevenLabs
+- https://elevenlabs.io/
+
+
+# Mu
+
+See also markdown xblock!
+https://github.com/citynetwork/markdown-xblock
+
+
+Writing courses in markdown.
+
+
+Mu Course authoring for humans
+https://discuss.openedx.org/t/introducing-mu-course-authoring-for-humans/9314
+
+In a nutshell, Mu allows you to write your courses in Markdown or HTML5, and then convert them to OLX, and vice-versa.
+
+https://github.com/overhangio/mu
+
+## Installation
+
+pip install mu-courses
+
+Install up to date pandoc version
+https://github.com/jgm/pandoc/releases/
+pandoc 3.6.4
+
+mkdir olx
+mu ./course.md ./olx/
+
+Package the course
+```
+tar -czf mycourse.tar.gz ./olx
+```

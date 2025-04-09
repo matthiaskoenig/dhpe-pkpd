@@ -1,0 +1,18 @@
+Hey there!
+
+Have you ever wondered how medications actually work in the body?  
+How they’re absorbed, where they go, how they’re broken down, and why the same drug can affect people so differently?
+
+💊 Welcome to Pharmacokinetic & Pharmacodynamic Modelling – your gateway into the science of how drugs move and act in the body.
+
+👨‍🏫 I’m Matthias König, and I’ll be your guide throughout this course.  
+Together, we’ll explore the fascinating world of PK/PD through:
+
+- Clear, hands-on lessons  
+- Interactive scenarios  
+- And open tools that make learning both fun and reproducible
+
+✨ Built with open technologies like Markdown, and hosted on Open edX and GitHub, this course is all about learning by doing.
+
+No boring lectures. Just science, models, and playful experimentation.  
+Join us and become part of the future of digital health education!  

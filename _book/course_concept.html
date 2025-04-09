@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Installation and basic usage – Pharmacokinetic &amp; pharmacodynamic modelling</title>
+<title>1&nbsp; Course concept – Pharmacokinetic &amp; pharmacodynamic modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -65,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./todo.html" rel="next">
-<link href="./04_lecture_pkparameters.html" rel="prev">
+<link href="./course_overview.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href="././images/pkpd.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -107,9 +72,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta name="twitter:title" content="4&nbsp; Installation and basic usage – Pharmacokinetic &amp; pharmacodynamic modelling">
+<meta name="twitter:title" content="1&nbsp; Course concept – Pharmacokinetic &amp; pharmacodynamic modelling">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://livermetabolism.com/images/dhpe_poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -121,7 +87,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./install.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Installation and basic usage</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course_concept.html">Concept</a></li><li class="breadcrumb-item"><a href="./course_concept.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -159,36 +125,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Concept</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course_concept.html" class="sidebar-item-text sidebar-link">
+  <a href="./course_concept.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./course_overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Course overview</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_lecture_pkparameters.html" class="sidebar-item-text sidebar-link">
+  <a href="./lecture_pkparameters.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pharmacokinetic parameters</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Technology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./install.html" class="sidebar-item-text sidebar-link active">
+  <a href="./install.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Installation and basic usage</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./todo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">PK/PD course</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./technology_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Technology review</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -199,29 +204,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#uv" id="toc-uv" class="nav-link active" data-scroll-target="#uv"><span class="header-section-number">4.1</span> uv</a></li>
-  <li><a href="#quatro" id="toc-quatro" class="nav-link" data-scroll-target="#quatro"><span class="header-section-number">4.2</span> Quatro</a>
+  <li><a href="#general-idea" id="toc-general-idea" class="nav-link active" data-scroll-target="#general-idea"><span class="header-section-number">1.1</span> General idea</a></li>
+  <li><a href="#technology" id="toc-technology" class="nav-link" data-scroll-target="#technology"><span class="header-section-number">1.2</span> Technology</a>
   <ul class="collapse">
-  <li><a href="#vs-code-plugin" id="toc-vs-code-plugin" class="nav-link" data-scroll-target="#vs-code-plugin"><span class="header-section-number">4.2.1</span> VS Code Plugin</a></li>
-  <li><a href="#github-actions-for-publishing" id="toc-github-actions-for-publishing" class="nav-link" data-scroll-target="#github-actions-for-publishing"><span class="header-section-number">4.2.2</span> Github actions for publishing</a></li>
-  <li><a href="#rendering-and-preview" id="toc-rendering-and-preview" class="nav-link" data-scroll-target="#rendering-and-preview"><span class="header-section-number">4.2.3</span> Rendering and preview</a></li>
-  <li><a href="#render-to-reveal.js-and-book" id="toc-render-to-reveal.js-and-book" class="nav-link" data-scroll-target="#render-to-reveal.js-and-book"><span class="header-section-number">4.2.4</span> Render to reveal.js and book</a></li>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control"><span class="header-section-number">1.2.1</span> Version control</a></li>
+  <li><a href="#continous-integration-and-deployment" id="toc-continous-integration-and-deployment" class="nav-link" data-scroll-target="#continous-integration-and-deployment"><span class="header-section-number">1.2.2</span> Continous integration and deployment</a></li>
+  <li><a href="#jupyter-notebooks" id="toc-jupyter-notebooks" class="nav-link" data-scroll-target="#jupyter-notebooks"><span class="header-section-number">1.2.3</span> Jupyter notebooks</a></li>
   </ul></li>
-  <li><a href="#open-edx" id="toc-open-edx" class="nav-link" data-scroll-target="#open-edx"><span class="header-section-number">4.3</span> Open edX</a>
+  <li><a href="#different-classes" id="toc-different-classes" class="nav-link" data-scroll-target="#different-classes"><span class="header-section-number">1.3</span> Different classes</a></li>
+  <li><a href="#open-broadcast-study" id="toc-open-broadcast-study" class="nav-link" data-scroll-target="#open-broadcast-study"><span class="header-section-number">2</span> Open Broadcast study</a>
   <ul class="collapse">
-  <li><a href="#creating-a-new-user-with-staff-and-admin-rights" id="toc-creating-a-new-user-with-staff-and-admin-rights" class="nav-link" data-scroll-target="#creating-a-new-user-with-staff-and-admin-rights"><span class="header-section-number">4.3.1</span> Creating a new user with staff and admin rights</a></li>
-  <li><a href="#importing-the-demo-course" id="toc-importing-the-demo-course" class="nav-link" data-scroll-target="#importing-the-demo-course"><span class="header-section-number">4.3.2</span> Importing the demo course</a></li>
-  <li><a href="#view-status-of-containers" id="toc-view-status-of-containers" class="nav-link" data-scroll-target="#view-status-of-containers"><span class="header-section-number">4.3.3</span> View status of containers</a></li>
-  <li><a href="#open-edx-notebookjupyter-integration" id="toc-open-edx-notebookjupyter-integration" class="nav-link" data-scroll-target="#open-edx-notebookjupyter-integration"><span class="header-section-number">4.3.4</span> Open edX notebook/jupyter integration</a></li>
-  <li><a href="#h5p" id="toc-h5p" class="nav-link" data-scroll-target="#h5p"><span class="header-section-number">4.3.5</span> H5P</a></li>
+  <li><a href="#software-and-tools" id="toc-software-and-tools" class="nav-link" data-scroll-target="#software-and-tools"><span class="header-section-number">2.1</span> Software and tools</a></li>
+  <li><a href="#ai-support-for-writing-text" id="toc-ai-support-for-writing-text" class="nav-link" data-scroll-target="#ai-support-for-writing-text"><span class="header-section-number">2.2</span> AI support for writing text</a></li>
+  <li><a href="#corporate-styling-for-the-course" id="toc-corporate-styling-for-the-course" class="nav-link" data-scroll-target="#corporate-styling-for-the-course"><span class="header-section-number">2.3</span> Corporate Styling for the course</a></li>
+  <li><a href="#hosting" id="toc-hosting" class="nav-link" data-scroll-target="#hosting"><span class="header-section-number">2.4</span> Hosting</a></li>
+  <li><a href="#notebook-and-markdown-based-publishing-tools" id="toc-notebook-and-markdown-based-publishing-tools" class="nav-link" data-scroll-target="#notebook-and-markdown-based-publishing-tools"><span class="header-section-number">2.5</span> Notebook and markdown based publishing tools</a>
+  <ul class="collapse">
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto"><span class="header-section-number">2.5.1</span> Quarto</a></li>
+  <li><a href="#jupyterbook" id="toc-jupyterbook" class="nav-link" data-scroll-target="#jupyterbook"><span class="header-section-number">2.5.2</span> Jupyterbook</a></li>
   </ul></li>
-  <li><a href="#edx-course-creation" id="toc-edx-course-creation" class="nav-link" data-scroll-target="#edx-course-creation"><span class="header-section-number">4.4</span> edX course creation</a>
+  <li><a href="#presentations" id="toc-presentations" class="nav-link" data-scroll-target="#presentations"><span class="header-section-number">2.6</span> Presentations</a>
   <ul class="collapse">
-  <li><a href="#harvardx-course-template-builder" id="toc-harvardx-course-template-builder" class="nav-link" data-scroll-target="#harvardx-course-template-builder"><span class="header-section-number">4.4.1</span> HarvardX Course Template Builder</a></li>
-  <li><a href="#xnf-conversion" id="toc-xnf-conversion" class="nav-link" data-scroll-target="#xnf-conversion"><span class="header-section-number">4.4.2</span> XNF conversion</a></li>
-  <li><a href="#mu" id="toc-mu" class="nav-link" data-scroll-target="#mu"><span class="header-section-number">4.4.3</span> Mu</a></li>
-  <li><a href="#common-cartrige-cc" id="toc-common-cartrige-cc" class="nav-link" data-scroll-target="#common-cartrige-cc"><span class="header-section-number">4.4.4</span> Common Cartrige (CC)</a></li>
-  <li><a href="#obs" id="toc-obs" class="nav-link" data-scroll-target="#obs"><span class="header-section-number">4.4.5</span> OBS</a></li>
+  <li><a href="#reveal.js" id="toc-reveal.js" class="nav-link" data-scroll-target="#reveal.js"><span class="header-section-number">2.6.1</span> reveal.js</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#openedx" id="toc-openedx" class="nav-link" data-scroll-target="#openedx"><span class="header-section-number">3</span> OpenEdx</a>
+  <ul class="collapse">
+  <li><a href="#course-structure" id="toc-course-structure" class="nav-link" data-scroll-target="#course-structure"><span class="header-section-number">3.1</span> Course structure</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -229,9 +238,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course_concept.html">Concept</a></li><li class="breadcrumb-item"><a href="./course_concept.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Installation and basic usage</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></h1>
 </div>
 
 
@@ -248,128 +257,157 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This section provides information on how to setup the different parts of the course. This is a working document to keep track of the technology stack and how to configure the parts.</p>
-<section id="uv" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="uv"><span class="header-section-number">4.1</span> uv</h2>
-<p>As part of the course python code has to be executed. All requirements are managed via virtual environments. The dependencies are managed using <a href="https://docs.astral.sh/uv/">uv</a>. For installation information see: <a href="https://docs.astral.sh/uv/getting-started/installation/" class="uri">https://docs.astral.sh/uv/getting-started/installation/</a></p>
-<p>The virtual environment can be setup via:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> venv</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To activate the virtual environment use</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>or the corresponding command for your operating system. The environment should be set as python interpreter in vscode and pycharm.</p>
+<section id="general-idea" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="general-idea"><span class="header-section-number">1.1</span> General idea</h2>
+<p>This open, practice-oriented course introduces the fundamentals of pharmacokinetic (PK) and pharmacodynamic (PD) modelling, with a strong emphasis on reproducible research, open science, and digital competencies in health professions education. Leveraging best practices from software development—such as version control via Git and GitHub, continuous integration (CI) for automated course building, and open formats like Markdown—the course is designed as a fully open educational resource. Hosted on the Open edX platform, it combines theoretical foundations with interactive, hands-on learning to equip participants with the skills needed to understand, simulate, and critically assess PK/PD models in clinical and research contexts.</p>
+<p>The course consists of the following complementary parts which should allow as much offline studying as possible:</p>
+<ol type="1">
+<li><p><strong>Short lectures</strong> about pharmacokinetics in the form of a book chapter providing the content. The book is available as HTML webpage, PDF, Epub and HTML slideshow. <a href="https://quarto.org">Quarto</a> is used to render high quality books with professional figures, layouts, full text search, cross references, references, citation, and the possibiliy to compile to multiple output formats.</p></li>
+<li><p><strong>Short presentations</strong> for motivation and providing up to date use cases in the form of short videos and accompanying slides.</p></li>
+<li><p>An <strong>Open edX course</strong> for the respective chapter with interactive content (quizzes, H5P components).</p></li>
+<li><p><strong>Interactive Jupyter notebooks and simple apps</strong> for active exploration of the course content.</p></li>
+</ol>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-dhpe" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-cap-location="bottom">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dhpe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./images/dhpe_poster.jpg" title="Title: Digital Health Professions Educator" class="img-fluid figure-img" style="width:100.0%" data-fig-cap-location="bottom">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dhpe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Overview of the Digital Health Professions Educator (DHPE) program.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>The course was developed as part of the <a href="https://lernzentrum.charite.de/projekte/heds/digital_health_professions_educator">Digital Health Professions Educator</a> 2024/2025. The course is the digital teaching project of phase III (see <a href="#fig-dhpe" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>.)</p>
+</div>
+</div>
+</div>
 </section>
-<section id="quatro" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="quatro"><span class="header-section-number">4.2</span> Quatro</h2>
-<p>Information about installation is available from <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>.</p>
-<p>This documents were created with the prerelease version <code>quarto-1.7.21-linux-amd64.deb</code> available from <a href="https://quarto.org/docs/download/prerelease.html" class="uri">https://quarto.org/docs/download/prerelease.html</a>.</p>
-<p>Documentation for the pre-release is available at <a href="https://prerelease.quarto.org/" class="uri">https://prerelease.quarto.org/</a>.</p>
-<section id="vs-code-plugin" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="vs-code-plugin"><span class="header-section-number">4.2.1</span> VS Code Plugin</h3>
-<p>Information on the visual studio code integration is available here: <a href="https://quarto.org/docs/tools/vscode.html" class="uri">https://quarto.org/docs/tools/vscode.html</a></p>
-<p>For executing the python code the python interpreter must be set and the jupyter plugin must be installed.</p>
+<section id="technology" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="technology"><span class="header-section-number">1.2</span> Technology</h2>
+<p>In this section we provide an overview of the technology behind the course.</p>
+<p>The following figure provides an overview of the workflow of the course.</p>
+<p><img src="images/workflow.png" class="img-fluid" alt="images/workflow.png"> Figure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility.</p>
+<section id="version-control" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="version-control"><span class="header-section-number">1.2.1</span> Version control</h3>
+<p>Course content is managed in a GitHub repository <a href="https://github.com/matthiaskoenig/dhpe-pkpd/" class="uri">https://github.com/matthiaskoenig/dhpe-pkpd/</a> (version control). Content is managed in quarto QMD markdown files.</p>
+<p>All course content is managed in github. On changes locally the complete content is updated.</p>
 </section>
-<section id="github-actions-for-publishing" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="github-actions-for-publishing"><span class="header-section-number">4.2.2</span> Github actions for publishing</h3>
-<p>The output can be automatically generated using github actions. <a href="https://quarto.org/docs/publishing/github-pages.html#github-action" class="uri">https://quarto.org/docs/publishing/github-pages.html#github-action</a></p>
-</section>
-<section id="rendering-and-preview" class="level3" data-number="4.2.3">
-<h3 data-number="4.2.3" class="anchored" data-anchor-id="rendering-and-preview"><span class="header-section-number">4.2.3</span> Rendering and preview</h3>
-<p>The content can be rendered to the respective output format using the <code>render</code> command.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render notebooks/hello.ipynb <span class="at">--to</span> html</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render notebooks/hello.ipynb <span class="at">--to</span> pdf</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render notebooks/hello.ipynb <span class="at">--to</span> revealjs</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render notebooks/hello.ipynb <span class="at">--to</span> pptx</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To execute the notebooks use the <code>execute</code> flag</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> frender notebook.ipynb <span class="at">--execute</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To preview the HTML use the <code>preview</code> command.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview notebooks/hello.ipynb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="render-to-reveal.js-and-book" class="level3" data-number="4.2.4">
-<h3 data-number="4.2.4" class="anchored" data-anchor-id="render-to-reveal.js-and-book"><span class="header-section-number">4.2.4</span> Render to reveal.js and book</h3>
-<p>Necessary to render to different target types: Presentation (reveal.js) -&gt; hosted on Github.io; necessary to render to a different target; see <a href="https://github.com/quarto-dev/quarto-cli/discussions/1433" class="uri">https://github.com/quarto-dev/quarto-cli/discussions/1433</a>; see <a href="https://github.com/quarto-dev/quarto-cli/issues/2200" class="uri">https://github.com/quarto-dev/quarto-cli/issues/2200</a>. By using different profiles these information can be combined.</p>
-</section>
-</section>
-<section id="open-edx" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="open-edx"><span class="header-section-number">4.3</span> Open edX</h2>
-<p>Open edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.</p>
-<p>A local installation of OpenEdx can be setup with tutor: <a href="https://docs.tutor.edly.io/index.html" class="uri">https://docs.tutor.edly.io/index.html</a>. This requires a working docker installation: <a href="https://docs.docker.com/engine/install/" class="uri">https://docs.docker.com/engine/install/</a>.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">tutor</span> local launch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This results in</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">All</span> services initialised.</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">The</span> platform is now running and can be accessed at the following urls:</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="ex">http://local.openedx.io</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="ex">http://studio.local.openedx.io</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">http://meilisearch.local.openedx.io</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="ex">http://apps.local.openedx.io</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="creating-a-new-user-with-staff-and-admin-rights" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="creating-a-new-user-with-staff-and-admin-rights"><span class="header-section-number">4.3.1</span> Creating a new user with staff and admin rights</h3>
-<p>You will most certainly need to create a user to administer the platform. Just run:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">tutor</span> local do createuser <span class="at">--staff</span> <span class="at">--superuser</span> matthiaskoenig konigmatt@googlemail.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="importing-the-demo-course" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="importing-the-demo-course"><span class="header-section-number">4.3.2</span> Importing the demo course</h3>
-<p>After a fresh installation, your platform will not have a single course. To import the Open edX demo course, run:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">tutor</span> local do importdemocourse</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="view-status-of-containers" class="level3" data-number="4.3.3">
-<h3 data-number="4.3.3" class="anchored" data-anchor-id="view-status-of-containers"><span class="header-section-number">4.3.3</span> View status of containers</h3>
-<p>You can view your platform’s containers:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">tutor</span> local status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="open-edx-notebookjupyter-integration" class="level3" data-number="4.3.4">
-<h3 data-number="4.3.4" class="anchored" data-anchor-id="open-edx-notebookjupyter-integration"><span class="header-section-number">4.3.4</span> Open edX notebook/jupyter integration</h3>
-<p>Tutor plugin for running Jupyter notebooks.</p>
-<pre><code>- name: jupyter
-  src: tutor-jupyter&gt;=19.0.0,&lt;20.0.0
-  url: &lt;https://github.com/overhangio/tutor-jupyter&gt;
-  author: Edly &lt;hello@edly.io&gt;
-  maintainer: Edly &lt;abdul.muqadim@arbisoft.com&gt;
-  description: |
-    Run Jupyter notebooks right in your LMS.
-
-    Launch a JupyterHub single-node cluster and install the Jupyter XBlock in the Open
-    edX LMS/CMS. This makes it very easy to launch student-editable code editors rights
-    in your courses.</code></pre>
+<section id="continous-integration-and-deployment" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="continous-integration-and-deployment"><span class="header-section-number">1.2.2</span> Continous integration and deployment</h3>
 <ul>
-<li>openedx notebook integration: https://github.com/parmentelat/nbhosting ?!</li>
-<li>https://github.com/overhangio/jupyter-xblock JupyterHub hosts Jupyter instances with authentication (e.g.&nbsp;OAuth; IDK about using edX users as JupyterHub users with individual Docker image instance containers with nbgrader/xblock) The new jupyter-viewer-xblock (https://github.com/ibleducation/jupyter-viewer-xblock) allows to embed notebooks dynamically from a public URL. Demo here! https://www.youtube.com/watch?v=K8jhWgQnxvI</li>
-<li>https://github.com/overhangio/tutor-jupyter; This is a plugin for Tutor that makes it easy to integrate Jupyter notebooks in Open edX. It achieves the following: 1. Install the official jupyter-xblock in the Open edX LMS and Studio. 2. Run a Docker-based JupyterHub instance with a Docker spawner.</li>
+<li>CI via GitHub actions is used to automatically build and deploy the course content.</li>
 </ul>
 </section>
-<section id="h5p" class="level3" data-number="4.3.5">
-<h3 data-number="4.3.5" class="anchored" data-anchor-id="h5p"><span class="header-section-number">4.3.5</span> H5P</h3>
-<p>Open edX supports integration of H5P. - Play H5P content in Open edX using h5pxblock - https://github.com/edly-io/h5pxblock</p>
+<section id="jupyter-notebooks" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="jupyter-notebooks"><span class="header-section-number">1.2.3</span> Jupyter notebooks</h3>
 </section>
 </section>
-<section id="edx-course-creation" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="edx-course-creation"><span class="header-section-number">4.4</span> edX course creation</h2>
-<section id="harvardx-course-template-builder" class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="harvardx-course-template-builder"><span class="header-section-number">4.4.1</span> HarvardX Course Template Builder</h3>
-<p>Allows to create some template structure of the course <a href="https://harvardx.github.io/edx_course_templater/index.html" class="uri">https://harvardx.github.io/edx_course_templater/index.html</a></p>
-<p>A while ago I created the HarvardX Course Template Builder for our project leads. You answer some questions about your course (length, structure, desired template) and it builds you a blank course that you can import to Studio. It really speeds up the process of clicking “New Unit” over and over.</p>
-<p>You are welcome to use it as much as you like. My bosses have ok’d releasing this into the wild, including our usual boilerplate (intro pages and a few sample items). The code is available on a <a href="https://github.com/HarvardX/edx_course_templater">GitHub repo</a> if you want to make your own custom version or just see how it works.</p>
-</section>
-<section id="xnf-conversion" class="level3" data-number="4.4.2">
-<h3 data-number="4.4.2" class="anchored" data-anchor-id="xnf-conversion"><span class="header-section-number">4.4.2</span> XNF conversion</h3>
-<p>https://git.upv.es/serpucga/xnf2edx_cli/-/tree/master https://discuss.openedx.org/t/script-to-create-complete-open-edx-courses-from-a-template-in-an-excel-file/8520</p>
-<p>https://discuss.openedx.org/t/programmatically-create-courses-including-all-xblock-children/9206</p>
-</section>
-<section id="mu" class="level3" data-number="4.4.3">
-<h3 data-number="4.4.3" class="anchored" data-anchor-id="mu"><span class="header-section-number">4.4.3</span> Mu</h3>
-</section>
-<section id="common-cartrige-cc" class="level3" data-number="4.4.4">
-<h3 data-number="4.4.4" class="anchored" data-anchor-id="common-cartrige-cc"><span class="header-section-number">4.4.4</span> Common Cartrige (CC)</h3>
-<p>https://github.com/openedx/cc2olx</p>
-</section>
-<section id="obs" class="level3" data-number="4.4.5">
-<h3 data-number="4.4.5" class="anchored" data-anchor-id="obs"><span class="header-section-number">4.4.5</span> OBS</h3>
+<section id="different-classes" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="different-classes"><span class="header-section-number">1.3</span> Different classes</h2>
 <ul>
-<li>add video source</li>
-<li>add filter (chroma key green)</li>
+<li>teaching notebooks =&gt; rendered to content</li>
+<li>exercise notebooks</li>
+<li>solution notebooks/material</li>
 </ul>
+<ol type="1">
+<li>Lecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.</li>
+</ol>
+<ul>
+<li>Jupyter notebooks + markdown =&gt; cross compilation to
+<ul>
+<li><label><input type="checkbox" checked="">HTML (Blog/Webpage) -&gt; hosted on github.io</label></li>
+<li><label><input type="checkbox" checked="">PDF (handout/book, typst) -&gt; hosted on github.io for download</label></li>
+<li>[ ]</li>
+</ul></li>
+</ul>
+</section>
+<section id="open-broadcast-study" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Open Broadcast study</h1>
+<section id="software-and-tools" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="software-and-tools"><span class="header-section-number">2.1</span> Software and tools</h2>
+<ul>
+<li>quatro for conversion;</li>
+<li>openedx (docker container)</li>
+</ul>
+</section>
+<section id="ai-support-for-writing-text" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="ai-support-for-writing-text"><span class="header-section-number">2.2</span> AI support for writing text</h2>
+<ul>
+<li>All text creation is supported by ChatGPT.</li>
+</ul>
+</section>
+<section id="corporate-styling-for-the-course" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="corporate-styling-for-the-course"><span class="header-section-number">2.3</span> Corporate Styling for the course</h2>
+<ul>
+<li>use consistent colorschema and logos</li>
+</ul>
+</section>
+<section id="hosting" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="hosting"><span class="header-section-number">2.4</span> Hosting</h2>
+<ul>
+<li>OpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack</li>
+</ul>
+</section>
+<section id="notebook-and-markdown-based-publishing-tools" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="notebook-and-markdown-based-publishing-tools"><span class="header-section-number">2.5</span> Notebook and markdown based publishing tools</h2>
+<section id="quarto" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="quarto"><span class="header-section-number">2.5.1</span> Quarto</h3>
+<ul>
+<li>Quarto is an open-source scientific and technical publishing system available from <a href="https://quarto.org/" class="uri">https://quarto.org/</a>.</li>
+<li>Publish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.</li>
+<li>For a nice introduction to the features see: <a href="https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html" class="uri">https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html</a></li>
+</ul>
+<section id="interactivity" class="level4" data-number="2.5.1.1">
+<h4 data-number="2.5.1.1" class="anchored" data-anchor-id="interactivity"><span class="header-section-number">2.5.1.1</span> Interactivity</h4>
+<ul>
+<li>Quarto supports interactivity via different methods: <a href="https://quarto.org/docs/interactive/" class="uri">https://quarto.org/docs/interactive/</a></li>
+<li>Create custom JavaScript visualizations using Observable JS: <a href="https://quarto.org/docs/interactive/ojs/" class="uri">https://quarto.org/docs/interactive/ojs/</a></li>
+<li>Incorporate Jupyter Widgets: <a href="https://ipywidgets.readthedocs.io/en/latest/" class="uri">https://ipywidgets.readthedocs.io/en/latest/</a></li>
+<li>Shiny for Python integration: <a href="https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html" class="uri">https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html</a></li>
+</ul>
+</section>
+</section>
+<section id="jupyterbook" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="jupyterbook"><span class="header-section-number">2.5.2</span> Jupyterbook</h3>
+<ul>
+<li>Jupyterbool is an alternative to Quarto with some overlapping functionality: https://jupyterbook.org/en/stable/intro.html</li>
+<li>Build beautiful, publication-quality books and documents from computational content.</li>
+</ul>
+</section>
+</section>
+<section id="presentations" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="presentations"><span class="header-section-number">2.6</span> Presentations</h2>
+<section id="reveal.js" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="reveal.js"><span class="header-section-number">2.6.1</span> reveal.js</h3>
+<ul>
+<li>reveal.js is an open source HTML presentation framework. It’s a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.</li>
+<li>Presentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an <code>iframe</code> or add your own custom behavior using our JavaScript API.</li>
+<li>The framework comes with a broad range of features including nested slides, Markdown support, Auto-Animate, PDF export, speaker notes, LaTeX support and syntax highlighted code.</li>
+<li>https://revealjs.com/course/</li>
+<li>nice integration with Quarto; https://quarto.org/docs/presentations/revealjs/demo/#/title-slide</li>
+<li>https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="openedx" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> OpenEdx</h1>
+<ul>
+<li>https://openedx.org/</li>
+<li>Enable online campuses, instructor-led courses, degree programs, and self-paced courses using a single platform.</li>
+<li>Open edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.</li>
+</ul>
+<p>Allows integration of jupyter notebooks, H5P, …</p>
+<section id="course-structure" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="course-structure"><span class="header-section-number">3.1</span> Course structure</h2>
+<p>The course is structured in sections, subsections and units. <img src="images/course_structure.png" class="img-fluid" alt="images/course_structure.png"></p>
+<!-- Create a figure with the actual content structure; use the meridian  -->
 
 
 </section>
@@ -777,13 +815,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./04_lecture_pkparameters.html" class="pagination-link" aria-label="Pharmacokinetic parameters">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pharmacokinetic parameters</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./todo.html" class="pagination-link" aria-label="PK/PD course">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">PK/PD course</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./course_overview.html" class="pagination-link" aria-label="Course overview">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Course overview</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

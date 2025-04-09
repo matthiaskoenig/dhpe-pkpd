@@ -1,42 +1,30 @@
 # Preface {.unnumbered}
 
-This documents provides an overview of the DHPE2025 teaching project on pharmacokinetics/pharmacodynamics modeling.
+Welcome to the Course: **Pharmacokinetic and pharmacodynamic modelling**
+
+Have you ever wondered how medications travel through the human body, or how we determine the right dose for each patient? Understanding drug movement and action isn’t just for pharmacologists—it’s a key competency in modern healthcare and biomedical research.
+
+This course invites you to explore the fascinating world of **pharmacokinetics (PK)**—how drugs are absorbed, distributed, metabolised, and excreted—and **pharmacodynamics (PD)**—how drugs produce their effects. You'll gain practical insights into the models that help us simulate and predict drug behavior in the body, from simple compartment models to advanced physiologically based models used in cutting-edge research and clinical decision-making.
+
+<!-- {{< video ./videos/intro.mp4>}}-->
+{{< video https://www.youtube.com/embed/HPIw1wDLmaw >}}
 
 
-## PK/PD course
-
-PK/PD course overview
-
-- [ ] overview course content: `content.qmd`. Sections and modules; keywords; high level summary; teaching goals.
-- [ ] create workflow picture
-
-## DHPE course
-
-DHPE teaching project overview.
-
-- [ ] write short summary of teaching project: `concept.qmd`
-- [ ] create workflow picture 
+Through interactive content and hands-on examples, you'll learn how PK/PD modelling plays a critical role in:
+- Understanding variability in patient responses
+- Optimising drug dosing
+- Evaluating drug-drug interactions
 
 
-## Proof of principle implementation
 
-Create a proof of principle for a first lecture: **pharmacokinetic parameters**.
+Built with open technologies and aligned with best practices in digital health education, this course empowers you to become part of a growing community of learners and educators who believe in transparency, reproducibility, and innovation.
 
-### Course: WebBook + EPub + PDF
+Ready to begin? Dive in and transform the way you think about medicine.
 
-- [ ] Create script/text + teaching notebook (for visualization)
-- [ ] Create slides 5-15 min
-- [ ] Create video of slides
-- [ ] Create teaser videos
-- [ ] interactive tutorial notebook --> reveal.js
-- [ ] interactive tutorial notebook solutions --> reveals.js
+<!--
+::: {layout-ncol=2}
 
-### OpenEdX
+![Invidivual responses to drugs.](./images/individuality.png ){#fig-individuality width=100%}
 
-Create course section Open edX (from script content).
-    
-- [ ] create initial course
-- [ ] test content from script (import course content; qmd -> OLX(mu) -> course format?; other options? xmarkdown))
-- [ ] test interactivity
-- [ ] test quizz
-- [ ] test h5p integration
+:::
+-->
