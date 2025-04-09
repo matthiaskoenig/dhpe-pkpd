@@ -11,6 +11,7 @@ This course invites you to explore the fascinating world of **pharmacokinetics (
 
 
 Through interactive content and hands-on examples, you'll learn how PK/PD modelling plays a critical role in:
+
 - Understanding variability in patient responses
 - Optimising drug dosing
 - Evaluating drug-drug interactions
