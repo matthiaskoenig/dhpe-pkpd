@@ -2,331 +2,352 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Pharmacokinetics/Pharmacodynamics Modelling",
+    "title": "Pharmacokinetic & pharmacodynamic modelling",
     "section": "",
-    "text": "Preface\nThis documents provides an overview of the DHPE2025 teaching project on pharmacokinetics/pharmacodynamics modeling.",
+    "text": "Preface\nWelcome to the Course: Pharmacokinetic and pharmacodynamic modelling\nHave you ever wondered how medications travel through the human body, or how we determine the right dose for each patient? Understanding drug movement and action isn’t just for pharmacologists—it’s a key competency in modern healthcare and biomedical research.\nThis course invites you to explore the fascinating world of pharmacokinetics (PK)—how drugs are absorbed, distributed, metabolised, and excreted—and pharmacodynamics (PD)—how drugs produce their effects. You’ll gain practical insights into the models that help us simulate and predict drug behavior in the body, from simple compartment models to advanced physiologically based models used in cutting-edge research and clinical decision-making.\n\n\nThrough interactive content and hands-on examples, you’ll learn how PK/PD modelling plays a critical role in: - Understanding variability in patient responses - Optimising drug dosing - Evaluating drug-drug interactions\nBuilt with open technologies and aligned with best practices in digital health education, this course empowers you to become part of a growing community of learners and educators who believe in transparency, reproducibility, and innovation.\nReady to begin? Dive in and transform the way you think about medicine.",
     "crumbs": [
       "Preface"
     ]
   },
   {
-    "objectID": "index.html#pkpd-course",
-    "href": "index.html#pkpd-course",
-    "title": "Pharmacokinetics/Pharmacodynamics Modelling",
-    "section": "PK/PD course",
-    "text": "PK/PD course\nPK/PD course overview\n\noverview course content: content.qmd. Sections and modules; keywords; high level summary; teaching goals.\ncreate workflow picture",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "index.html#dhpe-course",
-    "href": "index.html#dhpe-course",
-    "title": "Pharmacokinetics/Pharmacodynamics Modelling",
-    "section": "DHPE course",
-    "text": "DHPE course\nDHPE teaching project overview.\n\nwrite short summary of teaching project: concept.qmd\ncreate workflow picture",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "index.html#proof-of-principle-implementation",
-    "href": "index.html#proof-of-principle-implementation",
-    "title": "Pharmacokinetics/Pharmacodynamics Modelling",
-    "section": "Proof of principle implementation",
-    "text": "Proof of principle implementation\nCreate a proof of principle for a first lecture: pharmacokinetic parameters.\n\nCourse: WebBook + EPub + PDF\n\nCreate script/text + teaching notebook (for visualization)\nCreate slides 5-15 min\nCreate video of slides\nCreate teaser videos\ninteractive tutorial notebook –&gt; reveal.js\ninteractive tutorial notebook solutions –&gt; reveals.js\n\n\n\nOpenEdX\nCreate course section Open edX (from script content).\n\ncreate initial course\ntest content from script (import course content; qmd -&gt; OLX(mu) -&gt; course format?; other options? xmarkdown))\ntest interactivity\ntest quizz\ntest h5p integration",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "course_content.html",
-    "href": "course_content.html",
-    "title": "1  Content",
+    "objectID": "course_concept.html",
+    "href": "course_concept.html",
+    "title": "1  Course concept",
     "section": "",
-    "text": "1.1 Summary\nPharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: https://livermetabolism.com\nThe course is structured in sections, subsections and units.",
+    "text": "1.1 General idea\nThis open, practice-oriented course introduces the fundamentals of pharmacokinetic (PK) and pharmacodynamic (PD) modelling, with a strong emphasis on reproducible research, open science, and digital competencies in health professions education. Leveraging best practices from software development—such as version control via Git and GitHub, continuous integration (CI) for automated course building, and open formats like Markdown—the course is designed as a fully open educational resource. Hosted on the Open edX platform, it combines theoretical foundations with interactive, hands-on learning to equip participants with the skills needed to understand, simulate, and critically assess PK/PD models in clinical and research contexts.\nThe course consists of the following complementary parts which should allow as much offline studying as possible:",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Content</span>"
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
     ]
   },
   {
-    "objectID": "course_content.html#lecturesunits",
-    "href": "course_content.html#lecturesunits",
-    "title": "1  Content",
-    "section": "1.2 Lectures/Units",
-    "text": "1.2 Lectures/Units\n\nstructural models\nordinary differential equations (ODE)\ncompartment models",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Content</span>"
-    ]
-  },
-  {
-    "objectID": "course_content.html#lernziele",
-    "href": "course_content.html#lernziele",
-    "title": "1  Content",
-    "section": "1.3 Lernziele",
-    "text": "1.3 Lernziele",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Content</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html",
-    "href": "teaching_concept.html",
-    "title": "2  Course concept",
+    "objectID": "course_concept.html#general-idea",
+    "href": "course_concept.html#general-idea",
+    "title": "1  Course concept",
     "section": "",
-    "text": "2.1 Form/Technology\nAll course content is managed in github. On changes locally the complete content is updated.\nChapter 1. What is the technology behind this course.\nFigure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility.\nThe course consists of the following complementary parts which should allow as much offline studying as possible:",
+    "text": "Short lectures about pharmacokinetics in the form of a book chapter providing the content. The book is available as HTML webpage, PDF, Epub and HTML slideshow. Quarto is used to render high quality books with professional figures, layouts, full text search, cross references, references, citation, and the possibiliy to compile to multiple output formats.\nShort presentations for motivation and providing up to date use cases in the form of short videos and accompanying slides.\nAn Open edX course for the respective chapter with interactive content (quizzes, H5P components).\nInteractive Jupyter notebooks and simple apps for active exploration of the course content.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1.1: Overview of the Digital Health Professions Educator (DHPE) program.\n\n\n\n\n\nThe course was developed as part of the Digital Health Professions Educator 2024/2025. The course is the digital teaching project of phase III (see Figure 1.1.)",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
     ]
   },
   {
-    "objectID": "teaching_concept.html#formtechnology",
-    "href": "teaching_concept.html#formtechnology",
-    "title": "2  Course concept",
+    "objectID": "course_concept.html#technology",
+    "href": "course_concept.html#technology",
+    "title": "1  Course concept",
+    "section": "1.2 Technology",
+    "text": "1.2 Technology\nIn this section we provide an overview of the technology behind the course.\nThe following figure provides an overview of the workflow of the course.\n Figure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility.\n\n1.2.1 Version control\nCourse content is managed in a GitHub repository https://github.com/matthiaskoenig/dhpe-pkpd/ (version control). Content is managed in quarto QMD markdown files.\nAll course content is managed in github. On changes locally the complete content is updated.\n\n\n1.2.2 Continous integration and deployment\n\nCI via GitHub actions is used to automatically build and deploy the course content.\n\n\n\n1.2.3 Jupyter notebooks",
+    "crumbs": [
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "course_concept.html#different-classes",
+    "href": "course_concept.html#different-classes",
+    "title": "1  Course concept",
+    "section": "1.3 Different classes",
+    "text": "1.3 Different classes\n\nteaching notebooks =&gt; rendered to content\nexercise notebooks\nsolution notebooks/material\n\n\nLecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.\n\n\nJupyter notebooks + markdown =&gt; cross compilation to\n\nHTML (Blog/Webpage) -&gt; hosted on github.io\nPDF (handout/book, typst) -&gt; hosted on github.io for download\n[ ]",
+    "crumbs": [
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "course_concept.html#software-and-tools",
+    "href": "course_concept.html#software-and-tools",
+    "title": "1  Course concept",
+    "section": "2.1 Software and tools",
+    "text": "2.1 Software and tools\n\nquatro for conversion;\nopenedx (docker container)",
+    "crumbs": [
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "course_concept.html#ai-support-for-writing-text",
+    "href": "course_concept.html#ai-support-for-writing-text",
+    "title": "1  Course concept",
+    "section": "2.2 AI support for writing text",
+    "text": "2.2 AI support for writing text\n\nAll text creation is supported by ChatGPT.",
+    "crumbs": [
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "course_concept.html#corporate-styling-for-the-course",
+    "href": "course_concept.html#corporate-styling-for-the-course",
+    "title": "1  Course concept",
+    "section": "2.3 Corporate Styling for the course",
+    "text": "2.3 Corporate Styling for the course\n\nuse consistent colorschema and logos",
+    "crumbs": [
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "course_concept.html#hosting",
+    "href": "course_concept.html#hosting",
+    "title": "1  Course concept",
+    "section": "2.4 Hosting",
+    "text": "2.4 Hosting\n\nOpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack",
+    "crumbs": [
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "course_concept.html#notebook-and-markdown-based-publishing-tools",
+    "href": "course_concept.html#notebook-and-markdown-based-publishing-tools",
+    "title": "1  Course concept",
+    "section": "2.5 Notebook and markdown based publishing tools",
+    "text": "2.5 Notebook and markdown based publishing tools\n\n2.5.1 Quarto\n\nQuarto is an open-source scientific and technical publishing system available from https://quarto.org/.\nPublish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nFor a nice introduction to the features see: https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html\n\n\n2.5.1.1 Interactivity\n\nQuarto supports interactivity via different methods: https://quarto.org/docs/interactive/\nCreate custom JavaScript visualizations using Observable JS: https://quarto.org/docs/interactive/ojs/\nIncorporate Jupyter Widgets: https://ipywidgets.readthedocs.io/en/latest/\nShiny for Python integration: https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html\n\n\n\n\n2.5.2 Jupyterbook\n\nJupyterbool is an alternative to Quarto with some overlapping functionality: https://jupyterbook.org/en/stable/intro.html\nBuild beautiful, publication-quality books and documents from computational content.",
+    "crumbs": [
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "course_concept.html#presentations",
+    "href": "course_concept.html#presentations",
+    "title": "1  Course concept",
+    "section": "2.6 Presentations",
+    "text": "2.6 Presentations\n\n2.6.1 reveal.js\n\nreveal.js is an open source HTML presentation framework. It’s a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.\nPresentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an iframe or add your own custom behavior using our JavaScript API.\nThe framework comes with a broad range of features including nested slides, Markdown support, Auto-Animate, PDF export, speaker notes, LaTeX support and syntax highlighted code.\nhttps://revealjs.com/course/\nnice integration with Quarto; https://quarto.org/docs/presentations/revealjs/demo/#/title-slide\nhttps://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd",
+    "crumbs": [
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "course_concept.html#course-structure",
+    "href": "course_concept.html#course-structure",
+    "title": "1  Course concept",
+    "section": "3.1 Course structure",
+    "text": "3.1 Course structure\nThe course is structured in sections, subsections and units.",
+    "crumbs": [
+      "Concept",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html",
+    "href": "course_overview.html",
+    "title": "2  Course overview",
     "section": "",
-    "text": "Lecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.\n\n\nJupyter notebooks + markdown =&gt; cross compilation to\n\nHTML (Blog/Webpage) -&gt; hosted on github.io\nPDF (handout/book, typst) -&gt; hosted on github.io for download\nPresentation (reveal.js) -&gt; hosted on Github.io; necessary to render to a different target; see https://github.com/quarto-dev/quarto-cli/discussions/1433; see https://github.com/quarto-dev/quarto-cli/issues/2200. By using different profiles these information can be combined.\n\n\n\nShort presentations\n\n[~] currently the presentations are in google slides; motivational content; short; 5-15 min\nvideos of the presentations;\n\nOpenEdx course: markdown -&gt; OLX (mu), to openedx course format\n\n\nfigure out how to customize compilation to different targets in Quarto; I.e. special behavior for book vs. slides.",
+    "text": "2.1 Summary\nPharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: https://livermetabolism.com",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course overview</span>"
     ]
   },
   {
-    "objectID": "teaching_concept.html#different-classes",
-    "href": "teaching_concept.html#different-classes",
-    "title": "2  Course concept",
-    "section": "2.2 Different classes",
-    "text": "2.2 Different classes\n\nteaching notebooks =&gt; rendered to content\nexercise notebooks\nsolution notebooks/material",
+    "objectID": "course_overview.html#lecturesunits",
+    "href": "course_overview.html#lecturesunits",
+    "title": "2  Course overview",
+    "section": "2.2 Lectures/Units",
+    "text": "2.2 Lectures/Units\n\nstructural models\nordinary differential equations (ODE)\ncompartment models",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course overview</span>"
     ]
   },
   {
-    "objectID": "teaching_concept.html#version-control",
-    "href": "teaching_concept.html#version-control",
-    "title": "2  Course concept",
-    "section": "2.3 Version control",
-    "text": "2.3 Version control\n\nCourse content is managed in a GitHub repository (version control)",
+    "objectID": "course_overview.html#teaching-goals",
+    "href": "course_overview.html#teaching-goals",
+    "title": "2  Course overview",
+    "section": "2.3 Teaching goals",
+    "text": "2.3 Teaching goals\nThe teaching goals are …",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#continous-integration-and-deployment",
-    "href": "teaching_concept.html#continous-integration-and-deployment",
-    "title": "2  Course concept",
-    "section": "2.4 Continous integration and deployment",
-    "text": "2.4 Continous integration and deployment\n\nCI via GitHub actions is used to automatically build and deploy the course content.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#software-and-tools",
-    "href": "teaching_concept.html#software-and-tools",
-    "title": "2  Course concept",
-    "section": "2.5 Software and tools",
-    "text": "2.5 Software and tools\n\nquatro for conversion;\nopenedx (docker container)",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#ai-support-for-writing-text",
-    "href": "teaching_concept.html#ai-support-for-writing-text",
-    "title": "2  Course concept",
-    "section": "2.6 AI support for writing text",
-    "text": "2.6 AI support for writing text\n\nAll text creation is supported by ChatGPT.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#corporate-styling-for-the-course",
-    "href": "teaching_concept.html#corporate-styling-for-the-course",
-    "title": "2  Course concept",
-    "section": "2.7 Corporate Styling for the course",
-    "text": "2.7 Corporate Styling for the course\n\nuse consistent colorschema and logos",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#hosting",
-    "href": "teaching_concept.html#hosting",
-    "title": "2  Course concept",
-    "section": "2.8 Hosting",
-    "text": "2.8 Hosting\n\nOpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#notebook-and-markdown-based-publishing-tools",
-    "href": "teaching_concept.html#notebook-and-markdown-based-publishing-tools",
-    "title": "2  Course concept",
-    "section": "2.9 Notebook and markdown based publishing tools",
-    "text": "2.9 Notebook and markdown based publishing tools\n\n2.9.1 Quarto\n\nQuarto is an open-source scientific and technical publishing system available from https://quarto.org/.\nPublish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nFor a nice introduction to the features see: https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html\n\n\n2.9.1.1 Interactivity\n\nQuarto supports interactivity via different methods: https://quarto.org/docs/interactive/\nCreate custom JavaScript visualizations using Observable JS: https://quarto.org/docs/interactive/ojs/\nIncorporate Jupyter Widgets: https://ipywidgets.readthedocs.io/en/latest/\nShiny for Python integration: https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html\n\n\n\n\n2.9.2 Jupyterbook\n\nJupyterbool is an alternative to Quarto with some overlapping functionality: https://jupyterbook.org/en/stable/intro.html\nBuild beautiful, publication-quality books and documents from computational content.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#presentations",
-    "href": "teaching_concept.html#presentations",
-    "title": "2  Course concept",
-    "section": "2.10 Presentations",
-    "text": "2.10 Presentations\n\n2.10.1 reveal.js\n\nreveal.js is an open source HTML presentation framework. It’s a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.\nPresentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an iframe or add your own custom behavior using our JavaScript API.\nThe framework comes with a broad range of features including nested slides, Markdown support, Auto-Animate, PDF export, speaker notes, LaTeX support and syntax highlighted code.\nhttps://revealjs.com/course/\nnice integration with Quarto; https://quarto.org/docs/presentations/revealjs/demo/#/title-slide\nhttps://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#interactive-plots",
-    "href": "teaching_concept.html#interactive-plots",
-    "title": "2  Course concept",
-    "section": "2.11 Interactive plots",
-    "text": "2.11 Interactive plots\n\n2.11.1 plotly\n\nhttps://plotly.com/python/ ### altair\nhttps://altair-viz.github.io/",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#interactive-webapps",
-    "href": "teaching_concept.html#interactive-webapps",
-    "title": "2  Course concept",
-    "section": "2.12 Interactive webapps",
-    "text": "2.12 Interactive webapps\n\n2.12.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n2.12.2 Voila\n\nvoila notebooks: https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n2.12.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n2.12.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n2.12.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n2.12.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#deployment-of-notebooks",
-    "href": "teaching_concept.html#deployment-of-notebooks",
-    "title": "2  Course concept",
-    "section": "2.13 Deployment of notebooks",
-    "text": "2.13 Deployment of notebooks\n\n2.13.1 binderhub\n\nvery slow\nhttps://binderhub.readthedocs.io/en/latest/\n2.13.2 jupyterhub\nJupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.\nhttps://jupyter.org/hub\nhttps://tljh.jupyter.org/en/latest/howto/index.html\n\nhttps://education.github.com/globalcampus/teacher?email_referrer=true\nnbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader & gradescope",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#openedx-deployment",
-    "href": "teaching_concept.html#openedx-deployment",
-    "title": "2  Course concept",
-    "section": "3.1 OpenEdx Deployment",
-    "text": "3.1 OpenEdx Deployment\n\ndeployment with tutor: https://docs.tutor.edly.io/index.html",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#h5p",
-    "href": "teaching_concept.html#h5p",
-    "title": "2  Course concept",
-    "section": "3.2 H5P",
-    "text": "3.2 H5P\n\nPlay H5P content in Open edX using h5pxblock\nhttps://github.com/edly-io/h5pxblock",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#openedx-notebook-integration",
-    "href": "teaching_concept.html#openedx-notebook-integration",
-    "title": "2  Course concept",
-    "section": "3.3 OpenEdx Notebook Integration",
-    "text": "3.3 OpenEdx Notebook Integration\n\nopenedx notebook integration: https://github.com/parmentelat/nbhosting ?!\nhttps://github.com/overhangio/jupyter-xblock JupyterHub hosts Jupyter instances with authentication (e.g. OAuth; IDK about using edX users as JupyterHub users with individual Docker image instance containers with nbgrader/xblock) The new jupyter-viewer-xblock (https://github.com/ibleducation/jupyter-viewer-xblock) allows to embed notebooks dynamically from a public URL. Demo here! https://www.youtube.com/watch?v=K8jhWgQnxvI\nhttps://github.com/overhangio/tutor-jupyter; This is a plugin for Tutor that makes it easy to integrate Jupyter notebooks in Open edX. It achieves the following: 1. Install the official jupyter-xblock in the Open edX LMS and Studio. 2. Run a Docker-based JupyterHub instance with a Docker spawner.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#teaching-and-learning-with-jupyter",
-    "href": "teaching_concept.html#teaching-and-learning-with-jupyter",
-    "title": "2  Course concept",
-    "section": "5.1 Teaching and Learning with Jupyter",
-    "text": "5.1 Teaching and Learning with Jupyter\nThis handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - https://jupyter4edu.github.io/jupyter-edu-book/",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#open-edx-educators",
-    "href": "teaching_concept.html#open-edx-educators",
-    "title": "2  Course concept",
-    "section": "5.2 Open edX Educators",
-    "text": "5.2 Open edX Educators\n\nMaterial on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html\nInstructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#text-to-speech",
-    "href": "teaching_concept.html#text-to-speech",
-    "title": "2  Course concept",
-    "section": "5.3 Text to speech",
-    "text": "5.3 Text to speech\n\n5.3.1 Whisper AI\n\nhttps://openai.com/index/whisper/\n\n\n\n5.3.2 ElevenLabs\n\nhttps://elevenlabs.io/",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
-    ]
-  },
-  {
-    "objectID": "teaching_concept.html#quatro-document-creation",
-    "href": "teaching_concept.html#quatro-document-creation",
-    "title": "2  Course concept",
-    "section": "5.4 Quatro document creation",
-    "text": "5.4 Quatro document creation\nOne can update the notebooks in their favourite environment, e.g. jupyterlab\njupyter lab notebooks/hello.ipynb\nThe content can be rendered to the respective output format using the render command.\nquarto render notebooks/hello.ipynb --to html\nquarto render notebooks/hello.ipynb --to pdf\nquarto render notebooks/hello.ipynb --to revealjs\nquarto render notebooks/hello.ipynb --to pptx\nTo execute the notebooks use the execute flag\nquarto frender notebook.ipynb --execute\nTo preview the HTML use the preview command.\nquarto preview notebooks/hello.ipynb",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course concept</span>"
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course overview</span>"
     ]
   },
   {
     "objectID": "install.html",
     "href": "install.html",
-    "title": "3  Installation",
+    "title": "4  Installation and basic usage",
     "section": "",
-    "text": "3.1 uv\nThis section provides information on how to setup the different parts of the course. This is a working document to keep track of the technology stack and how to configure the parts.\nAs part of the course python code has to be executed. All requirements are managed via virtual environments. The dependencies are managed using uv. For installation information see: https://docs.astral.sh/uv/getting-started/installation/\nThe virtual environment can be setup via:\nTo activate the virtual environment use\nor the corresponding command for your operating system. The environment should be set as python interpreter in vscode and pycharm.",
+    "text": "4.1 uv\nThis section provides information on how to setup the different parts of the course. This is a working document to keep track of the technology stack and how to configure the parts.\nAs part of the course python code has to be executed. All requirements are managed via virtual environments. The dependencies are managed using uv. For installation information see: https://docs.astral.sh/uv/getting-started/installation/\nThe virtual environment can be setup via:\nTo activate the virtual environment use\nor the corresponding command for your operating system. The environment should be set as python interpreter in vscode and pycharm.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
+      "Technology",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Installation and basic usage</span>"
     ]
   },
   {
     "objectID": "install.html#uv",
     "href": "install.html#uv",
-    "title": "3  Installation",
+    "title": "4  Installation and basic usage",
     "section": "",
     "text": "uv venv\nuv sync\n\nsource .venv/bin/activate",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
+      "Technology",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Installation and basic usage</span>"
     ]
   },
   {
     "objectID": "install.html#quatro",
     "href": "install.html#quatro",
-    "title": "3  Installation",
-    "section": "3.2 Quatro",
-    "text": "3.2 Quatro\nInformation about installation is available from https://quarto.org/docs/get-started/.\nThis documents were created with the prerelease version quarto-1.7.21-linux-amd64.deb available from https://quarto.org/docs/download/prerelease.html.\nDocumentation for the pre-release is available at https://prerelease.quarto.org/.\n\n3.2.1 VS Code Plugin\nInformation on the visual studio code integration is available here: https://quarto.org/docs/tools/vscode.html\nFor executing the python code the python interpreter must be set and the jupyter plugin must be installed.\n\n\n3.2.2 Github actions for publishing\nThe output can be automatically generated using github actions. https://quarto.org/docs/publishing/github-pages.html#github-action",
+    "title": "4  Installation and basic usage",
+    "section": "4.2 Quatro",
+    "text": "4.2 Quatro\nInformation about installation is available from https://quarto.org/docs/get-started/.\nThis documents were created with the prerelease version quarto-1.7.21-linux-amd64.deb available from https://quarto.org/docs/download/prerelease.html.\nDocumentation for the pre-release is available at https://prerelease.quarto.org/.\n\n4.2.1 VS Code Plugin\nInformation on the visual studio code integration is available here: https://quarto.org/docs/tools/vscode.html\nFor executing the python code the python interpreter must be set and the jupyter plugin must be installed.\n\n\n4.2.2 Github actions for publishing\nThe output can be automatically generated using github actions. https://quarto.org/docs/publishing/github-pages.html#github-action\n\n\n4.2.3 Rendering and preview\nThe content can be rendered to the respective output format using the render command.\nquarto render notebooks/hello.ipynb --to html\nquarto render notebooks/hello.ipynb --to pdf\nquarto render notebooks/hello.ipynb --to revealjs\nquarto render notebooks/hello.ipynb --to pptx\nTo execute the notebooks use the execute flag\nquarto frender notebook.ipynb --execute\nTo preview the HTML use the preview command.\nquarto preview notebooks/hello.ipynb\n\n\n4.2.4 Render to reveal.js and book\nNecessary to render to different target types: Presentation (reveal.js) -&gt; hosted on Github.io; necessary to render to a different target; see https://github.com/quarto-dev/quarto-cli/discussions/1433; see https://github.com/quarto-dev/quarto-cli/issues/2200. By using different profiles these information can be combined.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
+      "Technology",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Installation and basic usage</span>"
     ]
   },
   {
     "objectID": "install.html#open-edx",
     "href": "install.html#open-edx",
-    "title": "3  Installation",
-    "section": "3.3 Open edX",
-    "text": "3.3 Open edX\nOpen edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.\nA local installation of OpenEdx can be setup with tutor: https://docs.tutor.edly.io/index.html. This requires a working docker installation: https://docs.docker.com/engine/install/.\nsource .venv/bin/activate\ntutor local launch\nThis results in\nAll services initialised.\nThe platform is now running and can be accessed at the following urls:\n\n    http://local.openedx.io\n    http://studio.local.openedx.io\n    http://meilisearch.local.openedx.io\n    http://apps.local.openedx.io\n\n3.3.1 Creating a new user with staff and admin rights\nYou will most certainly need to create a user to administer the platform. Just run:\ntutor local do createuser --staff --superuser matthiaskoenig konigmatt@googlemail.com\n\n\n3.3.2 Importing the demo course\nAfter a fresh installation, your platform will not have a single course. To import the Open edX demo course, run:\ntutor local do importdemocourse\n\n\n3.3.3 View status of containers\nYou can view your platform’s containers:\ntutor local status\n\n\n3.3.4 Open edX Jupyter integration\nTutor plugin for running Jupyter notebooks.\n- name: jupyter\n  src: tutor-jupyter&gt;=19.0.0,&lt;20.0.0\n  url: &lt;https://github.com/overhangio/tutor-jupyter&gt;\n  author: Edly &lt;hello@edly.io&gt;\n  maintainer: Edly &lt;abdul.muqadim@arbisoft.com&gt;\n  description: |\n    Run Jupyter notebooks right in your LMS.\n\n    Launch a JupyterHub single-node cluster and install the Jupyter XBlock in the Open\n    edX LMS/CMS. This makes it very easy to launch student-editable code editors rights\n    in your courses.",
+    "title": "4  Installation and basic usage",
+    "section": "4.3 Open edX",
+    "text": "4.3 Open edX\nOpen edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.\nA local installation of OpenEdx can be setup with tutor: https://docs.tutor.edly.io/index.html. This requires a working docker installation: https://docs.docker.com/engine/install/.\nsource .venv/bin/activate\ntutor local launch\nThis results in\nAll services initialised.\nThe platform is now running and can be accessed at the following urls:\n\n    http://local.openedx.io\n    http://studio.local.openedx.io\n    http://meilisearch.local.openedx.io\n    http://apps.local.openedx.io\n\n4.3.1 Creating a new user with staff and admin rights\nYou will most certainly need to create a user to administer the platform. Just run:\ntutor local do createuser --staff --superuser matthiaskoenig konigmatt@googlemail.com\n\n\n4.3.2 Importing the demo course\nAfter a fresh installation, your platform will not have a single course. To import the Open edX demo course, run:\ntutor local do importdemocourse\n\n\n4.3.3 View status of containers\nYou can view your platform’s containers:\ntutor local status\n\n\n4.3.4 Open edX notebook/jupyter integration\nTutor plugin for running Jupyter notebooks.\n- name: jupyter\n  src: tutor-jupyter&gt;=19.0.0,&lt;20.0.0\n  url: &lt;https://github.com/overhangio/tutor-jupyter&gt;\n  author: Edly &lt;hello@edly.io&gt;\n  maintainer: Edly &lt;abdul.muqadim@arbisoft.com&gt;\n  description: |\n    Run Jupyter notebooks right in your LMS.\n\n    Launch a JupyterHub single-node cluster and install the Jupyter XBlock in the Open\n    edX LMS/CMS. This makes it very easy to launch student-editable code editors rights\n    in your courses.\n\nopenedx notebook integration: https://github.com/parmentelat/nbhosting ?!\nhttps://github.com/overhangio/jupyter-xblock JupyterHub hosts Jupyter instances with authentication (e.g. OAuth; IDK about using edX users as JupyterHub users with individual Docker image instance containers with nbgrader/xblock) The new jupyter-viewer-xblock (https://github.com/ibleducation/jupyter-viewer-xblock) allows to embed notebooks dynamically from a public URL. Demo here! https://www.youtube.com/watch?v=K8jhWgQnxvI\nhttps://github.com/overhangio/tutor-jupyter; This is a plugin for Tutor that makes it easy to integrate Jupyter notebooks in Open edX. It achieves the following: 1. Install the official jupyter-xblock in the Open edX LMS and Studio. 2. Run a Docker-based JupyterHub instance with a Docker spawner.\n\n\n\n4.3.5 H5P\nOpen edX supports integration of H5P. - Play H5P content in Open edX using h5pxblock - https://github.com/edly-io/h5pxblock",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
+      "Technology",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Installation and basic usage</span>"
     ]
   },
   {
     "objectID": "install.html#edx-course-creation",
     "href": "install.html#edx-course-creation",
-    "title": "3  Installation",
-    "section": "3.4 edX course creation",
-    "text": "3.4 edX course creation\n\n3.4.1 HarvardX Course Template Builder\nAllows to create some template structure of the course https://harvardx.github.io/edx_course_templater/index.html\nA while ago I created the HarvardX Course Template Builder for our project leads. You answer some questions about your course (length, structure, desired template) and it builds you a blank course that you can import to Studio. It really speeds up the process of clicking “New Unit” over and over.\nYou are welcome to use it as much as you like. My bosses have ok’d releasing this into the wild, including our usual boilerplate (intro pages and a few sample items). The code is available on a GitHub repo if you want to make your own custom version or just see how it works.\n\n\n3.4.2 XNF conversion\nhttps://git.upv.es/serpucga/xnf2edx_cli/-/tree/master https://discuss.openedx.org/t/script-to-create-complete-open-edx-courses-from-a-template-in-an-excel-file/8520\nhttps://discuss.openedx.org/t/programmatically-create-courses-including-all-xblock-children/9206\n\n\n3.4.3 Mu\n\n\n3.4.4 Common Cartrige (CC)\nhttps://github.com/openedx/cc2olx",
+    "title": "4  Installation and basic usage",
+    "section": "4.4 edX course creation",
+    "text": "4.4 edX course creation\n\n4.4.1 HarvardX Course Template Builder\nAllows to create some template structure of the course https://harvardx.github.io/edx_course_templater/index.html\nA while ago I created the HarvardX Course Template Builder for our project leads. You answer some questions about your course (length, structure, desired template) and it builds you a blank course that you can import to Studio. It really speeds up the process of clicking “New Unit” over and over.\nYou are welcome to use it as much as you like. My bosses have ok’d releasing this into the wild, including our usual boilerplate (intro pages and a few sample items). The code is available on a GitHub repo if you want to make your own custom version or just see how it works.\n\n\n4.4.2 XNF conversion\nhttps://git.upv.es/serpucga/xnf2edx_cli/-/tree/master https://discuss.openedx.org/t/script-to-create-complete-open-edx-courses-from-a-template-in-an-excel-file/8520\nhttps://discuss.openedx.org/t/programmatically-create-courses-including-all-xblock-children/9206\n\n\n4.4.3 Mu\n\n\n4.4.4 Common Cartrige (CC)\nhttps://github.com/openedx/cc2olx\n\n\n4.4.5 OBS\n\nadd video source\nadd filter (chroma key green)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Installation</span>"
+      "Technology",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Installation and basic usage</span>"
+    ]
+  },
+  {
+    "objectID": "todo.html",
+    "href": "todo.html",
+    "title": "5  PK/PD course",
+    "section": "",
+    "text": "5.1 DHPE course\nDHPE teaching project overview.\nPK/PD course overview",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>PK/PD course</span>"
+    ]
+  },
+  {
+    "objectID": "todo.html#dhpe-course",
+    "href": "todo.html#dhpe-course",
+    "title": "5  PK/PD course",
+    "section": "",
+    "text": "write short summary of teaching project: teaching_concept.qmd\ncreate workflow picture\n\n\n\noverview course content: content.qmd. Sections and modules; keywords; high level summary; teaching goals.\ncreate workflow picture",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>PK/PD course</span>"
+    ]
+  },
+  {
+    "objectID": "todo.html#proof-of-principle-implementation",
+    "href": "todo.html#proof-of-principle-implementation",
+    "title": "5  PK/PD course",
+    "section": "5.2 Proof of principle implementation",
+    "text": "5.2 Proof of principle implementation\nCreate a proof of principle for a first lecture: pharmacokinetic parameters.\n\n5.2.1 Course: WebBook + EPub + PDF\n\nCreate script/text + teaching notebook (for visualization)\nCreate slides 5-15 min\nCreate video of slides\nCreate teaser videos\ninteractive tutorial notebook –&gt; reveal.js\ninteractive tutorial notebook solutions –&gt; reveals.js\n\n\n\n5.2.2 OpenEdX\nCreate course section Open edX (from script content).\n\ncreate initial course\ntest content from script (import course content; qmd -&gt; OLX(mu) -&gt; course format?; other options? xmarkdown))\ntest interactivity\ntest quizz\ntest h5p integration",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>PK/PD course</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html",
+    "href": "technology_review.html",
+    "title": "6  Technology review",
+    "section": "",
+    "text": "6.1 Interactive plots\nOverview of technology relevant for the course.",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#interactive-plots",
+    "href": "technology_review.html#interactive-plots",
+    "title": "6  Technology review",
+    "section": "",
+    "text": "6.1.1 plotly\n\nhttps://plotly.com/python/ ### altair\nhttps://altair-viz.github.io/",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#interactive-webapps",
+    "href": "technology_review.html#interactive-webapps",
+    "title": "6  Technology review",
+    "section": "6.2 Interactive webapps",
+    "text": "6.2 Interactive webapps\n\n6.2.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n6.2.2 Voila\n\nvoila notebooks: https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n6.2.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n6.2.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n6.2.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n6.2.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#deployment-of-notebooks",
+    "href": "technology_review.html#deployment-of-notebooks",
+    "title": "6  Technology review",
+    "section": "6.3 Deployment of notebooks",
+    "text": "6.3 Deployment of notebooks\n\n6.3.1 binderhub\n\nvery slow\nhttps://binderhub.readthedocs.io/en/latest/\n6.3.2 jupyterhub\nJupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.\nhttps://jupyter.org/hub\nhttps://tljh.jupyter.org/en/latest/howto/index.html\n\nhttps://education.github.com/globalcampus/teacher?email_referrer=true\nnbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader & gradescope",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#educational-resources",
+    "href": "technology_review.html#educational-resources",
+    "title": "6  Technology review",
+    "section": "7.1 Educational resources",
+    "text": "7.1 Educational resources\nResources on building a digital course, Course structure and best practise",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#teaching-and-learning-with-jupyter",
+    "href": "technology_review.html#teaching-and-learning-with-jupyter",
+    "title": "6  Technology review",
+    "section": "7.2 Teaching and Learning with Jupyter",
+    "text": "7.2 Teaching and Learning with Jupyter\nThis handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - https://jupyter4edu.github.io/jupyter-edu-book/",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#open-edx-educators",
+    "href": "technology_review.html#open-edx-educators",
+    "title": "6  Technology review",
+    "section": "7.3 Open edX Educators",
+    "text": "7.3 Open edX Educators\n\nMaterial on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html\nInstructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#text-to-speech",
+    "href": "technology_review.html#text-to-speech",
+    "title": "6  Technology review",
+    "section": "7.4 Text to speech",
+    "text": "7.4 Text to speech\n\n7.4.1 Whisper AI\n\nhttps://openai.com/index/whisper/\n\n\n\n7.4.2 ElevenLabs\n\nhttps://elevenlabs.io/",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#installation",
+    "href": "technology_review.html#installation",
+    "title": "6  Technology review",
+    "section": "8.1 Installation",
+    "text": "8.1 Installation\npip install mu-courses\nInstall up to date pandoc version https://github.com/jgm/pandoc/releases/ pandoc 3.6.4\nmkdir olx mu ./course.md ./olx/\nPackage the course\ntar -czf mycourse.tar.gz ./olx",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
     ]
   }
 ]

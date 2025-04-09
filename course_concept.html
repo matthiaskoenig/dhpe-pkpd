@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Matthias König">
-<meta name="dcterms.date" content="2025-04-09">
 
-<title>Pharmacokinetic &amp; pharmacodynamic modelling</title>
+<title>1&nbsp; Course concept – Pharmacokinetic &amp; pharmacodynamic modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./course_concept.html" rel="next">
+<link href="./course_overview.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href="././images/pkpd.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -43,8 +42,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-a34d670291f06f286357e447776a572a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,9 +71,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="Pharmacokinetic &amp; pharmacodynamic modelling">
+<meta name="twitter:title" content="1&nbsp; Course concept – Pharmacokinetic &amp; pharmacodynamic modelling">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://livermetabolism.com/images/dhpe_poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating">
@@ -88,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course_concept.html">Concept</a></li><li class="breadcrumb-item"><a href="./course_concept.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -122,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -137,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course_concept.html" class="sidebar-item-text sidebar-link">
+  <a href="./course_concept.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></span></a>
   </div>
 </li>
@@ -205,35 +203,50 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#general-idea" id="toc-general-idea" class="nav-link active" data-scroll-target="#general-idea"><span class="header-section-number">1.1</span> General idea</a></li>
+  <li><a href="#technology" id="toc-technology" class="nav-link" data-scroll-target="#technology"><span class="header-section-number">1.2</span> Technology</a>
+  <ul class="collapse">
+  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control"><span class="header-section-number">1.2.1</span> Version control</a></li>
+  <li><a href="#continous-integration-and-deployment" id="toc-continous-integration-and-deployment" class="nav-link" data-scroll-target="#continous-integration-and-deployment"><span class="header-section-number">1.2.2</span> Continous integration and deployment</a></li>
+  <li><a href="#jupyter-notebooks" id="toc-jupyter-notebooks" class="nav-link" data-scroll-target="#jupyter-notebooks"><span class="header-section-number">1.2.3</span> Jupyter notebooks</a></li>
+  </ul></li>
+  <li><a href="#different-classes" id="toc-different-classes" class="nav-link" data-scroll-target="#different-classes"><span class="header-section-number">1.3</span> Different classes</a></li>
+  <li><a href="#open-broadcast-study" id="toc-open-broadcast-study" class="nav-link" data-scroll-target="#open-broadcast-study"><span class="header-section-number">2</span> Open Broadcast study</a>
+  <ul class="collapse">
+  <li><a href="#software-and-tools" id="toc-software-and-tools" class="nav-link" data-scroll-target="#software-and-tools"><span class="header-section-number">2.1</span> Software and tools</a></li>
+  <li><a href="#ai-support-for-writing-text" id="toc-ai-support-for-writing-text" class="nav-link" data-scroll-target="#ai-support-for-writing-text"><span class="header-section-number">2.2</span> AI support for writing text</a></li>
+  <li><a href="#corporate-styling-for-the-course" id="toc-corporate-styling-for-the-course" class="nav-link" data-scroll-target="#corporate-styling-for-the-course"><span class="header-section-number">2.3</span> Corporate Styling for the course</a></li>
+  <li><a href="#hosting" id="toc-hosting" class="nav-link" data-scroll-target="#hosting"><span class="header-section-number">2.4</span> Hosting</a></li>
+  <li><a href="#notebook-and-markdown-based-publishing-tools" id="toc-notebook-and-markdown-based-publishing-tools" class="nav-link" data-scroll-target="#notebook-and-markdown-based-publishing-tools"><span class="header-section-number">2.5</span> Notebook and markdown based publishing tools</a>
+  <ul class="collapse">
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto"><span class="header-section-number">2.5.1</span> Quarto</a></li>
+  <li><a href="#jupyterbook" id="toc-jupyterbook" class="nav-link" data-scroll-target="#jupyterbook"><span class="header-section-number">2.5.2</span> Jupyterbook</a></li>
+  </ul></li>
+  <li><a href="#presentations" id="toc-presentations" class="nav-link" data-scroll-target="#presentations"><span class="header-section-number">2.6</span> Presentations</a>
+  <ul class="collapse">
+  <li><a href="#reveal.js" id="toc-reveal.js" class="nav-link" data-scroll-target="#reveal.js"><span class="header-section-number">2.6.1</span> reveal.js</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#openedx" id="toc-openedx" class="nav-link" data-scroll-target="#openedx"><span class="header-section-number">3</span> OpenEdx</a>
+  <ul class="collapse">
+  <li><a href="#course-structure" id="toc-course-structure" class="nav-link" data-scroll-target="#course-structure"><span class="header-section-number">3.1</span> Course structure</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course_concept.html">Concept</a></li><li class="breadcrumb-item"><a href="./course_concept.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Pharmacokinetic &amp; pharmacodynamic modelling</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Matthias König </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 9, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -243,25 +256,163 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>Welcome to the Course: <strong>Pharmacokinetic and pharmacodynamic modelling</strong></p>
-<p>Have you ever wondered how medications travel through the human body, or how we determine the right dose for each patient? Understanding drug movement and action isn’t just for pharmacologists—it’s a key competency in modern healthcare and biomedical research.</p>
-<p>This course invites you to explore the fascinating world of <strong>pharmacokinetics (PK)</strong>—how drugs are absorbed, distributed, metabolised, and excreted—and <strong>pharmacodynamics (PD)</strong>—how drugs produce their effects. You’ll gain practical insights into the models that help us simulate and predict drug behavior in the body, from simple compartment models to advanced physiologically based models used in cutting-edge research and clinical decision-making.</p>
-<!-- -->
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/HPIw1wDLmaw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Through interactive content and hands-on examples, you’ll learn how PK/PD modelling plays a critical role in: - Understanding variability in patient responses - Optimising drug dosing - Evaluating drug-drug interactions</p>
-<p>Built with open technologies and aligned with best practices in digital health education, this course empowers you to become part of a growing community of learners and educators who believe in transparency, reproducibility, and innovation.</p>
-<p>Ready to begin? Dive in and transform the way you think about medicine.</p>
-<!--
-::: {layout-ncol=2}
+<section id="general-idea" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="general-idea"><span class="header-section-number">1.1</span> General idea</h2>
+<p>This open, practice-oriented course introduces the fundamentals of pharmacokinetic (PK) and pharmacodynamic (PD) modelling, with a strong emphasis on reproducible research, open science, and digital competencies in health professions education. Leveraging best practices from software development—such as version control via Git and GitHub, continuous integration (CI) for automated course building, and open formats like Markdown—the course is designed as a fully open educational resource. Hosted on the Open edX platform, it combines theoretical foundations with interactive, hands-on learning to equip participants with the skills needed to understand, simulate, and critically assess PK/PD models in clinical and research contexts.</p>
+<p>The course consists of the following complementary parts which should allow as much offline studying as possible:</p>
+<ol type="1">
+<li><p><strong>Short lectures</strong> about pharmacokinetics in the form of a book chapter providing the content. The book is available as HTML webpage, PDF, Epub and HTML slideshow. <a href="https://quarto.org">Quarto</a> is used to render high quality books with professional figures, layouts, full text search, cross references, references, citation, and the possibiliy to compile to multiple output formats.</p></li>
+<li><p><strong>Short presentations</strong> for motivation and providing up to date use cases in the form of short videos and accompanying slides.</p></li>
+<li><p>An <strong>Open edX course</strong> for the respective chapter with interactive content (quizzes, H5P components).</p></li>
+<li><p><strong>Interactive Jupyter notebooks and simple apps</strong> for active exploration of the course content.</p></li>
+</ol>
+<div>
 
-![Invidivual responses to drugs.](./images/individuality.png ){#fig-individuality width=100%}
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-dhpe" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-cap-location="bottom">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dhpe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./images/dhpe_poster.jpg" title="Title: Digital Health Professions Educator" class="img-fluid figure-img" style="width:100.0%" data-fig-cap-location="bottom">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dhpe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Overview of the Digital Health Professions Educator (DHPE) program.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>The course was developed as part of the <a href="https://lernzentrum.charite.de/projekte/heds/digital_health_professions_educator">Digital Health Professions Educator</a> 2024/2025. The course is the digital teaching project of phase III (see <a href="#fig-dhpe" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>.)</p>
+</div>
+</div>
+</div>
+</section>
+<section id="technology" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="technology"><span class="header-section-number">1.2</span> Technology</h2>
+<p>In this section we provide an overview of the technology behind the course.</p>
+<p>The following figure provides an overview of the workflow of the course.</p>
+<p><img src="images/workflow.png" class="img-fluid" alt="images/workflow.png"> Figure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility.</p>
+<section id="version-control" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="version-control"><span class="header-section-number">1.2.1</span> Version control</h3>
+<p>Course content is managed in a GitHub repository <a href="https://github.com/matthiaskoenig/dhpe-pkpd/" class="uri">https://github.com/matthiaskoenig/dhpe-pkpd/</a> (version control). Content is managed in quarto QMD markdown files.</p>
+<p>All course content is managed in github. On changes locally the complete content is updated.</p>
+</section>
+<section id="continous-integration-and-deployment" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="continous-integration-and-deployment"><span class="header-section-number">1.2.2</span> Continous integration and deployment</h3>
+<ul>
+<li>CI via GitHub actions is used to automatically build and deploy the course content.</li>
+</ul>
+</section>
+<section id="jupyter-notebooks" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="jupyter-notebooks"><span class="header-section-number">1.2.3</span> Jupyter notebooks</h3>
+</section>
+</section>
+<section id="different-classes" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="different-classes"><span class="header-section-number">1.3</span> Different classes</h2>
+<ul>
+<li>teaching notebooks =&gt; rendered to content</li>
+<li>exercise notebooks</li>
+<li>solution notebooks/material</li>
+</ul>
+<ol type="1">
+<li>Lecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.</li>
+</ol>
+<ul>
+<li>Jupyter notebooks + markdown =&gt; cross compilation to
+<ul>
+<li><label><input type="checkbox" checked="">HTML (Blog/Webpage) -&gt; hosted on github.io</label></li>
+<li><label><input type="checkbox" checked="">PDF (handout/book, typst) -&gt; hosted on github.io for download</label></li>
+<li>[ ]</li>
+</ul></li>
+</ul>
+</section>
+<section id="open-broadcast-study" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Open Broadcast study</h1>
+<section id="software-and-tools" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="software-and-tools"><span class="header-section-number">2.1</span> Software and tools</h2>
+<ul>
+<li>quatro for conversion;</li>
+<li>openedx (docker container)</li>
+</ul>
+</section>
+<section id="ai-support-for-writing-text" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="ai-support-for-writing-text"><span class="header-section-number">2.2</span> AI support for writing text</h2>
+<ul>
+<li>All text creation is supported by ChatGPT.</li>
+</ul>
+</section>
+<section id="corporate-styling-for-the-course" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="corporate-styling-for-the-course"><span class="header-section-number">2.3</span> Corporate Styling for the course</h2>
+<ul>
+<li>use consistent colorschema and logos</li>
+</ul>
+</section>
+<section id="hosting" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="hosting"><span class="header-section-number">2.4</span> Hosting</h2>
+<ul>
+<li>OpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack</li>
+</ul>
+</section>
+<section id="notebook-and-markdown-based-publishing-tools" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="notebook-and-markdown-based-publishing-tools"><span class="header-section-number">2.5</span> Notebook and markdown based publishing tools</h2>
+<section id="quarto" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="quarto"><span class="header-section-number">2.5.1</span> Quarto</h3>
+<ul>
+<li>Quarto is an open-source scientific and technical publishing system available from <a href="https://quarto.org/" class="uri">https://quarto.org/</a>.</li>
+<li>Publish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.</li>
+<li>For a nice introduction to the features see: <a href="https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html" class="uri">https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html</a></li>
+</ul>
+<section id="interactivity" class="level4" data-number="2.5.1.1">
+<h4 data-number="2.5.1.1" class="anchored" data-anchor-id="interactivity"><span class="header-section-number">2.5.1.1</span> Interactivity</h4>
+<ul>
+<li>Quarto supports interactivity via different methods: <a href="https://quarto.org/docs/interactive/" class="uri">https://quarto.org/docs/interactive/</a></li>
+<li>Create custom JavaScript visualizations using Observable JS: <a href="https://quarto.org/docs/interactive/ojs/" class="uri">https://quarto.org/docs/interactive/ojs/</a></li>
+<li>Incorporate Jupyter Widgets: <a href="https://ipywidgets.readthedocs.io/en/latest/" class="uri">https://ipywidgets.readthedocs.io/en/latest/</a></li>
+<li>Shiny for Python integration: <a href="https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html" class="uri">https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html</a></li>
+</ul>
+</section>
+</section>
+<section id="jupyterbook" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="jupyterbook"><span class="header-section-number">2.5.2</span> Jupyterbook</h3>
+<ul>
+<li>Jupyterbool is an alternative to Quarto with some overlapping functionality: https://jupyterbook.org/en/stable/intro.html</li>
+<li>Build beautiful, publication-quality books and documents from computational content.</li>
+</ul>
+</section>
+</section>
+<section id="presentations" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="presentations"><span class="header-section-number">2.6</span> Presentations</h2>
+<section id="reveal.js" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="reveal.js"><span class="header-section-number">2.6.1</span> reveal.js</h3>
+<ul>
+<li>reveal.js is an open source HTML presentation framework. It’s a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.</li>
+<li>Presentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an <code>iframe</code> or add your own custom behavior using our JavaScript API.</li>
+<li>The framework comes with a broad range of features including nested slides, Markdown support, Auto-Animate, PDF export, speaker notes, LaTeX support and syntax highlighted code.</li>
+<li>https://revealjs.com/course/</li>
+<li>nice integration with Quarto; https://quarto.org/docs/presentations/revealjs/demo/#/title-slide</li>
+<li>https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="openedx" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> OpenEdx</h1>
+<ul>
+<li>https://openedx.org/</li>
+<li>Enable online campuses, instructor-led courses, degree programs, and self-paced courses using a single platform.</li>
+<li>Open edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.</li>
+</ul>
+<p>Allows integration of jupyter notebooks, H5P, …</p>
+<section id="course-structure" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="course-structure"><span class="header-section-number">3.1</span> Course structure</h2>
+<p>The course is structured in sections, subsections and units. <img src="images/course_structure.png" class="img-fluid" alt="images/course_structure.png"></p>
+<!-- Create a figure with the actual content structure; use the meridian  -->
 
-:::
--->
 
-
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -684,15 +835,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./course_concept.html" class="pagination-link" aria-label="Course concept">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./course_overview.html" class="pagination-link" aria-label="Course overview">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Course overview</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
