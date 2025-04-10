@@ -1114,7 +1114,7 @@
     "href": "todo.html#feature-demos",
     "title": "16  Open issues",
     "section": "16.4 Feature demos",
-    "text": "16.4 Feature demos\nThe following features work, but have to still be implemented or activated\n\nreferences from zotero with workflow\nadd button “edit on github to the pages”",
+    "text": "16.4 Feature demos\nThe following features work, but have to still be implemented or activated\n\nreferences from zotero with workflow\nadd button “edit on github to the pages”\nadd about section with figure! short presentation of yourself.",
     "crumbs": [
       "TODO",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Open issues</span>"
@@ -1125,7 +1125,7 @@
     "href": "todo.html#bugs",
     "title": "16  Open issues",
     "section": "16.5 Bugs",
-    "text": "16.5 Bugs\n\ncompilation to reveal.js; settings for different compilation targets.\nsection headers in notebooks not working\nPDF compilation in CI not working\nProper image locations and formating in PDF",
+    "text": "16.5 Bugs\n\ncompilation to reveal.js; settings for different compilation targets.\nsection headers in notebooks not working\nPDF compilation in CI not working\nProper image locations and formating in PDF\nFix warning bugs;",
     "crumbs": [
       "TODO",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Open issues</span>"
