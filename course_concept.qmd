@@ -1,4 +1,4 @@
-# Course concept
+# Teaching concept {#sec-concept}
 
 ## General idea
 This open, practice-oriented course introduces the fundamentals of pharmacokinetic (PK) and pharmacodynamic (PD) modelling, with a strong emphasis on reproducible research, open science, and digital competencies in health professions education. Leveraging best practices from software development—such as version control via Git and GitHub, continuous integration (CI) for automated course building, and open formats like Markdown—the course is designed as a fully open educational resource. Hosted on the Open edX platform, it combines theoretical foundations with interactive, hands-on learning to equip participants with the skills needed to understand, simulate, and critically assess PK/PD models in clinical and research contexts.
@@ -15,7 +15,7 @@ The course consists of the following complementary parts which should allow as m
 The course was developed as part of the [Digital Health Professions Educator](https://lernzentrum.charite.de/projekte/heds/digital_health_professions_educator) 2024/2025. The course is the digital teaching project of phase III (see @fig-dhpe.)
 
 
-## Technology
+## Technology {#sec-technology}
 In this section we provide an overview of the technology behind the course.
 
 The following figure provides an overview of the workflow of the course.
@@ -25,9 +25,7 @@ Figure 1: Course writing workflow, starting from plain text (narrative, code and
 
 
 ### Version control
-Course content is managed in a GitHub repository <https://github.com/matthiaskoenig/dhpe-pkpd/> (version control). Content is managed in quarto QMD markdown files. 
-
-All course content is managed in github. On changes locally the complete content is updated.
+Course content is managed in a GitHub repository <https://github.com/matthiaskoenig/dhpe-pkpd/> (version control). Content is managed in quarto QMD markdown files. All course content is managed in github. On changes locally the complete content is updated.
 
 
 ### Continous integration and deployment

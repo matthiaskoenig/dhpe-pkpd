@@ -32,8 +32,10 @@ book:
     - part: "Technology"
       chapters:
       - install.qmd
-      - todo.qmd
       - technology_review.qmd
+    - part: "TODO"
+      chapters:
+      - todo.qmd
   favicon: ./images/pkpd.png
   twitter-card: true
   repo-url: https://github.com/matthiaskoenig/dhpe-pkpd.git

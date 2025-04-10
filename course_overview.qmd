@@ -1,8 +1,10 @@
-# Overview and introduction
+# Introduction {#sec-course-introduction}
 
-## Summary
+Welcome to the course **Introduction to pharmacokinetic and pharmacodynamic modelling**. Here we provide an overview of the course content and the topics which will be covered.
 
-Pharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: <https://livermetabolism.com>.
+## Summary {#sec-course-summary}
+
+Pharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy.
 
 ::: {.callout-note}
 ## Note: Help us improve the course
@@ -59,11 +61,10 @@ The main learning objectives are
 - 🎯 Apply PD models to quantify drug effects.
 
 ::: {.callout-tip}
-## Tip: Customize Your Learning Path
+## Tip: If you are interested in the technology behind this course
 
-The course does not have to be done linearly—you can explore the content in any order. Choose the learning path that best suits your goals, interests, or current knowledge level. This way, you stay engaged and make the most of your learning experience.
+If you're curious about the technology powering this course, check out the technology overview in [Chapter @sec-technology]. For a deeper dive into how everything works behind the scenes, we’ve provided more detailed information [Chapter @sec-technology-details].
 :::
-
 
 
 ## Resources

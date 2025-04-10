@@ -1,43 +1,51 @@
-## PK/PD course
+# Open issues {#sec-todo}
+Here we collect open issues and things which are still to do. This is by no means comprehensive but more of an infomration drop.
+
 
 ## DHPE course
 
 DHPE teaching project overview.
 
-- [ ] write short summary of teaching project: `teaching_concept.qmd`
+- [ ] update the teaching concept: `teaching_concept.qmd`
 - [ ] create workflow picture
-
-- [ ] translate the notebooks
-
-
-PK/PD course overview
-
-- [ ] overview course content: `content.qmd`. Sections and modules; keywords; high level summary; teaching goals.
-- [ ] create workflow picture
-
-
-
 
 
 ## Proof of principle implementation
 
-Create a proof of principle for a first lecture: **pharmacokinetic parameters**.
+Create a proof of principle for a first lecture: **structural models**.
+This should demonstrate the complete learning path with the different used technologies
 
-### Course: WebBook + EPub + PDF
-
-- [ ] Create script/text + teaching notebook (for visualization)
-- [ ] Create slides 5-15 min
+- [x] Create script/text + teaching notebook (for visualization)
+- [x] Create slides 5-15 min
 - [ ] Create video of slides
 - [ ] Create teaser videos
 - [ ] interactive tutorial notebook --> reveal.js
 - [ ] interactive tutorial notebook solutions --> reveals.js
 
-### OpenEdX
+## OpenEdX
 
 Create course section Open edX (from script content).
 
-- [ ] create initial course
+- [x] setup local platform for development and testing
+- [~] create initial course
 - [ ] test content from script (import course content; qmd -> OLX(mu) -> course format?; other options? xmarkdown))
 - [ ] test interactivity
 - [ ] test quizz
 - [ ] test h5p integration
+- [ ] deployment
+
+## Feature demos
+The following features work, but have to still be implemented or activated
+
+- [ ] references from zotero with workflow
+- [ ] add button "edit on github to the pages" 
+
+## Open issues
+
+- [ ] How to properly greenscreen videos (canva remove background not very convincing; OBS chroma key filter)?
+- [ ] How to programmatically generate Open edX course from markdown and XML (interactive components). Various scripts and proof-of-principles available, but nothing convincing so far. We want to version control all course content and be able to transfer lessions/sections content to other courses easily.
+
+## Bugs
+
+- [ ] section headers in notebooks not working
+- [ ] PDF compilation in CI not working

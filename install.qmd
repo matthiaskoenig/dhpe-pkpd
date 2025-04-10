@@ -1,4 +1,4 @@
-# Installation and basic usage
+# Technology details {#sec-technology-details}
 This section provides information on how to setup the different parts of the course. This is a working document to keep track of the technology stack and how to configure the parts.
 
 ## uv
