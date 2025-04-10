@@ -2,30 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://livermetabolism.com/index.html</loc>
-    <lastmod>2025-04-09T21:45:16.188Z</lastmod>
+    <lastmod>2025-04-10T07:45:11.035Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/course_concept.html</loc>
-    <lastmod>2025-04-09T21:45:16.178Z</lastmod>
+    <lastmod>2025-04-10T07:45:11.024Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/course_overview.html</loc>
-    <lastmod>2025-04-09T21:45:16.178Z</lastmod>
+    <lastmod>2025-04-10T07:45:11.024Z</lastmod>
   </url>
   <url>
-    <loc>https://livermetabolism.com/lecture_pkparameters.html</loc>
-    <lastmod>2025-04-09T21:45:16.189Z</lastmod>
+    <loc>https://livermetabolism.com/notebooks/course/01_structural_models.html</loc>
+    <lastmod>2025-04-10T07:45:11.037Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/02_ordinary_differential_equations.html</loc>
+    <lastmod>2025-04-10T07:45:11.039Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/03_compartment_model.html</loc>
+    <lastmod>2025-04-10T07:45:11.040Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/04_absorption.html</loc>
+    <lastmod>2025-04-10T07:45:11.047Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/05_multiple_dosing.html</loc>
+    <lastmod>2025-04-10T07:45:11.051Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/06_metabolism.html</loc>
+    <lastmod>2025-04-10T07:45:11.054Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/07_pharmacokinetic_parameters.html</loc>
+    <lastmod>2025-04-10T07:45:11.056Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/08_variability.html</loc>
+    <lastmod>2025-04-10T07:45:11.060Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/09_sbml.html</loc>
+    <lastmod>2025-04-10T07:45:11.074Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/10_pharmacodynamics.html</loc>
+    <lastmod>2025-04-10T07:45:11.076Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/11_pbpk_tutorial.html</loc>
+    <lastmod>2025-04-10T07:45:11.080Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/install.html</loc>
-    <lastmod>2025-04-09T21:45:16.188Z</lastmod>
+    <lastmod>2025-04-10T07:45:11.035Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/todo.html</loc>
-    <lastmod>2025-04-09T21:45:16.244Z</lastmod>
+    <lastmod>2025-04-10T07:45:11.090Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/technology_review.html</loc>
-    <lastmod>2025-04-09T21:45:16.244Z</lastmod>
+    <lastmod>2025-04-10T07:45:11.090Z</lastmod>
   </url>
 </urlset>

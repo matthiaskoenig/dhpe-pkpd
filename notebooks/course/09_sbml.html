@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Matthias König">
-<meta name="dcterms.date" content="2025-04-09">
 
-<title>Pharmacokinetic &amp; pharmacodynamic modelling</title>
+<title>SBML Models – Pharmacokinetic &amp; pharmacodynamic modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,29 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./course_concept.html" rel="next">
-<link href="././images/pkpd.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a34d670291f06f286357e447776a572a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../notebooks/course/10_pharmacodynamics.html" rel="next">
+<link href="../../notebooks/course/08_variability.html" rel="prev">
+<link href="../.././images/pkpd.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a34d670291f06f286357e447776a572a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -72,11 +103,17 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
-<meta name="twitter:title" content="Pharmacokinetic &amp; pharmacodynamic modelling">
+<meta name="twitter:title" content="SBML Models – Pharmacokinetic &amp; pharmacodynamic modelling">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://livermetabolism.com/notebooks/course/04_simple_absorption.png">
+<meta name="twitter:image-height" content="170">
+<meta name="twitter:image-width" content="930">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating">
@@ -88,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../course_overview.html">Course</a></li><li class="breadcrumb-item"><a href="../../notebooks/course/09_sbml.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">SBML Models</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -102,14 +139,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="././images/pkpd.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../.././images/pkpd.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Pharmacokinetic &amp; pharmacodynamic modelling</a> 
+      <a href="../../">Pharmacokinetic &amp; pharmacodynamic modelling</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/matthiaskoenig/dhpe-pkpd.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="./Pharmacokinetic---pharmacodynamic-modelling.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <a href="../../Pharmacokinetic---pharmacodynamic-modelling.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
 </div>
     </div>
       </div>
@@ -122,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -137,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course_concept.html" class="sidebar-item-text sidebar-link">
+  <a href="../../course_concept.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></span></a>
   </div>
 </li>
@@ -154,73 +191,73 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course_overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../../course_overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview and introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/01_structural_models.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/01_structural_models.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Structural Models as Algebraic Equations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/02_ordinary_differential_equations.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/02_ordinary_differential_equations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ordinary Differential Equations and Numerical Integration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/03_compartment_model.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/03_compartment_model.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Compartment Model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/04_absorption.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/04_absorption.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Absorption</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/05_multiple_dosing.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/05_multiple_dosing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Multiple dosing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/06_metabolism.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/06_metabolism.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Metabolization</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/07_pharmacokinetic_parameters.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/07_pharmacokinetic_parameters.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Pharmacokinetic parameters</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/08_variability.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/08_variability.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Variability in pharmacokinetics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/09_sbml.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/09_sbml.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">SBML Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/10_pharmacodynamics.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/10_pharmacodynamics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pharmacodynamics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/11_pbpk_tutorial.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/course/11_pbpk_tutorial.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Physiologically based pharmacokinetic (PBPK)</span></span></a>
   </div>
 </li>
@@ -237,19 +274,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./install.html" class="sidebar-item-text sidebar-link">
+  <a href="../../install.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Installation and basic usage</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./todo.html" class="sidebar-item-text sidebar-link">
+  <a href="../../todo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">PK/PD course</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./technology_review.html" class="sidebar-item-text sidebar-link">
+  <a href="../../technology_review.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Technology review</span></span></a>
   </div>
 </li>
@@ -265,35 +302,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#key-features-and-benefits" id="toc-key-features-and-benefits" class="nav-link active" data-scroll-target="#key-features-and-benefits">Key Features and Benefits</a></li>
+  <li><a href="#components-of-sbml" id="toc-components-of-sbml" class="nav-link" data-scroll-target="#components-of-sbml">Components of SBML</a></li>
+  <li><a href="#development-and-support" id="toc-development-and-support" class="nav-link" data-scroll-target="#development-and-support">Development and Support</a></li>
+  <li><a href="#working-with-sbml" id="toc-working-with-sbml" class="nav-link" data-scroll-target="#working-with-sbml">Working with SBML</a></li>
+  <li><a href="#encode-sbml-model" id="toc-encode-sbml-model" class="nav-link" data-scroll-target="#encode-sbml-model">Encode SBML model</a></li>
+  <li><a href="#simulate-sbml-model" id="toc-simulate-sbml-model" class="nav-link" data-scroll-target="#simulate-sbml-model">Simulate SBML model</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../course_overview.html">Course</a></li><li class="breadcrumb-item"><a href="../../notebooks/course/09_sbml.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">SBML Models</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Pharmacokinetic &amp; pharmacodynamic modelling</h1>
+<h1 class="title">SBML Models</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Matthias König </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 9, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -303,28 +333,144 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>Welcome to the Course: <strong>Pharmacokinetic and pharmacodynamic modelling</strong></p>
-<p>Have you ever wondered how medications travel through the human body, or how we determine the right dose for each patient? Understanding drug movement and action isn’t just for pharmacologists—it’s a key competency in modern healthcare and biomedical research.</p>
-<p>This course invites you to explore the fascinating world of <strong>pharmacokinetics (PK)</strong>—how drugs are absorbed, distributed, metabolised, and excreted—and <strong>pharmacodynamics (PD)</strong>—how drugs produce their effects. You’ll gain practical insights into the models that help us simulate and predict drug behavior in the body, from simple compartment models to advanced physiologically based models used in cutting-edge research and clinical decision-making.</p>
-<!-- -->
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/HPIw1wDLmaw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Through interactive content and hands-on examples, you’ll learn how PK/PD modelling plays a critical role in:</p>
+<p>The Systems Biology Markup Language (SBML) is a computer-readable format designed for representing models of biological systems. It is an XML-based standard that encodes computational models in systems biology, a field focused on understanding the interactions and behaviors of biological components within a system.</p>
+<section id="key-features-and-benefits" class="level2">
+<h2 class="anchored" data-anchor-id="key-features-and-benefits">Key Features and Benefits</h2>
 <ul>
-<li>Understanding variability in patient responses</li>
-<li>Optimising drug dosing</li>
-<li>Evaluating drug-drug interactions</li>
+<li><strong>Standardization</strong>: SBML provides a standardized format for encoding biological models, ensuring consistency and interoperability across different software tools.</li>
+<li><strong>Model Exchange</strong>: Facilitates the exchange of models between different research groups and software applications, allowing researchers to utilize the best tools available for various aspects of their work.</li>
+<li><strong>Collaboration and Reproducibility</strong>: Enhances collaboration by enabling researchers to share models easily. It also ensures that models can be stored, archived, and reused, promoting reproducibility in scientific research.</li>
 </ul>
-<p>Built with open technologies and aligned with best practices in digital health education, this course empowers you to become part of a growing community of learners and educators who believe in transparency, reproducibility, and innovation.</p>
-<p>Ready to begin? Dive in and transform the way you think about medicine.</p>
-<!--
-::: {layout-ncol=2}
+</section>
+<section id="components-of-sbml" class="level2">
+<h2 class="anchored" data-anchor-id="components-of-sbml">Components of SBML</h2>
+<p>SBML models describe biochemical entities (such as species), the reactions between these entities, and the mathematical rules that govern the system. It can represent a wide range of biological processes, including metabolism, cell signaling, and gene regulation.</p>
+</section>
+<section id="development-and-support" class="level2">
+<h2 class="anchored" data-anchor-id="development-and-support">Development and Support</h2>
+<p>The development of SBML is coordinated by the SBML Project, a community-driven effort that includes researchers, software developers, and other stakeholders in systems biology. The project provides libraries, software tools, and educational resources for working with SBML.</p>
+</section>
+<section id="working-with-sbml" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-sbml">Working with SBML</h2>
+<p>To work with SBML models, additional packages such as <code>sbmlutils</code> and <code>libroadrunner</code> are required. These packages facilitate the manipulation and simulation of SBML models. You can install them via pip:</p>
+<p>pip install sbmlutils pip install libroadrunner</p>
+<p>By using these tools, researchers can effectively create, modify, and analyze SBML models, enhancing their understanding of complex biological systems and improving the quality of their computational studies.</p>
+</section>
+<section id="encode-sbml-model" class="level2">
+<h2 class="anchored" data-anchor-id="encode-sbml-model">Encode SBML model</h2>
+<p>In a first step we encode our simple model with sbmlutils as SBML.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="04_simple_absorption.png" class="img-fluid figure-img"></p>
+<figcaption>Absorption Elimination Model</figcaption>
+</figure>
+</div>
+<div id="38ad57e3" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sbmlutils.factory <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sbmlutils.metadata <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> Model(</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    sid<span class="op">=</span><span class="st">"absorption_first_order"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">"Absorption model with first order kinetics"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>m.compartments <span class="op">=</span> [</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    Compartment(<span class="st">"body"</span>, <span class="fl">1.0</span>, name<span class="op">=</span><span class="st">"Body"</span>, sboTerm<span class="op">=</span>SBO.SIMPLE_CHEMICAL)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>m.parameters <span class="op">=</span> [</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    Parameter(<span class="st">"Dose_A"</span>, <span class="fl">10.0</span>, name<span class="op">=</span><span class="st">"Dose of A"</span>),</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    Parameter(<span class="st">"ka"</span>, <span class="fl">1.0</span>, name<span class="op">=</span><span class="st">"Absorption rate"</span>),</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    Parameter(<span class="st">"ke"</span>, <span class="fl">1.0</span>, name<span class="op">=</span><span class="st">"Elimination rate"</span>),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>m.species <span class="op">=</span> [</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    Species(<span class="st">"A_tablet"</span>, initialAmount<span class="op">=</span><span class="fl">0.0</span>, hasOnlySubstanceUnits<span class="op">=</span><span class="va">True</span>, </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            compartment<span class="op">=</span><span class="st">"body"</span>, name<span class="op">=</span><span class="st">"A (tablet)"</span>, sboTerm<span class="op">=</span>SBO.SIMPLE_CHEMICAL),</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    Species(<span class="st">"A_central"</span>, initialAmount<span class="op">=</span><span class="fl">0.0</span>, hasOnlySubstanceUnits<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>           compartment<span class="op">=</span><span class="st">"body"</span>, name<span class="op">=</span><span class="st">"A (body)"</span>, sboTerm<span class="op">=</span>SBO.SIMPLE_CHEMICAL),</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    Species(<span class="st">"A_urine"</span>, initialAmount<span class="op">=</span><span class="fl">0.0</span>, hasOnlySubstanceUnits<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>           compartment<span class="op">=</span><span class="st">"body"</span>, name<span class="op">=</span><span class="st">"A (urine)"</span>, sboTerm<span class="op">=</span>SBO.SIMPLE_CHEMICAL),</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>m.assignments <span class="op">=</span> [</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    InitialAssignment(<span class="st">"A_tablet"</span>, <span class="st">"Dose_A"</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>m.reactions <span class="op">=</span> [</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    Reaction(</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        <span class="st">"ABSORPTION"</span>,</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        name<span class="op">=</span><span class="st">"absorption A"</span>,</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        equation<span class="op">=</span><span class="st">"A_tablet -&gt; A_central"</span>,</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>        formula <span class="op">=</span> <span class="st">"ka * A_tablet"</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    Reaction(</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">"ELIMINATION"</span>,</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        name<span class="op">=</span><span class="st">"elimination A"</span>,</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        equation<span class="op">=</span><span class="st">"A_central -&gt; A_urine"</span>,</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        formula <span class="op">=</span> <span class="st">"ke * A_central"</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="co"># save the model (uncomment the following lines to create the model)</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="co"># results = create_model(</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="co">#     model=m,</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co">#     filepath=Path("absorption_first_order.xml"),</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="co">#     validation_options=ValidationOptions(units_consistency=False)</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Exercise</strong>: Explore the model with <code>https://sbml4humans.de</code>. Upload the model to the website and navigate the objects.</p>
+<p><strong>Exercise</strong>: Visualize the model with cytoscape and <code>cy3sbml</code>. I.e. download Cytoscape, install the app <code>cy3sbml</code> and load the model to explore the model.</p>
+</section>
+<section id="simulate-sbml-model" class="level2">
+<h2 class="anchored" data-anchor-id="simulate-sbml-model">Simulate SBML model</h2>
+<p>In a second step we load the model and perform a simple simulation and visualization.</p>
+<div id="b0d24ce2" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> roadrunner</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> roadrunner.RoadRunner(<span class="st">"absorption_first_order.xml"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> r.simulate(start<span class="op">=</span><span class="dv">0</span>, end<span class="op">=</span><span class="dv">10</span>, steps<span class="op">=</span><span class="dv">100</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(s, columns<span class="op">=</span>s.colnames)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     time  [A_tablet]  [A_central]  [A_urine]
+0     0.0   10.000000     0.000000   0.000000
+1     0.1    9.048374     0.904837   0.046788
+2     0.2    8.187307     1.637462   0.175231
+3     0.3    7.408182     2.222455   0.369363
+4     0.4    6.703201     2.681278   0.615521
+..    ...         ...          ...        ...
+96    9.6    0.000677     0.006502   9.992821
+97    9.7    0.000613     0.005945   9.993443
+98    9.8    0.000555     0.005434   9.994011
+99    9.9    0.000502     0.004967   9.994531
+100  10.0    0.000454     0.004540   9.995006
 
-![Invidivual responses to drugs.](./images/individuality.png ){#fig-individuality width=100%}
-
-:::
--->
+[101 rows x 4 columns]</code></pre>
+</div>
+</div>
+<div id="3561b5fa" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(nrows<span class="op">=</span><span class="dv">1</span>, ncols<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>f.suptitle(<span class="st">"Simulation with SBML"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name <span class="kw">in</span> [<span class="st">"A_tablet"</span>, <span class="st">"A_central"</span>, <span class="st">"A_urine"</span>]:</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    ax.plot(df.time, df[<span class="ss">f"[</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">]"</span>], lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span>name)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"concentration"</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"time [hr]"</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>ax.legend()</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="09_sbml_files/figure-html/cell-4-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -749,15 +895,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../notebooks/course/08_variability.html" class="pagination-link" aria-label="Variability in pharmacokinetics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Variability in pharmacokinetics</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./course_concept.html" class="pagination-link" aria-label="Course concept">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../notebooks/course/10_pharmacodynamics.html" class="pagination-link" aria-label="Pharmacodynamics">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pharmacodynamics</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
