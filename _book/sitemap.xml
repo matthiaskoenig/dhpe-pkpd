@@ -2,39 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://livermetabolism.com/index.html</loc>
-    <lastmod>2025-04-10T08:27:46.613Z</lastmod>
+    <lastmod>2025-04-10T08:56:39.489Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/course_concept.html</loc>
-    <lastmod>2025-04-10T08:06:36.865Z</lastmod>
+    <lastmod>2025-04-10T09:31:00.027Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/course_overview.html</loc>
-    <lastmod>2025-04-10T08:30:02.887Z</lastmod>
-  </url>
-  <url>
-    <loc>https://livermetabolism.com/04_lecture_pkparameters.html</loc>
-    <lastmod>2025-04-09T20:25:27.270Z</lastmod>
-  </url>
-  <url>
-    <loc>https://livermetabolism.com/install.html</loc>
-    <lastmod>2025-04-10T07:46:36.385Z</lastmod>
-  </url>
-  <url>
-    <loc>https://livermetabolism.com/todo.html</loc>
-    <lastmod>2025-04-10T08:05:07.864Z</lastmod>
-  </url>
-  <url>
-    <loc>https://livermetabolism.com/Pharmacokinetic---pharmacodynamic-modelling.epub</loc>
-    <lastmod>2025-04-09T21:06:00.547Z</lastmod>
-  </url>
-  <url>
-    <loc>https://livermetabolism.com/lecture_pkparameters.html</loc>
-    <lastmod>2025-04-09T20:25:27.270Z</lastmod>
-  </url>
-  <url>
-    <loc>https://livermetabolism.com/technology_review.html</loc>
-    <lastmod>2025-04-10T07:07:22.217Z</lastmod>
+    <lastmod>2025-04-10T09:40:14.720Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/notebooks/course/01_structural_models.html</loc>
@@ -79,5 +55,25 @@
   <url>
     <loc>https://livermetabolism.com/notebooks/course/11_pbpk_tutorial.html</loc>
     <lastmod>2025-04-07T14:35:37.368Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/install.html</loc>
+    <lastmod>2025-04-10T07:46:36.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/technology_review.html</loc>
+    <lastmod>2025-04-10T07:07:22.217Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/todo.html</loc>
+    <lastmod>2025-04-10T09:43:39.063Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/Pharmacokinetic---pharmacodynamic-modelling.pdf</loc>
+    <lastmod>2025-04-10T09:38:42.526Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/Pharmacokinetic---pharmacodynamic-modelling.epub</loc>
+    <lastmod>2025-04-10T09:38:46.294Z</lastmod>
   </url>
 </urlset>

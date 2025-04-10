@@ -69,6 +69,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
 
 
 <meta name="twitter:title" content="16&nbsp; Open issues – Pharmacokinetic &amp; pharmacodynamic modelling">
@@ -135,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./course_concept.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Teaching concept</span></span></a>
   </div>
 </li>
       </ul>
@@ -152,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./course_overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview and introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -277,8 +283,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#proof-of-principle-implementation" id="toc-proof-of-principle-implementation" class="nav-link" data-scroll-target="#proof-of-principle-implementation"><span class="header-section-number">16.2</span> Proof of principle implementation</a></li>
   <li><a href="#openedx" id="toc-openedx" class="nav-link" data-scroll-target="#openedx"><span class="header-section-number">16.3</span> OpenEdX</a></li>
   <li><a href="#feature-demos" id="toc-feature-demos" class="nav-link" data-scroll-target="#feature-demos"><span class="header-section-number">16.4</span> Feature demos</a></li>
-  <li><a href="#open-issues" id="toc-open-issues" class="nav-link" data-scroll-target="#open-issues"><span class="header-section-number">16.5</span> Open issues</a></li>
-  <li><a href="#bugs" id="toc-bugs" class="nav-link" data-scroll-target="#bugs"><span class="header-section-number">16.6</span> Bugs</a></li>
+  <li><a href="#bugs" id="toc-bugs" class="nav-link" data-scroll-target="#bugs"><span class="header-section-number">16.5</span> Bugs</a></li>
+  <li><a href="#open-issues" id="toc-open-issues" class="nav-link" data-scroll-target="#open-issues"><span class="header-section-number">16.6</span> Open issues</a></li>
   </ul>
 </nav>
     </div>
@@ -346,18 +352,21 @@ ul.task-list li input[type="checkbox"] {
 <li><label><input type="checkbox">add button “edit on github to the pages”</label></li>
 </ul>
 </section>
-<section id="open-issues" class="level2" data-number="16.5">
-<h2 data-number="16.5" class="anchored" data-anchor-id="open-issues"><span class="header-section-number">16.5</span> Open issues</h2>
+<section id="bugs" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="bugs"><span class="header-section-number">16.5</span> Bugs</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">compilation to reveal.js; settings for different compilation targets.</label></li>
+<li><label><input type="checkbox">section headers in notebooks not working</label></li>
+<li><label><input type="checkbox">PDF compilation in CI not working</label></li>
+<li><label><input type="checkbox">Proper image locations and formating in PDF</label></li>
+</ul>
+</section>
+<section id="open-issues" class="level2" data-number="16.6">
+<h2 data-number="16.6" class="anchored" data-anchor-id="open-issues"><span class="header-section-number">16.6</span> Open issues</h2>
 <ul class="task-list">
 <li><label><input type="checkbox">How to properly greenscreen videos (canva remove background not very convincing; OBS chroma key filter)?</label></li>
 <li><label><input type="checkbox">How to programmatically generate Open edX course from markdown and XML (interactive components). Various scripts and proof-of-principles available, but nothing convincing so far. We want to version control all course content and be able to transfer lessions/sections content to other courses easily.</label></li>
-</ul>
-</section>
-<section id="bugs" class="level2" data-number="16.6">
-<h2 data-number="16.6" class="anchored" data-anchor-id="bugs"><span class="header-section-number">16.6</span> Bugs</h2>
-<ul class="task-list">
-<li><label><input type="checkbox">section headers in notebooks not working</label></li>
-<li><label><input type="checkbox">PDF compilation in CI not working</label></li>
+<li><label><input type="checkbox">deployment of courses</label></li>
 </ul>
 
 

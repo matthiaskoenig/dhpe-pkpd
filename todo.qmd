@@ -40,12 +40,15 @@ The following features work, but have to still be implemented or activated
 - [ ] references from zotero with workflow
 - [ ] add button "edit on github to the pages" 
 
+## Bugs
+- [ ] compilation to reveal.js; settings for different compilation targets.
+- [ ] section headers in notebooks not working
+- [ ] PDF compilation in CI not working
+- [ ] Proper image locations and formating in PDF
+
 ## Open issues
 
 - [ ] How to properly greenscreen videos (canva remove background not very convincing; OBS chroma key filter)?
 - [ ] How to programmatically generate Open edX course from markdown and XML (interactive components). Various scripts and proof-of-principles available, but nothing convincing so far. We want to version control all course content and be able to transfer lessions/sections content to other courses easily.
+- [ ] deployment of courses
 
-## Bugs
-
-- [ ] section headers in notebooks not working
-- [ ] PDF compilation in CI not working

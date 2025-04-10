@@ -55,8 +55,8 @@ book:
     collapse-level: 3
     search: true
 
-# comments:
-#  hypothesis: true
+comments:
+ hypothesis: true
 
 bibliography: references.json
 
@@ -66,9 +66,11 @@ format:
     # cover-image: images/banner.png
   # pdf:
   #   documentclass: scrreprt
-  #   cover-image: images/banner.png
-  # typst:
-  #   default
+  #   # cover-image: images/banner.png
+
   # epub:
   #   default
     # cover-image: images/banner.png
+  
+  # typst:
+  #   default

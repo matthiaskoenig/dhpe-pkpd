@@ -1,6 +1,6 @@
 # Preface {.unnumbered}
 
-Welcome to the Course: **Pharmacokinetic and pharmacodynamic modelling**
+Welcome to the Course: **Pharmacokinetic and pharmacodynamic modelling** available from <https://matthiaskoenig.github.io/dhpe-pkpd>.
 
 Have you ever wondered how medications travel through the human body, or how we determine the right dose for each patient? Understanding drug movement and action isn’t just for pharmacologists—it’s a key competency in modern healthcare and biomedical research.
 

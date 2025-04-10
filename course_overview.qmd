@@ -67,7 +67,7 @@ If you're curious about the technology powering this course, check out the techn
 :::
 
 ## Open edX
-The Open edX course is available from http://apps.local.openedx.io.
+The Open edX course is available from <http://apps.local.openedx.io>.
 
 ::: {.callout-warning}
 ## Tip: This will not work for you
