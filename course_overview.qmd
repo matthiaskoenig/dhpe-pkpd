@@ -66,6 +66,16 @@ The main learning objectives are
 If you're curious about the technology powering this course, check out the technology overview in [Chapter @sec-technology]. For a deeper dive into how everything works behind the scenes, we’ve provided more detailed information [Chapter @sec-technology-details].
 :::
 
+## Open edX
+The Open edX course is available from http://apps.local.openedx.io.
+
+::: {.callout-warning}
+## Tip: This will not work for you
+
+The Open edX platform is currently only running locally and we are working on deploying it asap.
+Please be patient.
+:::
+
 
 ## Resources
 

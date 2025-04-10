@@ -1212,8 +1212,8 @@
     "objectID": "course_overview.html#resources",
     "href": "course_overview.html#resources",
     "title": "2  Introduction",
-    "section": "2.4 Resources",
-    "text": "2.4 Resources\nA lot of great resources exist on the topic. Below we provide a few recommendations to get started. Some of the material was used as inspiration for the course",
+    "section": "2.5 Resources",
+    "text": "2.5 Resources\nA lot of great resources exist on the topic. Below we provide a few recommendations to get started. Some of the material was used as inspiration for the course",
     "crumbs": [
       "Course",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
@@ -1324,6 +1324,61 @@
     "title": "2  Introduction",
     "section": "",
     "text": "Note: Help us improve the course\n\n\n\nThis course is a work in progress, and we’re always looking for ways to make it better. If you have suggestions, ideas, or feedback on what to improve or how to enhance your learning experience, please don’t hesitate to get in touch. Your input is valuable and appreciated!",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#open-t",
+    "href": "course_overview.html#open-t",
+    "title": "2  Introduction",
+    "section": "2.4 Open ```{T}",
+    "text": "2.4 Open ```{T}\n```",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#open",
+    "href": "course_overview.html#open",
+    "title": "2  Introduction",
+    "section": "2.4 Open",
+    "text": "2.4 Open",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#open-edx",
+    "href": "course_overview.html#open-edx",
+    "title": "2  Introduction",
+    "section": "2.4 Open edX",
+    "text": "2.4 Open edX\nThe Open edX course is available from http://apps.local.openedx.io.\n\n\n\n\n\n\nTip: This will not work for you\n\n\n\nThe Open edX platform is currently only running locally and we are working on deploying it asap. Please be patient.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#tip-if-you-are-interested-in-the-technology-behind-this-course-1",
+    "href": "course_overview.html#tip-if-you-are-interested-in-the-technology-behind-this-course-1",
+    "title": "2  Introduction",
+    "section": "2.5 Tip: If you are interested in the technology behind this course",
+    "text": "2.5 Tip: If you are interested in the technology behind this course\nIf you’re curious about the technology powering this course, check out the technology overview in Chapter 1.2. For a deeper dive into how everything works behind the scenes, we’ve provided more detailed information Chapter 14.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#tip-this-will-not-work-for-you",
+    "href": "course_overview.html#tip-this-will-not-work-for-you",
+    "title": "2  Introduction",
+    "section": "2.5 Tip: This will not work for you",
+    "text": "2.5 Tip: This will not work for you\nThe Open edX platform is currently only running locally and we are working on deploying it asap. Please be patient.",
     "crumbs": [
       "Course",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"

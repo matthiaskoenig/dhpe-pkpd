@@ -17,7 +17,6 @@ Through interactive content and hands-on examples, you'll learn how PK/PD modell
 - Evaluating drug-drug interactions
 
 
-
 Built with open technologies and aligned with best practices in digital health education, this course empowers you to become part of a growing community of learners and educators who believe in transparency, reproducibility, and innovation.
 
 Ready to begin? Dive in and transform the way you think about medicine.
