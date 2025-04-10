@@ -39,12 +39,14 @@ The following features work, but have to still be implemented or activated
 
 - [ ] references from zotero with workflow
 - [ ] add button "edit on github to the pages" 
+- [ ] add about section with figure! short presentation of yourself.
 
 ## Bugs
 - [ ] compilation to reveal.js; settings for different compilation targets.
 - [ ] section headers in notebooks not working
 - [ ] PDF compilation in CI not working
 - [ ] Proper image locations and formating in PDF
+- [ ] Fix warning bugs; 
 
 ## Open issues
 
