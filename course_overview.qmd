@@ -1,14 +1,71 @@
-# Course overview
+# Overview and introduction
 
 ## Summary
-Pharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: https://livermetabolism.com
+
+Pharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: <https://livermetabolism.com>.
+
+::: {.callout-note}
+## Note: Help us improve the course
+
+This course is a work in progress, and we’re always looking for ways to make it better. If you have suggestions, ideas, or feedback on what to improve or how to enhance your learning experience, please don’t hesitate to get in touch. Your input is valuable and appreciated!
+:::
+
+## Topics
+
+The following topics will be covered in the course:
+
+- **Structural Models** (@sec-structural-models)
+  Introduction to structural pharmacokinetic/pharmacodynamic (PK/PD) models, including model types (e.g., one- and multi-compartment), assumptions, and diagrammatic representation.
+- **Ordinary Differential Equations (ODEs)** (@sec-ode)
+  Fundamentals of ODEs as the mathematical foundation of dynamic modeling in pharmacology; solving and interpreting ODEs in PK/PD contexts.
+- **Compartment Model** (@sec-compartment-models)
+  Detailed exploration of compartmental models in pharmacokinetics, including one-, two-, and multi-compartment models with drug distribution and elimination.
+- **Absorption** (@sec-absorption)
+  Modeling drug absorption processes including first-order and zero-order kinetics, and factors affecting bioavailability.
+- **Multiple Dosing** (@sec-compartment-models)
+  Modeling and simulation of repeated drug administration; concepts such as steady-state concentration and accumulation.
+- **Metabolism** (@sec-metabolism)  
+  Representation of drug metabolism in models; modeling hepatic clearance and metabolite formation.
+- **Pharmacokinetic Parameters** (@sec-pharmacokinetic-parameters)
+  Derivation and interpretation of key PK parameters such as clearance (CL), volume of distribution (Vd), half-life (t½), and area under the curve (AUC).
+- **Variability** (@sec-variability)
+  Introduction to interindividual and intraindividual variability in PK/PD; sources of variability and population modeling concepts.
+- **SBML (Systems Biology Markup Language)** (@sec-sbml)
+  Working with SBML for model exchange and simulation; structure of SBML files and integration with modeling tools.
+- **Pharmacodynamics** (@sec-pharmacodynamics)
+  Modeling drug effects on the body; PD models such as Emax, sigmoid Emax, and indirect response models.
+- **PBPK Tutorial (Physiologically Based Pharmacokinetic Modeling)**  (@sec-pbpk)
+  Introduction to PBPK modeling with tutorial examples; structure, parameters, and application in translational and personalized medicine.
+
+::: {.callout-tip}
+## Tip: Customize Your Learning Path
+
+The course does not have to be done linearly—you can explore the content in any order. Choose the learning path that best suits your goals, interests, or current knowledge level. This way, you stay engaged and make the most of your learning experience.
+:::
 
 
-## Lectures/Units
+## Learning Objectives
 
-- structural models
-- ordinary differential equations (ODE)
-- compartment models
+The main learning objectives are
 
-## Teaching goals
-The teaching goals are ...
+- 🎯 Understand key concepts in pharmacokinetics and pharmacodynamics.  
+- 🎯 Learn to formulate and analyze models using differential equations.  
+- 🎯 Develop and simulate compartment and PBPK models.  
+- 🎯 Model drug absorption, metabolism, and multiple dosing scenarios.  
+- 🎯 Interpret core PK parameters (e.g., clearance, half-life, AUC).  
+- 🎯 Understand interindividual variability in drug response.  
+- 🎯 Use SBML for model sharing and interoperability.  
+- 🎯 Learn basic computational skills for model simulation and analysis.  
+- 🎯 Apply PD models to quantify drug effects.
+
+::: {.callout-tip}
+## Tip: Customize Your Learning Path
+
+The course does not have to be done linearly—you can explore the content in any order. Choose the learning path that best suits your goals, interests, or current knowledge level. This way, you stay engaged and make the most of your learning experience.
+:::
+
+
+
+## Resources
+
+A lot of great resources exist on the topic. Below we provide a few recommendations to get started. Some of the material was used as inspiration for the course

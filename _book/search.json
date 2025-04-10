@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Pharmacokinetic & pharmacodynamic modelling",
     "section": "",
-    "text": "Preface\nWelcome to the Course: Pharmacokinetic and pharmacodynamic modelling\nHave you ever wondered how medications travel through the human body, or how we determine the right dose for each patient? Understanding drug movement and action isn’t just for pharmacologists—it’s a key competency in modern healthcare and biomedical research.\nThis course invites you to explore the fascinating world of pharmacokinetics (PK)—how drugs are absorbed, distributed, metabolised, and excreted—and pharmacodynamics (PD)—how drugs produce their effects. You’ll gain practical insights into the models that help us simulate and predict drug behavior in the body, from simple compartment models to advanced physiologically based models used in cutting-edge research and clinical decision-making.\n\n\nThrough interactive content and hands-on examples, you’ll learn how PK/PD modelling plays a critical role in: - Understanding variability in patient responses - Optimising drug dosing - Evaluating drug-drug interactions\nBuilt with open technologies and aligned with best practices in digital health education, this course empowers you to become part of a growing community of learners and educators who believe in transparency, reproducibility, and innovation.\nReady to begin? Dive in and transform the way you think about medicine.",
+    "text": "Preface\nWelcome to the Course: Pharmacokinetic and pharmacodynamic modelling\nHave you ever wondered how medications travel through the human body, or how we determine the right dose for each patient? Understanding drug movement and action isn’t just for pharmacologists—it’s a key competency in modern healthcare and biomedical research.\nThis course invites you to explore the fascinating world of pharmacokinetics (PK)—how drugs are absorbed, distributed, metabolised, and excreted—and pharmacodynamics (PD)—how drugs produce their effects. You’ll gain practical insights into the models that help us simulate and predict drug behavior in the body, from simple compartment models to advanced physiologically based models used in cutting-edge research and clinical decision-making.\n\n\nThrough interactive content and hands-on examples, you’ll learn how PK/PD modelling plays a critical role in:\n\nUnderstanding variability in patient responses\nOptimising drug dosing\nEvaluating drug-drug interactions\n\nBuilt with open technologies and aligned with best practices in digital health education, this course empowers you to become part of a growing community of learners and educators who believe in transparency, reproducibility, and innovation.\nReady to begin? Dive in and transform the way you think about medicine.",
     "crumbs": [
       "Preface"
     ]
@@ -14,7 +14,7 @@
     "href": "course_concept.html",
     "title": "1  Course concept",
     "section": "",
-    "text": "1.1 General idea\nThis open, practice-oriented course introduces the fundamentals of pharmacokinetic (PK) and pharmacodynamic (PD) modelling, with a strong emphasis on reproducible research, open science, and digital competencies in health professions education. Leveraging best practices from software development—such as version control via Git and GitHub, continuous integration (CI) for automated course building, and open formats like Markdown—the course is designed as a fully open educational resource. Hosted on the Open edX platform, it combines theoretical foundations with interactive, hands-on learning to equip participants with the skills needed to understand, simulate, and critically assess PK/PD models in clinical and research contexts.\nThe course consists of the following complementary parts which should allow as much offline studying as possible:",
+    "text": "1.1 General idea\nThis open, practice-oriented course introduces the fundamentals of pharmacokinetic (PK) and pharmacodynamic (PD) modelling, with a strong emphasis on reproducible research, open science, and digital competencies in health professions education. Leveraging best practices from software development—such as version control via Git and GitHub, continuous integration (CI) for automated course building, and open formats like Markdown—the course is designed as a fully open educational resource. Hosted on the Open edX platform, it combines theoretical foundations with interactive, hands-on learning to equip participants with the skills needed to understand, simulate, and critically assess PK/PD models in clinical and research contexts.\nThe course consists of the following complementary parts which should allow as much offline studying as possible:\nThe course was developed as part of the Digital Health Professions Educator 2024/2025. The course is the digital teaching project of phase III (see Figure 1.1.)",
     "crumbs": [
       "Concept",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
@@ -122,20 +122,22 @@
   {
     "objectID": "course_overview.html",
     "href": "course_overview.html",
-    "title": "2  Course overview",
+    "title": "2  Overview and introduction",
     "section": "",
-    "text": "Summary\nPharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: https://livermetabolism.com",
+    "text": "2.1 Summary\nPharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: https://livermetabolism.com.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course overview</span>"
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Overview and introduction</span>"
     ]
   },
   {
     "objectID": "course_overview.html#lecturesunits",
     "href": "course_overview.html#lecturesunits",
     "title": "2  Course overview",
-    "section": "Lectures/Units",
-    "text": "Lectures/Units\n\nstructural models\nordinary differential equations (ODE)\ncompartment models",
+    "section": "2.2 Lectures/Units",
+    "text": "2.2 Lectures/Units\n\nStructural Models\nIntroduction to structural pharmacokinetic/pharmacodynamic (PK/PD) models, including model types (e.g., one- and multi-compartment), assumptions, and diagrammatic representation.\nOrdinary Differential Equations (ODEs)\nFundamentals of ODEs as the mathematical foundation of dynamic modeling in pharmacology; solving and interpreting ODEs in PK/PD contexts.\nCompartment Model\nDetailed exploration of compartmental models in pharmacokinetics, including one-, two-, and multi-compartment models with drug distribution and elimination.\nAbsorption\nModeling drug absorption processes including first-order and zero-order kinetics, and factors affecting bioavailability.\nMultiple Dosing\nModeling and simulation of repeated drug administration; concepts such as steady-state concentration and accumulation.\nMetabolism\nRepresentation of drug metabolism in models; modeling hepatic clearance and metabolite formation.\nPharmacokinetic Parameters\nDerivation and interpretation of key PK parameters such as clearance (CL), volume of distribution (Vd), half-life (t½), and area under the curve (AUC).\nVariability\nIntroduction to interindividual and intraindividual variability in PK/PD; sources of variability and population modeling concepts.\nSBML (Systems Biology Markup Language)\nWorking with SBML for model exchange and simulation; structure of SBML files and integration with modeling tools.\nPharmacodynamics\nModeling drug effects on the body; PD models such as Emax, sigmoid Emax, and indirect response models.\nPBPK Tutorial (Physiologically Based Pharmacokinetic Modeling)\nIntroduction to PBPK modeling with tutorial examples; structure, parameters, and application in translational and personalized medicine.\n\n\n2.2.1 Learning Objectives\nThe main learning objectives are\n\n🎯 Understand key concepts in pharmacokinetics and pharmacodynamics.\n\n🎯 Learn to formulate and analyze models using differential equations.\n\n🎯 Develop and simulate compartment and PBPK models.\n\n🎯 Model drug absorption, metabolism, and multiple dosing scenarios.\n\n🎯 Interpret core PK parameters (e.g., clearance, half-life, AUC).\n\n🎯 Understand interindividual variability in drug response.\n\n🎯 Use SBML for model sharing and interoperability.\n\n🎯 Learn basic computational skills for model simulation and analysis.\n\n🎯 Apply PD models to quantify drug effects.",
     "crumbs": [
+      "Course",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course overview</span>"
     ]
   },
@@ -143,9 +145,10 @@
     "objectID": "course_overview.html#teaching-goals",
     "href": "course_overview.html#teaching-goals",
     "title": "2  Course overview",
-    "section": "Teaching goals",
-    "text": "Teaching goals\nThe teaching goals are …",
+    "section": "2.3 Teaching goals",
+    "text": "2.3 Teaching goals\nThe teaching goals are …",
     "crumbs": [
+      "Course",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course overview</span>"
     ]
   },
@@ -202,31 +205,34 @@
   {
     "objectID": "todo.html",
     "href": "todo.html",
-    "title": "5  PK/PD course",
+    "title": "15  PK/PD course",
     "section": "",
-    "text": "5.1 DHPE course\nDHPE teaching project overview.\nPK/PD course overview",
+    "text": "15.1 DHPE course\nDHPE teaching project overview.\nPK/PD course overview",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>PK/PD course</span>"
+      "Technology",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>PK/PD course</span>"
     ]
   },
   {
     "objectID": "todo.html#dhpe-course",
     "href": "todo.html#dhpe-course",
-    "title": "5  PK/PD course",
+    "title": "15  PK/PD course",
     "section": "",
-    "text": "write short summary of teaching project: teaching_concept.qmd\ncreate workflow picture\n\n\n\noverview course content: content.qmd. Sections and modules; keywords; high level summary; teaching goals.\ncreate workflow picture",
+    "text": "write short summary of teaching project: teaching_concept.qmd\ncreate workflow picture\ntranslate the notebooks\n\n\n\noverview course content: content.qmd. Sections and modules; keywords; high level summary; teaching goals.\ncreate workflow picture",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>PK/PD course</span>"
+      "Technology",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>PK/PD course</span>"
     ]
   },
   {
     "objectID": "todo.html#proof-of-principle-implementation",
     "href": "todo.html#proof-of-principle-implementation",
-    "title": "5  PK/PD course",
-    "section": "5.2 Proof of principle implementation",
-    "text": "5.2 Proof of principle implementation\nCreate a proof of principle for a first lecture: pharmacokinetic parameters.\n\n5.2.1 Course: WebBook + EPub + PDF\n\nCreate script/text + teaching notebook (for visualization)\nCreate slides 5-15 min\nCreate video of slides\nCreate teaser videos\ninteractive tutorial notebook –&gt; reveal.js\ninteractive tutorial notebook solutions –&gt; reveals.js\n\n\n\n5.2.2 OpenEdX\nCreate course section Open edX (from script content).\n\ncreate initial course\ntest content from script (import course content; qmd -&gt; OLX(mu) -&gt; course format?; other options? xmarkdown))\ntest interactivity\ntest quizz\ntest h5p integration",
+    "title": "15  PK/PD course",
+    "section": "15.2 Proof of principle implementation",
+    "text": "15.2 Proof of principle implementation\nCreate a proof of principle for a first lecture: pharmacokinetic parameters.\n\n15.2.1 Course: WebBook + EPub + PDF\n\nCreate script/text + teaching notebook (for visualization)\nCreate slides 5-15 min\nCreate video of slides\nCreate teaser videos\ninteractive tutorial notebook –&gt; reveal.js\ninteractive tutorial notebook solutions –&gt; reveals.js\n\n\n\n15.2.2 OpenEdX\nCreate course section Open edX (from script content).\n\ncreate initial course\ntest content from script (import course content; qmd -&gt; OLX(mu) -&gt; course format?; other options? xmarkdown))\ntest interactivity\ntest quizz\ntest h5p integration",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>PK/PD course</span>"
+      "Technology",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>PK/PD course</span>"
     ]
   },
   {
@@ -234,7 +240,7 @@
     "href": "course_concept.html#general-idea",
     "title": "1  Course concept",
     "section": "",
-    "text": "Short lectures about pharmacokinetics in the form of a book chapter providing the content. The book is available as HTML webpage, PDF, Epub and HTML slideshow. Quarto is used to render high quality books with professional figures, layouts, full text search, cross references, references, citation, and the possibiliy to compile to multiple output formats.\nShort presentations for motivation and providing up to date use cases in the form of short videos and accompanying slides.\nAn Open edX course for the respective chapter with interactive content (quizzes, H5P components).\nInteractive Jupyter notebooks and simple apps for active exploration of the course content.\n\n\n\n\n\n\n\n\n\n\nFigure 1.1: Overview of the Digital Health Professions Educator (DHPE) program.\n\n\n\n\n\nThe course was developed as part of the Digital Health Professions Educator 2024/2025. The course is the digital teaching project of phase III (see Figure 1.1.)",
+    "text": "Short lectures about pharmacokinetics in the form of a book chapter providing the content. The book is available as HTML webpage, PDF, Epub and HTML slideshow. Quarto is used to render high quality books with professional figures, layouts, full text search, cross references, references, citation, and the possibiliy to compile to multiple output formats.\nShort presentations for motivation and providing up to date use cases in the form of short videos and accompanying slides.\nAn Open edX course for the respective chapter with interactive content (quizzes, H5P components).\nInteractive Jupyter notebooks and simple apps for active exploration of the course content. See for instance the indocyanine green application.\n\n\n\n\n\n\n\nFigure 1.1: Overview of the Digital Health Professions Educator (DHPE) program.",
     "crumbs": [
       "Concept",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Course concept</span>"
@@ -243,100 +249,980 @@
   {
     "objectID": "technology_review.html",
     "href": "technology_review.html",
-    "title": "6  Technology review",
+    "title": "16  Technology review",
     "section": "",
-    "text": "6.1 Interactive plots\nOverview of technology relevant for the course.",
+    "text": "16.1 Interactive plots\nHere we performed a search of available open technologies which could be used for the course. Some of these are employed in the course. Overview of technology relevant for the course.\nAn important part are interactive plots in the python notebooks. Most of the static plots are currently be generated with matplotlib.",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#interactive-plots",
     "href": "technology_review.html#interactive-plots",
-    "title": "6  Technology review",
+    "title": "16  Technology review",
     "section": "",
-    "text": "6.1.1 plotly\n\nhttps://plotly.com/python/ ### altair\nhttps://altair-viz.github.io/",
+    "text": "16.1.1 plotly\n\nhttps://plotly.com/python/\n\n\n\n16.1.2 altair\n\nhttps://altair-viz.github.io/",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#interactive-webapps",
     "href": "technology_review.html#interactive-webapps",
-    "title": "6  Technology review",
-    "section": "6.2 Interactive webapps",
-    "text": "6.2 Interactive webapps\n\n6.2.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n6.2.2 Voila\n\nvoila notebooks: https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n6.2.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n6.2.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n6.2.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n6.2.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
+    "title": "16  Technology review",
+    "section": "16.2 Interactive webapps",
+    "text": "16.2 Interactive webapps\n\n16.2.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n16.2.2 Voila\n\nvoila notebooks: https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n16.2.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n16.2.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n16.2.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n16.2.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#deployment-of-notebooks",
     "href": "technology_review.html#deployment-of-notebooks",
-    "title": "6  Technology review",
-    "section": "6.3 Deployment of notebooks",
-    "text": "6.3 Deployment of notebooks\n\n6.3.1 binderhub\n\nvery slow\nhttps://binderhub.readthedocs.io/en/latest/\n6.3.2 jupyterhub\nJupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.\nhttps://jupyter.org/hub\nhttps://tljh.jupyter.org/en/latest/howto/index.html\n\nhttps://education.github.com/globalcampus/teacher?email_referrer=true\nnbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader & gradescope",
+    "title": "16  Technology review",
+    "section": "16.3 Deployment of notebooks",
+    "text": "16.3 Deployment of notebooks\n\n16.3.1 binderhub\n\nvery slow\nhttps://binderhub.readthedocs.io/en/latest/\n16.3.2 jupyterhub\nJupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.\nhttps://jupyter.org/hub\nhttps://tljh.jupyter.org/en/latest/howto/index.html\n\nhttps://education.github.com/globalcampus/teacher?email_referrer=true\nnbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader & gradescope",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#educational-resources",
     "href": "technology_review.html#educational-resources",
-    "title": "6  Technology review",
-    "section": "7.1 Educational resources",
-    "text": "7.1 Educational resources\nResources on building a digital course, Course structure and best practise",
+    "title": "16  Technology review",
+    "section": "17.1 Educational resources",
+    "text": "17.1 Educational resources\nResources on building a digital course, Course structure and best practise",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#teaching-and-learning-with-jupyter",
     "href": "technology_review.html#teaching-and-learning-with-jupyter",
-    "title": "6  Technology review",
-    "section": "7.2 Teaching and Learning with Jupyter",
-    "text": "7.2 Teaching and Learning with Jupyter\nThis handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - https://jupyter4edu.github.io/jupyter-edu-book/",
+    "title": "16  Technology review",
+    "section": "17.2 Teaching and Learning with Jupyter",
+    "text": "17.2 Teaching and Learning with Jupyter\nThis handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - https://jupyter4edu.github.io/jupyter-edu-book/",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#open-edx-educators",
     "href": "technology_review.html#open-edx-educators",
-    "title": "6  Technology review",
-    "section": "7.3 Open edX Educators",
-    "text": "7.3 Open edX Educators\n\nMaterial on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html\nInstructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts",
+    "title": "16  Technology review",
+    "section": "17.3 Open edX Educators",
+    "text": "17.3 Open edX Educators\n\nMaterial on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html\nInstructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#text-to-speech",
     "href": "technology_review.html#text-to-speech",
-    "title": "6  Technology review",
-    "section": "7.4 Text to speech",
-    "text": "7.4 Text to speech\n\n7.4.1 Whisper AI\n\nhttps://openai.com/index/whisper/\n\n\n\n7.4.2 ElevenLabs\n\nhttps://elevenlabs.io/",
+    "title": "16  Technology review",
+    "section": "17.4 Text to speech",
+    "text": "17.4 Text to speech\n\n17.4.1 Whisper AI\n\nhttps://openai.com/index/whisper/\n\n\n\n17.4.2 ElevenLabs\n\nhttps://elevenlabs.io/",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#installation",
     "href": "technology_review.html#installation",
-    "title": "6  Technology review",
-    "section": "8.1 Installation",
-    "text": "8.1 Installation\npip install mu-courses\nInstall up to date pandoc version https://github.com/jgm/pandoc/releases/ pandoc 3.6.4\nmkdir olx mu ./course.md ./olx/\nPackage the course\ntar -czf mycourse.tar.gz ./olx",
+    "title": "16  Technology review",
+    "section": "18.1 Installation",
+    "text": "18.1 Installation\npip install mu-courses\nInstall up to date pandoc version https://github.com/jgm/pandoc/releases/ pandoc 3.6.4\nmkdir olx mu ./course.md ./olx/\nPackage the course\ntar -czf mycourse.tar.gz ./olx",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html",
+    "href": "notebooks/course/01_structural_models.html",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "",
+    "text": "Understanding Variables and Parameters\nA pharmacokinetic (PK) model can be simply represented by an algebraic equation. For instance, a one-compartment model with a single intravenous bolus dose can be described by the following equation:\n\\[\\begin{equation}\nC(t) = \\frac{Dose}{V} e^{-\\frac{CL}{V}\\cdot t}\n\\end{equation}\\]\nIn this model, the equation defines the relationship between the independent variable, time t, and the dependent variable, concentration C. The notation C(t) indicates that C is a function of t. The parameters — Dose, clearance (CL), and distribution volume (V) — are constants and do not vary with time.\nIt’s important to distinguish between variables and parameters. Variables (dependent and independent) are used to extract information from the equation. In PK modeling, time is often the independent variable, but the equation can be rearranged for different analyses, such as using CL as the independent variable for sensitivity analysis, with time as a constant.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#exponential-decay-and-curve-interpretation",
+    "href": "notebooks/course/01_structural_models.html#exponential-decay-and-curve-interpretation",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Exponential Decay and Curve Interpretation",
+    "text": "Exponential Decay and Curve Interpretation\nThis algebraic equation results in an exponential decay curve, representing the drug concentration over time. This type of curve is crucial for understanding how a drug is metabolized and eliminated from the body.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#practical-applications",
+    "href": "notebooks/course/01_structural_models.html#practical-applications",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Practical Applications",
+    "text": "Practical Applications\nPK modeling has several practical applications: - Drug Development: It helps in determining the optimal dosing regimen. - Clinical Pharmacology: It aids in understanding how different patient factors (e.g., age, weight, renal function) affect drug kinetics. - Personalized Medicine: It supports tailoring drug therapy to individual patient needs, enhancing therapeutic outcomes while minimizing side effects.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#key-concepts",
+    "href": "notebooks/course/01_structural_models.html#key-concepts",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nOne-Compartment Model: Assumes the body acts as a single, homogeneous compartment where the drug distributes instantly.\nIntravenous Bolus Dose: Refers to the entire dose of the drug administered at once into the bloodstream.\nClearance (CL): A measure of the body’s efficiency in eliminating the drug.\nVolume of Distribution (V): A theoretical volume that relates the amount of drug in the body to the concentration in the blood or plasma.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#beyond-the-basics",
+    "href": "notebooks/course/01_structural_models.html#beyond-the-basics",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Beyond the Basics",
+    "text": "Beyond the Basics\nWhile this equation represents a simplified model, more complex models exist that account for multiple compartments, non-linear kinetics, and various routes of administration (e.g., oral, subcutaneous). Advanced PK models can incorporate biological factors and mechanisms, such as enzyme kinetics and receptor binding.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#background-on-warfarin",
+    "href": "notebooks/course/01_structural_models.html#background-on-warfarin",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Background on Warfarin",
+    "text": "Background on Warfarin\nWarfarin is a commonly prescribed oral anticoagulant that helps prevent blood clots. It is often used in the treatment and prevention of deep vein thrombosis (DVT), pulmonary embolism (PE), and in patients with atrial fibrillation to reduce the risk of stroke. Warfarin works by inhibiting the synthesis of vitamin K-dependent clotting factors, which are essential for blood coagulation.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#importance-of-warfarin",
+    "href": "notebooks/course/01_structural_models.html#importance-of-warfarin",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Importance of Warfarin",
+    "text": "Importance of Warfarin\nWarfarin is crucial in managing conditions that predispose individuals to thromboembolic events. However, it has a narrow therapeutic index, meaning that small changes in its concentration can lead to significant differences in therapeutic effect and toxicity. Monitoring and adjusting the dose of warfarin is essential to ensure its efficacy while minimizing the risk of bleeding complications.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#unique-pharmacokinetics-of-warfarin",
+    "href": "notebooks/course/01_structural_models.html#unique-pharmacokinetics-of-warfarin",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Unique Pharmacokinetics of Warfarin",
+    "text": "Unique Pharmacokinetics of Warfarin\nWarfarin’s pharmacokinetics are complex due to several factors: - Variable Absorption: Although it is generally well-absorbed, factors such as diet and gastrointestinal health can affect its absorption. - Protein Binding: Warfarin is highly bound to plasma proteins, particularly albumin, which influences its distribution and free (active) concentration in the blood. - Metabolism: Warfarin is metabolized by the liver, primarily through the cytochrome P450 enzyme system. Genetic variations in these enzymes can lead to significant interindividual differences in drug clearance. - Long Half-Life: Warfarin has a long half-life, typically ranging from 20 to 60 hours, leading to a steady-state being reached only after several days of consistent dosing.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#simulation-task",
+    "href": "notebooks/course/01_structural_models.html#simulation-task",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Simulation Task",
+    "text": "Simulation Task\nTo simulate the pharmacokinetics of warfarin using the algebraic equation, we need values for the pharmacokinetic parameters: clearance (CL) and volume of distribution (Vd).\n\nParameters for Warfarin\n\nClearance (CL): The rate at which warfarin is removed from the body. For warfarin, typical clearance values range from 0.1 to 0.2 L/hour.\nVolume of Distribution (Vd): The theoretical volume in which the total amount of drug would need to be uniformly distributed to produce the observed blood concentration. For warfarin, Vd is approximately 10 L.\n\n\n\nSimulation Procedure\n\nSelect a Dose: Choose a typical dose of warfarin, such as 10 mg, administered as a single intravenous bolus dose.\nSet Parameters: Use the provided values for CL and Vd.\nApply the Equation: Use the one-compartment model equation to simulate the concentration of warfarin over time:\n\n\\[\\begin{equation}\nC(t) = \\frac{Dose}{V} e^{-\\frac{CL}{V}\\cdot t}\n\\end{equation}\\]\n\nPlot the Concentration Curve: Generate a plot of warfarin concentration (C) versus time (t) to visualize the drug’s pharmacokinetics.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#practical-insight",
+    "href": "notebooks/course/01_structural_models.html#practical-insight",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Practical Insight",
+    "text": "Practical Insight\nThis simulation will help students understand how warfarin’s concentration changes over time after administration, providing insights into its dosing regimen and the importance of monitoring to maintain therapeutic levels. Additionally, it highlights the significance of individual patient factors in determining the appropriate dose and frequency of administration.\n\nfrom matplotlib import pyplot as plt\nimport numpy as np\n\n# simulate\nV = 10  # [l]\nCL = 0.1  # [L/hr]\nDose = 10  # [mg]\nt = np.linspace(start=0, stop=12*24, num=200)  # [hr]\nC = Dose/V * np.exp(-CL/V * t)  # [mg/l]\n\n# plot\nf, ax = plt.subplots()\nax.plot(t/24.0, C, label=\"warfarin\", color=\"black\", linewidth=2.0, marker=\"o\")\nax.set_xlabel(\"time [day]\")\nax.set_ylabel(\"warfarin [mg/l]\")\nax.set_ylim(bottom=0)\nax.legend()\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#background-on-aspirin-and-chloroquine",
+    "href": "notebooks/course/01_structural_models.html#background-on-aspirin-and-chloroquine",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Background on Aspirin and Chloroquine",
+    "text": "Background on Aspirin and Chloroquine\nAspirin: Aspirin (acetylsalicylic acid) is a widely used medication with analgesic, anti-inflammatory, and antipyretic properties. It is also commonly used for its antiplatelet effect to prevent cardiovascular events such as heart attacks and strokes. Aspirin works by inhibiting the enzyme cyclooxygenase, which plays a key role in the synthesis of prostaglandins and thromboxanes.\nChloroquine: Chloroquine is an antimalarial drug that has also been used to treat autoimmune diseases such as rheumatoid arthritis and lupus. It functions by interfering with the growth of parasites in red blood cells. Chloroquine has a complex pharmacokinetic profile due to its extensive tissue distribution and long half-life.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#variability-in-volume-of-distribution-and-clearance",
+    "href": "notebooks/course/01_structural_models.html#variability-in-volume-of-distribution-and-clearance",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Variability in Volume of Distribution and Clearance",
+    "text": "Variability in Volume of Distribution and Clearance\nThe volume of distribution (Vd) and clearance (CL) of drugs can vary significantly between different medications due to factors such as: - Drug Properties: Lipophilicity, molecular size, and plasma protein binding affect how a drug distributes in the body. - Patient Characteristics: Age, weight, organ function (especially liver and kidneys), and genetic factors can influence drug metabolism and elimination. - Pathophysiological Conditions: Diseases and conditions affecting the liver, kidneys, and cardiovascular system can alter pharmacokinetic parameters.\nUnderstanding this variability is crucial for tailoring drug therapy to individual patients and ensuring optimal therapeutic outcomes while minimizing adverse effects.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#exercises",
+    "href": "notebooks/course/01_structural_models.html#exercises",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Exercises",
+    "text": "Exercises\n\nExercise 1: Solve the Algebraic Equation for Aspirin or Chloroquine\nUsing the respective CL and Vd parameters from the figure, solve the algebraic equation for the concentration of aspirin or chloroquine over time.\nAspirin Example Parameters: - Clearance (CL): Approximately 50 L/hour - Volume of Distribution (Vd): Approximately 10 L\nChloroquine Example Parameters: - Clearance (CL): Approximately 10 L/hour - Volume of Distribution (Vd): Approximately 5000 L\n\n\nExercise 2: Change the Dose and Observe the Effects\nModify the dose of the drug and observe the resulting effects on the concentration-time curves. Consider the following doses: - Aspirin: 500 mg, 1000 mg, 1500 mg - Chloroquine: 200 mg, 400 mg, 600 mg\nPlot the concentration curves for each dose and analyze how changes in dosage affect the drug’s pharmacokinetics.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#practical-insight-1",
+    "href": "notebooks/course/01_structural_models.html#practical-insight-1",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Practical Insight",
+    "text": "Practical Insight\nThese exercises will help you understand the impact of different pharmacokinetic parameters on drug behavior in the body. By comparing the profiles of aspirin and chloroquine, you can appreciate the importance of individualized dosing and the challenges associated with drugs that have large volumes of distribution or low clearance rates.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#background-and-relevance",
+    "href": "notebooks/course/01_structural_models.html#background-and-relevance",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Background and Relevance",
+    "text": "Background and Relevance\nParameter scans are a crucial tool in pharmacokinetic modeling. They allow us to understand how changes in dosing, volume of distribution, and clearance affect drug behavior. This knowledge is essential for optimizing drug dosing regimens, predicting therapeutic outcomes, and identifying potential risks of adverse effects.\nBy performing parameter scans, researchers and clinicians can: - Optimize Dosing Strategies: Determine the most effective and safe doses for different patient populations. - Understand Drug Behavior: Gain insights into how drugs distribute, metabolize, and eliminate from the body. - Tailor Therapies: Customize treatments based on individual patient characteristics and conditions. - Predict Outcomes: Forecast the effects of parameter variations, such as those due to drug interactions or genetic differences.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#dose-dependency",
+    "href": "notebooks/course/01_structural_models.html#dose-dependency",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Dose Dependency",
+    "text": "Dose Dependency\n\nConcept\nDose dependency refers to how changes in the administered dose of a drug affect its concentration over time. Understanding dose dependency helps in determining the appropriate dose that achieves the desired therapeutic effect without causing toxicity.\n\n\nExercise\n\nSelect a Range of Doses: Choose a range of doses for the drug being studied (e.g., 0 mg, 50 mg, 100 mg, 150 mg, 200 mg).\nSimulate Concentration-Time Profiles: Use the pharmacokinetic equation to simulate the concentration-time profiles for each dose.\nAnalyze the Results: Plot the concentration versus time for each dose and analyze how the peak concentration (Cmax) and area under the curve (AUC) change with different doses.\n\n\n# warfarin\nV = 10  # [l]\nCL = 0.1  # [L/hr]\nDose = 100  # [mg]\nt = np.linspace(start=0, stop=10*24, num=200)  # [hr]\n\n# Dose dependency\nf, ax = plt.subplots(nrows=1, ncols=1)\nfor Dose in np.linspace(0, 200, num=5):\n    C = Dose / V * np.exp(-CL / V * t)  # [mg/l]\n    ax.plot(t/24.0, C, label=f\"{Dose} [mg]\")\n# reset dose\nDose = 100  # [mg]\n\n# plot\nax.set_xlabel(\"time [day]\")\nax.set_ylabel(\"warfarin [mg/l]\")\nax.set_ylim(bottom=0)\nax.legend()\nax.set_title(\"Dose dependency\")\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#volume-of-distribution-dependency",
+    "href": "notebooks/course/01_structural_models.html#volume-of-distribution-dependency",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Volume of Distribution Dependency",
+    "text": "Volume of Distribution Dependency\n\nConcept\nThe volume of distribution (Vd) is a theoretical volume that relates the amount of drug in the body to its concentration in the blood or plasma. It provides insight into how extensively a drug disperses into body tissues. Changes in Vd can significantly affect drug concentration profiles, especially for drugs that distribute widely into tissues.\n\n\nExercise\n\nSelect a Range of Vd Values: Choose a range of Vd values for the drug (e.g., 5 L, 10 L, 20 L).\nSimulate Concentration-Time Profiles: Use the pharmacokinetic equation to simulate the concentration-time profiles for each Vd value.\nAnalyze the Results: Plot the concentration versus time for each Vd value and observe how the distribution volume influences the drug’s concentration, half-life, and overall exposure.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#practical-insight-2",
+    "href": "notebooks/course/01_structural_models.html#practical-insight-2",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Practical Insight",
+    "text": "Practical Insight\nBy performing parameter scans on dose and volume of distribution, students can gain a deeper understanding of the dynamic nature of pharmacokinetics. These exercises will illustrate: - Non-Linear Relationships: How parameters do not always change drug concentration linearly. - Therapeutic Window: The importance of maintaining drug concentrations within a therapeutic range. - Individual Variability: How patient-specific factors might necessitate adjustments in dosing or consideration of different pharmacokinetic profiles.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/01_structural_models.html#example-applications",
+    "href": "notebooks/course/01_structural_models.html#example-applications",
+    "title": "Structural Models as Algebraic Equations",
+    "section": "Example Applications",
+    "text": "Example Applications\n\nDose Adjustment: For patients with renal or hepatic impairment, dose adjustments may be required to avoid toxicity.\nDrug Development: In the early stages of drug development, parameter scans help in predicting human pharmacokinetics based on preclinical data.\nPersonalized Medicine: Tailoring doses based on genetic makeup and other patient-specific factors to achieve optimal therapeutic outcomes.\n\nBy understanding and applying these concepts, students can appreciate the complexities involved in pharmacokinetic modeling and the importance of personalized approaches in clinical pharmacology.\n\n# V dependency\nf, ax = plt.subplots(nrows=1, ncols=1)\nfor V in np.linspace(10, 100, num=5):\n    C = Dose / V * np.exp(-CL / V * t)  # [mg/l]\n    ax.plot(t/24.0, C, label=f\"{V:.2f} [l]\")\n# reset volume\nV = 10  # [mg]\n\nax.set_xlabel(\"time [day]\")\nax.set_ylabel(\"warfarin [mg/l]\")\nax.set_ylim(bottom=0)\nax.legend()\nax.set_title(\"Volume dependency\")\nplt.show()\n\n\n\n\n\n\n\n\nExercise: Implement a Parameter Scan for Clearance (CL)\nObjective: To understand how changes in clearance (CL) affect the pharmacokinetics of a drug, implement a parameter scan for CL values ranging from 0.1 to 3 L/hour.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Structural Models as Algebraic Equations</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/02_ordinary_differential_equations.html",
+    "href": "notebooks/course/02_ordinary_differential_equations.html",
+    "title": "Ordinary Differential Equations and Numerical Integration",
+    "section": "",
+    "text": "Introduction\nIn pharmacokinetics, many models describing the behavior of drugs within the body are represented by ordinary differential equations (ODEs). These equations capture the dynamic changes in drug concentration over time, accounting for various processes such as absorption, distribution, metabolism, and excretion.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ordinary Differential Equations and Numerical Integration</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/02_ordinary_differential_equations.html#background",
+    "href": "notebooks/course/02_ordinary_differential_equations.html#background",
+    "title": "Ordinary Differential Equations and Numerical Integration",
+    "section": "Background",
+    "text": "Background\n\nOrdinary Differential Equations (ODEs)\nAn ODE is an equation that involves a function and its derivatives. In pharmacokinetics, ODEs describe how the concentration of a drug changes with respect to time due to different biological processes. The simplest form of an ODE in pharmacokinetics is a first-order equation representing the rate of change of drug concentration:\n\\[\\begin{equation}\n\\frac{dC(t)}{dt} = -k \\cdot C(t)\n\\end{equation}\\]\nwhere: - C(t) is the concentration of the drug at time t. - k is the rate constant for the process being described (e.g., elimination).\nMore complex models may involve multiple compartments and multiple rate constants, leading to systems of ODEs.\n\n\nNumerical Integration\nIn many cases, ODEs cannot be solved analytically, especially when dealing with complex pharmacokinetic models. Numerical integration techniques are employed to approximate the solutions of these equations. Methods such as Euler’s method, the Runge-Kutta method, and more advanced algorithms provide approximate solutions by discretizing time and iteratively solving the equations.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ordinary Differential Equations and Numerical Integration</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/02_ordinary_differential_equations.html#importance-in-pharmacokinetics",
+    "href": "notebooks/course/02_ordinary_differential_equations.html#importance-in-pharmacokinetics",
+    "title": "Ordinary Differential Equations and Numerical Integration",
+    "section": "Importance in Pharmacokinetics",
+    "text": "Importance in Pharmacokinetics\nUnderstanding and solving ODEs is crucial in pharmacokinetics for several reasons: - Modeling Drug Behavior: Accurately predict how drugs move through different compartments of the body over time. - Dose Optimization: Determine the optimal dosing regimen to achieve therapeutic levels without causing toxicity. - Predicting Drug Interactions: Understand how multiple drugs may interact and affect each other’s pharmacokinetics. - Personalized Medicine: Tailor drug treatments based on individual patient characteristics and responses.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ordinary Differential Equations and Numerical Integration</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/02_ordinary_differential_equations.html#applications",
+    "href": "notebooks/course/02_ordinary_differential_equations.html#applications",
+    "title": "Ordinary Differential Equations and Numerical Integration",
+    "section": "Applications",
+    "text": "Applications\n\nOne-Compartment Models: Describing the elimination of a drug from a single compartment.\nMulti-Compartment Models: Accounting for distribution between central (e.g., blood) and peripheral (e.g., tissues) compartments.\nNon-Linear Models: Handling cases where drug kinetics do not follow simple linear relationships, such as saturation kinetics.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ordinary Differential Equations and Numerical Integration</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/02_ordinary_differential_equations.html#learning-objectives",
+    "href": "notebooks/course/02_ordinary_differential_equations.html#learning-objectives",
+    "title": "Ordinary Differential Equations and Numerical Integration",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this chapter, you should be able to: - Understand the basic principles of ODEs and their role in pharmacokinetics. - Apply numerical integration methods to solve pharmacokinetic equations. - Interpret the results of ODE models.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ordinary Differential Equations and Numerical Integration</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/02_ordinary_differential_equations.html#euler-method",
+    "href": "notebooks/course/02_ordinary_differential_equations.html#euler-method",
+    "title": "Ordinary Differential Equations and Numerical Integration",
+    "section": "Euler method",
+    "text": "Euler method\nWe will mainly use ordinary differential equations of the form.\n\\[\\begin{equation}\n\\frac{d\\vec{x}}{dt} = \\vec{f}(\\vec{x},\\vec{p},t)\n\\end{equation}\\]\nHere \\(\\vec{x}\\) is a vector of state variables at time \\(t\\). The parameters of the system are represented by the vector \\(\\vec{p}\\).\nIn one dimension, the system is written as\n\\[\\begin{equation}\n\\frac{dx}{dt} = f(x) \\quad \\mbox{with} \\quad x(t=0) := x_0\n\\end{equation}\\]\nThe simplest way to solve the equation numerically is the Euler integration \\[\\begin{equation}\nf(x) = \\frac{dx}{dt} \\approx \\frac{x(t+\\Delta t) - x(t)}{\\Delta t}\n\\end{equation}\\]\nWe obtain \\[\\begin{equation}\nx(t+\\Delta t) \\; = \\;  x(t) \\; + \\; \\Delta t \\;   f(x(t)) \\; + \\;  {\\cal O}(\\Delta t^2)\n\\end{equation}\\]\nStarting from an initial value \\(x_0\\) at time \\(t=0\\) the solution can now be determined for later time points.\nIt is of importance to consider the error of the method. The Euler method introduces an error of \\({\\cal O}(\\Delta t^2)\\) per integration step. To obtain the solution \\(x(t)\\) at a time \\(t=T\\), \\(N=T/\\Delta t\\) integration steps have to be performed. The total error is therefore of the order \\({\\cal O}(T \\Delta t)\\) and decreases with decreasing \\(\\Delta t\\). Euler integration is a first-order method. The method is rarely used in real life (too inefficient).\nThe Euler Method \\[\\begin{equation}\n\\frac{dC}{dt} = f(C) = - \\frac{CL}{V} C \\quad \\mbox{with} \\quad C(0) = \\frac{DOSE}{V}\n\\end{equation}\\]\nThe analytical solution at time \\(t\\) is \\[\\begin{equation}\nC(t) = \\frac{DOSE}{V} \\exp(-\\frac{CL}{V} t)\n\\end{equation}\\]\nAn initial value is needed for this process. Computational errors are minimized by keeping the time increments very small. There has been extensive development of algorithms to solve dif- ferential equations numerically, and in most contexts the dif- ference between an analytical solution and the approximate numerical solution is inconsequential. However, solving a system of equations is computationally intensive and, even with automated, rapid processors, there is a time penalty for using differential equations to describe a model.\nWe now write a simple function that compares the numerical integration of the simple system with the (known) analytical solution.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ndef simple_euler(C0, tend, N, CL, V):\n    \"\"\" The function integrates the simple\n    system dx/dt = -k x to a time tend using the  \n    Euler method (N Steps) and initial condition x0.\n\n    usage: C = simple_euler(C0, t, N)\n    \"\"\"\n    k = 1 # set parameter k\n\n    # some parameters\n    dt = float(tend)/N\n    timespan = np.arange(0, tend, dt)\n    C = [float(C0)]\n\n    # integration\n    for i in range(1, N):\n        # C(t) + dt * f\n        C.append(C[i-1] + dt*(-CL/V*C[i-1]))\n        \n    # plot both solutions\n    f, ax = plt.subplots(nrows=1, ncols=1)\n    ax.plot(timespan, C,'ko', markersize=8, label='Euler method')\n    ax.plot(timespan, C0*np.exp(-CL/V*timespan), 'r-', label='analytical solution')\n    ax.set_xlabel('time t [hr]')\n    ax.set_ylabel('C(t) [mg]')\n    ax.legend(loc='upper right')\n    plt.show()\n\n    # return value of function\n    cend = C[N-1]\n\n    return cend, dt\n\n\nV = 10  # [l]\nCL = 0.1  # [l/hr]\nDOSE = 100  # [mg]\nC0 = DOSE/V\n\nsimple_euler(C0=C0, tend=24*10, N=5, CL=CL, V=V)\n\n\n\n\n\n\n\n\nExercise: We do know the true value \\(x(t=1)\\) using an analytical solution. Compare the numerical estimates for different values of N and plot the error as a function of 1/N. What does N stand for? How does the graph look like? Why?",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ordinary Differential Equations and Numerical Integration</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/02_ordinary_differential_equations.html#example-simple-ode",
+    "href": "notebooks/course/02_ordinary_differential_equations.html#example-simple-ode",
+    "title": "Ordinary Differential Equations and Numerical Integration",
+    "section": "Example: Simple ODE",
+    "text": "Example: Simple ODE\nWe consider a simple ODE of the form:\n\\[\\begin{equation}\n\\frac{dC}{dt} = - \\frac{CL}{V} \\cdot C\n\\end{equation}\\]\nwith the initial condition:\n\\[\\begin{equation}\nC(0) = \\frac{Dose}{V}\n\\end{equation}\\]\nwhere CL (clearance) and V (volume of distribution) are parameters.\nTo solve this system numerically, we need to define the function representing the ODE. In this case, the function f(C, t) is:\n\\[\\begin{equation}\nf(C, t) = - \\frac{CL}{V} \\cdot C\n\\end{equation}\\]\nThis is implemented in a user-defined function in Python.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ordinary Differential Equations and Numerical Integration</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/02_ordinary_differential_equations.html#understanding-the-differential-equation",
+    "href": "notebooks/course/02_ordinary_differential_equations.html#understanding-the-differential-equation",
+    "title": "Ordinary Differential Equations and Numerical Integration",
+    "section": "Understanding the Differential Equation",
+    "text": "Understanding the Differential Equation\nA differential equation describes the rate of change of a variable. In this example, \\(\\frac{dC}{dt}\\) represents the rate of change of drug concentration C with respect to time t. This rate of change is sometimes abbreviated as C’.\nTo solve a differential equation numerically, we must specify the initial value of the dependent variable. Here, the initial concentration C at time zero (C0) is given by:\n\\[\\begin{equation}\nC(0) = \\frac{Dose}{V}\n\\end{equation}\\]\nNumerical methods, such as those provided by scipy.integrate.odeint, are used to solve systems of differential equations where analytical solutions may not be feasible.\n\nfrom scipy.integrate import odeint\n\ndef simple_ode(C, t, CL, V):\n    \"\"\"\n    The function implements the simple linear\n    ODE dCdt = -CL/V * C\n    \"\"\"\n\n    dCdt = - CL/V *C\n\n    return dCdt \n\nTo integrate the system numerically, we use odeint:\n\nfrom scipy.integrate import odeint\nimport numpy as np\n\n# parameters\nV = 10  # [l]\nCL = 0.1  # [l/hr]\nDOSE = 100  # [mg]\n\n\n# initial condition and time span\nt = np.arange(0, 240, 0.1)  # [hr]\nC0 = DOSE/V\n\nC = odeint(simple_ode, C0, t, args=(CL, V))\nf, ax = plt.subplots(nrows=1, ncols=1)\nax.set_xlabel('time t [hr]')\nax.set_ylabel('C(t) [mg]')\nax.plot(t, C, linewidth=2)\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ordinary Differential Equations and Numerical Integration</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/02_ordinary_differential_equations.html#insights-and-what-we-learned",
+    "href": "notebooks/course/02_ordinary_differential_equations.html#insights-and-what-we-learned",
+    "title": "Ordinary Differential Equations and Numerical Integration",
+    "section": "Insights and What We Learned",
+    "text": "Insights and What We Learned\n\nDefining the ODE: We learned how to define a differential equation representing the pharmacokinetics of a drug. This involves identifying the parameters and the rate of change of the drug concentration.\nInitial Conditions: We understood the importance of initial conditions in solving differential equations. The initial concentration is determined by the dose and volume of distribution.\nNumerical Integration: We explored how to use numerical methods, specifically the odeint function from the scipy.integrate module, to solve ODEs when analytical solutions are not practical.\nInterpreting Results: By plotting the concentration-time profile, we can visually analyze how the drug concentration changes over time, providing insights into the drug’s pharmacokinetics.\n\nThese skills are fundamental in pharmacokinetic modeling, allowing us to simulate and predict drug behavior under various conditions. This knowledge is crucial for optimizing drug dosing regimens, improving therapeutic efficacy, and minimizing adverse effects.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ordinary Differential Equations and Numerical Integration</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/03_compartment_model.html",
+    "href": "notebooks/course/03_compartment_model.html",
+    "title": "Compartment Model",
+    "section": "",
+    "text": "Background\nPharmacokinetic models are essential tools for understanding how drugs move through the body. One common approach is the compartment model, which divides the body into compartments where drugs are absorbed, distributed, metabolized, and eliminated.\nA compartment model simplifies the complex processes of drug distribution and elimination by grouping tissues and organs with similar drug kinetics into compartments. The most basic compartment models are:\nIn this section, we will implement a simple compartment model consisting of absorption, elimination, and metabolization processes.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Compartment Model</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/03_compartment_model.html#background",
+    "href": "notebooks/course/03_compartment_model.html#background",
+    "title": "Compartment Model",
+    "section": "",
+    "text": "One-Compartment Model: Assumes the body is a single homogeneous unit where the drug distributes instantaneously.\nTwo-Compartment Model: Divides the body into a central compartment (e.g., blood and highly perfused organs) and a peripheral compartment (e.g., muscle and fat tissues).\nMulti-Compartment Models: Include more compartments to capture more complex drug kinetics.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Compartment Model</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/03_compartment_model.html#relevance",
+    "href": "notebooks/course/03_compartment_model.html#relevance",
+    "title": "Compartment Model",
+    "section": "Relevance",
+    "text": "Relevance\nCompartment models are highly relevant in pharmacokinetics for several reasons: - Drug Development: They help in predicting how new drugs behave in the body, guiding dosage form design and therapeutic regimens. - Therapeutic Drug Monitoring: Models aid in adjusting doses for individual patients to achieve optimal therapeutic levels. - Understanding Drug Interactions: They provide insights into how drugs interact with each other and with biological systems, influencing metabolism and elimination.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Compartment Model</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/03_compartment_model.html#simple-compartment-model",
+    "href": "notebooks/course/03_compartment_model.html#simple-compartment-model",
+    "title": "Compartment Model",
+    "section": "Simple Compartment Model",
+    "text": "Simple Compartment Model\n\nComponents of the Model\n\nAbsorption: The process by which a drug enters the bloodstream from the site of administration (e.g., oral, intravenous).\nElimination: The removal of the drug from the body, primarily through metabolic conversion and excretion.\nMetabolization: The chemical transformation of the drug into metabolites, which may be active or inactive.\n\n\n\n\nCompartment Model",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Compartment Model</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/03_compartment_model.html#insights-and-what-we-learned",
+    "href": "notebooks/course/03_compartment_model.html#insights-and-what-we-learned",
+    "title": "Compartment Model",
+    "section": "Insights and What We Learned",
+    "text": "Insights and What We Learned\n\nCompartmental Representation: By dividing the body into compartments, we can model complex drug kinetics in a manageable way.\nAbsorption, Metabolization, and Elimination: Understanding these processes helps in predicting drug behavior and designing effective dosing regimens.\nNumerical Solutions: Using numerical methods like odeint allows us to solve complex systems of ODEs that do not have straightforward analytical solutions.\n\nThis exercise provides a practical foundation in modeling drug kinetics using compartment models, which are crucial for various applications in pharmacology and medicine.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Compartment Model</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/03_compartment_model.html#background-1",
+    "href": "notebooks/course/03_compartment_model.html#background-1",
+    "title": "Compartment Model",
+    "section": "Background",
+    "text": "Background\nIn pharmacokinetics, the metabolism of a drug can significantly influence its pharmacological effects and the duration of its action. Metabolites can be either active or inactive, and their formation and elimination are crucial in determining the overall drug effect and safety profile. The rate of metabolism, represented by the rate constant (k_m), plays a key role in these processes.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Compartment Model</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/03_compartment_model.html#relevance-1",
+    "href": "notebooks/course/03_compartment_model.html#relevance-1",
+    "title": "Compartment Model",
+    "section": "Relevance",
+    "text": "Relevance\nUnderstanding the effect of metabolism on urinary recoveries is important for several reasons: - Drug Efficacy and Safety: The rate at which a drug is metabolized can affect its therapeutic efficacy and the risk of side effects. - Dosing Regimens: Adjustments to dosing regimens may be necessary based on metabolic rates to achieve optimal drug levels. - Interindividual Variability: Differences in metabolic rates among individuals can lead to variations in drug response and require personalized medicine approaches.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Compartment Model</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/03_compartment_model.html#systematic-parameter-scan",
+    "href": "notebooks/course/03_compartment_model.html#systematic-parameter-scan",
+    "title": "Compartment Model",
+    "section": "Systematic Parameter Scan",
+    "text": "Systematic Parameter Scan\nWe will systematically alter the metabolization rate \\(k_m\\) to observe its effect on the amounts of A and B recovered in the urine. The range of \\(k_m\\) values will be chosen to cover a broad spectrum of metabolic rates, from slow to fast metabolism.\n\nt = np.arange(0, 3, 0.1)  # [hr]\nkms = np.arange(0, 10, 0.1)\nA_recovery = np.zeros_like(kms)\nB_recovery = np.zeros_like(kms)\n\nfor k, km_new in enumerate(kms):\n    x = odeint(dydt_compartment_model, x0, t, args=(ka, km_new, ke))\n    A_recovery[k] = x[-1, 3]  # A_urine(end)\n    B_recovery[k] = x[-1, 4]  # B_urine(end)\n\nA_recovery = A_recovery/Dose_A\nB_recovery = B_recovery/Dose_A\n\nf, ax = plt.subplots(nrows=1, ncols=1)\nax.plot(kms, A_recovery * 100, linewidth=2, label=\"recovery A\", marker=\"o\")\nax.plot(kms, B_recovery * 100, linewidth=2, label=\"recovery B\", marker=\"o\")\nax.plot(kms, (A_recovery + B_recovery) * 100, linewidth=2, label=\"recovery A + B\", marker=\"o\")\nax.legend()\nax.set_xlabel(\"Metabolism: km\")\nax.set_ylabel(\"recovery [%]\")\n\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Compartment Model</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/03_compartment_model.html#insights-and-what-we-learned-1",
+    "href": "notebooks/course/03_compartment_model.html#insights-and-what-we-learned-1",
+    "title": "Compartment Model",
+    "section": "Insights and What We Learned",
+    "text": "Insights and What We Learned\n\nMetabolism Rate Impact: The rate of metabolism ((k_m)) significantly influences the amounts of the parent drug and its metabolite recovered in the urine.\nUrinary Recovery Patterns: By varying (k_m), we can observe how faster metabolism leads to higher levels of metabolite B and lower levels of drug A in the urine, and vice versa.\nClinical Implications: Understanding these patterns is crucial for dose adjustment and optimizing therapeutic outcomes, especially for drugs with active metabolites.\n\nThrough this exercise, we gain valuable insights into the dynamic interplay between drug metabolism and elimination, enhancing our ability to predict drug behavior and tailor treatments to individual patient needs.\nExercise: Does the absorption rate of A have an effect on the urinary recovery of B?",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Compartment Model</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/04_absorption.html",
+    "href": "notebooks/course/04_absorption.html",
+    "title": "Absorption",
+    "section": "",
+    "text": "Simple absorption models\nAbsorption is a key principle of pharmacokinetics, which is the study of how the body interacts with a drug over time, including the processes of absorption, distribution, metabolism, and excretion (ADME).\nIn the context of drug therapy, absorption refers to the process through which a drug moves from the site of administration into the bloodstream. The rate and extent of absorption can significantly impact how quickly and effectively a drug acts.\nVarious factors can influence drug absorption, including:\n1. Route of Administration: The route of administration significantly impacts how a drug is absorbed. For instance, drugs administered intravenously bypass the absorption process as they are introduced directly into the bloodstream. However, orally administered drugs must pass through the stomach and intestines, where they are absorbed into the bloodstream. This can be influenced by factors such as pH levels, presence of food, and gastrointestinal motility.\n2. Drug Formulation: The physical and chemical properties of the drug can influence how well it is absorbed. For example, drugs formulated in a liquid solution are often absorbed more rapidly than those in a tablet or capsule.\n3. Physiological Factors: Individual characteristics like age, sex, genetic factors, and health status can also influence drug absorption. For example, certain conditions like malabsorption syndromes or diseases affecting the liver or kidney can alter the absorption of drugs.\n4. Drug Interactions: Certain drugs can interact in the body and affect absorption. For instance, some medications can increase stomach acidity, which can affect the absorption of other drugs.\nUnderstanding absorption is crucial in drug therapy as it affects the onset, intensity, and duration of a drug’s effect. A drug must be absorbed into the bloodstream before it can reach its site of action, and variations in the rate and extent of absorption can lead to differences in how individuals respond to the same dose of a drug. Consequently, understanding absorption can help in designing drug dosing regimens and predicting a drug’s effect.\nIn the following we study a simple model for absorption and elimination. A can be absorbed from the tablet in the systemic circulation (\\(A_{tablet} \\rightarrow A_{system}\\)) which can be eliminated in the urine via renal excretion (\\(A_{system} \\rightarrow A_{urine}\\)).\nElimination and absorption are assumed to be Mass-Action, i.e., depending on a rate constant k and the amount or concentration of the respective substance.\nThe ordinary differential equation system (ODE) results in:\nimport numpy as np\nfrom scipy.integrate import odeint\nfrom matplotlib import pylab as plt\n\ndef dxdt_absorption_first_order(x, t, ka, ke):\n    \"\"\"\n    First order absorption model\n    \"\"\"\n    # state variables\n    A_tablet = x[0]  # [mg]\n    A_central = x[1] # [mg/l]\n    A_urine = x[2] # [mg]\n    \n    # rates\n    va = ka * A_tablet  # [mg/hr]\n    ve = ke * A_central # [mg/hr]\n\n    # odes (stoichiometric equation)    \n    return [\n        -va,            # dA_tablet/dt  [mg/hr]\n         va - ve,       # dA_central/dt [mg/hr]\n         ve,            # dA_urine/dt  [mg/hr]\n    ] \n\n\n# initial condition and time span\nt = np.arange(0, 10, 0.05) # [hr]\nDose_A = 10.0  # [mg]\nx0 = [\n    Dose_A,  # A_tablet  [mg]\n    0,   # A_central [mg]\n    0,   # A_urine [mg]\n]\n\n# parameters\nka = 2.0  # [1/hr]\nke = 5.0  # [1/hr]\n\nx = odeint(dxdt_absorption_first_order, x0, t, args=(ka, ke))\nnames = [\"A_tablet\", \"A_central\", \"A_urine\"]\ncolors = [\"black\", \"tab:blue\", \"tab:orange\"]\n\n# plot results\nf, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(10,5))\nf.suptitle(\"First order absorption model\")\n# all species\nfor k, name in enumerate(names):\n    ax1.plot(t, x[:, k], linewidth=2, label=name, color=colors[k])\n\n# only A_central\nax2.plot(t, x[:, 1], linewidth=2, label=names[1], color=colors[1])\n\nfor ax in (ax1, ax2):\n\n    ax.legend()\n    ax.set_xlabel(\"time [hr]\")\n    ax.set_ylabel(\"amount [mg]\")\n\nplt.show()\nWhen va = ve the peak concentration in the central compartment is reached.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Absorption</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/04_absorption.html#effect-of-absorption-parameter",
+    "href": "notebooks/course/04_absorption.html#effect-of-absorption-parameter",
+    "title": "Absorption",
+    "section": "Effect of absorption parameter",
+    "text": "Effect of absorption parameter\n\n# parameters\nka = 2.0  # [1/hr]\nke = 5.0  # [1/hr]\n\nn_samples = 5\nkas = np.linspace(0.1, 2.0, num=n_samples)  # [1/hr]\n\n# plot results\nf, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(10,5))\nf.suptitle(\"First order absorption model\")\n\nfor kp, ka in enumerate(kas):\n    x = odeint(dxdt_absorption_first_order, x0, t, args=(ka, ke))\n    \n    # all species\n    for k, name in enumerate(names):\n        ax1.plot(t, x[:, k], linewidth=2, color=colors[k], alpha=(kp+1)/n_samples, label=f\"{ka=}\")\n\n    # only A_central\n    ax2.plot(t, x[:, 1], linewidth=2, color=colors[1], alpha=(kp+1)/n_samples, label=f\"{ka=}\")\n\n    for ax in (ax1, ax2):\n        ax.set_xlabel(\"time [hr]\")\n        ax.set_ylabel(\"amount [mg]\")\n    ax2.legend()\n\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Absorption</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/05_multiple_dosing.html",
+    "href": "notebooks/course/05_multiple_dosing.html",
+    "title": "Multiple dosing",
+    "section": "",
+    "text": "Multiple dosing example\nMultiple dosing in drug therapy refers to the practice of administering multiple doses of a drug or medication over a specific period of time to maintain a constant or effective drug concentration within the body. This approach is often used for conditions that require a continuous level of drug presence in the system, or for drugs with a short half-life that need to be administered frequently to maintain their effect.\nHere are the main aspects of multiple dosing:\nIn short, multiple dosing is a sophisticated process and is a crucial part of many drug therapies. It involves a careful balance of dose, frequency, and timing to ensure that the drug is as effective as possible while minimizing side effects and toxicity. To achieve this, healthcare providers often need to monitor drug levels in the blood and adjust doses based on patient response.\nWe now run a multiple dosing protocol with our simple model.\nimport numpy as np\nfrom scipy.integrate import odeint\nfrom matplotlib import pylab as plt\nimport pandas as pd\n\ndef dxdt_absorption_first_order(x, t, ka, ke):\n    \"\"\"\n    First order absorption model\n    \"\"\"\n    # state variables\n    A_tablet = x[0]  # [mg]\n    A_central = x[1] # [mg/l]\n    A_urine = x[2] # [mg]\n    \n    # rates\n    va = ka * A_tablet  # [mg/hr]\n    ve = ke * A_central # [mg/hr]\n\n    # odes (stoichiometric equation)    \n    return [\n        -va,            # dA_tablet/dt  [mg/hr]\n         va - ve,       # dA_central/dt [mg/hr]\n         ve,            # dA_urine/dt  [mg/hr]\n    ] \n\n\ndef simulate_multi_dosing(Dose_A, ka, ke):\n    \"\"\"Helper function to run the multiple dosing simulation.\"\"\"\n\n    # initial condition\n    names = [\"A_tablet\", \"A_central\", \"A_urine\"]\n    x0 = [\n        Dose_A,  # A_tablet  [mg]\n        0.0,   # A_central [mg]\n        0.0,   # A_urine [mg]\n    ]\n\n    # time span for single dose\n    t = np.linspace(0, 24, num=100) # [hr]\n\n    # multiple dose simulation\n    n_doses = 20  # [hr]\n    \n    dfs = []\n    for k in range(n_doses):\n        if k == 0:\n            x0[0] = 0\n            tvec = t.copy()\n        elif k &gt; 0:\n            x0 = x[-1, :]\n            x0[0] = x0[0] + Dose_A\n            tvec = t.copy() + tvec[-1]\n\n        x = odeint(dxdt_absorption_first_order, x0, tvec, args=(ka, ke))\n        df = pd.DataFrame(x, columns=names)\n        df[\"time\"] = tvec\n        dfs.append(df)\n\n    df_all = pd.concat(dfs)\n    return df_all\n# run simulation and plot results\nDose_A = 10.0  # [mg]\nka = 0.5  # [1/hr]\nke = 0.2  # [1/hr]\ndf = simulate_multi_dosing(Dose_A, ka, ke)\n\ncolors = [\"black\", \"tab:blue\", \"tab:orange\"]\nnames = [\"A_tablet\", \"A_central\", \"A_urine\"]\nf, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(10,5))\nf.suptitle(\"Multiple dosing\")\n# all species\nfor k, name in enumerate(names):\n    ax1.plot(df.time, df[name], linewidth=2, label=name, color=colors[k])\n\n# only A_central\nax2.plot(df.time, df[\"A_central\"], linewidth=2, label=names[1], color=colors[1])\n\nfor ax in (ax1, ax2):\n\n    ax.legend()\n    ax.set_xlabel(\"time [hr]\")\n    ax.set_ylabel(\"amount [mg]\")\n\nplt.show()\nExercise: How do you have to change kel or ka to observe dose accumulation in the central compartment? Change these parameters and see what the effect is.\nDoes the Dose Dose_A play a role?",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Multiple dosing</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/05_multiple_dosing.html#multiple-dosing-example",
+    "href": "notebooks/course/05_multiple_dosing.html#multiple-dosing-example",
+    "title": "Multiple dosing",
+    "section": "",
+    "text": "Absorption Elimination Model",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Multiple dosing</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/06_metabolism.html",
+    "href": "notebooks/course/06_metabolism.html",
+    "title": "Metabolization",
+    "section": "",
+    "text": "Inhibition and activition\nIn pharmacokinetics and enzymology, the rate at which reactions occur is crucial. Different mathematical models are used to describe these rates, with some of the most common being the Mass-Action model, the Michaelis-Menten model, and the Hill equation. Here’s a brief summary of each:\n1. Mass-Action Model: This model is one of the simplest and is based on the principle that the rate of a reaction is directly proportional to the concentration of the reacting substances. For a reaction A + B → C, the rate would be expressed as Rate = k[A][B], where k is the rate constant, and [A] and [B] are the concentrations of A and B.\n2. Michaelis-Menten Model: This model is used to describe enzyme-catalyzed reactions, particularly when enzyme concentrations are much lower than substrate concentrations. The rate of reaction (v) is given by the equation v = Vmax[S]/(Km + [S]), where Vmax is the maximum rate, [S] is the substrate concentration, and Km is the Michaelis constant (the substrate concentration at which the reaction rate is half of Vmax).\n3. Hill Equation: This model is often used when there is cooperativity or interaction between multiple binding sites on a molecule (like a protein or enzyme). The equation is given by v = Vmax[S]^n/(Kd + [S]^n), where n is the Hill coefficient representing the degree of cooperativity.\nFor both the Michaelis-Menten model and Hill equation, values of Vmax, Km, and Kd are usually determined experimentally.\nInhibition and activation also play crucial roles in metabolic models:\nInhibition: This occurs when a molecule binds to an enzyme and decreases its activity. Inhibitors can be competitive (bind to the active site and compete with the substrate), non-competitive (bind to a separate site and change the enzyme’s shape), or uncompetitive (bind to the enzyme-substrate complex). Each type of inhibition changes the parameters (Vmax, Km) in distinctive ways.\nActivation: This is when a molecule binds to an enzyme and increases its activity. This can lead to an increase in the maximum reaction rate (Vmax) or a decrease in the Km value, indicating an increased affinity of the enzyme for its substrate.\nIn summary, these models and concepts help scientists understand and predict the behavior of enzymes and other biochemical reactions, which is crucial in fields like drug design and metabolic engineering.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Metabolization</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/06_metabolism.html#rate-equations",
+    "href": "notebooks/course/06_metabolism.html#rate-equations",
+    "title": "Metabolization",
+    "section": "Rate equations",
+    "text": "Rate equations\n\nMass-Action Model\nThis model is one of the simplest and is based on the principle that the rate of a reaction is directly proportional to the concentration of the reacting substances. For a reaction A + B → C, the rate would be expressed as\n\\[\\begin{equation}\nv = k \\cdot A \\cdot B\n\\end{equation}\\]\nwhere k is the rate constant, and A and B are the concentrations of A and B.\nIn case of reaction A → B, the rate would be expressed as\n\\[\\begin{equation}\nv = k \\cdot A\n\\end{equation}\\]\n\nimport numpy as np\nfrom matplotlib import pyplot as plt\n\nk = 1.0\nA = np.linspace(0, 10, num=100)  # [mM]\nv = k * A\n\nf, ax = plt.subplots(nrows=1, ncols=1)\nf.suptitle(\"Mass Action Kinetics\")\nax.plot(A, v)\nax.set_xlabel(\"Concentration A [mM]\")\nax.set_ylabel(\"Rate v\")\nplt.show()\n\n\n\n\n\n\n\n\nExercise: Plot the dependency of the rate v on the rate constant k. I.e. perform a parameter scan and show the rate curves for different k values.\n\n\nMichaelis-Menten Model\nThis model is used to describe enzyme-catalyzed reactions, particularly when enzyme concentrations are much lower than substrate concentrations. The rate of reaction (v) is given by the equation\n\\[\\begin{equation}\nv = \\frac{Vmax \\cdot A}{Km + A}\n\\end{equation}\\]\n, where Vmax is the maximum rate, A is the substrate concentration, and Km is the Michaelis constant (the substrate concentration at which the reaction rate is half of Vmax).\n\nimport numpy as np\nfrom matplotlib import pyplot as plt\n\nKm = 1.0  # [mM]\nVmax = 10\nA = np.linspace(0, 10, num=100)  # [mM]\nv = Vmax * A/(Km + A)\n\nf, ax = plt.subplots(nrows=1, ncols=1)\nf.suptitle(\"Michaelis Menten Kinetics\")\nax.plot(A, v)\nax.axhline(y=10, color='r', linestyle='-', label=\"Vmax\")\nax.axvline(x=1, color='b', linestyle='-', label=\"Km\")\nax.set_xlabel(\"Concentration A [mM]\")\nax.set_ylabel(\"Rate v\")\nplt.show()\n\n\n\n\n\n\n\n\nExercise: Plot the dependency of the rate v on the parameters Km and Vmax. I.e. perform a parameter scan and show the curves for different Km and Vmax values.\n\n\nHill Equation\nThis model is often used when there is cooperativity or interaction between multiple binding sites on a molecule (like a protein or enzyme). The equation is given by\n\\[\\begin{equation}\nv = \\frac{Vmax \\cdot A^n}{Kd^n + A^n}\n\\end{equation}\\]\n, where n is the Hill coefficient representing the degree of cooperativity.\n\nimport numpy as np\nfrom matplotlib import pyplot as plt\n\nKm = 3.0  # [mM]\nVmax = 10\nn = 20\nA = np.linspace(0, 10, num=100)  # [mM]\nv = Vmax * A**n/(Km**n + A**n)\n\nf, ax = plt.subplots(nrows=1, ncols=1)\nf.suptitle(\"Hill Kinetics\")\nax.plot(A, v)\nax.set_xlabel(\"Concentration A [mM]\")\nax.set_ylabel(\"Rate v\")\nplt.show()\n\n\n\n\n\n\n\n\nExercise: Plot the dependency of the rate v on the parameters Km and n. I.e. perform a parameter scan and show the curves for different Km and n values.\n\n\nInhibition\nA simple competitive inhibition term for a rate equation is\n\\[\\begin{equation}\n(\\frac{1}{Ki + I})\n\\end{equation}\\]\nwith Ki being the inhibition constant and I being the concentration of the inhibitor.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Metabolization</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/07_pharmacokinetic_parameters.html",
+    "href": "notebooks/course/07_pharmacokinetic_parameters.html",
+    "title": "Pharmacokinetic parameters",
+    "section": "",
+    "text": "Algebraic equation\nPharmacokinetic parameters are numerical values that describe how a drug behaves in the body. They play a vital role in determining the dosage and frequency of drug administration. Here’s a summary of some of the key parameters:\nThese pharmacokinetic parameters are essential in understanding a drug’s behavior and in designing optimal drug dosing regimens. By understanding these parameters, healthcare professionals can better predict how a drug will behave, enabling them to administer the drug safely and effectively.\nWe calculate the pharmacokinetic parameters based on simple algebraic equation for oral absorption:\n\\[\\begin{equation}\nC(t) = \\frac{Dose}{V} \\cdot t \\cdot e^{-\\frac{CL}{V}\\cdot t}\n\\end{equation}\\]\nThis model states the relationship between the independent variable, time (t), and the dependent variable, concentration (C). The notation C(t) suggests that C depends on t. Dose, clearance (CL), and distribution volume (V) are param- eters (constants); they do not change with different values of t.\nimport numpy as np\nfrom matplotlib import pyplot as plt\n\nt = np.linspace(0, 20, num=300) # [hr]\nt_points = np.linspace(0, 6, num=8)\ndose = 100  # [mg]\nV = 6.0  # [l] \nCL = 5.0  # [L/hr]\nC = dose/V * t * np.exp(-CL/V*t)  # [mg/l]\nC_points = dose/V * t_points * np.exp(-CL/V*t_points)\n\nf, ax = plt.subplots(nrows=1, ncols=1)\nax.plot(t, C)\nax.plot(t_points, C_points, linestyle=\"None\", marker=\"o\", markeredgecolor=\"black\", color=\"darkgrey\")\nax.set_xlabel(\"time [hr]\")\nax.set_ylabel(\"concentration [mg/l]\")\nax.set_ylim(bottom=0)\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Pharmacokinetic parameters</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/07_pharmacokinetic_parameters.html#pharmacokinetic-parameters",
+    "href": "notebooks/course/07_pharmacokinetic_parameters.html#pharmacokinetic-parameters",
+    "title": "Pharmacokinetic parameters",
+    "section": "Pharmacokinetic parameters",
+    "text": "Pharmacokinetic parameters\nBased on the example curve we now calculate typical pharmacokinetic parameters of the curve.\n\n# overview of the measurement data\nimport pandas as pd\nt_unit = \"hr\"\nc_unit = \"mg/l\"\ndf = pd.DataFrame({\n    \"t\": t_points, \n    \"c\": C_points,\n})\nprint(df)\n\n          t         c\n0  0.000000  0.000000\n1  0.857143  6.993452\n2  1.714286  6.847172\n3  2.571429  5.027964\n4  3.428571  3.281864\n5  4.285714  2.008261\n6  5.142857  1.179753\n7  6.000000  0.673795\n\n\n\nAUC (area under the curve)\nThe AUC, or Area Under the Curve, is another important pharmacokinetic parameter.\nIn the context of pharmacokinetics, the “curve” in question is a graph of drug concentration in the bloodstream over time. The AUC is essentially the area under this graph, representing the total exposure of the body to the drug.\nAUC is used to quantify the extent of drug absorption. When a drug is administered, it gets absorbed into the bloodstream and then gradually eliminated. A plot of the drug concentration in the blood over time typically forms a curve. The AUC of this curve from the time of administration to a specific time point (say, 24 hours) provides an estimate of the total drug exposure during this period. The AUC from time zero to infinity (AUC0–∞) is often used to estimate the total drug exposure over an infinite period.\nAUC is directly proportional to the total amount of unchanged drug that reaches systemic circulation. Therefore, it’s a valuable indicator of bioavailability (the extent and rate at which the drug is absorbed and becomes available at the site of action). It’s also used to calculate other pharmacokinetic parameters, such as the clearance rate (how quickly the drug is eliminated from the body).\nMoreover, AUC is often used in dose-response studies, where it helps in identifying the appropriate dosage for a therapeutic effect, and in comparative bioavailability studies, where it is used to compare the bioavailability of two different pharmaceutical products, such as a brand name drug and its generic version.\n\ndef f_auc(t: np.ndarray, c: np.ndarray):\n    \"\"\"Calculate the area under the curve (AUC) via trapezoid rule.\n\n    :param t = time array\n    :param c = concentration array\n    :param rm_nan = remove nan values array\n    \"\"\"\n    auc = np.sum((t[1:] - t[0:-1]) * (c[1:] + c[0:-1]) / 2.0)\n    return auc\n\nauc = f_auc(t=df.t.values, c=df.c.values)\nprint(f\"AUC: {auc:.2f} [{c_unit}*{t_unit}]\")\n\nAUC: 22.01 [mg/l*hr]\n\n\n\n\nTime to maximum (tmax) and maximum concentration (cmax)\n\nTmax (Time of maximum concentration): This parameter represents the time it takes for a drug to reach its maximum concentration (Cmax) in the bloodstream after administration. It can provide insight into the rate of absorption of the drug. For example, a shorter Tmax could suggest faster absorption. However, many factors can affect Tmax, including the route of administration, the drug’s formulation, and individual physiological differences.\nCmax (Maximum or peak concentration): This parameter refers to the highest concentration that a drug achieves in the body after administration, and before elimination processes reduce it. Cmax is a crucial factor in determining the efficacy and potential toxicity of a drug. This parameter can be influenced by factors such as the dose, rate of administration, and rate of absorption and elimination.\n\n\n\n\nCmax and tmax\n\n\n\ndef f_max(t, c):\n    \"\"\"Return timepoint of maximal value and maximal value based on curve.\n\n    The tmax depends on the value of both the absorption rate constant (ka)\n    and the elimination rate constant (kel).\n\n    :return: tuple (tmax, cmax)\n    \"\"\"\n    idx = np.nanargmax(c)\n    return t[idx], c[idx]\n\n\ntmax, cmax = f_max(t=df.t.values, c=df.c.values)\nprint(f\"tmax: {tmax:.2f} [{t_unit}]\")\nprint(f\"cmax: {cmax:.2f} [{c_unit}]\")\n\ntmax: 0.86 [hr]\ncmax: 6.99 [mg/l]",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Pharmacokinetic parameters</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/08_variability.html",
+    "href": "notebooks/course/08_variability.html",
+    "title": "Variability in pharmacokinetics",
+    "section": "",
+    "text": "Importance of Understanding Pharmacokinetic Variability\nPharmacokinetics is the study of how a drug moves through the body. The four primary aspects of pharmacokinetics are absorption, distribution, metabolism, and excretion (ADME). Pharmacokinetic variability refers to the differences in drug response among individuals due to various factors. Understanding these factors is crucial for optimizing drug therapy and achieving personalized medicine.\nHere are key points about the factors that result in pharmacokinetic variability:\nUnderstanding these factors is critical in personalized medicine as it allows for the optimization of drug therapy based on an individual’s unique characteristics. This leads to improved drug efficacy, reduced adverse effects, and better overall patient outcomes. Healthcare professionals must consider these variables when prescribing medications and monitoring therapeutic responses.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variability in pharmacokinetics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/08_variability.html#variability-in-protein-amounts-of-transporters-and-proteins",
+    "href": "notebooks/course/08_variability.html#variability-in-protein-amounts-of-transporters-and-proteins",
+    "title": "Variability in pharmacokinetics",
+    "section": "Variability in Protein Amounts of Transporters and Proteins",
+    "text": "Variability in Protein Amounts of Transporters and Proteins\nA large part of the variability in drug metabolism within the population is due to individual protein amounts.\n\n\n\nProtein variability\n\n\n\n\n\nAbsorption Elimination Model\n\n\n\nDefining the Protein Distribution\nTo model the variability in protein amounts, we first need to define the distribution from which we will sample. We use a lognormal distribution for this purpose, as it is well-suited for representing biological data, including protein concentrations, which often exhibit right-skewed distributions.\nA lognormal distribution is defined such that the logarithm of the variable is normally distributed. This characteristic makes it ideal for modeling data that cannot be negative and that exhibit multiplicative rather than additive variability.\nFor more details on the lognormal distribution and its properties, you can refer to the scipy.stats.lognorm documentation.\n\n\nWhy Use a Lognormal Distribution?\n\nBiological Relevance: Protein concentrations in biological systems are often right-skewed and span several orders of magnitude, characteristics that are well-captured by a lognormal distribution.\nNon-Negativity: Since protein amounts cannot be negative, the lognormal distribution is appropriate because it is defined for positive values only.\nMultiplicative Effects: Biological processes that affect protein levels (such as gene expression and degradation) often have multiplicative effects, aligning well with the lognormal distribution.\n\nBy using a lognormal distribution, we can more accurately model and simulate the variability observed in protein amounts across different samples or populations.\n\nimport numpy as np\nfrom matplotlib import pyplot as plt\nfrom scipy.stats import lognorm\nnp.random.seed(1234) # random seed for reproducibility\n\ns = 0.954\n\n# define the range and calculate the probability density function (pdf):\nx = np.linspace(lognorm.ppf(0.01, s), lognorm.ppf(0.99, s), num=200)\ny = lognorm.pdf(x, s)\n\n# sample from distribution\nn_samples = 100\nf_proteins = lognorm.rvs(s, size=n_samples)\n\n# plot a histogram of samples\nfig, ax = plt.subplots()\nax.hist(f_proteins, density=True, bins='auto', histtype='stepfilled', alpha=0.7, \n        edgecolor=\"black\")\n# plot the exact distribution\nax.plot(x, y, 'k-', lw=2, alpha=0.6, label='lognorm pdf')\nax.set_xlim([x[0], x[-1]])\nax.legend(loc='best')\nax.set_xlabel(\"relative protein amount [-]\")\nax.set_ylabel(\"density\")\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variability in pharmacokinetics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/08_variability.html#calculating-individual-pharmacokinetics",
+    "href": "notebooks/course/08_variability.html#calculating-individual-pharmacokinetics",
+    "title": "Variability in pharmacokinetics",
+    "section": "Calculating Individual Pharmacokinetics",
+    "text": "Calculating Individual Pharmacokinetics\nNext, we simulate the resulting distribution of pharmacokinetics based on the protein distribution. In our example, we sample the protein amount of a transporter responsible for the renal excretion of the drug. By sampling from the lognormal distribution of this protein’s amounts, we can model how variability in its expression impacts pharmacokinetic parameters such as absorption, distribution, metabolism, and excretion. This approach allows us to understand and predict the range of pharmacokinetic behaviors in a population, considering individual differences in protein expression.\n\nimport numpy as np\nimport pandas as pd\nfrom scipy.integrate import odeint\nfrom matplotlib import pylab as plt\n\nfrom helpers import f_pk, dxdt_absorption_first_order\n\n# initial condition and time span\nt = np.arange(0, 10, 0.05) # [hr]\nDose_A = 10.0  # [mg]\nx0 = [\n    Dose_A,  # A_tablet  [mg]\n    0.0,   # A_central [mg]\n    0.0,   # A_urine [mg]\n]\n\n# parameters\nka = 2.0  # [1/hr]\nke = 5.0  # [1/hr]\n\n# simulate pharmacokinetics for indivdual proteins\ntcs = []\npks = []\n\nfor f_protein in f_proteins:\n    \n    # the genetic variants effect the elimination/transport rate\n    ke_protein = f_protein * ke \n    x = odeint(dxdt_absorption_first_order, x0, t, args=(ka, ke_protein))\n    df = pd.DataFrame(x, columns=[\"A_tablet\", \"A_central\", \"A_urine\"])\n    df[\"time\"] = t\n    tcs.append(df)\n    \n    # calculate pharmacokinetics parameters on the curves\n    pk = f_pk(t=df.time.values, c=df.A_central.values, dose=Dose_A, show=False)\n    pks.append(pk)\n\n    \n# plot timecourse\nf, ax = plt.subplots(nrows=1, ncols=1)    \nf.suptitle(\"Effect of protein variability\")\nax.set_xlabel(\"time [hr]\")\nax.set_ylabel(\"amount [mg]\")\n\nfor k, f_protein in enumerate(f_proteins):\n    tc = tcs[k]\n    ax.plot(tc.time, tc.A_central, color=\"tab:blue\", alpha=0.3)\nplt.show()\n\n# plot AUC\nf, ax = plt.subplots(nrows=1, ncols=1)\nf.suptitle(\"AUC distribution\")\naucs = [pk[\"auc\"] for pk in pks]\nax.hist(aucs, density=True, bins='auto', histtype='stepfilled', alpha=0.7, \n        edgecolor=\"black\")\n\nax.set_xlabel(\"AUC\")\nax.set_ylabel(\"density\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExercise: Analyzing the Distribution of Pharmacokinetic Parameters\nObjective: Investigate how the distribution of a protein transporter responsible for renal excretion affects other pharmacokinetic parameters in the population. This includes parameters such as the half-life \\(t_{1/2}\\) or elimination rate constant \\(k_{el}\\), and others.\nSteps:\n\nSample Protein Amounts: Sample from the lognormal distribution of the protein transporter responsible for renal excretion.\nCalculate Pharmacokinetic Parameters: Use the sampled protein amounts to calculate various pharmacokinetic parameters. For instance:\n\n**Half-life \\(t_{1/2}\\)\nElimination Rate Constant \\(k_{el}\\)\n\nPlot Histograms: Generate histograms for these pharmacokinetic parameters to visualize their distributions in the population.\n\n\n\nInsights\nBy plotting these histograms, we can: - Visualize Variability: Understand how variability in protein transporter expression translates to variability in pharmacokinetic parameters. - Predict Population Behavior: Predict the range of pharmacokinetic responses in a population, which is critical for dosing strategies. - Inform Personalized Medicine: Use this information to tailor drug therapies based on individual differences in protein expression and pharmacokinetic responses.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variability in pharmacokinetics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/08_variability.html#achieving-the-therapeutic-range",
+    "href": "notebooks/course/08_variability.html#achieving-the-therapeutic-range",
+    "title": "Variability in pharmacokinetics",
+    "section": "Achieving the Therapeutic Range",
+    "text": "Achieving the Therapeutic Range\nAchieving the therapeutic range is crucial for ensuring that a drug is both effective and safe. The therapeutic range refers to the concentration window within which a drug produces its desired effect without causing significant adverse effects. Various factors, including pharmacokinetic variability, influence a drug’s ability to stay within this range. Understanding and managing these factors are essential for optimizing drug dosing and maximizing therapeutic efficacy.\n\ndef simulate_multi_dosing(Dose_A, ka, ke):\n    \"\"\"Helper function to run the multiple dosing simulation.\"\"\"\n\n    # initial condition\n    names = [\"A_tablet\", \"A_central\", \"A_urine\"]\n    x0 = [\n        Dose_A,  # A_tablet  [mg]\n        0.0,   # A_central [mg]\n        0.0,   # A_urine [mg]\n    ]\n\n    # time span for single dose\n    t = np.linspace(0, 24, num=100) # [hr]\n\n    # multiple dose simulation\n    n_doses = 10  # [hr]\n    \n    dfs = []\n    for k in range(n_doses):\n        if k == 0:\n            # x0[0] = 400   # first dose\n            tvec = t.copy()\n        elif k &gt; 0:\n            x0 = x[-1, :]\n            x0[0] = x0[0] + Dose_A\n            tvec = t.copy() + tvec[-1]\n\n        x = odeint(dxdt_absorption_first_order, x0, tvec, args=(ka, ke))\n        df = pd.DataFrame(x, columns=names)\n        df[\"time\"] = tvec\n        dfs.append(df)\n\n    df_all = pd.concat(dfs)\n    return df_all\n\n\n# run simulation and plot results\nDose_A = 5.0  # [mg]\nka = 0.1  # [1/hr]\nke = 0.1  # [1/hr]\n\n\n# simulate multi dosing\ntcs = []\npks = []\nfor f_protein in f_proteins:\n    # individual elimination rate\n    ke_protein = f_protein * ke \n    df = simulate_multi_dosing(Dose_A, ka, ke_protein)\n    tcs.append(df)\n\n# plot timecourse\nf, ax = plt.subplots(nrows=1, ncols=1)    \nf.suptitle(\"Effect of protein variability\")\nax.set_xlabel(\"time [hr]\")\nax.set_ylabel(\"amount [mg]\")\nax.axhline(y=4, color='r', linestyle='-', label=\"MTC\")\nax.axhline(y=2, color='b', linestyle='-', label=\"MEC\")\n\nfor k, f_protein in enumerate(f_proteins):\n    tc = tcs[k]\n    ax.plot(tc.time, tc.A_central, color=\"black\", alpha=0.2)\nplt.show()\n\n\n\n\n\n\n\n\n\nExercise: Dosing Optimization for the Population\nObjective: Perform a dosing optimization for the population by adjusting the absorption rate constant \\(k_a\\), the elimination rate constant \\(k_e\\), and the administered dose \\(Dose_A\\) to achieve optimal therapeutic outcomes.\n\n\nInsights\n\nOptimization Process: Understand the process of optimizing pharmacokinetic parameters to achieve therapeutic goals.\nParameter Interdependence: Learn how changes in one parameter affect the overall pharmacokinetic profile and how to balance multiple parameters for optimal therapy.\nTherapeutic Outcomes: Ensure drug concentrations remain within the therapeutic range for the majority of the population, maximizing efficacy and minimizing adverse effects.\n\nThis exercise helps you gain practical experience in pharmacokinetic modeling and dosing optimization, crucial for personalized medicine and effective drug therapy. It helps to understand the difference between optimizing the theraphy for an individual versus the population.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variability in pharmacokinetics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/08_variability.html#stratification",
+    "href": "notebooks/course/08_variability.html#stratification",
+    "title": "Variability in pharmacokinetics",
+    "section": "Stratification",
+    "text": "Stratification\nIn pharmacokinetic modeling, it is important to recognize that distributions of pharmacokinetic parameters can vary across different subsets of the population. This variability can be leveraged through stratification, which involves applying separate models to distinct subgroups within the population.\n\nGender-Based Stratification\nFor example, we can study the differences in pharmacokinetics between males and females by assuming that protein distributions differ between these groups. This approach allows us to more accurately predict drug behavior and optimize dosing for each subgroup.\n\n\nKey Points:\n\nRecognizing Differences: Understand that pharmacokinetic parameters such as protein expression levels, enzyme activity, and drug transporter amounts can vary significantly between different demographic groups.\nSubgroup Analysis: By stratifying the population into subgroups (e.g., males and females), we can develop more precise pharmacokinetic models that account for these differences.\nImproved Accuracy: Stratified models can lead to better predictions of drug concentrations, efficacy, and safety profiles for each subgroup, enhancing personalized medicine.\n\n\n\nExample Application:\n\nGender Differences: Protein distributions related to drug metabolism and transport can differ between males and females due to physiological and hormonal variations. By stratifying the population into male and female subgroups, we can tailor pharmacokinetic models to reflect these differences.\nImplications for Dosing: Stratification allows for more accurate dose adjustments based on subgroup-specific characteristics, reducing the risk of under- or over-dosing and improving therapeutic outcomes.\n\nBy incorporating stratification into pharmacokinetic modeling, we can enhance our understanding of drug behavior across different population subsets and optimize treatment strategies accordingly.\n\nimport numpy as np\nfrom matplotlib import pyplot as plt\nfrom scipy.stats import lognorm\n\nfig, ax = plt.subplots(1, 1)\ns_men = 1\nscale_men=1\nscale_women=0.4\ns_women = 2\n\nn_samples = 500\nf_proteins_men = lognorm.rvs(s_men, scale=scale_men, size=n_samples)\nf_proteins_women = lognorm.rvs(s_women, scale=scale_women, size=n_samples)\n\nax.hist(f_proteins_men, density=True, bins='auto', histtype='stepfilled', alpha=0.7, \n        edgecolor=\"black\", color=\"tab:red\", label=\"men\")\nax.hist(f_proteins_women, density=True, bins='auto', histtype='stepfilled', alpha=0.7, \n        edgecolor=\"black\", color=\"tab:blue\", label=\"women\")\n\nax.legend(loc='best')\nax.set_xlabel(\"relative protein amount [-]\")\nax.set_ylabel(\"density\")\nax.set_xlim(left=-0.1, right=20)\nplt.show()\n# print(f_proteins)\n\n\n\n\n\n\n\n\n\nimport numpy as np\nimport pandas as pd\nfrom scipy.integrate import odeint\nfrom matplotlib import pylab as plt\n\nfrom helpers import f_pk, dxdt_absorption_first_order\n\n# initial condition and time span\nt = np.arange(0, 10, 0.05) # [hr]\nDose_A = 10.0  # [mg]\nx0 = [\n    Dose_A,  # A_tablet  [mg]\n    0.0,   # A_central [mg]\n    0.0,   # A_urine [mg]\n]\n\n# parameters\nka = 2.0  # [1/hr]\nke = 5.0  # [1/hr]\n\n# simulate all genetic variants\ntcs_dict = {}\npks_dict = {}\n\nfor key in [\"men\", \"women\"]:\n    tcs = []\n    pks = []\n\n    if key == \"men\":\n        f_proteins = f_proteins_men\n    elif key == \"women\":\n        f_proteins = f_proteins_women\n    \n    for f_protein in f_proteins:\n\n        # the genetic variants effect the elimination/transport rate\n        ke_protein = f_protein * ke \n        x = odeint(dxdt_absorption_first_order, x0, t, args=(ka, ke_protein))\n        df = pd.DataFrame(x, columns=[\"A_tablet\", \"A_central\", \"A_urine\"])\n        df[\"time\"] = t\n        tcs.append(df)\n\n        # calculate pharmacokinetics parameters on the curves\n        pk = f_pk(t=df.time.values, c=df.A_central.values, dose=Dose_A, show=False)\n        pks.append(pk)\n    tcs_dict[key] = tcs\n    pks_dict[key] = pks\n    \n# plot AUC\nf, ax = plt.subplots(nrows=1, ncols=1)\nf.suptitle(\"AUC distribution\")\nfor key in [\"men\", \"women\"]:\n    pks = pks_dict[key]\n\n    if key == \"men\":\n        color = \"tab:red\"\n    elif key == \"women\":\n        color = \"tab:blue\"\n    \n    aucs = [pk[\"auc\"] for pk in pks]\n    ax.hist(aucs, density=True, bins='auto', histtype='stepfilled', alpha=0.7, \n            edgecolor=\"black\", color=color)\n\nax.set_xlabel(\"AUC\")\nax.set_ylabel(\"density\")\nplt.show()\n\n/home/mkoenig/git/course-pharmacokinetic-modelling/src/mb19/notebooks/helpers.py:33: RuntimeWarning: invalid value encountered in log\n  y = np.log(c[max_index + 1:])\n/home/mkoenig/git/course-pharmacokinetic-modelling/src/mb19/notebooks/helpers.py:33: RuntimeWarning: invalid value encountered in log\n  y = np.log(c[max_index + 1:])\n/home/mkoenig/git/course-pharmacokinetic-modelling/src/mb19/notebooks/helpers.py:33: RuntimeWarning: invalid value encountered in log\n  y = np.log(c[max_index + 1:])\n/home/mkoenig/git/course-pharmacokinetic-modelling/src/mb19/notebooks/helpers.py:33: RuntimeWarning: invalid value encountered in log\n  y = np.log(c[max_index + 1:])\n/home/mkoenig/git/course-pharmacokinetic-modelling/src/mb19/notebooks/helpers.py:33: RuntimeWarning: invalid value encountered in log\n  y = np.log(c[max_index + 1:])\n/home/mkoenig/git/course-pharmacokinetic-modelling/src/mb19/notebooks/helpers.py:33: RuntimeWarning: invalid value encountered in log\n  y = np.log(c[max_index + 1:])\n/home/mkoenig/git/course-pharmacokinetic-modelling/src/mb19/notebooks/helpers.py:33: RuntimeWarning: invalid value encountered in log\n  y = np.log(c[max_index + 1:])\n/home/mkoenig/git/course-pharmacokinetic-modelling/src/mb19/notebooks/helpers.py:33: RuntimeWarning: invalid value encountered in log\n  y = np.log(c[max_index + 1:])",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variability in pharmacokinetics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/08_variability.html#pharmacogenetic-variants",
+    "href": "notebooks/course/08_variability.html#pharmacogenetic-variants",
+    "title": "Variability in pharmacokinetics",
+    "section": "Pharmacogenetic Variants",
+    "text": "Pharmacogenetic Variants\nPharmacogenomics is the study of how an individual’s genetic makeup influences their response to drugs. This field combines pharmacology (the science of drugs) and genomics (the study of genes and their functions) to develop effective, safe medications and doses that will be tailored to a person’s genetic makeup.\nPharmacogenomics is a part of the broader field of personalized medicine, which aims to tailor medical treatment to the individual characteristics of each patient.\nWith respect to pharmacokinetics (the study of how the body absorbs, distributes, metabolizes, and excretes drugs), pharmacogenomics can provide valuable insights. For instance:\n\nAbsorption and Distribution: Genetic differences can affect the expression and function of proteins involved in drug transport across cell membranes, influencing how quickly and effectively a drug is absorbed or distributed within the body.\nMetabolism: A key aspect of pharmacokinetics is understanding how drugs are metabolized, primarily by enzymes in the liver. Individual genetic variations can affect the activity of these enzymes, leading to differences in how quickly a drug is metabolized. For example, some individuals may have genetic variations that cause certain enzymes to be overly active (“ultra-metabolizers”) or underactive (“poor metabolizers”). This can significantly impact the concentration of drug in the body and therefore its efficacy and potential for side effects.\nExcretion: Variations in genes can also impact the function of proteins involved in the excretion of drugs, primarily in the kidneys, affecting the rate at which a drug is removed from the body.\n\nBy understanding an individual’s pharmacogenomic profile, healthcare providers can better predict how a patient will respond to a particular drug, informing decisions about which drug to prescribe and at what dose. This can improve drug efficacy, reduce the risk of adverse effects, and contribute to more efficient and safer healthcare. However, it’s important to note that while pharmacogenomics holds great promise, its application in routine clinical practice is currently limited, though it’s an area of active research and development.\nThe following defines the activity of the allels of the SLCO1B1 transporter. We focus on the subset of important genetic variants *1a, *1b, *15 and possible combinations\n\n# SLCO1B1\n# f_sclo1b1\nf_wildtype = 1.0  # *1a wildtype activity\nf_increase = 1.1  # *1b has slightly increased activity\nf_decrease = 0.5  # all variants with the 521T/C mutant have strongly reduced activity, e.g., *15\n\nslco1b1_activity = {\n    # strong increase (dark blue)\n    \"*1b/*1b\": (f_increase + f_increase) / 2,\n    \n    # mild increase (light blue)\n    \"*1a/*1b\": (f_wildtype + f_increase) / 2,\n    \n    # wildtype (black)\n    \"*1a/*1a\": (f_wildtype + f_wildtype)/2,\n    \n    # minor decrease (orange)\n    \"*1b/*15\": (f_increase + f_decrease) / 2,\n    \n    # mild decrease (red)\n    \"*1a/*15\": (f_wildtype + f_decrease) / 2,\n\n    # strong decrease (dark red)\n    \"*15/*15\": (f_decrease + f_decrease) / 2,\n}\nslco1b1_color = {\n        \"*1b/*1b\": \"blue\",\n        \"*1a/*1b\": \"tab:blue\",\n        \"*1a/*1a\": \"black\",\n        \"*1b/*15\": \"tab:orange\",\n        \"*1a/*15\": \"tab:red\",\n        \"*15/*15\": \"red\",\n}\n\n\n\n\nAbsorption Elimination Model\n\n\n\nimport numpy as np\nimport pandas as pd\nfrom scipy.integrate import odeint\nfrom matplotlib import pylab as plt\n\nfrom helpers import f_pk, dxdt_absorption_first_order\n\n# initial condition and time span\nt = np.arange(0, 10, 0.05) # [hr]\nDose_A = 10.0  # [mg]\nx0 = [\n    Dose_A,  # A_tablet  [mg]\n    0.0,   # A_central [mg]\n    0.0,   # A_urine [mg]\n]\n\n# parameters\nka = 2.0  # [1/hr]\nke = 5.0  # [1/hr]\n\n# simulate all genetic variants\ntcs = []\npks = []\n\nfor variant, f_activity in slco1b1_activity.items():\n    \n    # the genetic variants effect the elimination/transport rate\n    ke_variant = f_activity * ke \n    x = odeint(dxdt_absorption_first_order, x0, t, args=(ka, ke_variant))\n    df = pd.DataFrame(x, columns=[\"A_tablet\", \"A_central\", \"A_urine\"])\n    df[\"time\"] = t\n    tcs.append(df)\n    \n    # calculate pharmacokinetics parameters on the curves\n    pk = f_pk(t=df.time.values, c=df.A_central.values, dose=Dose_A, show=False)\n    pks.append(pk)\n\n    \n# plot timecourse\nf, ax = plt.subplots(nrows=1, ncols=1)    \nf.suptitle(\"Pharmacogenomic effects of SLCO1B1\")\nax.set_xlabel(\"time [hr]\")\nax.set_ylabel(\"amount [mg]\")\n\nfor k, variant in enumerate(slco1b1_activity):\n    color = slco1b1_color[variant]\n    tc = tcs[k]\n    ax.plot(tc.time, tc.A_central, linewidth=2, color=color, label=variant)\n\nax.legend()\nplt.show()\n\n# plot AUC\nf, ax = plt.subplots(nrows=1, ncols=1)\nf.suptitle(\"AUC dependency\")\n\naucs = [pk[\"auc\"] for pk in pks]\nvariants = list(slco1b1_activity.keys())\ncolors = [slco1b1_color[v] for v in variants]\n\nax.bar(\n    x=range(len(aucs)), height=aucs, \n    color=colors, \n    tick_label=variants\n)\nax.set_xlabel(\"variant\")\nax.set_ylabel(\"AUC\")\n\n\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExercise 1: Study the effect of the genetic variants on other pharmacokinetic parameters such as CL, thalf, …\nExercise 2: Add an additional newly discovered variant *f to the analysis which has 2.0 activity compared to the wildtype variant.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variability in pharmacokinetics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/09_sbml.html",
+    "href": "notebooks/course/09_sbml.html",
+    "title": "SBML Models",
+    "section": "",
+    "text": "Key Features and Benefits\nThe Systems Biology Markup Language (SBML) is a computer-readable format designed for representing models of biological systems. It is an XML-based standard that encodes computational models in systems biology, a field focused on understanding the interactions and behaviors of biological components within a system.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>SBML Models</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/09_sbml.html#key-features-and-benefits",
+    "href": "notebooks/course/09_sbml.html#key-features-and-benefits",
+    "title": "SBML Models",
+    "section": "",
+    "text": "Standardization: SBML provides a standardized format for encoding biological models, ensuring consistency and interoperability across different software tools.\nModel Exchange: Facilitates the exchange of models between different research groups and software applications, allowing researchers to utilize the best tools available for various aspects of their work.\nCollaboration and Reproducibility: Enhances collaboration by enabling researchers to share models easily. It also ensures that models can be stored, archived, and reused, promoting reproducibility in scientific research.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>SBML Models</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/09_sbml.html#components-of-sbml",
+    "href": "notebooks/course/09_sbml.html#components-of-sbml",
+    "title": "SBML Models",
+    "section": "Components of SBML",
+    "text": "Components of SBML\nSBML models describe biochemical entities (such as species), the reactions between these entities, and the mathematical rules that govern the system. It can represent a wide range of biological processes, including metabolism, cell signaling, and gene regulation.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>SBML Models</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/09_sbml.html#development-and-support",
+    "href": "notebooks/course/09_sbml.html#development-and-support",
+    "title": "SBML Models",
+    "section": "Development and Support",
+    "text": "Development and Support\nThe development of SBML is coordinated by the SBML Project, a community-driven effort that includes researchers, software developers, and other stakeholders in systems biology. The project provides libraries, software tools, and educational resources for working with SBML.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>SBML Models</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/09_sbml.html#working-with-sbml",
+    "href": "notebooks/course/09_sbml.html#working-with-sbml",
+    "title": "SBML Models",
+    "section": "Working with SBML",
+    "text": "Working with SBML\nTo work with SBML models, additional packages such as sbmlutils and libroadrunner are required. These packages facilitate the manipulation and simulation of SBML models. You can install them via pip:\npip install sbmlutils pip install libroadrunner\nBy using these tools, researchers can effectively create, modify, and analyze SBML models, enhancing their understanding of complex biological systems and improving the quality of their computational studies.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>SBML Models</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/09_sbml.html#encode-sbml-model",
+    "href": "notebooks/course/09_sbml.html#encode-sbml-model",
+    "title": "SBML Models",
+    "section": "Encode SBML model",
+    "text": "Encode SBML model\nIn a first step we encode our simple model with sbmlutils as SBML.\n\n\n\nAbsorption Elimination Model\n\n\n\nfrom sbmlutils.factory import *\nfrom sbmlutils.metadata import *\nfrom pathlib import Path\nimport warnings\nwarnings.filterwarnings(\"ignore\")\n\nm = Model(\n    sid=\"absorption_first_order\",\n    name=\"Absorption model with first order kinetics\",\n    \n)\nm.compartments = [\n    Compartment(\"body\", 1.0, name=\"Body\", sboTerm=SBO.SIMPLE_CHEMICAL)\n]\nm.parameters = [\n    Parameter(\"Dose_A\", 10.0, name=\"Dose of A\"),\n    Parameter(\"ka\", 1.0, name=\"Absorption rate\"),\n    Parameter(\"ke\", 1.0, name=\"Elimination rate\"),\n]\nm.species = [\n    Species(\"A_tablet\", initialAmount=0.0, hasOnlySubstanceUnits=True, \n            compartment=\"body\", name=\"A (tablet)\", sboTerm=SBO.SIMPLE_CHEMICAL),\n    Species(\"A_central\", initialAmount=0.0, hasOnlySubstanceUnits=True,\n           compartment=\"body\", name=\"A (body)\", sboTerm=SBO.SIMPLE_CHEMICAL),\n    Species(\"A_urine\", initialAmount=0.0, hasOnlySubstanceUnits=True,\n           compartment=\"body\", name=\"A (urine)\", sboTerm=SBO.SIMPLE_CHEMICAL),\n]\nm.assignments = [\n    InitialAssignment(\"A_tablet\", \"Dose_A\")\n]\nm.reactions = [\n    Reaction(\n        \"ABSORPTION\",\n        name=\"absorption A\",\n        equation=\"A_tablet -&gt; A_central\",\n        formula = \"ka * A_tablet\"\n    ),\n    Reaction(\n        \"ELIMINATION\",\n        name=\"elimination A\",\n        equation=\"A_central -&gt; A_urine\",\n        formula = \"ke * A_central\"\n    )\n]\n\n# save the model (uncomment the following lines to create the model)\n# results = create_model(\n#     model=m,\n#     filepath=Path(\"absorption_first_order.xml\"),\n#     validation_options=ValidationOptions(units_consistency=False)\n# )\n\nExercise: Explore the model with https://sbml4humans.de. Upload the model to the website and navigate the objects.\nExercise: Visualize the model with cytoscape and cy3sbml. I.e. download Cytoscape, install the app cy3sbml and load the model to explore the model.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>SBML Models</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/09_sbml.html#simulate-sbml-model",
+    "href": "notebooks/course/09_sbml.html#simulate-sbml-model",
+    "title": "SBML Models",
+    "section": "Simulate SBML model",
+    "text": "Simulate SBML model\nIn a second step we load the model and perform a simple simulation and visualization.\n\nimport roadrunner\nimport pandas as pd\nr = roadrunner.RoadRunner(\"absorption_first_order.xml\")\ns = r.simulate(start=0, end=10, steps=100)\ndf = pd.DataFrame(s, columns=s.colnames)\nprint(df)\n\n     time  [A_tablet]  [A_central]  [A_urine]\n0     0.0   10.000000     0.000000   0.000000\n1     0.1    9.048374     0.904837   0.046788\n2     0.2    8.187307     1.637462   0.175231\n3     0.3    7.408182     2.222455   0.369363\n4     0.4    6.703201     2.681278   0.615521\n..    ...         ...          ...        ...\n96    9.6    0.000677     0.006502   9.992821\n97    9.7    0.000613     0.005945   9.993443\n98    9.8    0.000555     0.005434   9.994011\n99    9.9    0.000502     0.004967   9.994531\n100  10.0    0.000454     0.004540   9.995006\n\n[101 rows x 4 columns]\n\n\n\nfrom matplotlib import pyplot as plt\nf, ax = plt.subplots(nrows=1, ncols=1)\nf.suptitle(\"Simulation with SBML\")\n\nfor name in [\"A_tablet\", \"A_central\", \"A_urine\"]:\n    ax.plot(df.time, df[f\"[{name}]\"], lw=2, label=name)\n    \nax.set_ylabel(\"concentration\")\nax.set_xlabel(\"time [hr]\")\nax.legend()\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>SBML Models</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/10_pharmacodynamics.html",
+    "href": "notebooks/course/10_pharmacodynamics.html",
+    "title": "Pharmacodynamics",
+    "section": "",
+    "text": "Dose response relationship\nPharmacodynamics is the study of how a drug affects the body. It involves understanding the biochemical, physiological, and molecular effects of drugs, as well as the body’s response to them. Pharmacodynamics focuses on receptor binding, post-receptor effects, and chemical interactions. This field helps to explain how drugs work, their mechanisms of action, their therapeutic effects, and any adverse effects they might cause.\nIn pharmacodynamics, key concepts include:\nPharmacodynamics, along with pharmacokinetics (how the body processes the drug), forms the basis for the development, therapeutic use, and understanding of drugs.\nPharmacodynamics describes what a drug does to the body, and the dose-response relationship is a key aspect of this. The dose-response relationship, in basic terms, describes how the effect of a drug changes as its dose changes.\nHere are the key points related to the dose-response relationship:\nThese points highlight how the dose of the drug and the body’s response to the drug are interconnected, and understanding this relationship is crucial in therapeutic drug use and development.\nFirst we will study the dose response relationship based on the following equation\n\\[\\begin{equation}\nE = E_{max} \\cdot \\frac{C^{\\gamma}}{E_{50}^{\\gamma} + C^{\\gamma}}\n\\end{equation}\\]\nwith \\(E_{max}\\) being the maximum effect or efficacy, \\(C\\) being the concentration at the site of action, and \\(E_{50}\\) being the dose required to produce 50% of the maximum effect, and \\(\\gamma\\) being the steepness factor of the sigmoidal curve.\nimport numpy as np\nfrom matplotlib import pyplot as plt\n\nE50 = 0.1  # [mM]\nEmax = 1.0  # [-] arbitrary effect units\ngamma = 2\nD = np.linspace(0, 1, num=200)  # [mM]\nE = Emax * D**gamma/(E50**gamma + D**gamma)  # [-]\n\nf, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(10, 5))\nf.suptitle(\"Dose response curve\")\nfor ax in (ax1, ax2):\n    ax.axhline(y=Emax, color=\"tab:blue\", linestyle=\"--\", label=\"Emax (Efficacy)\")\n    ax.axvline(x=E50, color=\"tab:red\", linestyle=\"--\", label=\"E50 (Potency)\")\n    ax.plot(D, E, color=\"black\", linewidth=2.0)\n    ax.set_xlabel(\"Drug D [mM]\")\n    ax.set_ylabel(\"Effect E [-]\")\n    ax.legend()\n    \nax2.set_xscale(\"log\")\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Pharmacodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/10_pharmacodynamics.html#dose-response-relationship",
+    "href": "notebooks/course/10_pharmacodynamics.html#dose-response-relationship",
+    "title": "Pharmacodynamics",
+    "section": "",
+    "text": "Graded Dose-Response: In this type of relationship, as the dose of a drug increases, the individual subject’s response to the drug also increases until a maximum effect (Emax) is reached. At this point, increasing the dose further will not enhance the effect. This curve is often used to understand the drug’s potency (amount of drug needed to produce a particular effect) and efficacy (maximum effect a drug can produce).\nQuantal Dose-Response: This type of relationship looks at the percentage of a population that responds to a certain dose of a drug rather than the intensity of an individual’s response. It’s typically used to determine the median effective dose (ED50, the dose that produces the desired effect in 50% of the population), median toxic dose (TD50, the dose that is toxic in 50% of the population), and median lethal dose (LD50, the dose that is lethal in 50% of the population). These values are used in determining a drug’s therapeutic index or safety margin.\nThreshold Dose: This is the minimum dose of a drug that produces a measurable response. Below this dose, no significant effect is observed.\nPlateau or Saturation Point: After a certain dose, increasing the quantity of the drug does not increase the therapeutic effect. This level is known as the plateau or saturation point, and it is here that the drug reaches its maximum efficacy.\nDrug Receptors and Binding: The dose-response relationship also hinges on the interaction between the drug and its receptor. Drugs bind to receptors to produce their effects, and the binding is often reversible. The degree to which a drug activates a response when it binds to a receptor is called intrinsic activity.\nAgonists and Antagonists: Drugs that bind to receptors and stimulate a response are called agonists. Those that prevent or dampen the receptor’s response are called antagonists. Understanding how agonists and antagonists work helps in understanding the dose-response relationship.\nInter-individual Variability: There can be significant variability in dose-response relationships between different individuals due to factors such as genetics, age, gender, disease state, and the presence of other drugs.\n\n\n\n\n\n\n\n\nDose response",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Pharmacodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/10_pharmacodynamics.html#potency",
+    "href": "notebooks/course/10_pharmacodynamics.html#potency",
+    "title": "Pharmacodynamics",
+    "section": "Potency",
+    "text": "Potency\nNow we perform a parameter scan to study the effect of potency (E50) on the drug dose-effect curve.\n\nE50 = 0.1  # [mM]\nEmax = 1.0  # [-] arbitrary effect units\ngamma = 2\nD = np.linspace(0, 6, num=2000)  # [mM]\nE50s = np.linspace(0.01, 1.0, num=6)\n\nf, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(10, 5))\nf.suptitle(\"Dose response\")\nfor ax in (ax1, ax2):    \n    for E50 in E50s:\n        E = Emax * D**gamma/(E50**gamma + D**gamma)  # [-]\n        ax.plot(D, E, linewidth=2.0, label=f\"{E50=:.2f}\")\n        \n    ax.set_xlabel(\"Drug D [mM]\")\n    ax.set_ylabel(\"Effect E [-]\")\n    ax.legend()\n    \nax2.set_xscale(\"log\")\nplt.show()\n\n\n\n\n\n\n\n\nExercise: Analyse the dependency of the Effect E on the efficacy Emax and steepness gamma. I.e. perform a parameter scan similar to the potency E50.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Pharmacodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/10_pharmacodynamics.html#pharmacokineticspharmacodynamics-pkpd",
+    "href": "notebooks/course/10_pharmacodynamics.html#pharmacokineticspharmacodynamics-pkpd",
+    "title": "Pharmacodynamics",
+    "section": "Pharmacokinetics/pharmacodynamics (PK/PD)",
+    "text": "Pharmacokinetics/pharmacodynamics (PK/PD)\nNext we are interested in combining a pharmacokinetics model (concentration timecourse) with a pharmacodynamic model of the drug to be able to describe the effect of the drug.\n\n\n\nPharmacokinetics and pharmacodynamics\n\n\nWe will couple the simple compartment model of absorption and elimination to a model pharmacodynamic model describing the desired effect E and the side effect S.\n\n\n\nPK/PD model\n\n\n\nimport numpy as np\nimport pandas as pd\nfrom scipy.integrate import odeint\nfrom matplotlib import pylab as plt\n\nfrom helpers import dxdt_absorption_first_order\n\n# initial condition and time span\nt = np.arange(0, 10, 0.05) # [hr]\nDose_A = 10.0  # [mg]\nx0 = [\n    Dose_A,  # A_tablet  [mg]\n    0.0,   # A_central [mg]\n    0.0,   # A_urine [mg]\n]\n\n# parameters of pharmacokinetics model\nka = 2.0  # [1/hr]\nke = 5.0  # [1/hr]\n\n# parameters of pharmacodynamics model\n# effect\nE50 = 0.5  # [mg]\nEmax = 1.0  # [-] arbitrary effect units\nEgamma = 2\n\n# adverse effect paramters\nS50 = 2.0  # [mg]\nSmax = 0.5  # [-] arbitrary effect units\nSgamma = 3\n\nx = odeint(dxdt_absorption_first_order, x0, t, args=(ka, ke))\n\nn_samples = 5\nkas = np.linspace(0.1, 2.0, num=n_samples)  # [1/hr]\ntcs = []\npks = []\n\n# simulate all the different absorption\nfor kp, ka in enumerate(kas):\n    x = odeint(dxdt_absorption_first_order, x0, t, args=(ka, ke))\n    df = pd.DataFrame(x, columns=[\"A_tablet\", \"A_central\", \"A_urine\"])\n    df[\"time\"] = t\n    # calculate effect\n    df[\"E\"] = Emax * df.A_central**Egamma/(E50**Egamma + df.A_central**Egamma)\n    # calculate side effect\n    df[\"S\"] = Smax * df.A_central**Sgamma/(S50**Sgamma + df.A_central**Sgamma)\n    tcs.append(df)\n    \n# plot timecourse\nf, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(15,5))    \n\nfor k, ka in enumerate(kas):\n    tc = tcs[k]\n    # pharmacokinetics\n    ax1.plot(\n        tc.time, tc.A_central, linewidth=2, color=\"tab:blue\", \n        alpha=(k+1)/n_samples, label=f\"{ka=:.2f}\"\n    )\n    # desired effect\n    ax2.plot(\n        tc.time, tc.E, linewidth=2, color=\"tab:green\", \n        alpha=(k+1)/n_samples, label=f\"Effect {ka=:.2f}\"\n    )\n    ax3.plot(\n        tc.A_central, tc.E, linewidth=2, color=\"tab:green\", linestyle=\"\", marker=\"o\", markeredgecolor=\"black\", \n        alpha=(k+1)/n_samples, label=f\"Effect {ka=:.2f}\"\n    )\n    # adverse effect\n    ax2.plot(\n        tc.time, tc.S, linewidth=2, color=\"tab:red\", \n        alpha=(k+1)/n_samples, label=f\"Adverse Effect {ka=:.2f}\"\n    )\n    ax3.plot(\n        tc.A_central, tc.S, linewidth=2, color=\"tab:red\", linestyle=\"\", marker=\"o\", markeredgecolor=\"black\", \n        alpha=(k+1)/n_samples, label=f\"Adverse Effect {ka=:.2f}\"\n    )\n\nfor ax in (ax1, ax2):\n    ax.set_xlabel(\"time [hr]\")\n    ax.set_ylabel(\"amount [mg]\")\n    ax.legend()\n\nax3.set_xlabel(\"amount [mg]\")\nax3.set_ylabel(\"Effect [-]\")\n\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Pharmacodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html",
+    "href": "notebooks/course/11_pbpk_tutorial.html",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "",
+    "text": "Install requirements\nPhysiologically based pharmacokinetic (PBPK) models are mathematical models that can predict how a drug is absorbed, distributed, metabolized, and excreted by the body. PBPK models are built to be physiologically meaningful and incorporate information about the physiology of the body and the physical chemistry of the drug.\nThese models are structured to represent the body as a series of interconnected compartments that correspond to actual body organs and tissues (e.g., liver, kidneys, heart, blood, etc.). Each compartment can have unique characteristics such as volume, blood flow rate, and specific enzyme or transporter levels.\nThe inputs for a PBPK model include parameters like the physicochemical properties of the drug (e.g., partition coefficients, molecular weight, pKa), its dose and route of administration, and specific information about the physiology of the individual (e.g., body weight, age, sex, organ function, enzyme activity).\nThese models are quite complex, but they are valuable because they can be used to simulate and predict the behavior of drugs in the body under various conditions. This allows researchers to anticipate potential issues with drug-drug interactions, pharmacokinetics in different populations (e.g., children, the elderly, or patients with specific organ impairments), or under various dosing scenarios.\nIn other words, PBPK models serve as a tool that helps scientists understand how a drug will behave in the body before it’s administered, thereby helping to optimize dosing regimens, predict potential side effects, and generally improve the safety and effectiveness of drug therapy.\nWithin this tutorial we will work with a simple PBPK model to study the pharmacokinetics of caffeine. Pharmacokinetics refers to how a drug is absorbed, distributed, metabolized, and excreted by the body. Here are the key points about the pharmacokinetics of caffeine:\nPlease note that while this is a general guide, individual responses to caffeine can vary based on genetics, body mass, age, medication interactions, and tolerance levels.\nFor questions contact konigmatt@googlemail.com. The latest version of the resources are available from https://github.com/matthiaskoenig/pkpd-course/releases\nThis tutorial works in a python environment with the following packages\nThe packages can be installed via\nor in conda via\nThe only additional requirement for this tutorial is libroadrunner",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#install-requirements",
+    "href": "notebooks/course/11_pbpk_tutorial.html#install-requirements",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "",
+    "text": "numpy\nscipy\nmatplotlib\npandas\nlibroadrunner\n\npip install numpy scipy matplotlib pandas libroadrunner\n\nconda install numpy scipy matplotlib pandas libroadrunner",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#download-the-model",
+    "href": "notebooks/course/11_pbpk_tutorial.html#download-the-model",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "Download the model",
+    "text": "Download the model\nThe caffeine model can be downloaded from https://github.com/matthiaskoenig/pkpd-course/raw/develop/notebooks/models/caffeine_body_flat.xml. The model must be located in the same folder as the scripts.\n\n# some magic (please ignore in spyder, only important for notebooks)\n%load_ext autoreload\n%autoreload 2\n%matplotlib inline\n\n\nimport roadrunner\n\n\n# general imports for ode integration\nfrom pathlib import Path\nimport numpy as np\nimport pandas as pd\nimport roadrunner\nfrom matplotlib import pylab as plt\nfrom pprint import pprint\n\n# global settings for plots (optional)\nplt.rcParams.update({\n        'axes.labelsize': 'large', \n        'axes.labelweight': 'bold',\n        'axes.titlesize': 'large',\n        'axes.titleweight': 'bold',\n        'legend.fontsize': 'small',\n        'xtick.labelsize': 'large',\n        'ytick.labelsize': 'large',\n    })\n\n# caffeine model\ncaffeine_sbml = str(Path(\".\").parent / \"caffeine_body_flat.xml\")\n\n\ndef simulate(r, start: float=0, end: float=10, steps: int=200, reset:bool=True) -&gt; pd.DataFrame:\n    \"\"\" Simulate given roadrunner model.\n\n    :param r: roadrunner model\n    :param start: start time\n    :param end: end time\n    :param steps: simulation steps\n    :param reset: resets the model after simulation\n    :return:\n    \"\"\"\n    if reset:\n        r.reset()\n    s = r.simulate(start=start, end=end, steps=steps)\n    return pd.DataFrame(s, columns=s.colnames)",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#physiologically-based-pharmacokinetic-pbpk-model-for-caffeine",
+    "href": "notebooks/course/11_pbpk_tutorial.html#physiologically-based-pharmacokinetic-pbpk-model-for-caffeine",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "Physiologically based pharmacokinetic (PBPK) model for caffeine",
+    "text": "Physiologically based pharmacokinetic (PBPK) model for caffeine\nThe model describes the clearance of caffeine by the liver in humans.\n\nCaffeine and the primary metabolite paraxanthine are removed from the blood by hepatic or renal clearance.\nCaffeine can be administered in the model either by intravenous injection or by oral dose.\n\nThis tutorial demonstrates some simple use cases and analysis of the model.\n\n\n\nFig.1 Caffeine PKPD Model",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#load-the-caffeine-model",
+    "href": "notebooks/course/11_pbpk_tutorial.html#load-the-caffeine-model",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "Load the caffeine model",
+    "text": "Load the caffeine model\n\n# from helpers import *\nprint(caffeine_sbml)\n\n# load the model\nr = roadrunner.RoadRunner(caffeine_sbml)\n# set variables in result\nr.timeCourseSelections = [\"time\"] + r.model.getFloatingSpeciesIds() + r.model.getGlobalParameterIds()\n# pprint(r.timeCourseSelections)\n\ncaffeine_body_flat.xml\n\n\nThe model is an SBML model and you can view the corresponding file and HTML report. This gives a good overview of the contents of the model. This report can be generated from https://sbml4humans.de",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#example-simulation",
+    "href": "notebooks/course/11_pbpk_tutorial.html#example-simulation",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "Example simulation",
+    "text": "Example simulation\nWe now simulate a 100 [mg] oral dose (p.o) of caffeine. In a first step we perform this simulation and look at some state variables of the model.\nThe model time is in [h]. The simulation result is a pandas DataFrame which can easily be accessed.\n\n# reset model to initial state\nr.resetToOrigin()\n\n# set the oral dose\nr[\"init(PODOSE_caf)\"] = 100  # [mg]\n\n# set parameters\nr[\"BW\"] = 100  # [kg] bodyweight\n# r[\"LI__CAF2PX_Vmax\"] = 2E-3  # [mmole/min/l] rate caf -&gt; px\n# r[\"KI__PXEX_f\"] = 5  # [-] renal clearance paraxantine\n\n# simulate the model for 24 [hr], model time is in [min]\ns = simulate(r, start=0, end=24*60, steps=1200)  # [min]\n\n# show the resulting DataFrame\nprint(s.head())\n\n   time  Cgu_plasma_caf  Cki_plasma_caf  Cli_plasma_caf  Clu_plasma_caf  \\\n0   0.0        0.000000    0.000000e+00        0.000000    0.000000e+00   \n1   1.2        0.000019    3.142602e-08        0.000003    1.359226e-07   \n2   2.4        0.000058    4.265750e-07        0.000017    1.097020e-06   \n3   3.6        0.000102    1.360261e-06        0.000038    2.943392e-06   \n4   4.8        0.000144    2.659598e-06        0.000062    5.310823e-06   \n\n   Cre_plasma_caf   Car_caf   Cve_caf   Cpo_caf   Chv_caf  ...    Mve_px  \\\n0    0.000000e+00  0.000000  0.000000  0.000000  0.000000  ...  0.000000   \n1    1.867982e-07  0.000013  0.000043  0.000024  0.000006  ...  0.000297   \n2    4.140970e-06  0.000127  0.000310  0.000074  0.000030  ...  0.002833   \n3    1.934535e-05  0.000358  0.000802  0.000130  0.000069  ...  0.008538   \n4    5.119269e-05  0.000661  0.001422  0.000185  0.000112  ...  0.016942   \n\n         Apo_px   Cpo_free_px    Xpo_px    Mpo_px        Ahv_px  Chv_free_px  \\\n0  0.000000e+00  0.000000e+00  0.000000  0.000000  0.000000e+00     0.000000   \n1  2.403103e-08  6.392825e-07  0.000004  0.000115  4.188096e-07     0.000011   \n2  3.926420e-07  1.044521e-05  0.000071  0.001882  2.678790e-06     0.000071   \n3  1.405600e-06  3.739231e-05  0.000253  0.006737  6.484786e-06     0.000173   \n4  3.018005e-06  8.028611e-05  0.000544  0.014464  1.096036e-05     0.000292   \n\n     Xhv_px    Mhv_px  dissolution_caf  \n0  0.000000  0.000000         0.085827  \n1  0.000075  0.002007         0.070269  \n2  0.000483  0.012839         0.057531  \n3  0.001168  0.031080         0.047103  \n4  0.001975  0.052530         0.038564  \n\n[5 rows x 164 columns]\n\n\n\n# plot venous caffeine & paraxanthine concentrations against time\nf1, ax1 = plt.subplots(1, 1, figsize=(5, 5))\n\ntime_hr = s.time/60  # [min] -&gt; [hr]\n\n# caffeine concentration, venous blood\nax1.plot(time_hr, s.Mve_caf, linewidth=2, label=\"caffeine [mg/l]\", color=\"tab:blue\") \n# paraxanthine concentration, venous blood\nax1.plot(time_hr, s.Mve_px, linewidth=2, label=\"paraxanthine [mg/l]\", color=\"tab:orange\")  \nax1.set_title('100 [mg] caffeine (oral dose)')\nax1.set_ylabel('concentration [mg/l]')\nax1.set_xlabel('time [hr]')\nax1.legend()\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#compare-amounts-in-different-organs",
+    "href": "notebooks/course/11_pbpk_tutorial.html#compare-amounts-in-different-organs",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "Compare amounts in different organs",
+    "text": "Compare amounts in different organs\nIn the following we compare the amount of caffeine in the different organs. For this we select all the columns in the solution which belong the amount of caffeine.\n\n# plot caffeine and paraxanthine amounts\nf1, (ax1, ax2) = plt.subplots(1, 2, figsize=(10,5))\naxes = (ax1, ax2)\norgans = {\n    \"li\": \"liver\", \n    \"ki\": \"kidney\",\n    \"lu\": \"lung\", \n    \"gu\": \"gut\", \n    \"re\": \"rest\",\n}\n\nfor organ, name in organs.items():\n    sid = f\"X{organ}_plasma_caf\"\n    label = f\"caffeine ({name}) [mg]\"\n    ax1.plot(s.time, s[sid], label=label)    \n    \n    sid = f\"M{organ}_plasma_caf\"\n    label = f\"caffeine ({organ}) [mg/l]\"\n    ax2.plot(s.time, s[sid], label=label)    \n\n\nax1.set_ylabel('caffeine [mg]')\nax2.set_ylabel('caffeine [mg/l]')\nfor ax in axes:\n    ax.set_xlabel('time [h]')\n    ax.legend()\n\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#plot-the-organ-volumes",
+    "href": "notebooks/course/11_pbpk_tutorial.html#plot-the-organ-volumes",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "Plot the organ volumes",
+    "text": "Plot the organ volumes\nIn the following we plot the organ volumes by querying the model. Model variables and parameters are available via the dot syntax (.) or the bracket access ([]).\n\nfor oid in organs:\n    vid = f\"V{oid}\"\n    print(f\"V{oid} = {r[vid]} [l]\")\n\nVli = 2.1 [l]\nVki = 0.44 [l]\nVlu = 0.76 [l]\nVgu = 2.97 [l]\nVre = 86.02000000000001 [l]\n\n\n\nprint(\"relative volume:\", r.FVli)\nprint(\"relative perfusion:\", r.FQh)\n\nrelative volume: 0.021\nrelative perfusion: 0.215",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#stepwise-increase-of-the-caffeine-dose",
+    "href": "notebooks/course/11_pbpk_tutorial.html#stepwise-increase-of-the-caffeine-dose",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "Stepwise increase of the caffeine dose",
+    "text": "Stepwise increase of the caffeine dose\nNow we see what happens if we drink more coffee every day\n\ndoses = np.linspace(0, 500, num=11)\nresults = []\n\nfor dose in doses:\n    # reset model to initial state\n    r.reset()\n    \n    # set the oral dose\n    r['init(PODOSE_caf)'] = dose  # [mg]\n\n    # simulate the model for 24[h]\n    s = simulate(r, start=0, end=24*60, steps=500)\n    results.append(s)\n\n# plot venous caffeine & paraxanthine against time\nf1, ax1 = plt.subplots(1, 1, figsize=(5, 5))\nfor k, s in enumerate(results):\n    time_hr = s.time/60\n    if k == 1:\n        label = \"caffeine [mg/l]\"\n    else:\n        label = \"__nolabel__\"\n    ax1.plot(time_hr, s.Mve_caf, linewidth=2, color=\"tab:blue\", label=label, alpha=0.8)\n    if k == 1:\n        label = \"paraxanthine [mg/l]\"\n    else:\n        label = \"__nolabel__\"\n    ax1.plot(time_hr, s.Mve_px, linewidth=2, color=\"tab:orange\", label=label, alpha=0.8)\nax1.set_title('caffeine (oral dose)')\nax1.set_ylabel('concentration')\nax1.set_xlabel('time [hr]')\nax1.legend()\nplt.show()",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#e1-your-caffeine-level",
+    "href": "notebooks/course/11_pbpk_tutorial.html#e1-your-caffeine-level",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "E1 Your caffeine level",
+    "text": "E1 Your caffeine level\nThe first exercise is to calculate the timecourse of the expected venous caffeine level after you drink some caffeinated beverage. To estimate your oral dose of caffeine you can estimate the caffeine content from the following chart\n\n\n\nFig.2 Caffeine Content of Beverages\n\n\nThe oral dose is defined in the model via parameter r['init(PODOSE_caf)'] = 100 [mg]. In addition you can also adjust the bodyweight to get a more realistic estimation via the parameter r['BW'] = 70 [kg].\n\nWhat would be your level of caffeine now, if you had two cups of coffee for breakfast this morning?\nHow would your time course and level of caffeine look if you would take the same amount of caffeine intravenously (I.V)? (Hint: you have to set the set the i.v. dose via r['init(IVDOSE_caf)'] = 100)\nWhat is the peak time of caffeine in venous blood? What is the peak concentration?",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/course/11_pbpk_tutorial.html#e2-interindividual-variability",
+    "href": "notebooks/course/11_pbpk_tutorial.html#e2-interindividual-variability",
+    "title": "Physiologically based pharmacokinetic (PBPK)",
+    "section": "E2 Interindividual variability",
+    "text": "E2 Interindividual variability\nWe saw that there is a large variability in caffeine kinetics in the population. Depending on if you are a fast or slow metabolizer of caffeine the timecourses can look very different. In E1 you calculated the mean timecourse for the population. Now we will look at the interindividual differences.\nYour caffeine clearance by the liver depends on the activity of CYP1A2 in the liver, the main enzyme metabolizing caffeine. The activity is defined via the liver parameter (r['LI__cyp1a2'] = 1 [dimensionless]).\n\nHow would your time course / level of caffeine change if you are a slow metabolizer (small apparent clearance), or if you are a fast metabolizer (large apperent clearance)?\nSimulate the effect of lifestyle changes on your caffeine clearance via adjusting the caffeine clearance accordingly. For instance simulate changes in your coffee intake or smoking habit. An overview over the changes in apparent clearance are given in Tab.1.\nHow would your caffeine timecourse change if you smoke &gt;20 cigarettes per day and drink 1 liter of coffee (the effects are additive) compared to being abstinent?\nAlso the bodyweight has a strong influence on the distribution of caffeine. What happens when setting your body weight? (r.BW = 75 [kg])\n\n\n\n\nTab.1 Lifestyle Effects",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Physiologically based pharmacokinetic (PBPK)</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#interactive-web-applications",
+    "href": "technology_review.html#interactive-web-applications",
+    "title": "16  Technology review",
+    "section": "16.2 Interactive web applications",
+    "text": "16.2 Interactive web applications\nTo demonstrate simple relationships between parameters/settings and outputs interactive small web applications with minimal overhead are a great solution. E.g. are the indocyanine green application\n\n16.2.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n16.2.2 Voila\n\nvoila notebooks: https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n16.2.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n16.2.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n16.2.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n16.2.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#learning-objectives",
+    "href": "course_overview.html#learning-objectives",
+    "title": "2  Overview and introduction",
+    "section": "2.3 Learning Objectives",
+    "text": "2.3 Learning Objectives\nThe main learning objectives are\n\n🎯 Understand key concepts in pharmacokinetics and pharmacodynamics.\n\n🎯 Learn to formulate and analyze models using differential equations.\n\n🎯 Develop and simulate compartment and PBPK models.\n\n🎯 Model drug absorption, metabolism, and multiple dosing scenarios.\n\n🎯 Interpret core PK parameters (e.g., clearance, half-life, AUC).\n\n🎯 Understand interindividual variability in drug response.\n\n🎯 Use SBML for model sharing and interoperability.\n\n🎯 Learn basic computational skills for model simulation and analysis.\n\n🎯 Apply PD models to quantify drug effects.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Overview and introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#topics",
+    "href": "course_overview.html#topics",
+    "title": "2  Overview and introduction",
+    "section": "2.2 Topics",
+    "text": "2.2 Topics\nThe following topics will be covered in the course:\n\nStructural Models (?sec-structural-models) Introduction to structural pharmacokinetic/pharmacodynamic (PK/PD) models, including model types (e.g., one- and multi-compartment), assumptions, and diagrammatic representation.\nOrdinary Differential Equations (ODEs) (?sec-ode) Fundamentals of ODEs as the mathematical foundation of dynamic modeling in pharmacology; solving and interpreting ODEs in PK/PD contexts.\nCompartment Model (?sec-compartment-models) Detailed exploration of compartmental models in pharmacokinetics, including one-, two-, and multi-compartment models with drug distribution and elimination.\nAbsorption (?sec-absorption) Modeling drug absorption processes including first-order and zero-order kinetics, and factors affecting bioavailability.\nMultiple Dosing (?sec-compartment-models) Modeling and simulation of repeated drug administration; concepts such as steady-state concentration and accumulation.\nMetabolism (?sec-metabolism)\nRepresentation of drug metabolism in models; modeling hepatic clearance and metabolite formation.\nPharmacokinetic Parameters (?sec-pharmacokinetic-parameters) Derivation and interpretation of key PK parameters such as clearance (CL), volume of distribution (Vd), half-life (t½), and area under the curve (AUC).\nVariability (?sec-variability) Introduction to interindividual and intraindividual variability in PK/PD; sources of variability and population modeling concepts.\nSBML (Systems Biology Markup Language) (?sec-sbml) Working with SBML for model exchange and simulation; structure of SBML files and integration with modeling tools.\nPharmacodynamics (?sec-pharmacodynamics) Modeling drug effects on the body; PD models such as Emax, sigmoid Emax, and indirect response models.\nPBPK Tutorial (Physiologically Based Pharmacokinetic Modeling) (?sec-pbpk) Introduction to PBPK modeling with tutorial examples; structure, parameters, and application in translational and personalized medicine.\n\n\n\n\n\n\n\nTip: Customize Your Learning Path\n\n\n\nThe course does not have to be done linearly—you can explore the content in any order. Choose the learning path that best suits your goals, interests, or current knowledge level. This way, you stay engaged and make the most of your learning experience.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Overview and introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#section",
+    "href": "course_overview.html#section",
+    "title": "2  Course overview",
+    "section": "2.4 ",
+    "text": "2.4",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course overview</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#references",
+    "href": "course_overview.html#references",
+    "title": "2  Course overview",
+    "section": "2.4 References",
+    "text": "2.4 References",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course overview</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#resources",
+    "href": "course_overview.html#resources",
+    "title": "2  Overview and introduction",
+    "section": "2.4 Resources",
+    "text": "2.4 Resources\nA lot of great resources exist on the topic. Below we provide a few recommendations to get started. Some of the material was used as inspiration for the course",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Overview and introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course_overview.html#summary",
+    "href": "course_overview.html#summary",
+    "title": "2  Overview and introduction",
+    "section": "",
+    "text": "Note: Help us improve the course\n\n\n\nThis course is a work in progress, and we’re always looking for ways to make it better. If you have suggestions, ideas, or feedback on what to improve or how to enhance your learning experience, please don’t hesitate to get in touch. Your input is valuable and appreciated!",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Overview and introduction</span>"
     ]
   }
 ]

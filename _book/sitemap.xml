@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://livermetabolism.com/index.html</loc>
-    <lastmod>2025-04-09T20:49:17.432Z</lastmod>
+    <lastmod>2025-04-09T21:44:04.498Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/course_concept.html</loc>
-    <lastmod>2025-04-09T21:16:14.280Z</lastmod>
+    <lastmod>2025-04-10T07:08:30.090Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/course_overview.html</loc>
-    <lastmod>2025-04-09T20:37:36.085Z</lastmod>
+    <lastmod>2025-04-10T07:40:21.856Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/04_lecture_pkparameters.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://livermetabolism.com/todo.html</loc>
-    <lastmod>2025-04-09T17:30:00.083Z</lastmod>
+    <lastmod>2025-04-10T06:57:30.929Z</lastmod>
   </url>
   <url>
     <loc>https://livermetabolism.com/Pharmacokinetic---pharmacodynamic-modelling.epub</loc>
@@ -34,6 +34,50 @@
   </url>
   <url>
     <loc>https://livermetabolism.com/technology_review.html</loc>
-    <lastmod>2025-04-09T21:33:59.565Z</lastmod>
+    <lastmod>2025-04-10T07:07:22.217Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/01_structural_models.html</loc>
+    <lastmod>2025-04-10T07:20:45.244Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/02_ordinary_differential_equations.html</loc>
+    <lastmod>2025-04-07T14:35:37.316Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/03_compartment_model.html</loc>
+    <lastmod>2025-04-07T14:35:37.320Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/04_absorption.html</loc>
+    <lastmod>2025-04-07T14:35:37.328Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/05_multiple_dosing.html</loc>
+    <lastmod>2025-04-07T14:35:37.332Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/06_metabolism.html</loc>
+    <lastmod>2025-04-07T14:35:37.336Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/07_pharmacokinetic_parameters.html</loc>
+    <lastmod>2025-04-07T14:35:37.336Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/08_variability.html</loc>
+    <lastmod>2025-04-07T14:35:37.344Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/09_sbml.html</loc>
+    <lastmod>2025-04-07T14:35:37.360Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/10_pharmacodynamics.html</loc>
+    <lastmod>2025-04-07T14:35:37.360Z</lastmod>
+  </url>
+  <url>
+    <loc>https://livermetabolism.com/notebooks/course/11_pbpk_tutorial.html</loc>
+    <lastmod>2025-04-07T14:35:37.368Z</lastmod>
   </url>
 </urlset>

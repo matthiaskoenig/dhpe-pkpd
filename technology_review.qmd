@@ -1,14 +1,21 @@
 # Technology review
+Here we performed a search of available open technologies which could be used for the course. Some of these are employed in the course.
 Overview of technology relevant for the course.
 
 ## Interactive plots
+An important part are interactive plots in the python notebooks. Most of the static plots are currently be generated with matplotlib.
+
 ### plotly
 - https://plotly.com/python/
+
 ### altair
 - https://altair-viz.github.io/
 
 
-## Interactive webapps
+## Interactive web applications
+
+To demonstrate simple relationships between parameters/settings and outputs interactive small web applications with minimal overhead are a great solution. E.g. are the [indocyanine green application](https://icg-model.streamlit.app/)
+
 ### Shiny for python 
 - possible integration with Quarto
 

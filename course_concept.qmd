@@ -6,17 +6,13 @@ This open, practice-oriented course introduces the fundamentals of pharmacokinet
 The course consists of the following complementary parts which should allow as much offline studying as possible:
 
 1. **Short lectures** about pharmacokinetics in the form of a book chapter providing the content. The book is available as HTML webpage, PDF, Epub and HTML slideshow. [Quarto](https://quarto.org) is used to render high quality books with professional figures, layouts, full text search, cross references, references, citation, and the possibiliy to compile to multiple output formats.
-
 2. **Short presentations** for motivation and providing up to date use cases in the form of short videos and accompanying slides.
 3. An **Open edX course** for the respective chapter with interactive content (quizzes, H5P components).
-4. **Interactive Jupyter notebooks and simple apps** for active exploration of the course content.
+4. **Interactive Jupyter notebooks and simple apps** for active exploration of the course content. See for instance the [indocyanine green application](https://icg-model.streamlit.app/).
 
-::: {layout-ncol=2}
-![Overview of the Digital Health Professions Educator (DHPE) program.](./images/dhpe_poster.jpg "Title: Digital Health Professions Educator"){#fig-dhpe width=100% fig-cap-location="bottom"}
+![Overview of the Digital Health Professions Educator (DHPE) program.](./images/dhpe_poster.jpg "Title: Digital Health Professions Educator"){#fig-dhpe width=50% fig-cap-location="bottom"}
 
 The course was developed as part of the [Digital Health Professions Educator](https://lernzentrum.charite.de/projekte/heds/digital_health_professions_educator) 2024/2025. The course is the digital teaching project of phase III (see @fig-dhpe.)
-:::
-
 
 
 ## Technology

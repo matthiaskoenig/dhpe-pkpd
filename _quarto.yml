@@ -16,7 +16,19 @@ book:
     - part: "Course"
       chapters:
       - course_overview.qmd
-      - lecture_pkparameters.qmd
+      # - lecture_pkparameters.qmd
+      - ./notebooks/course/01_structural_models.ipynb
+      - ./notebooks/course/02_ordinary_differential_equations.ipynb
+      - ./notebooks/course/03_compartment_model.ipynb
+      - ./notebooks/course/04_absorption.ipynb
+      - ./notebooks/course/05_multiple_dosing.ipynb
+      - ./notebooks/course/06_metabolism.ipynb
+      - ./notebooks/course/07_pharmacokinetic_parameters.ipynb
+      - ./notebooks/course/08_variability.ipynb
+      - ./notebooks/course/09_sbml.ipynb
+      - ./notebooks/course/10_pharmacodynamics.ipynb
+      - ./notebooks/course/11_pbpk_tutorial.ipynb
+
     - part: "Technology"
       chapters:
       - install.qmd

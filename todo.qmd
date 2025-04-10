@@ -7,6 +7,7 @@ DHPE teaching project overview.
 - [ ] write short summary of teaching project: `teaching_concept.qmd`
 - [ ] create workflow picture
 
+- [ ] translate the notebooks
 
 
 PK/PD course overview

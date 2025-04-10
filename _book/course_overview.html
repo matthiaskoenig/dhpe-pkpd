@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Course overview – Pharmacokinetic &amp; pharmacodynamic modelling</title>
+<title>2&nbsp; Overview and introduction – Pharmacokinetic &amp; pharmacodynamic modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./04_lecture_pkparameters.html" rel="next">
+<link href="./notebooks/course/01_structural_models.html" rel="next">
 <link href="./course_concept.html" rel="prev">
 <link href="././images/pkpd.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="2&nbsp; Course overview – Pharmacokinetic &amp; pharmacodynamic modelling">
+<meta name="twitter:title" content="2&nbsp; Overview and introduction – Pharmacokinetic &amp; pharmacodynamic modelling">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course_overview.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Course overview</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course_overview.html">Course</a></li><li class="breadcrumb-item"><a href="./course_overview.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview and introduction</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,36 +124,135 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Concept</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./course_concept.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Course concept</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./course_overview.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Course overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview and introduction</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_lecture_pkparameters.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pharmacokinetic parameters</span></span></a>
+  <a href="./notebooks/course/01_structural_models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Structural Models as Algebraic Equations</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/02_ordinary_differential_equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ordinary Differential Equations and Numerical Integration</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/03_compartment_model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Compartment Model</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/04_absorption.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Absorption</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/05_multiple_dosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Multiple dosing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/06_metabolism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Metabolization</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/07_pharmacokinetic_parameters.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Pharmacokinetic parameters</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/08_variability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Variability in pharmacokinetics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/09_sbml.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">SBML Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/10_pharmacodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pharmacodynamics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notebooks/course/11_pbpk_tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Physiologically based pharmacokinetic (PBPK)</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Technology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./install.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Installation and basic usage</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Installation and basic usage</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./todo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">PK/PD course</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">PK/PD course</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./technology_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Technology review</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -164,18 +263,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
-  <li><a href="#lecturesunits" id="toc-lecturesunits" class="nav-link" data-scroll-target="#lecturesunits">Lectures/Units</a></li>
-  <li><a href="#teaching-goals" id="toc-teaching-goals" class="nav-link" data-scroll-target="#teaching-goals">Teaching goals</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">2.1</span> Summary</a></li>
+  <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics"><span class="header-section-number">2.2</span> Topics</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="header-section-number">2.3</span> Learning Objectives</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><span class="header-section-number">2.4</span> Resources</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course_overview.html">Course</a></li><li class="breadcrumb-item"><a href="./course_overview.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview and introduction</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Course overview</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview and introduction</span></h1>
 </div>
 
 
@@ -192,21 +292,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>Pharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: https://livermetabolism.com</p>
+<section id="summary" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.1</span> Summary</h2>
+<p>Pharmacokinetic modelling is the study of how drugs are absorbed, distributed, metabolised and excreted in the body. The pharmacokinetic modelling course covers topics such as pharmacokinetic principles, drug distribution, clearance and elimination and the factors that influence these processes. Students will learn about different models used to describe pharmacokinetics, such as compartmental models and physiologically based pharmacokinetic models, and how these models can be used to predict drug concentrations and optimise dosing regimens. Other topics that may be covered include pharmacodynamics, drug-drug interactions and the use of pharmacokinetic modelling in drug development and clinical practice. Overall, a course in pharmacokinetic modelling will provide students with a comprehensive understanding of the principles and techniques used to describe the movement of drugs through the body and how this knowledge can be applied to improve drug therapy. For further information please visit: <a href="https://livermetabolism.com" class="uri">https://livermetabolism.com</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note: Help us improve the course
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This course is a work in progress, and we’re always looking for ways to make it better. If you have suggestions, ideas, or feedback on what to improve or how to enhance your learning experience, please don’t hesitate to get in touch. Your input is valuable and appreciated!</p>
+</div>
+</div>
 </section>
-<section id="lecturesunits" class="level2">
-<h2 class="anchored" data-anchor-id="lecturesunits">Lectures/Units</h2>
+<section id="topics" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="topics"><span class="header-section-number">2.2</span> Topics</h2>
+<p>The following topics will be covered in the course:</p>
 <ul>
-<li>structural models</li>
-<li>ordinary differential equations (ODE)</li>
-<li>compartment models</li>
+<li><strong>Structural Models</strong> (<span class="quarto-unresolved-ref">?sec-structural-models</span>) Introduction to structural pharmacokinetic/pharmacodynamic (PK/PD) models, including model types (e.g., one- and multi-compartment), assumptions, and diagrammatic representation.</li>
+<li><strong>Ordinary Differential Equations (ODEs)</strong> (<span class="quarto-unresolved-ref">?sec-ode</span>) Fundamentals of ODEs as the mathematical foundation of dynamic modeling in pharmacology; solving and interpreting ODEs in PK/PD contexts.</li>
+<li><strong>Compartment Model</strong> (<span class="quarto-unresolved-ref">?sec-compartment-models</span>) Detailed exploration of compartmental models in pharmacokinetics, including one-, two-, and multi-compartment models with drug distribution and elimination.</li>
+<li><strong>Absorption</strong> (<span class="quarto-unresolved-ref">?sec-absorption</span>) Modeling drug absorption processes including first-order and zero-order kinetics, and factors affecting bioavailability.</li>
+<li><strong>Multiple Dosing</strong> (<span class="quarto-unresolved-ref">?sec-compartment-models</span>) Modeling and simulation of repeated drug administration; concepts such as steady-state concentration and accumulation.</li>
+<li><strong>Metabolism</strong> (<span class="quarto-unresolved-ref">?sec-metabolism</span>)<br>
+Representation of drug metabolism in models; modeling hepatic clearance and metabolite formation.</li>
+<li><strong>Pharmacokinetic Parameters</strong> (<span class="quarto-unresolved-ref">?sec-pharmacokinetic-parameters</span>) Derivation and interpretation of key PK parameters such as clearance (CL), volume of distribution (Vd), half-life (t½), and area under the curve (AUC).</li>
+<li><strong>Variability</strong> (<span class="quarto-unresolved-ref">?sec-variability</span>) Introduction to interindividual and intraindividual variability in PK/PD; sources of variability and population modeling concepts.</li>
+<li><strong>SBML (Systems Biology Markup Language)</strong> (<span class="quarto-unresolved-ref">?sec-sbml</span>) Working with SBML for model exchange and simulation; structure of SBML files and integration with modeling tools.</li>
+<li><strong>Pharmacodynamics</strong> (<span class="quarto-unresolved-ref">?sec-pharmacodynamics</span>) Modeling drug effects on the body; PD models such as Emax, sigmoid Emax, and indirect response models.</li>
+<li><strong>PBPK Tutorial (Physiologically Based Pharmacokinetic Modeling)</strong> (<span class="quarto-unresolved-ref">?sec-pbpk</span>) Introduction to PBPK modeling with tutorial examples; structure, parameters, and application in translational and personalized medicine.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip: Customize Your Learning Path
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The course does not have to be done linearly—you can explore the content in any order. Choose the learning path that best suits your goals, interests, or current knowledge level. This way, you stay engaged and make the most of your learning experience.</p>
+</div>
+</div>
+</section>
+<section id="learning-objectives" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">2.3</span> Learning Objectives</h2>
+<p>The main learning objectives are</p>
+<ul>
+<li>🎯 Understand key concepts in pharmacokinetics and pharmacodynamics.<br>
+</li>
+<li>🎯 Learn to formulate and analyze models using differential equations.<br>
+</li>
+<li>🎯 Develop and simulate compartment and PBPK models.<br>
+</li>
+<li>🎯 Model drug absorption, metabolism, and multiple dosing scenarios.<br>
+</li>
+<li>🎯 Interpret core PK parameters (e.g., clearance, half-life, AUC).<br>
+</li>
+<li>🎯 Understand interindividual variability in drug response.<br>
+</li>
+<li>🎯 Use SBML for model sharing and interoperability.<br>
+</li>
+<li>🎯 Learn basic computational skills for model simulation and analysis.<br>
+</li>
+<li>🎯 Apply PD models to quantify drug effects.</li>
 </ul>
 </section>
-<section id="teaching-goals" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-goals">Teaching goals</h2>
-<p>The teaching goals are …</p>
+<section id="resources" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="resources"><span class="header-section-number">2.4</span> Resources</h2>
+<p>A lot of great resources exist on the topic. Below we provide a few recommendations to get started. Some of the material was used as inspiration for the course</p>
 
 
 </section>
@@ -618,8 +777,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./04_lecture_pkparameters.html" class="pagination-link" aria-label="Pharmacokinetic parameters">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pharmacokinetic parameters</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./notebooks/course/01_structural_models.html" class="pagination-link" aria-label="Structural Models as Algebraic Equations">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Structural Models as Algebraic Equations</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
