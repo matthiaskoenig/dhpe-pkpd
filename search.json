@@ -175,11 +175,22 @@
     ]
   },
   {
+    "objectID": "course_overview.html#open-edx",
+    "href": "course_overview.html#open-edx",
+    "title": "2  Introduction",
+    "section": "2.4 Open edX",
+    "text": "2.4 Open edX\nThe Open edX course is available from http://apps.local.openedx.io.\n\n\n\n\n\n\nTip: This will not work for you\n\n\n\nThe Open edX platform is currently only running locally and we are working on deploying it asap. Please be patient.",
+    "crumbs": [
+      "Course",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
     "objectID": "course_overview.html#resources",
     "href": "course_overview.html#resources",
     "title": "2  Introduction",
-    "section": "2.4 Resources",
-    "text": "2.4 Resources\nA lot of great resources exist on the topic. Below we provide a few recommendations to get started. Some of the material was used as inspiration for the course",
+    "section": "2.5 Resources",
+    "text": "2.5 Resources\nA lot of great resources exist on the topic. Below we provide a few recommendations to get started. Some of the material was used as inspiration for the course",
     "crumbs": [
       "Course",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
