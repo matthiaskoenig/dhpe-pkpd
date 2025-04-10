@@ -69,6 +69,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
 
 
 <meta name="twitter:title" content="1&nbsp; Teaching concept – Pharmacokinetic &amp; pharmacodynamic modelling">
@@ -278,29 +284,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-technology" id="toc-sec-technology" class="nav-link" data-scroll-target="#sec-technology"><span class="header-section-number">1.2</span> Technology</a>
   <ul class="collapse">
   <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control"><span class="header-section-number">1.2.1</span> Version control</a></li>
-  <li><a href="#continous-integration-and-deployment" id="toc-continous-integration-and-deployment" class="nav-link" data-scroll-target="#continous-integration-and-deployment"><span class="header-section-number">1.2.2</span> Continous integration and deployment</a></li>
-  <li><a href="#jupyter-notebooks" id="toc-jupyter-notebooks" class="nav-link" data-scroll-target="#jupyter-notebooks"><span class="header-section-number">1.2.3</span> Jupyter notebooks</a></li>
-  </ul></li>
-  <li><a href="#different-classes" id="toc-different-classes" class="nav-link" data-scroll-target="#different-classes"><span class="header-section-number">1.3</span> Different classes</a></li>
-  <li><a href="#open-broadcast-study" id="toc-open-broadcast-study" class="nav-link" data-scroll-target="#open-broadcast-study"><span class="header-section-number">2</span> Open Broadcast study</a>
-  <ul class="collapse">
-  <li><a href="#software-and-tools" id="toc-software-and-tools" class="nav-link" data-scroll-target="#software-and-tools"><span class="header-section-number">2.1</span> Software and tools</a></li>
-  <li><a href="#ai-support-for-writing-text" id="toc-ai-support-for-writing-text" class="nav-link" data-scroll-target="#ai-support-for-writing-text"><span class="header-section-number">2.2</span> AI support for writing text</a></li>
-  <li><a href="#corporate-styling-for-the-course" id="toc-corporate-styling-for-the-course" class="nav-link" data-scroll-target="#corporate-styling-for-the-course"><span class="header-section-number">2.3</span> Corporate Styling for the course</a></li>
-  <li><a href="#hosting" id="toc-hosting" class="nav-link" data-scroll-target="#hosting"><span class="header-section-number">2.4</span> Hosting</a></li>
-  <li><a href="#notebook-and-markdown-based-publishing-tools" id="toc-notebook-and-markdown-based-publishing-tools" class="nav-link" data-scroll-target="#notebook-and-markdown-based-publishing-tools"><span class="header-section-number">2.5</span> Notebook and markdown based publishing tools</a>
-  <ul class="collapse">
-  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto"><span class="header-section-number">2.5.1</span> Quarto</a></li>
-  <li><a href="#jupyterbook" id="toc-jupyterbook" class="nav-link" data-scroll-target="#jupyterbook"><span class="header-section-number">2.5.2</span> Jupyterbook</a></li>
-  </ul></li>
-  <li><a href="#presentations" id="toc-presentations" class="nav-link" data-scroll-target="#presentations"><span class="header-section-number">2.6</span> Presentations</a>
-  <ul class="collapse">
-  <li><a href="#reveal.js" id="toc-reveal.js" class="nav-link" data-scroll-target="#reveal.js"><span class="header-section-number">2.6.1</span> reveal.js</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#openedx" id="toc-openedx" class="nav-link" data-scroll-target="#openedx"><span class="header-section-number">3</span> OpenEdx</a>
-  <ul class="collapse">
-  <li><a href="#course-structure" id="toc-course-structure" class="nav-link" data-scroll-target="#course-structure"><span class="header-section-number">3.1</span> Course structure</a></li>
+  <li><a href="#continous-integration-ci" id="toc-continous-integration-ci" class="nav-link" data-scroll-target="#continous-integration-ci"><span class="header-section-number">1.2.2</span> Continous integration (CI)</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto"><span class="header-section-number">1.2.3</span> Quarto</a></li>
+  <li><a href="#jupyter-notebooks" id="toc-jupyter-notebooks" class="nav-link" data-scroll-target="#jupyter-notebooks"><span class="header-section-number">1.2.4</span> Jupyter notebooks</a></li>
+  <li><a href="#reveal.js" id="toc-reveal.js" class="nav-link" data-scroll-target="#reveal.js"><span class="header-section-number">1.2.5</span> reveal.js</a></li>
+  <li><a href="#openedx" id="toc-openedx" class="nav-link" data-scroll-target="#openedx"><span class="header-section-number">1.2.6</span> OpenEdx</a></li>
+  <li><a href="#generative-ai" id="toc-generative-ai" class="nav-link" data-scroll-target="#generative-ai"><span class="header-section-number">1.2.7</span> Generative AI</a></li>
+  <li><a href="#video-recording-obs-studio" id="toc-video-recording-obs-studio" class="nav-link" data-scroll-target="#video-recording-obs-studio"><span class="header-section-number">1.2.8</span> Video recording (OBS Studio)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -351,80 +341,28 @@ Figure&nbsp;1.1: Overview of the Digital Health Professions Educator (DHPE) prog
 </section>
 <section id="sec-technology" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="sec-technology"><span class="header-section-number">1.2</span> Technology</h2>
-<p>In this section we provide an overview of the technology behind the course.</p>
-<p>The following figure provides an overview of the workflow of the course.</p>
+<p>In this section we provide an overview of the technology behind the course. The following figure provides an overview of the workflow of the course.</p>
 <p><img src="images/workflow.png" class="img-fluid" alt="images/workflow.png"> Figure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility.</p>
 <section id="version-control" class="level3" data-number="1.2.1">
 <h3 data-number="1.2.1" class="anchored" data-anchor-id="version-control"><span class="header-section-number">1.2.1</span> Version control</h3>
-<p>Course content is managed in a GitHub repository <a href="https://github.com/matthiaskoenig/dhpe-pkpd/" class="uri">https://github.com/matthiaskoenig/dhpe-pkpd/</a> (version control). Content is managed in quarto QMD markdown files. All course content is managed in github. On changes locally the complete content is updated.</p>
+<p>Version control is a system that tracks changes to files over time, enabling users to manage revisions, collaborate efficiently, and maintain a complete history of their work. It allows users to revert to previous versions, compare changes, and resolve conflicts when multiple contributors edit the same content. Version control is essential for collaborative projects, ensuring transparency, consistency, and reproducibility.</p>
+<p>In this course, all teaching materials are managed using version control through a GitHub repository: <a href="https://github.com/matthiaskoenig/dhpe-pkpd/" class="uri">https://github.com/matthiaskoenig/dhpe-pkpd/</a>. The content is written in Quarto QMD markdown files, and all updates made locally are systematically synchronized and pushed to the repository. This setup ensures that any changes to the course materials are tracked, making it easy to review updates, maintain a clean history of edits, and collaborate across contributors. Version control offers significant advantages for creating teaching materials: it supports iterative improvement, minimizes the risk of losing work, and provides a reliable way to roll back to previous versions if needed—all of which enhance the quality and reproducibility of educational content.</p>
 </section>
-<section id="continous-integration-and-deployment" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="continous-integration-and-deployment"><span class="header-section-number">1.2.2</span> Continous integration and deployment</h3>
-<ul>
-<li>CI via GitHub actions is used to automatically build and deploy the course content.</li>
-</ul>
+<section id="continous-integration-ci" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="continous-integration-ci"><span class="header-section-number">1.2.2</span> Continous integration (CI)</h3>
+<p>Continuous Integration (CI) is a development practice where changes to a project are automatically tested and integrated on a regular basis. CI helps identify issues early, ensures consistency across updates, and automates repetitive tasks such as building, testing, and deploying code. This leads to faster development cycles, higher quality output, and greater confidence in the stability of the project.</p>
+<p>For this course, CI is implemented using <a href="https://github.com/matthiaskoenig/dhpe-pkpd/actions">GitHub Actions</a> to automatically build and deploy the course content. Whenever changes are made to the repository, the content is rebuilt and published to the course webpage at <a href="https://matthiaskoenig.github.io/pkpd" class="uri">https://matthiaskoenig.github.io/pkpd</a>. This automated workflow ensures the site is always up to date with the latest teaching materials, improving reliability, reproducibility, and ease of maintenance.</p>
 </section>
-<section id="jupyter-notebooks" class="level3" data-number="1.2.3">
-<h3 data-number="1.2.3" class="anchored" data-anchor-id="jupyter-notebooks"><span class="header-section-number">1.2.3</span> Jupyter notebooks</h3>
-</section>
-</section>
-<section id="different-classes" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="different-classes"><span class="header-section-number">1.3</span> Different classes</h2>
+<section id="quarto" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="quarto"><span class="header-section-number">1.2.3</span> Quarto</h3>
 <ul>
-<li>teaching notebooks =&gt; rendered to content</li>
-<li>exercise notebooks</li>
-<li>solution notebooks/material</li>
-</ul>
-<ol type="1">
-<li>Lecture scripts This is the complete reference information to learn; minimal interactivity; supports studying the content.</li>
-</ol>
-<ul>
-<li>Jupyter notebooks + markdown =&gt; cross compilation to
-<ul>
-<li><label><input type="checkbox" checked="">HTML (Blog/Webpage) -&gt; hosted on github.io</label></li>
-<li><label><input type="checkbox" checked="">PDF (handout/book, typst) -&gt; hosted on github.io for download</label></li>
-<li>[ ]</li>
-</ul></li>
-</ul>
-</section>
-<section id="open-broadcast-study" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Open Broadcast study</h1>
-<section id="software-and-tools" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="software-and-tools"><span class="header-section-number">2.1</span> Software and tools</h2>
-<ul>
-<li>quatro for conversion;</li>
-<li>openedx (docker container)</li>
-</ul>
-</section>
-<section id="ai-support-for-writing-text" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="ai-support-for-writing-text"><span class="header-section-number">2.2</span> AI support for writing text</h2>
-<ul>
-<li>All text creation is supported by ChatGPT.</li>
-</ul>
-</section>
-<section id="corporate-styling-for-the-course" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="corporate-styling-for-the-course"><span class="header-section-number">2.3</span> Corporate Styling for the course</h2>
-<ul>
-<li>use consistent colorschema and logos</li>
-</ul>
-</section>
-<section id="hosting" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="hosting"><span class="header-section-number">2.4</span> Hosting</h2>
-<ul>
-<li>OpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack</li>
-</ul>
-</section>
-<section id="notebook-and-markdown-based-publishing-tools" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="notebook-and-markdown-based-publishing-tools"><span class="header-section-number">2.5</span> Notebook and markdown based publishing tools</h2>
-<section id="quarto" class="level3" data-number="2.5.1">
-<h3 data-number="2.5.1" class="anchored" data-anchor-id="quarto"><span class="header-section-number">2.5.1</span> Quarto</h3>
-<ul>
+<li>Notebook and markdown based publishing tools</li>
 <li>Quarto is an open-source scientific and technical publishing system available from <a href="https://quarto.org/" class="uri">https://quarto.org/</a>.</li>
 <li>Publish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.</li>
 <li>For a nice introduction to the features see: <a href="https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html" class="uri">https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html</a></li>
 </ul>
-<section id="interactivity" class="level4" data-number="2.5.1.1">
-<h4 data-number="2.5.1.1" class="anchored" data-anchor-id="interactivity"><span class="header-section-number">2.5.1.1</span> Interactivity</h4>
+<section id="interactivity" class="level4" data-number="1.2.3.1">
+<h4 data-number="1.2.3.1" class="anchored" data-anchor-id="interactivity"><span class="header-section-number">1.2.3.1</span> Interactivity</h4>
 <ul>
 <li>Quarto supports interactivity via different methods: <a href="https://quarto.org/docs/interactive/" class="uri">https://quarto.org/docs/interactive/</a></li>
 <li>Create custom JavaScript visualizations using Observable JS: <a href="https://quarto.org/docs/interactive/ojs/" class="uri">https://quarto.org/docs/interactive/ojs/</a></li>
@@ -433,19 +371,15 @@ Figure&nbsp;1.1: Overview of the Digital Health Professions Educator (DHPE) prog
 </ul>
 </section>
 </section>
-<section id="jupyterbook" class="level3" data-number="2.5.2">
-<h3 data-number="2.5.2" class="anchored" data-anchor-id="jupyterbook"><span class="header-section-number">2.5.2</span> Jupyterbook</h3>
-<ul>
-<li>Jupyterbool is an alternative to Quarto with some overlapping functionality: https://jupyterbook.org/en/stable/intro.html</li>
-<li>Build beautiful, publication-quality books and documents from computational content.</li>
-</ul>
+<section id="jupyter-notebooks" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="jupyter-notebooks"><span class="header-section-number">1.2.4</span> Jupyter notebooks</h3>
+<p><a href="https://jupyter.org/">Jupyter</a> Notebooks are interactive documents that combine code, text, and visual outputs, making them ideal for exploring and teaching computational topics in an engaging and reproducible way.</p>
+<p>For this course, multiple sets of notebooks are generated to support different learning needs: content and teaching notebooks are rendered to the course webpage, while separate exercise notebooks offer hands-on practice, and solution notebooks provide detailed reference material.</p>
 </section>
-</section>
-<section id="presentations" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="presentations"><span class="header-section-number">2.6</span> Presentations</h2>
-<section id="reveal.js" class="level3" data-number="2.6.1">
-<h3 data-number="2.6.1" class="anchored" data-anchor-id="reveal.js"><span class="header-section-number">2.6.1</span> reveal.js</h3>
+<section id="reveal.js" class="level3" data-number="1.2.5">
+<h3 data-number="1.2.5" class="anchored" data-anchor-id="reveal.js"><span class="header-section-number">1.2.5</span> reveal.js</h3>
 <ul>
+<li>presentations are created with reveal.js</li>
 <li>reveal.js is an open source HTML presentation framework. It’s a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.</li>
 <li>Presentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an <code>iframe</code> or add your own custom behavior using our JavaScript API.</li>
 <li>The framework comes with a broad range of features including nested slides, Markdown support, Auto-Animate, PDF export, speaker notes, LaTeX support and syntax highlighted code.</li>
@@ -453,22 +387,36 @@ Figure&nbsp;1.1: Overview of the Digital Health Professions Educator (DHPE) prog
 <li>nice integration with Quarto; https://quarto.org/docs/presentations/revealjs/demo/#/title-slide</li>
 <li>https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd</li>
 </ul>
-<hr>
 </section>
-</section>
-</section>
-<section id="openedx" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> OpenEdx</h1>
+<section id="openedx" class="level3" data-number="1.2.6">
+<h3 data-number="1.2.6" class="anchored" data-anchor-id="openedx"><span class="header-section-number">1.2.6</span> OpenEdx</h3>
 <ul>
 <li>https://openedx.org/</li>
 <li>Enable online campuses, instructor-led courses, degree programs, and self-paced courses using a single platform.</li>
 <li>Open edX is a thriving open source project, backed by a great community, for running an online learning platform at scale. Open edX comes with an LMS (Learning Management System) where students access course contents, a CMS (Content Management System) that course staff uses to design courses, and a few other components to provide more services to students, course staff, and platform administrators.</li>
 </ul>
 <p>Allows integration of jupyter notebooks, H5P, …</p>
-<section id="course-structure" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="course-structure"><span class="header-section-number">3.1</span> Course structure</h2>
-<p>The course is structured in sections, subsections and units. <img src="images/course_structure.png" class="img-fluid" alt="images/course_structure.png"></p>
-<!-- Create a figure with the actual content structure; use the meridian  -->
+<section id="course-structure" class="level4" data-number="1.2.6.1">
+<h4 data-number="1.2.6.1" class="anchored" data-anchor-id="course-structure"><span class="header-section-number">1.2.6.1</span> Course structure</h4>
+<p>The course is structured in sections, subsections and units. <img src="images/course_structure.png" class="img-fluid" alt="images/course_structure.png"> <!-- Create a figure with the actual content structure; use the meridian  --></p>
+</section>
+<section id="deployment" class="level4" data-number="1.2.6.2">
+<h4 data-number="1.2.6.2" class="anchored" data-anchor-id="deployment"><span class="header-section-number">1.2.6.2</span> Deployment</h4>
+<ul>
+<li>Deployment based on docker and tutor</li>
+<li>OpenEDX is hosted using the de.NBI cloud (or HU resourses) via OpenStack</li>
+</ul>
+</section>
+</section>
+<section id="generative-ai" class="level3" data-number="1.2.7">
+<h3 data-number="1.2.7" class="anchored" data-anchor-id="generative-ai"><span class="header-section-number">1.2.7</span> Generative AI</h3>
+<p>Generative AI refers to a type of artificial intelligence designed to create new content, such as text, images, music, or code, by learning patterns from existing data. It uses models like neural networks to generate outputs that resemble human creativity and reasoning.</p>
+<p>All course content is supported by <a href="https://chatgpt.com">ChatGPT</a>. Initial drafts are created, and materials are continuously updated and refined using generative AI.</p>
+</section>
+<section id="video-recording-obs-studio" class="level3" data-number="1.2.8">
+<h3 data-number="1.2.8" class="anchored" data-anchor-id="video-recording-obs-studio"><span class="header-section-number">1.2.8</span> Video recording (OBS Studio)</h3>
+<p><a href="https://obsproject.com/">OBS Studio</a> (Open Broadcaster Software) is a free, open-source software for video recording and live streaming. It allows users to capture and mix video/audio in real time with customizable scenes, sources, and transitions. Popular among streamers, educators, and content creators, OBS supports platforms like YouTube, Twitch, and Zoom.</p>
+<p>Videos in this course are recorded using OBS Studio and subsequently hosted on youtube.</p>
 
 
 </section>
