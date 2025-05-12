@@ -969,100 +969,100 @@
   {
     "objectID": "technology_review.html",
     "href": "technology_review.html",
-    "title": "15  Technology review",
+    "title": "15  Technology Review",
     "section": "",
-    "text": "15.1 Interactive plots\nHere we performed a search of available open technologies which could be used for the course. Some of these are employed in the course. Overview of technology relevant for the course.\nAn important part are interactive plots in the python notebooks. Most of the static plots are currently be generated with matplotlib.",
+    "text": "15.1 Interactive Plots\nThis chapter provides an overview of technologies and Python libraries that support interactive teaching. We conducted a review of open-source tools suitable for use in digital health education, with a particular focus on technologies that facilitate interactivity, visualization, and reproducibility. Several of these tools are actively used in the course.\nInteractive visualizations are a key component of the course, particularly within Python notebooks. While static plots are commonly created using matplotlib, several libraries offer enhanced interactivity that can significantly improve learner engagement and data exploration.",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#interactive-plots",
     "href": "technology_review.html#interactive-plots",
-    "title": "15  Technology review",
+    "title": "15  Technology Review",
     "section": "",
-    "text": "15.1.1 plotly\n\nhttps://plotly.com/python/\n\n\n\n15.1.2 altair\n\nhttps://altair-viz.github.io/",
+    "text": "15.1.1 Plotly\n\n\nWebsite: https://plotly.com/python/\nPlotly is a powerful graphing library that enables the creation of interactive, publication-quality plots. It supports a wide range of chart types, including 3D plots, and integrates well with Jupyter Notebooks.\n\n\n\n15.1.2 Altair\n\n\nWebsite: https://altair-viz.github.io/\nAltair is a declarative statistical visualization library for Python, built on the Vega-Lite visualization grammar. It offers a clean and user-friendly API for quickly building interactive plots, making it well-suited for teaching and exploratory data analysis.",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#interactive-web-applications",
     "href": "technology_review.html#interactive-web-applications",
-    "title": "15  Technology review",
-    "section": "15.2 Interactive web applications",
-    "text": "15.2 Interactive web applications\nTo demonstrate simple relationships between parameters/settings and outputs interactive small web applications with minimal overhead are a great solution. E.g. are the indocyanine green application\n\n15.2.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n15.2.2 Voila\n\nvoila notebooks: https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n15.2.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n15.2.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n15.2.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n15.2.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
+    "title": "15  Technology Review",
+    "section": "15.2 Interactive Web Applications",
+    "text": "15.2 Interactive Web Applications\nTo demonstrate simple relationships between parameters, settings, and outputs, lightweight interactive web applications are highly effective. These tools enable the creation of intuitive and responsive interfaces with minimal overhead. For example, see the Indocyanine Green application.\n\n15.2.1 Marimo\n\nWebsite: https://marimo.io/\nMarimo is an open-source reactive notebook for Python. It is reproducible, git-friendly, supports built-in SQL, can be executed as a script, and shared as a web app.\n\n\n\n15.2.2 Shiny for Python\n\nWebsite: https://shiny.posit.co/py/\nShiny enables the development of reactive data and AI applications in pure Python.\nIntegrates well with the Quarto publishing system for seamless documentation and presentation.\n\n\n\n15.2.3 Voilà\n\nWebsite: https://voila.readthedocs.io/en/stable/\nVoilà turns Jupyter Notebooks into standalone interactive dashboards.\nAllows secure sharing with customizable user interfaces, hiding underlying code when needed.\n\n\n\n15.2.4 Streamlit\n\nWebsite: https://streamlit.io/\nStreamlit allows rapid development of shareable web apps directly from Python scripts.\nNo front-end development experience is required, making it ideal for education and prototyping.\n\n\n\n15.2.5 Dash\n\nWebsite: https://dash.plotly.com/\nDash is a low-code framework for building data apps in Python, developed by Plotly.\nSupports multi-page apps, complex layouts, and scalable deployment.\nAdvanced customization may require HTML, CSS, and JavaScript knowledge.\n\n\n\n15.2.6 Panel\n\nWebsite: https://panel.holoviz.org/\nPanel is a versatile Python library for building dashboards, applications, and custom GUIs.\nSupports integration with multiple backends and rendering libraries.\n\n\n\n15.2.7 Observable Framework\n\nWebsite: https://github.com/observablehq/framework\nObservable Framework is a static site generator for building data apps, dashboards, and reports.\nUses JavaScript on the front end and supports any backend language.\nOffers precomputed data snapshots for fast, interactive dashboards.",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#deployment-of-notebooks",
     "href": "technology_review.html#deployment-of-notebooks",
-    "title": "15  Technology review",
-    "section": "15.3 Deployment of notebooks",
-    "text": "15.3 Deployment of notebooks\n\n15.3.1 binderhub\n\nvery slow\nhttps://binderhub.readthedocs.io/en/latest/\n15.3.2 jupyterhub\nJupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.\nhttps://jupyter.org/hub\nhttps://tljh.jupyter.org/en/latest/howto/index.html\n\nhttps://education.github.com/globalcampus/teacher?email_referrer=true\nnbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader & gradescope",
+    "title": "15  Technology Review",
+    "section": "15.3 Deployment of Notebooks",
+    "text": "15.3 Deployment of Notebooks\nDeploying Jupyter Notebooks in a scalable and user-friendly way is essential for interactive teaching, especially when working with groups of students or collaborators. Below are several popular solutions for deploying and sharing notebooks in educational and research settings.\n\n15.3.1 JupyterHub\n\nWebsite: https://jupyter.org/hub\nDocs (TLJH): https://tljh.jupyter.org/en/latest/howto/index.html\nJupyterHub enables centralized deployment of Jupyter Notebooks for multiple users. It provides each user with their own workspace and computational environment on shared infrastructure.\nSuitable for classroom settings, research groups, or institutions, with user management, authentication, and resource allocation handled by administrators.\nThe TLJH (The Littlest JupyterHub) distribution is ideal for small to medium-sized deployments on a single server.\n\n\n\n15.3.2 BinderHub\n\nWebsite: https://binderhub.readthedocs.io/en/latest/\nBinderHub allows you to create custom computing environments that can be shared and run directly from a Git repository.\nIt is ideal for reproducible examples, demos, and workshops without requiring users to install anything locally.\nWhile convenient, Binder instances can be slow to start, have limited resources, and are not intended for high-performance or long-term deployments.\n\n\n\n15.3.3 Google Colab\n\nWebsite: https://colab.research.google.com/\nGoogle Colab offers a cloud-based notebook environment with free access to GPUs and TPUs.\nNotebooks are stored in Google Drive and can be shared easily with others.\nWell-suited for introductory courses or rapid prototyping, though less customizable than JupyterHub-based setups.\n\n\n\n15.3.4 Deepnote\n\nWebsite: https://deepnote.com/\nDeepnote is a collaborative Jupyter-compatible notebook platform that supports real-time collaboration, version control, and integrations with various data sources.\nDesigned with education and team workflows in mind, but requires registration and is partially commercial.\n\n\n\n15.3.5 Noteable\n\nWebsite: https://noteable.io/\nNoteable is a platform tailored for teaching with notebooks in higher education.\nOffers learning management system (LMS) integration, centralized course management, and grading support.\nFree plans are available for educators with institutional support.\n\n\n\n15.3.6 Saturn Cloud\n\nWebsite: https://saturncloud.io/\nSaturn Cloud provides scalable cloud-based Jupyter environments with support for Dask, GPUs, and large memory instances.\nSuitable for more demanding applications or machine learning workloads in teaching and research.",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#educational-resources",
     "href": "technology_review.html#educational-resources",
-    "title": "15  Technology review",
-    "section": "16.1 Educational resources",
-    "text": "16.1 Educational resources\nResources on building a digital course, Course structure and best practise",
+    "title": "15  Technology Review",
+    "section": "15.7 Educational resources",
+    "text": "15.7 Educational resources\n\n15.7.1 Open edX Educators\n\nMaterial on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html\nInstructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#teaching-and-learning-with-jupyter",
     "href": "technology_review.html#teaching-and-learning-with-jupyter",
-    "title": "15  Technology review",
-    "section": "16.2 Teaching and Learning with Jupyter",
-    "text": "16.2 Teaching and Learning with Jupyter\nThis handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - https://jupyter4edu.github.io/jupyter-edu-book/",
+    "title": "15  Technology Review",
+    "section": "15.6 Teaching and Learning with Jupyter",
+    "text": "15.6 Teaching and Learning with Jupyter\nThis handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - https://jupyter4edu.github.io/jupyter-edu-book/",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#open-edx-educators",
     "href": "technology_review.html#open-edx-educators",
-    "title": "15  Technology review",
-    "section": "16.3 Open edX Educators",
-    "text": "16.3 Open edX Educators\n\nMaterial on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html\nInstructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts",
+    "title": "15  Technology Review",
+    "section": "15.8 Open edX Educators",
+    "text": "15.8 Open edX Educators\n\nMaterial on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html\nInstructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#text-to-speech",
     "href": "technology_review.html#text-to-speech",
-    "title": "15  Technology review",
-    "section": "16.4 Text to speech",
-    "text": "16.4 Text to speech\n\n16.4.1 Whisper AI\n\nhttps://openai.com/index/whisper/\n\n\n\n16.4.2 ElevenLabs\n\nhttps://elevenlabs.io/",
+    "title": "15  Technology Review",
+    "section": "15.8 Text to Speech",
+    "text": "15.8 Text to Speech\nText-to-speech (TTS) technologies support accessibility and inclusive education by enabling the conversion of written content into spoken language. This is especially beneficial for learners with visual impairments, language processing difficulties, or for developing audio-based instructional content.\n\n15.8.1 Whisper AI\n\nWebsite: https://openai.com/index/whisper/\nWhisper is an open-source automatic speech recognition (ASR) model developed by OpenAI.\nWhile primarily used for speech-to-text, it is useful in TTS pipelines to transcribe audio input and generate corresponding spoken or text-based materials for learners.\n\n\n\n15.8.2 ElevenLabs\n\nWebsite: https://elevenlabs.io/\nElevenLabs provides advanced neural voice synthesis tools for generating natural-sounding speech from text.\nThough not open source, it is widely used for creating high-quality audio for educational videos and interactive content.\n\n\n\n15.8.3 Notable Open Source Resources for TTS in Education\n\n15.8.3.1 eSpeak NG\n\nWebsite: https://github.com/espeak-ng/espeak-ng\nA compact, open-source software speech synthesizer supporting multiple languages.\nSuitable for use in accessibility tools, screen readers, and lightweight educational devices.\n\n\n\n15.8.3.2 Festival Speech Synthesis System\n\nWebsite: http://www.cstr.ed.ac.uk/projects/festival/\nA general-purpose TTS system developed at the University of Edinburgh, supporting multiple languages and customizable voice outputs.\n\n\n\n15.8.3.3 Mozilla TTS\n\nWebsite: https://github.com/mozilla/TTS\nA deep learning-based TTS engine developed by Mozilla, offering high-quality, natural-sounding speech synthesis.\nCan be trained with custom datasets for specific educational domains or languages.\n\n\n\n15.8.3.4 Coqui TTS\n\nWebsite: https://github.com/coqui-ai/TTS\nA community-driven fork of Mozilla TTS with active development and support.\nOffers multilingual support and state-of-the-art models for generating educational audio content.\n\nThese open-source tools can be integrated into educational platforms, e-learning applications, or assistive technologies to improve the learning experience for diverse user groups.",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   },
   {
     "objectID": "technology_review.html#installation",
     "href": "technology_review.html#installation",
-    "title": "15  Technology review",
-    "section": "17.1 Installation",
-    "text": "17.1 Installation\npip install mu-courses\nInstall up to date pandoc version https://github.com/jgm/pandoc/releases/ pandoc 3.6.4\nmkdir olx mu ./course.md ./olx/\nPackage the course\ntar -czf mycourse.tar.gz ./olx",
+    "title": "15  Technology Review",
+    "section": "16.1 Installation",
+    "text": "16.1 Installation\npip install mu-courses\nInstall up to date pandoc version https://github.com/jgm/pandoc/releases/ pandoc 3.6.4\nmkdir olx mu ./course.md ./olx/\nPackage the course\ntar -czf mycourse.tar.gz ./olx",
     "crumbs": [
       "Technology",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   },
   {
@@ -1151,6 +1151,72 @@
     "crumbs": [
       "Course",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#marino",
+    "href": "technology_review.html#marino",
+    "title": "15  Technology review",
+    "section": "15.3 ### Marino",
+    "text": "15.3 ### Marino\n\nmarimo is an open-source reactive notebook for Python — reproducible, git-friendly, SQL built-in, executable as a script, and shareable as an app.\n\n\n15.3.1 Shiny for python\n\npossible integration with Quarto\n\n\n\n15.3.2 Voila\n\nvoila notebooks: (https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n15.3.3 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n15.3.4 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n15.3.5 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n15.3.6 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#shiny-for-python",
+    "href": "technology_review.html#shiny-for-python",
+    "title": "15  Technology review",
+    "section": "15.3 ### Shiny for python",
+    "text": "15.3 ### Shiny for python\n\npossible integration with Quarto\n\n\n15.3.1 Voila\n\nvoila notebooks: (https://voila.readthedocs.io/en/stable/\nVoilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.\n\n\n\n15.3.2 Streamlit\n\nhttps://streamlit.io/\nTurn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.\n\n\n\n15.3.3 Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n\n15.3.4 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n15.3.5 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#dash",
+    "href": "technology_review.html#dash",
+    "title": "15  Technology Review",
+    "section": "15.3 ### Dash",
+    "text": "15.3 ### Dash\n\nDeveloped by Plotly, Dash is ideal for creating complex, interactive web applications using Python.\nSupports multi-page apps and scales well for large datasets and multiple users.\nRequires knowledge of HTML, CSS, and JavaScript for advanced customization\n\n\n15.3.1 Panel\n\nhttps://panel.holoviz.org/\nPanel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.\n\n\n\n15.3.2 Framework\n\nhttps://github.com/observablehq/framework\nObservable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#github-global-campus",
+    "href": "technology_review.html#github-global-campus",
+    "title": "15  Technology Review",
+    "section": "15.4 GitHub Global Campus",
+    "text": "15.4 GitHub Global Campus\n\nhttps://education.github.com/globalcampus\n\nFocus on teaching with GitHub Classroom Managing and organizing your class is easy with GitHub Classroom. Track and manage assignments, automate grading, and help students when they get stuck— all while using GitHub.",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#grading-of-jupyter-notebooks",
+    "href": "technology_review.html#grading-of-jupyter-notebooks",
+    "title": "15  Technology Review",
+    "section": "15.6 Grading of jupyter notebooks",
+    "text": "15.6 Grading of jupyter notebooks\nnbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader & gradescope",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
+    ]
+  },
+  {
+    "objectID": "technology_review.html#teaching-with-interactive-notebooks",
+    "href": "technology_review.html#teaching-with-interactive-notebooks",
+    "title": "15  Technology Review",
+    "section": "15.5 Teaching with interactive notebooks",
+    "text": "15.5 Teaching with interactive notebooks\nResources on building a digital course, course using interactive notebooks and tools.\n\n15.5.1 Teaching and Learning with Jupyter\nThis handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - https://jupyter4edu.github.io/jupyter-edu-book/\n\n\n15.5.2 Guide to Jupyter Notebooks for Educational Purposes",
+    "crumbs": [
+      "Technology",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
     ]
   }
 ]

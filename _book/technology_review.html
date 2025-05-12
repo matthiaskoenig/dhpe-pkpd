@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>15&nbsp; Technology review – Pharmacokinetic &amp; pharmacodynamic modelling</title>
+<title>15&nbsp; Technology Review – Pharmacokinetic &amp; pharmacodynamic modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-b2bd955b7378b94aa8c2ba4fafa553c9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1960fbccac74ec23a5c333d38695c7f1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3f625c3be5dbf7db5960e9950681ae96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,9 +78,11 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<meta name="twitter:title" content="15&nbsp; Technology review – Pharmacokinetic &amp; pharmacodynamic modelling">
+<meta name="twitter:title" content="15&nbsp; Technology Review – Pharmacokinetic &amp; pharmacodynamic modelling">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://livermetabolism.com/images/logos/plotly.svg">
+<meta name="twitter:image:alt" content="Plotly logo">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -92,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./install.html">Technology</a></li><li class="breadcrumb-item"><a href="./technology_review.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Technology review</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./install.html">Technology</a></li><li class="breadcrumb-item"><a href="./technology_review.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Technology Review</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -248,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./technology_review.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Technology review</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Technology Review</span></span></a>
   </div>
 </li>
       </ul>
@@ -280,38 +282,50 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#interactive-plots" id="toc-interactive-plots" class="nav-link active" data-scroll-target="#interactive-plots"><span class="header-section-number">15.1</span> Interactive plots</a>
+  <li><a href="#interactive-plots" id="toc-interactive-plots" class="nav-link active" data-scroll-target="#interactive-plots"><span class="header-section-number">15.1</span> Interactive Plots</a>
   <ul class="collapse">
-  <li><a href="#plotly" id="toc-plotly" class="nav-link" data-scroll-target="#plotly"><span class="header-section-number">15.1.1</span> plotly</a></li>
-  <li><a href="#altair" id="toc-altair" class="nav-link" data-scroll-target="#altair"><span class="header-section-number">15.1.2</span> altair</a></li>
+  <li><a href="#plotly" id="toc-plotly" class="nav-link" data-scroll-target="#plotly"><span class="header-section-number">15.1.1</span> Plotly</a></li>
+  <li><a href="#altair" id="toc-altair" class="nav-link" data-scroll-target="#altair"><span class="header-section-number">15.1.2</span> Altair</a></li>
   </ul></li>
-  <li><a href="#interactive-web-applications" id="toc-interactive-web-applications" class="nav-link" data-scroll-target="#interactive-web-applications"><span class="header-section-number">15.2</span> Interactive web applications</a>
+  <li><a href="#interactive-web-applications" id="toc-interactive-web-applications" class="nav-link" data-scroll-target="#interactive-web-applications"><span class="header-section-number">15.2</span> Interactive Web Applications</a>
   <ul class="collapse">
-  <li><a href="#shiny-for-python" id="toc-shiny-for-python" class="nav-link" data-scroll-target="#shiny-for-python"><span class="header-section-number">15.2.1</span> Shiny for python</a></li>
-  <li><a href="#voila" id="toc-voila" class="nav-link" data-scroll-target="#voila"><span class="header-section-number">15.2.2</span> Voila</a></li>
-  <li><a href="#streamlit" id="toc-streamlit" class="nav-link" data-scroll-target="#streamlit"><span class="header-section-number">15.2.3</span> Streamlit</a></li>
-  <li><a href="#dash" id="toc-dash" class="nav-link" data-scroll-target="#dash"><span class="header-section-number">15.2.4</span> Dash</a></li>
-  <li><a href="#panel" id="toc-panel" class="nav-link" data-scroll-target="#panel"><span class="header-section-number">15.2.5</span> Panel</a></li>
-  <li><a href="#framework" id="toc-framework" class="nav-link" data-scroll-target="#framework"><span class="header-section-number">15.2.6</span> Framework</a></li>
+  <li><a href="#marimo" id="toc-marimo" class="nav-link" data-scroll-target="#marimo"><span class="header-section-number">15.2.1</span> Marimo</a></li>
+  <li><a href="#shiny-for-python" id="toc-shiny-for-python" class="nav-link" data-scroll-target="#shiny-for-python"><span class="header-section-number">15.2.2</span> Shiny for Python</a></li>
+  <li><a href="#voilà" id="toc-voilà" class="nav-link" data-scroll-target="#voilà"><span class="header-section-number">15.2.3</span> Voilà</a></li>
+  <li><a href="#streamlit" id="toc-streamlit" class="nav-link" data-scroll-target="#streamlit"><span class="header-section-number">15.2.4</span> Streamlit</a></li>
+  <li><a href="#dash" id="toc-dash" class="nav-link" data-scroll-target="#dash"><span class="header-section-number">15.2.5</span> Dash</a></li>
+  <li><a href="#panel" id="toc-panel" class="nav-link" data-scroll-target="#panel"><span class="header-section-number">15.2.6</span> Panel</a></li>
+  <li><a href="#observable-framework" id="toc-observable-framework" class="nav-link" data-scroll-target="#observable-framework"><span class="header-section-number">15.2.7</span> Observable Framework</a></li>
   </ul></li>
-  <li><a href="#deployment-of-notebooks" id="toc-deployment-of-notebooks" class="nav-link" data-scroll-target="#deployment-of-notebooks"><span class="header-section-number">15.3</span> Deployment of notebooks</a>
+  <li><a href="#deployment-of-notebooks" id="toc-deployment-of-notebooks" class="nav-link" data-scroll-target="#deployment-of-notebooks"><span class="header-section-number">15.3</span> Deployment of Notebooks</a>
   <ul class="collapse">
-  <li><a href="#binderhub" id="toc-binderhub" class="nav-link" data-scroll-target="#binderhub"><span class="header-section-number">15.3.1</span> binderhub</a></li>
+  <li><a href="#jupyterhub" id="toc-jupyterhub" class="nav-link" data-scroll-target="#jupyterhub"><span class="header-section-number">15.3.1</span> JupyterHub</a></li>
+  <li><a href="#binderhub" id="toc-binderhub" class="nav-link" data-scroll-target="#binderhub"><span class="header-section-number">15.3.2</span> BinderHub</a></li>
+  <li><a href="#google-colab" id="toc-google-colab" class="nav-link" data-scroll-target="#google-colab"><span class="header-section-number">15.3.3</span> Google Colab</a></li>
+  <li><a href="#deepnote" id="toc-deepnote" class="nav-link" data-scroll-target="#deepnote"><span class="header-section-number">15.3.4</span> Deepnote</a></li>
+  <li><a href="#noteable" id="toc-noteable" class="nav-link" data-scroll-target="#noteable"><span class="header-section-number">15.3.5</span> Noteable</a></li>
+  <li><a href="#saturn-cloud" id="toc-saturn-cloud" class="nav-link" data-scroll-target="#saturn-cloud"><span class="header-section-number">15.3.6</span> Saturn Cloud</a></li>
   </ul></li>
-  <li><a href="#github-global-campus" id="toc-github-global-campus" class="nav-link" data-scroll-target="#github-global-campus"><span class="header-section-number">16</span> GitHub Global Campus</a>
+  <li><a href="#github-global-campus" id="toc-github-global-campus" class="nav-link" data-scroll-target="#github-global-campus"><span class="header-section-number">15.4</span> GitHub Global Campus</a></li>
+  <li><a href="#teaching-with-interactive-notebooks" id="toc-teaching-with-interactive-notebooks" class="nav-link" data-scroll-target="#teaching-with-interactive-notebooks"><span class="header-section-number">15.5</span> Teaching with interactive notebooks</a>
   <ul class="collapse">
-  <li><a href="#educational-resources" id="toc-educational-resources" class="nav-link" data-scroll-target="#educational-resources"><span class="header-section-number">16.1</span> Educational resources</a></li>
-  <li><a href="#teaching-and-learning-with-jupyter" id="toc-teaching-and-learning-with-jupyter" class="nav-link" data-scroll-target="#teaching-and-learning-with-jupyter"><span class="header-section-number">16.2</span> Teaching and Learning with Jupyter</a></li>
-  <li><a href="#open-edx-educators" id="toc-open-edx-educators" class="nav-link" data-scroll-target="#open-edx-educators"><span class="header-section-number">16.3</span> Open edX Educators</a></li>
-  <li><a href="#text-to-speech" id="toc-text-to-speech" class="nav-link" data-scroll-target="#text-to-speech"><span class="header-section-number">16.4</span> Text to speech</a>
-  <ul class="collapse">
-  <li><a href="#whisper-ai" id="toc-whisper-ai" class="nav-link" data-scroll-target="#whisper-ai"><span class="header-section-number">16.4.1</span> Whisper AI</a></li>
-  <li><a href="#elevenlabs" id="toc-elevenlabs" class="nav-link" data-scroll-target="#elevenlabs"><span class="header-section-number">16.4.2</span> ElevenLabs</a></li>
+  <li><a href="#teaching-and-learning-with-jupyter" id="toc-teaching-and-learning-with-jupyter" class="nav-link" data-scroll-target="#teaching-and-learning-with-jupyter"><span class="header-section-number">15.5.1</span> Teaching and Learning with Jupyter</a></li>
+  <li><a href="#guide-to-jupyter-notebooks-for-educational-purposes" id="toc-guide-to-jupyter-notebooks-for-educational-purposes" class="nav-link" data-scroll-target="#guide-to-jupyter-notebooks-for-educational-purposes"><span class="header-section-number">15.5.2</span> Guide to Jupyter Notebooks for Educational Purposes</a></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#mu" id="toc-mu" class="nav-link" data-scroll-target="#mu"><span class="header-section-number">17</span> Mu</a>
+  <li><a href="#grading-of-jupyter-notebooks" id="toc-grading-of-jupyter-notebooks" class="nav-link" data-scroll-target="#grading-of-jupyter-notebooks"><span class="header-section-number">15.6</span> Grading of jupyter notebooks</a></li>
+  <li><a href="#educational-resources" id="toc-educational-resources" class="nav-link" data-scroll-target="#educational-resources"><span class="header-section-number">15.7</span> Educational resources</a>
   <ul class="collapse">
-  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation"><span class="header-section-number">17.1</span> Installation</a></li>
+  <li><a href="#open-edx-educators" id="toc-open-edx-educators" class="nav-link" data-scroll-target="#open-edx-educators"><span class="header-section-number">15.7.1</span> Open edX Educators</a></li>
+  </ul></li>
+  <li><a href="#text-to-speech" id="toc-text-to-speech" class="nav-link" data-scroll-target="#text-to-speech"><span class="header-section-number">15.8</span> Text to Speech</a>
+  <ul class="collapse">
+  <li><a href="#whisper-ai" id="toc-whisper-ai" class="nav-link" data-scroll-target="#whisper-ai"><span class="header-section-number">15.8.1</span> Whisper AI</a></li>
+  <li><a href="#elevenlabs" id="toc-elevenlabs" class="nav-link" data-scroll-target="#elevenlabs"><span class="header-section-number">15.8.2</span> ElevenLabs</a></li>
+  <li><a href="#notable-open-source-resources-for-tts-in-education" id="toc-notable-open-source-resources-for-tts-in-education" class="nav-link" data-scroll-target="#notable-open-source-resources-for-tts-in-education"><span class="header-section-number">15.8.3</span> Notable Open Source Resources for TTS in Education</a></li>
+  </ul></li>
+  <li><a href="#mu" id="toc-mu" class="nav-link" data-scroll-target="#mu"><span class="header-section-number">16</span> Mu</a>
+  <ul class="collapse">
+  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation"><span class="header-section-number">16.1</span> Installation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -319,9 +333,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./install.html">Technology</a></li><li class="breadcrumb-item"><a href="./technology_review.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Technology review</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./install.html">Technology</a></li><li class="breadcrumb-item"><a href="./technology_review.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Technology Review</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Technology review</span></h1>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Technology Review</span></h1>
 </div>
 
 
@@ -338,128 +352,242 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Here we performed a search of available open technologies which could be used for the course. Some of these are employed in the course. Overview of technology relevant for the course.</p>
+<p>This chapter provides an overview of technologies and Python libraries that support interactive teaching. We conducted a review of open-source tools suitable for use in digital health education, with a particular focus on technologies that facilitate interactivity, visualization, and reproducibility. Several of these tools are actively used in the course.</p>
 <section id="interactive-plots" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="interactive-plots"><span class="header-section-number">15.1</span> Interactive plots</h2>
-<p>An important part are interactive plots in the python notebooks. Most of the static plots are currently be generated with matplotlib.</p>
+<h2 data-number="15.1" class="anchored" data-anchor-id="interactive-plots"><span class="header-section-number">15.1</span> Interactive Plots</h2>
+<p>Interactive visualizations are a key component of the course, particularly within Python notebooks. While static plots are commonly created using <code>matplotlib</code>, several libraries offer enhanced interactivity that can significantly improve learner engagement and data exploration.</p>
 <section id="plotly" class="level3" data-number="15.1.1">
-<h3 data-number="15.1.1" class="anchored" data-anchor-id="plotly"><span class="header-section-number">15.1.1</span> plotly</h3>
+<h3 data-number="15.1.1" class="anchored" data-anchor-id="plotly"><span class="header-section-number">15.1.1</span> Plotly</h3>
+<p><img src="./images/logos/plotly.svg" alt="Plotly logo" height="30"></p>
 <ul>
-<li>https://plotly.com/python/</li>
+<li>Website: <a href="https://plotly.com/python/">https://plotly.com/python/</a></li>
+<li>Plotly is a powerful graphing library that enables the creation of interactive, publication-quality plots. It supports a wide range of chart types, including 3D plots, and integrates well with Jupyter Notebooks.</li>
 </ul>
 </section>
 <section id="altair" class="level3" data-number="15.1.2">
-<h3 data-number="15.1.2" class="anchored" data-anchor-id="altair"><span class="header-section-number">15.1.2</span> altair</h3>
+<h3 data-number="15.1.2" class="anchored" data-anchor-id="altair"><span class="header-section-number">15.1.2</span> Altair</h3>
+<p><img src="./images/logos/altair.png" alt="Altair logo" height="30"></p>
 <ul>
-<li>https://altair-viz.github.io/</li>
+<li>Website: <a href="https://altair-viz.github.io/">https://altair-viz.github.io/</a></li>
+<li>Altair is a declarative statistical visualization library for Python, built on the Vega-Lite visualization grammar. It offers a clean and user-friendly API for quickly building interactive plots, making it well-suited for teaching and exploratory data analysis.</li>
 </ul>
 </section>
 </section>
 <section id="interactive-web-applications" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="interactive-web-applications"><span class="header-section-number">15.2</span> Interactive web applications</h2>
-<p>To demonstrate simple relationships between parameters/settings and outputs interactive small web applications with minimal overhead are a great solution. E.g. are the <a href="https://icg-model.streamlit.app/">indocyanine green application</a></p>
-<section id="shiny-for-python" class="level3" data-number="15.2.1">
-<h3 data-number="15.2.1" class="anchored" data-anchor-id="shiny-for-python"><span class="header-section-number">15.2.1</span> Shiny for python</h3>
+<h2 data-number="15.2" class="anchored" data-anchor-id="interactive-web-applications"><span class="header-section-number">15.2</span> Interactive Web Applications</h2>
+<p>To demonstrate simple relationships between parameters, settings, and outputs, lightweight interactive web applications are highly effective. These tools enable the creation of intuitive and responsive interfaces with minimal overhead. For example, see the <a href="https://icg-model.streamlit.app/">Indocyanine Green application</a>.</p>
+<section id="marimo" class="level3" data-number="15.2.1">
+<h3 data-number="15.2.1" class="anchored" data-anchor-id="marimo"><span class="header-section-number">15.2.1</span> Marimo</h3>
 <ul>
-<li>possible integration with Quarto</li>
+<li>Website: <a href="https://marimo.io/" class="uri">https://marimo.io/</a></li>
+<li>Marimo is an open-source reactive notebook for Python. It is reproducible, git-friendly, supports built-in SQL, can be executed as a script, and shared as a web app.</li>
 </ul>
 </section>
-<section id="voila" class="level3" data-number="15.2.2">
-<h3 data-number="15.2.2" class="anchored" data-anchor-id="voila"><span class="header-section-number">15.2.2</span> Voila</h3>
+<section id="shiny-for-python" class="level3" data-number="15.2.2">
+<h3 data-number="15.2.2" class="anchored" data-anchor-id="shiny-for-python"><span class="header-section-number">15.2.2</span> Shiny for Python</h3>
 <ul>
-<li>voila notebooks: https://voila.readthedocs.io/en/stable/</li>
-<li>Voilà allows you to convert a Jupyter Notebook into an interactive dashboard that allows you to share your work with others. It is secure and customizable, giving you control over what your readers experience.</li>
+<li>Website: <a href="https://shiny.posit.co/py/" class="uri">https://shiny.posit.co/py/</a></li>
+<li>Shiny enables the development of reactive data and AI applications in pure Python.</li>
+<li>Integrates well with the Quarto publishing system for seamless documentation and presentation.</li>
 </ul>
 </section>
-<section id="streamlit" class="level3" data-number="15.2.3">
-<h3 data-number="15.2.3" class="anchored" data-anchor-id="streamlit"><span class="header-section-number">15.2.3</span> Streamlit</h3>
+<section id="voilà" class="level3" data-number="15.2.3">
+<h3 data-number="15.2.3" class="anchored" data-anchor-id="voilà"><span class="header-section-number">15.2.3</span> Voilà</h3>
 <ul>
-<li>https://streamlit.io/</li>
-<li>Turn your data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.</li>
+<li>Website: <a href="https://voila.readthedocs.io/en/stable/" class="uri">https://voila.readthedocs.io/en/stable/</a></li>
+<li>Voilà turns Jupyter Notebooks into standalone interactive dashboards.</li>
+<li>Allows secure sharing with customizable user interfaces, hiding underlying code when needed.</li>
 </ul>
 </section>
-<section id="dash" class="level3" data-number="15.2.4">
-<h3 data-number="15.2.4" class="anchored" data-anchor-id="dash"><span class="header-section-number">15.2.4</span> Dash</h3>
+<section id="streamlit" class="level3" data-number="15.2.4">
+<h3 data-number="15.2.4" class="anchored" data-anchor-id="streamlit"><span class="header-section-number">15.2.4</span> Streamlit</h3>
 <ul>
-<li>Developed by Plotly, Dash is ideal for creating complex, interactive web applications using Python.</li>
-<li>Supports multi-page apps and scales well for large datasets and multiple users.</li>
-<li>Requires knowledge of HTML, CSS, and JavaScript for advanced customization</li>
+<li>Website: <a href="https://streamlit.io/" class="uri">https://streamlit.io/</a></li>
+<li>Streamlit allows rapid development of shareable web apps directly from Python scripts.</li>
+<li>No front-end development experience is required, making it ideal for education and prototyping.</li>
 </ul>
 </section>
-<section id="panel" class="level3" data-number="15.2.5">
-<h3 data-number="15.2.5" class="anchored" data-anchor-id="panel"><span class="header-section-number">15.2.5</span> Panel</h3>
+<section id="dash" class="level3" data-number="15.2.5">
+<h3 data-number="15.2.5" class="anchored" data-anchor-id="dash"><span class="header-section-number">15.2.5</span> Dash</h3>
 <ul>
-<li>https://panel.holoviz.org/</li>
-<li>Panel is an open-source Python library designed to streamline the development of robust tools, dashboards, and complex applications entirely within Python.</li>
+<li>Website: <a href="https://dash.plotly.com/" class="uri">https://dash.plotly.com/</a></li>
+<li>Dash is a low-code framework for building data apps in Python, developed by Plotly.</li>
+<li>Supports multi-page apps, complex layouts, and scalable deployment.</li>
+<li>Advanced customization may require HTML, CSS, and JavaScript knowledge.</li>
 </ul>
 </section>
-<section id="framework" class="level3" data-number="15.2.6">
-<h3 data-number="15.2.6" class="anchored" data-anchor-id="framework"><span class="header-section-number">15.2.6</span> Framework</h3>
+<section id="panel" class="level3" data-number="15.2.6">
+<h3 data-number="15.2.6" class="anchored" data-anchor-id="panel"><span class="header-section-number">15.2.6</span> Panel</h3>
 <ul>
-<li>https://github.com/observablehq/framework</li>
-<li>Observable Framework is a free, open-source, static site generator for data apps, dashboards, reports, and more. Framework combines JavaScript on the front-end for interactive graphics with any language on the back-end for data analysis. Framework features data loaders that precompute static snapshots of data at build time for dashboards that load instantly.</li>
+<li>Website: <a href="https://panel.holoviz.org/" class="uri">https://panel.holoviz.org/</a></li>
+<li>Panel is a versatile Python library for building dashboards, applications, and custom GUIs.</li>
+<li>Supports integration with multiple backends and rendering libraries.</li>
+</ul>
+</section>
+<section id="observable-framework" class="level3" data-number="15.2.7">
+<h3 data-number="15.2.7" class="anchored" data-anchor-id="observable-framework"><span class="header-section-number">15.2.7</span> Observable Framework</h3>
+<ul>
+<li>Website: <a href="https://github.com/observablehq/framework" class="uri">https://github.com/observablehq/framework</a></li>
+<li>Observable Framework is a static site generator for building data apps, dashboards, and reports.</li>
+<li>Uses JavaScript on the front end and supports any backend language.</li>
+<li>Offers precomputed data snapshots for fast, interactive dashboards.</li>
 </ul>
 </section>
 </section>
 <section id="deployment-of-notebooks" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="deployment-of-notebooks"><span class="header-section-number">15.3</span> Deployment of notebooks</h2>
-<section id="binderhub" class="level3" data-number="15.3.1">
-<h3 data-number="15.3.1" class="anchored" data-anchor-id="binderhub"><span class="header-section-number">15.3.1</span> binderhub</h3>
+<h2 data-number="15.3" class="anchored" data-anchor-id="deployment-of-notebooks"><span class="header-section-number">15.3</span> Deployment of Notebooks</h2>
+<p>Deploying Jupyter Notebooks in a scalable and user-friendly way is essential for interactive teaching, especially when working with groups of students or collaborators. Below are several popular solutions for deploying and sharing notebooks in educational and research settings.</p>
+<section id="jupyterhub" class="level3" data-number="15.3.1">
+<h3 data-number="15.3.1" class="anchored" data-anchor-id="jupyterhub"><span class="header-section-number">15.3.1</span> JupyterHub</h3>
 <ul>
-<li>very slow</li>
-<li>https://binderhub.readthedocs.io/en/latest/</li>
-<li><h3 id="jupyterhub" data-number="15.3.2" class="anchored"><span class="header-section-number">15.3.2</span> jupyterhub</h3></li>
-<li>JupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks. Users - including students, researchers, and data scientists - can get their work done in their own workspaces on shared resources which can be managed efficiently by system administrators.</li>
-<li>https://jupyter.org/hub</li>
-<li>https://tljh.jupyter.org/en/latest/howto/index.html</li>
+<li>Website: <a href="https://jupyter.org/hub" class="uri">https://jupyter.org/hub</a></li>
+<li>Docs (TLJH): <a href="https://tljh.jupyter.org/en/latest/howto/index.html" class="uri">https://tljh.jupyter.org/en/latest/howto/index.html</a></li>
+<li>JupyterHub enables centralized deployment of Jupyter Notebooks for multiple users. It provides each user with their own workspace and computational environment on shared infrastructure.</li>
+<li>Suitable for classroom settings, research groups, or institutions, with user management, authentication, and resource allocation handled by administrators.</li>
+<li>The <a href="https://tljh.jupyter.org/">TLJH (The Littlest JupyterHub)</a> distribution is ideal for small to medium-sized deployments on a single server.</li>
 </ul>
-<p>https://education.github.com/globalcampus/teacher?email_referrer=true</p>
-<p>nbgrader: https://nbgrader.readthedocs.io/en/stable/ https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader &amp; gradescope</p>
+</section>
+<section id="binderhub" class="level3" data-number="15.3.2">
+<h3 data-number="15.3.2" class="anchored" data-anchor-id="binderhub"><span class="header-section-number">15.3.2</span> BinderHub</h3>
+<ul>
+<li>Website: <a href="https://binderhub.readthedocs.io/en/latest/" class="uri">https://binderhub.readthedocs.io/en/latest/</a></li>
+<li>BinderHub allows you to create custom computing environments that can be shared and run directly from a Git repository.</li>
+<li>It is ideal for reproducible examples, demos, and workshops without requiring users to install anything locally.</li>
+<li>While convenient, Binder instances can be slow to start, have limited resources, and are not intended for high-performance or long-term deployments.</li>
+</ul>
+</section>
+<section id="google-colab" class="level3" data-number="15.3.3">
+<h3 data-number="15.3.3" class="anchored" data-anchor-id="google-colab"><span class="header-section-number">15.3.3</span> Google Colab</h3>
+<ul>
+<li>Website: <a href="https://colab.research.google.com/" class="uri">https://colab.research.google.com/</a></li>
+<li>Google Colab offers a cloud-based notebook environment with free access to GPUs and TPUs.</li>
+<li>Notebooks are stored in Google Drive and can be shared easily with others.</li>
+<li>Well-suited for introductory courses or rapid prototyping, though less customizable than JupyterHub-based setups.</li>
+</ul>
+</section>
+<section id="deepnote" class="level3" data-number="15.3.4">
+<h3 data-number="15.3.4" class="anchored" data-anchor-id="deepnote"><span class="header-section-number">15.3.4</span> Deepnote</h3>
+<ul>
+<li>Website: <a href="https://deepnote.com/" class="uri">https://deepnote.com/</a></li>
+<li>Deepnote is a collaborative Jupyter-compatible notebook platform that supports real-time collaboration, version control, and integrations with various data sources.</li>
+<li>Designed with education and team workflows in mind, but requires registration and is partially commercial.</li>
+</ul>
+</section>
+<section id="noteable" class="level3" data-number="15.3.5">
+<h3 data-number="15.3.5" class="anchored" data-anchor-id="noteable"><span class="header-section-number">15.3.5</span> Noteable</h3>
+<ul>
+<li>Website: <a href="https://noteable.io/" class="uri">https://noteable.io/</a></li>
+<li>Noteable is a platform tailored for teaching with notebooks in higher education.</li>
+<li>Offers learning management system (LMS) integration, centralized course management, and grading support.</li>
+<li>Free plans are available for educators with institutional support.</li>
+</ul>
+</section>
+<section id="saturn-cloud" class="level3" data-number="15.3.6">
+<h3 data-number="15.3.6" class="anchored" data-anchor-id="saturn-cloud"><span class="header-section-number">15.3.6</span> Saturn Cloud</h3>
+<ul>
+<li>Website: <a href="https://saturncloud.io/" class="uri">https://saturncloud.io/</a></li>
+<li>Saturn Cloud provides scalable cloud-based Jupyter environments with support for Dask, GPUs, and large memory instances.</li>
+<li>Suitable for more demanding applications or machine learning workloads in teaching and research.</li>
+</ul>
 </section>
 </section>
-<section id="github-global-campus" class="level1" data-number="16">
-<h1 data-number="16"><span class="header-section-number">16</span> GitHub Global Campus</h1>
+<section id="github-global-campus" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="github-global-campus"><span class="header-section-number">15.4</span> GitHub Global Campus</h2>
+<ul>
+<li><a href="https://education.github.com/globalcampus" class="uri">https://education.github.com/globalcampus</a></li>
+</ul>
 <p>Focus on teaching with GitHub Classroom Managing and organizing your class is easy with GitHub Classroom. Track and manage assignments, automate grading, and help students when they get stuck— all while using GitHub.</p>
-<section id="educational-resources" class="level2" data-number="16.1">
-<h2 data-number="16.1" class="anchored" data-anchor-id="educational-resources"><span class="header-section-number">16.1</span> Educational resources</h2>
-<p>Resources on building a digital course, Course structure and best practise</p>
 </section>
-<section id="teaching-and-learning-with-jupyter" class="level2" data-number="16.2">
-<h2 data-number="16.2" class="anchored" data-anchor-id="teaching-and-learning-with-jupyter"><span class="header-section-number">16.2</span> Teaching and Learning with Jupyter</h2>
-<p>This handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - https://jupyter4edu.github.io/jupyter-edu-book/</p>
+<section id="teaching-with-interactive-notebooks" class="level2" data-number="15.5">
+<h2 data-number="15.5" class="anchored" data-anchor-id="teaching-with-interactive-notebooks"><span class="header-section-number">15.5</span> Teaching with interactive notebooks</h2>
+<p>Resources on building a digital course, course using interactive notebooks and tools.</p>
+<section id="teaching-and-learning-with-jupyter" class="level3" data-number="15.5.1">
+<h3 data-number="15.5.1" class="anchored" data-anchor-id="teaching-and-learning-with-jupyter"><span class="header-section-number">15.5.1</span> Teaching and Learning with Jupyter</h3>
+<p>This handbook is for any educator teaching a topic that includes data analysis or computation in order to support learning. - <a href="https://jupyter4edu.github.io/jupyter-edu-book/" class="uri">https://jupyter4edu.github.io/jupyter-edu-book/</a></p>
 </section>
-<section id="open-edx-educators" class="level2" data-number="16.3">
-<h2 data-number="16.3" class="anchored" data-anchor-id="open-edx-educators"><span class="header-section-number">16.3</span> Open edX Educators</h2>
+<section id="guide-to-jupyter-notebooks-for-educational-purposes" class="level3" data-number="15.5.2">
+<h3 data-number="15.5.2" class="anchored" data-anchor-id="guide-to-jupyter-notebooks-for-educational-purposes"><span class="header-section-number">15.5.2</span> Guide to Jupyter Notebooks for Educational Purposes</h3>
+</section>
+</section>
+<section id="grading-of-jupyter-notebooks" class="level2" data-number="15.6">
+<h2 data-number="15.6" class="anchored" data-anchor-id="grading-of-jupyter-notebooks"><span class="header-section-number">15.6</span> Grading of jupyter notebooks</h2>
+<p>nbgrader: <a href="https://nbgrader.readthedocs.io/en/stable/" class="uri">https://nbgrader.readthedocs.io/en/stable/</a> https://www.youtube.com/watch?v=bEcxnR2V-_8 Otter grader &amp; gradescope</p>
+</section>
+<section id="educational-resources" class="level2" data-number="15.7">
+<h2 data-number="15.7" class="anchored" data-anchor-id="educational-resources"><span class="header-section-number">15.7</span> Educational resources</h2>
+<section id="open-edx-educators" class="level3" data-number="15.7.1">
+<h3 data-number="15.7.1" class="anchored" data-anchor-id="open-edx-educators"><span class="header-section-number">15.7.1</span> Open edX Educators</h3>
 <ul>
 <li>Material on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html</li>
 <li>Instructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts</li>
 </ul>
 </section>
-<section id="text-to-speech" class="level2" data-number="16.4">
-<h2 data-number="16.4" class="anchored" data-anchor-id="text-to-speech"><span class="header-section-number">16.4</span> Text to speech</h2>
-<section id="whisper-ai" class="level3" data-number="16.4.1">
-<h3 data-number="16.4.1" class="anchored" data-anchor-id="whisper-ai"><span class="header-section-number">16.4.1</span> Whisper AI</h3>
+</section>
+<section id="text-to-speech" class="level2" data-number="15.8">
+<h2 data-number="15.8" class="anchored" data-anchor-id="text-to-speech"><span class="header-section-number">15.8</span> Text to Speech</h2>
+<p>Text-to-speech (TTS) technologies support accessibility and inclusive education by enabling the conversion of written content into spoken language. This is especially beneficial for learners with visual impairments, language processing difficulties, or for developing audio-based instructional content.</p>
+<section id="whisper-ai" class="level3" data-number="15.8.1">
+<h3 data-number="15.8.1" class="anchored" data-anchor-id="whisper-ai"><span class="header-section-number">15.8.1</span> Whisper AI</h3>
 <ul>
-<li>https://openai.com/index/whisper/</li>
+<li>Website: <a href="https://openai.com/index/whisper/" class="uri">https://openai.com/index/whisper/</a></li>
+<li>Whisper is an open-source automatic speech recognition (ASR) model developed by OpenAI.</li>
+<li>While primarily used for speech-to-text, it is useful in TTS pipelines to transcribe audio input and generate corresponding spoken or text-based materials for learners.</li>
 </ul>
 </section>
-<section id="elevenlabs" class="level3" data-number="16.4.2">
-<h3 data-number="16.4.2" class="anchored" data-anchor-id="elevenlabs"><span class="header-section-number">16.4.2</span> ElevenLabs</h3>
+<section id="elevenlabs" class="level3" data-number="15.8.2">
+<h3 data-number="15.8.2" class="anchored" data-anchor-id="elevenlabs"><span class="header-section-number">15.8.2</span> ElevenLabs</h3>
 <ul>
-<li>https://elevenlabs.io/</li>
+<li>Website: <a href="https://elevenlabs.io/" class="uri">https://elevenlabs.io/</a></li>
+<li>ElevenLabs provides advanced neural voice synthesis tools for generating natural-sounding speech from text.</li>
+<li>Though not open source, it is widely used for creating high-quality audio for educational videos and interactive content.</li>
 </ul>
 </section>
+<section id="notable-open-source-resources-for-tts-in-education" class="level3" data-number="15.8.3">
+<h3 data-number="15.8.3" class="anchored" data-anchor-id="notable-open-source-resources-for-tts-in-education"><span class="header-section-number">15.8.3</span> Notable Open Source Resources for TTS in Education</h3>
+<section id="espeak-ng" class="level4" data-number="15.8.3.1">
+<h4 data-number="15.8.3.1" class="anchored" data-anchor-id="espeak-ng"><span class="header-section-number">15.8.3.1</span> eSpeak NG</h4>
+<ul>
+<li>Website: <a href="https://github.com/espeak-ng/espeak-ng" class="uri">https://github.com/espeak-ng/espeak-ng</a></li>
+<li>A compact, open-source software speech synthesizer supporting multiple languages.</li>
+<li>Suitable for use in accessibility tools, screen readers, and lightweight educational devices.</li>
+</ul>
+</section>
+<section id="festival-speech-synthesis-system" class="level4" data-number="15.8.3.2">
+<h4 data-number="15.8.3.2" class="anchored" data-anchor-id="festival-speech-synthesis-system"><span class="header-section-number">15.8.3.2</span> Festival Speech Synthesis System</h4>
+<ul>
+<li>Website: <a href="http://www.cstr.ed.ac.uk/projects/festival/" class="uri">http://www.cstr.ed.ac.uk/projects/festival/</a></li>
+<li>A general-purpose TTS system developed at the University of Edinburgh, supporting multiple languages and customizable voice outputs.</li>
+</ul>
+</section>
+<section id="mozilla-tts" class="level4" data-number="15.8.3.3">
+<h4 data-number="15.8.3.3" class="anchored" data-anchor-id="mozilla-tts"><span class="header-section-number">15.8.3.3</span> Mozilla TTS</h4>
+<ul>
+<li>Website: <a href="https://github.com/mozilla/TTS" class="uri">https://github.com/mozilla/TTS</a></li>
+<li>A deep learning-based TTS engine developed by Mozilla, offering high-quality, natural-sounding speech synthesis.</li>
+<li>Can be trained with custom datasets for specific educational domains or languages.</li>
+</ul>
+</section>
+<section id="coqui-tts" class="level4" data-number="15.8.3.4">
+<h4 data-number="15.8.3.4" class="anchored" data-anchor-id="coqui-tts"><span class="header-section-number">15.8.3.4</span> Coqui TTS</h4>
+<ul>
+<li>Website: <a href="https://github.com/coqui-ai/TTS" class="uri">https://github.com/coqui-ai/TTS</a></li>
+<li>A community-driven fork of Mozilla TTS with active development and support.</li>
+<li>Offers multilingual support and state-of-the-art models for generating educational audio content.</li>
+</ul>
+<p>These open-source tools can be integrated into educational platforms, e-learning applications, or assistive technologies to improve the learning experience for diverse user groups.</p>
+<hr>
 </section>
 </section>
-<section id="mu" class="level1" data-number="17">
-<h1 data-number="17"><span class="header-section-number">17</span> Mu</h1>
+</section>
+<section id="mu" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> Mu</h1>
 <p>See also markdown xblock! https://github.com/citynetwork/markdown-xblock</p>
 <p>Writing courses in markdown.</p>
 <p>Mu Course authoring for humans https://discuss.openedx.org/t/introducing-mu-course-authoring-for-humans/9314</p>
 <p>In a nutshell, Mu allows you to write your courses in Markdown or HTML5, and then convert them to OLX, and vice-versa.</p>
 <p>https://github.com/overhangio/mu</p>
-<section id="installation" class="level2" data-number="17.1">
-<h2 data-number="17.1" class="anchored" data-anchor-id="installation"><span class="header-section-number">17.1</span> Installation</h2>
+<section id="installation" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="installation"><span class="header-section-number">16.1</span> Installation</h2>
 <p>pip install mu-courses</p>
 <p>Install up to date pandoc version https://github.com/jgm/pandoc/releases/ pandoc 3.6.4</p>
 <p>mkdir olx mu ./course.md ./olx/</p>

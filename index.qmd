@@ -24,7 +24,7 @@ Ready to begin? Dive in and transform the way you think about medicine.
 <!--
 ::: {layout-ncol=2}
 
-![Invidivual responses to drugs.](./images/individuality.png ){#fig-individuality width=100%}
+![Individual responses to drugs.](./images/individuality.png ){#fig-individuality width=100%}
 
 :::
 -->
