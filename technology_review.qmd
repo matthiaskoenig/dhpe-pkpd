@@ -25,6 +25,7 @@ To demonstrate simple relationships between parameters, settings, and outputs, l
 ### Marimo
 * Website: <https://marimo.io/>
 * Marimo is an open-source reactive notebook for Python. It is reproducible, git-friendly, supports built-in SQL, can be executed as a script, and shared as a web app.
+* Deployment of marimo with: https://github.com/jyio/jupyter-marimo-proxy
 
 ### Shiny for Python
 - Website: <https://shiny.posit.co/py/>
@@ -68,6 +69,7 @@ Deploying Jupyter Notebooks in a scalable and user-friendly way is essential for
 - JupyterHub enables centralized deployment of Jupyter Notebooks for multiple users. It provides each user with their own workspace and computational environment on shared infrastructure.
 - Suitable for classroom settings, research groups, or institutions, with user management, authentication, and resource allocation handled by administrators.
 - The [TLJH (The Littlest JupyterHub)](https://tljh.jupyter.org/) distribution is ideal for small to medium-sized deployments on a single server.
+- Jupyterhub on Kybernetics https://z2jh.jupyter.org/en/latest/index.html
 
 ### BinderHub
 - Website: <https://binderhub.readthedocs.io/en/latest/>
