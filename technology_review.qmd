@@ -127,13 +127,14 @@ nbgrader: <https://nbgrader.readthedocs.io/en/stable/>
 https://www.youtube.com/watch?v=bEcxnR2V-_8 
 Otter grader & gradescope
 
-
+TODO: check other plugins and extensions such as Calysto activity magic.
 
 ## Educational resources
 ### Open edX Educators
 - Material on how to build and design courses: https://docs.openedx.org/en/latest/educators/index.html
 - Instructional Design Concepts: https://docs.openedx.org/en/latest/educators/navigation/creating_course.html#instructional-design-concepts
 
+Tickets to leave: https://www.brown.edu/sheridan/teaching-learning-resources/teaching-resources/course-design/ classroom-assessment/entrance-and-exit/sample.
 
 ## Text to Speech
 
@@ -159,11 +160,6 @@ Text-to-speech (TTS) technologies support accessibility and inclusive education 
 #### Festival Speech Synthesis System
 - Website: <http://www.cstr.ed.ac.uk/projects/festival/>
 - A general-purpose TTS system developed at the University of Edinburgh, supporting multiple languages and customizable voice outputs.
-
-#### Mozilla TTS
-- Website: <https://github.com/mozilla/TTS>
-- A deep learning-based TTS engine developed by Mozilla, offering high-quality, natural-sounding speech synthesis.
-- Can be trained with custom datasets for specific educational domains or languages.
 
 #### Coqui TTS
 - Website: <https://github.com/coqui-ai/TTS>
