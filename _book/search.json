@@ -1068,78 +1068,78 @@
   {
     "objectID": "todo.html",
     "href": "todo.html",
-    "title": "16  Open issues",
+    "title": "17  Open issues",
     "section": "",
-    "text": "16.1 DHPE course\nHere we collect open issues and things which are still to do. This is by no means comprehensive but more of an infomration drop.\nDHPE teaching project overview.",
+    "text": "17.1 DHPE course\nHere we collect open issues and things which are still to do. This is by no means comprehensive but more of an infomration drop.\nDHPE teaching project overview.",
     "crumbs": [
       "TODO",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Open issues</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Open issues</span>"
     ]
   },
   {
     "objectID": "todo.html#dhpe-course",
     "href": "todo.html#dhpe-course",
-    "title": "16  Open issues",
+    "title": "17  Open issues",
     "section": "",
-    "text": "update the teaching concept: teaching_concept.qmd\ncreate workflow picture",
+    "text": "update the teaching concept: teaching_concept.qmd\ncreate workflow picture\nAdd code of conduct",
     "crumbs": [
       "TODO",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Open issues</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Open issues</span>"
     ]
   },
   {
     "objectID": "todo.html#proof-of-principle-implementation",
     "href": "todo.html#proof-of-principle-implementation",
-    "title": "16  Open issues",
-    "section": "16.2 Proof of principle implementation",
-    "text": "16.2 Proof of principle implementation\nCreate a proof of principle for a first lecture: structural models. This should demonstrate the complete learning path with the different used technologies\n\nCreate script/text + teaching notebook (for visualization)\nCreate slides 5-15 min\nCreate video of slides\nCreate teaser videos\ninteractive tutorial notebook –&gt; reveal.js\ninteractive tutorial notebook solutions –&gt; reveals.js",
+    "title": "17  Open issues",
+    "section": "17.2 Proof of principle implementation",
+    "text": "17.2 Proof of principle implementation\nCreate a proof of principle for a first lecture: structural models. This should demonstrate the complete learning path with the different used technologies\n\nCreate script/text + teaching notebook (for visualization)\nCreate slides 5-15 min\nCreate video of slides\nCreate teaser videos\ninteractive tutorial notebook –&gt; reveal.js\ninteractive tutorial notebook solutions –&gt; reveals.js",
     "crumbs": [
       "TODO",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Open issues</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Open issues</span>"
     ]
   },
   {
     "objectID": "todo.html#openedx",
     "href": "todo.html#openedx",
-    "title": "16  Open issues",
-    "section": "16.3 OpenEdX",
-    "text": "16.3 OpenEdX\nCreate course section Open edX (from script content).\n\nsetup local platform for development and testing\n[~] create initial course\ntest content from script (import course content; qmd -&gt; OLX(mu) -&gt; course format?; other options? xmarkdown))\ntest interactivity\ntest quizz\ntest h5p integration\ndeployment",
+    "title": "17  Open issues",
+    "section": "17.3 OpenEdX",
+    "text": "17.3 OpenEdX\nCreate course section Open edX (from script content).\n\nsetup local platform for development and testing\n[~] create initial course\ntest content from script (import course content; qmd -&gt; OLX(mu) -&gt; course format?; other options? xmarkdown))\ntest interactivity\ntest quizz\ntest h5p integration\ndeployment",
     "crumbs": [
       "TODO",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Open issues</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Open issues</span>"
     ]
   },
   {
     "objectID": "todo.html#feature-demos",
     "href": "todo.html#feature-demos",
-    "title": "16  Open issues",
-    "section": "16.4 Feature demos",
-    "text": "16.4 Feature demos\nThe following features work, but have to still be implemented or activated\n\nreferences from zotero with workflow\nadd button “edit on github to the pages”\nadd about section with figure! short presentation of yourself.",
+    "title": "17  Open issues",
+    "section": "17.4 Feature demos",
+    "text": "17.4 Feature demos\nThe following features work, but have to still be implemented or activated\n\nreferences from zotero with workflow\nadd button “edit on github to the pages”\nadd about section with figure! short presentation of yourself.",
     "crumbs": [
       "TODO",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Open issues</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Open issues</span>"
     ]
   },
   {
     "objectID": "todo.html#open-issues",
     "href": "todo.html#open-issues",
-    "title": "16  Open issues",
-    "section": "16.6 Open issues",
-    "text": "16.6 Open issues\n\nHow to properly greenscreen videos (canva remove background not very convincing; OBS chroma key filter)?\nHow to programmatically generate Open edX course from markdown and XML (interactive components). Various scripts and proof-of-principles available, but nothing convincing so far. We want to version control all course content and be able to transfer lessions/sections content to other courses easily.\ndeployment of courses",
+    "title": "17  Open issues",
+    "section": "17.6 Open issues",
+    "text": "17.6 Open issues\n\nHow to properly greenscreen videos (canva remove background not very convincing; OBS chroma key filter)?\nHow to programmatically generate Open edX course from markdown and XML (interactive components). Various scripts and proof-of-principles available, but nothing convincing so far. We want to version control all course content and be able to transfer lessions/sections content to other courses easily.\ndeployment of courses",
     "crumbs": [
       "TODO",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Open issues</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Open issues</span>"
     ]
   },
   {
     "objectID": "todo.html#bugs",
     "href": "todo.html#bugs",
-    "title": "16  Open issues",
-    "section": "16.5 Bugs",
-    "text": "16.5 Bugs\n\ncompilation to reveal.js; settings for different compilation targets.\nsection headers in notebooks not working\nPDF compilation in CI not working\nProper image locations and formating in PDF\nFix warning bugs;",
+    "title": "17  Open issues",
+    "section": "17.5 Bugs",
+    "text": "17.5 Bugs\n\ncompilation to reveal.js; settings for different compilation targets.\nsection headers in notebooks not working\nPDF compilation in CI not working\nProper image locations and formating in PDF\nFix warning bugs;",
     "crumbs": [
       "TODO",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Open issues</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Open issues</span>"
     ]
   },
   {
@@ -1217,6 +1217,72 @@
     "crumbs": [
       "Technology",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Technology Review</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html",
+    "href": "code_of_conduct.html",
+    "title": "16  Code of Conduct",
+    "section": "",
+    "text": "16.1 Our Pledge\nWe as members, contributors, students and teachers pledge to make participation in our course and community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.",
+    "crumbs": [
+      "General information",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Code of Conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#our-standards",
+    "href": "code_of_conduct.html#our-standards",
+    "title": "16  Code of Conduct",
+    "section": "16.2 Our Standards",
+    "text": "16.2 Our Standards\nExamples of behavior that contributes to a positive environment for our course and community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting",
+    "crumbs": [
+      "General information",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Code of Conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#enforcement-responsibilities",
+    "href": "code_of_conduct.html#enforcement-responsibilities",
+    "title": "16  Code of Conduct",
+    "section": "16.3 Enforcement Responsibilities",
+    "text": "16.3 Enforcement Responsibilities\nTeachers are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nTeachers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.",
+    "crumbs": [
+      "General information",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Code of Conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#scope",
+    "href": "code_of_conduct.html#scope",
+    "title": "16  Code of Conduct",
+    "section": "16.4 Scope",
+    "text": "16.4 Scope\nThis Code of Conduct applies within all learning and community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official email address, posting via an official social media account, or acting as an appointed representative at an online or offline event.",
+    "crumbs": [
+      "General information",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Code of Conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#enforcement",
+    "href": "code_of_conduct.html#enforcement",
+    "title": "16  Code of Conduct",
+    "section": "16.5 Enforcement",
+    "text": "16.5 Enforcement\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at konigmatt@googlemail.com. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident.",
+    "crumbs": [
+      "General information",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Code of Conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#attribution",
+    "href": "code_of_conduct.html#attribution",
+    "title": "16  Code of Conduct",
+    "section": "16.6 Attribution",
+    "text": "16.6 Attribution\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.",
+    "crumbs": [
+      "General information",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Code of Conduct</span>"
     ]
   }
 ]

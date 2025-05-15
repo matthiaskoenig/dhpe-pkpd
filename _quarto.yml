@@ -33,9 +33,16 @@ book:
       chapters:
       - install.qmd
       - technology_review.qmd
+
+    - part: "General information"
+      chapters:
+      - code_of_conduct.qmd
+
     - part: "TODO"
       chapters:
       - todo.qmd
+
+
   favicon: ./images/pkpd.png
   twitter-card: true
   repo-url: https://github.com/matthiaskoenig/dhpe-pkpd.git

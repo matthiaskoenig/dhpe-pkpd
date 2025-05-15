@@ -8,6 +8,7 @@ DHPE teaching project overview.
 
 - [ ] update the teaching concept: `teaching_concept.qmd`
 - [ ] create workflow picture
+- [ ] Add code of conduct
 
 
 ## Proof of principle implementation
