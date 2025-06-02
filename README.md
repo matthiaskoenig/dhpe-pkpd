@@ -27,5 +27,4 @@ Start jupyter lab
 uv run --with jupyter jupyter lab
 ```
 
-
 © 2024-2025 [Matthias König](https://livermetabolism.com)

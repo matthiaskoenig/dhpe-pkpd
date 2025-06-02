@@ -317,7 +317,7 @@ requires-dist = [
     { name = "numpy" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "plotly", specifier = ">=6.0.1" },
-    { name = "sbmlutils" },
+    { name = "sbmlutils", specifier = ">=0.9.0" },
     { name = "scipy", specifier = ">=1.15.3" },
 ]
 
