@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Matthias König">
-<meta name="dcterms.date" content="2025-06-25">
 
-<title>Pharmacokinetic &amp; Pharmacodynamic Modelling</title>
+<title>Course Concept – Pharmacokinetic &amp; Pharmacodynamic Modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01_introduction.html" rel="next">
+<link href="./02_project_outline.html" rel="next">
+<link href="./notebooks/course/11_pbpk_tutorial.html" rel="prev">
 <link href="././images/pkpd.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -44,8 +43,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-48fb113fea7c09ade55c8c495d57f66a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,9 +78,10 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<meta name="twitter:title" content="Pharmacokinetic &amp; Pharmacodynamic Modelling">
+<meta name="twitter:title" content="Course Concept – Pharmacokinetic &amp; Pharmacodynamic Modelling">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://livermetabolism.com/images/dhpe_poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -95,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_course_concept.html">Concept</a></li><li class="breadcrumb-item"><a href="./02_course_concept.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Course Concept</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -129,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -227,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_course_concept.html" class="sidebar-item-text sidebar-link">
+  <a href="./02_course_concept.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Course Concept</span></span></a>
   </div>
 </li>
@@ -284,35 +282,33 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#general-idea" id="toc-general-idea" class="nav-link active" data-scroll-target="#general-idea">General idea</a></li>
+  <li><a href="#sec-technology" id="toc-sec-technology" class="nav-link" data-scroll-target="#sec-technology">Technology</a>
+  <ul class="collapse">
+  <li><a href="#markdown" id="toc-markdown" class="nav-link" data-scroll-target="#markdown">Markdown</a></li>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version control</a></li>
+  <li><a href="#continous-integration-ci" id="toc-continous-integration-ci" class="nav-link" data-scroll-target="#continous-integration-ci">Continous integration (CI)</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#jupyter-notebooks" id="toc-jupyter-notebooks" class="nav-link" data-scroll-target="#jupyter-notebooks">Jupyter notebooks</a></li>
+  <li><a href="#generative-ai" id="toc-generative-ai" class="nav-link" data-scroll-target="#generative-ai">Generative AI</a></li>
+  <li><a href="#video-recording-obs-studio" id="toc-video-recording-obs-studio" class="nav-link" data-scroll-target="#video-recording-obs-studio">Video recording (OBS Studio)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_course_concept.html">Concept</a></li><li class="breadcrumb-item"><a href="./02_course_concept.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Course Concept</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Pharmacokinetic &amp; Pharmacodynamic Modelling</h1>
+<h1 class="title"><span id="sec-course-concept" class="quarto-section-identifier">Course Concept</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Matthias König </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 25, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -322,30 +318,91 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>Welcome to the Course: <strong>Pharmacokinetic and pharmacodynamic modelling</strong> available from <a href="https://matthiaskoenig.github.io/dhpe-pkpd" class="uri">https://matthiaskoenig.github.io/dhpe-pkpd</a>.</p>
-<p>Have you ever wondered how medications travel through the human body, or how we determine the right dose for each patient? Understanding drug movement and action isn’t just for pharmacologists—it’s a key competency in modern healthcare and biomedical research.</p>
-<p>This course invites you to explore the fascinating world of <strong>pharmacokinetics (PK)</strong>—how drugs are absorbed, distributed, metabolised, and excreted—and <strong>pharmacodynamics (PD)</strong>—how drugs produce their effects. You’ll gain practical insights into the models that help us simulate and predict drug behavior in the body, from simple compartment models to advanced physiologically based models used in cutting-edge research and clinical decision-making.</p>
-<!-- -->
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/HPIw1wDLmaw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Through interactive content and hands-on examples, you’ll learn how PK/PD modelling plays a critical role in:</p>
+<section id="general-idea" class="level2">
+<h2 class="anchored" data-anchor-id="general-idea">General idea</h2>
+<p>This open, practice-oriented course introduces the fundamentals of pharmacokinetic (PK) and pharmacodynamic (PD) modelling, with a strong emphasis on reproducible research, open science, and digital competencies in health professions education. Leveraging best practices from software development—such as version control via Git and GitHub, continuous integration (CI) for automated course building, and open formats like Markdown—the course is designed as a fully open educational resource. Hosted on the Open edX platform, it combines theoretical foundations with interactive, hands-on learning to equip participants with the skills needed to understand, simulate, and critically assess PK/PD models in clinical and research contexts.</p>
+<p>The course consists of the following complementary parts which should allow as much offline studying as possible:</p>
+<ol type="1">
+<li><strong>Short lectures</strong> about pharmacokinetics in the form of a book chapter providing the content. The book is available as HTML webpage, PDF, Epub and HTML slideshow. <a href="https://quarto.org">Quarto</a> is used to render high quality books with professional figures, layouts, full text search, cross references, references, citation, and the possibiliy to compile to multiple output formats.</li>
+<li><strong>Short presentations</strong> for motivation and providing up to date use cases in the form of short videos and accompanying slides.</li>
+<li>An <strong>Open edX course</strong> for the respective chapter with interactive content (quizzes, H5P components).</li>
+<li><strong>Interactive Jupyter notebooks and simple apps</strong> for active exploration of the course content. See for instance the <a href="https://icg-model.streamlit.app/">indocyanine green application</a>.</li>
+</ol>
+<div id="fig-dhpe" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-cap-location="bottom">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dhpe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./images/dhpe_poster.jpg" title="Title: Digital Health Professions Educator" class="img-fluid figure-img" style="width:50.0%" data-fig-cap-location="bottom">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dhpe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Overview of the Digital Health Professions Educator (DHPE) program.
+</figcaption>
+</figure>
+</div>
+<p>The course was developed as part of the <a href="https://lernzentrum.charite.de/projekte/heds/digital_health_professions_educator">Digital Health Professions Educator</a> 2024/2025. The course is the digital teaching project of phase III (see <a href="#fig-dhpe" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-dhpe</span></a>.)</p>
+</section>
+<section id="sec-technology" class="level2">
+<h2 class="anchored" data-anchor-id="sec-technology">Technology</h2>
+<p>In this section we provide an overview of the technology behind the course. The following figure provides an overview of the workflow of the course.</p>
+<p><img src="images/workflow.png" class="img-fluid" alt="images/workflow.png"> Figure 1: Course writing workflow, starting from plain text (narrative, code and data) all under version control for reproducibility.</p>
+<section id="markdown" class="level3">
+<h3 class="anchored" data-anchor-id="markdown">Markdown</h3>
+<p>Markdown is a lightweight markup language that allows you to write structured documents using plain text. It’s widely used in data science, software development, and open education for writing documentation, course materials, and scientific reports. Markdown is easy to learn and supports formatting elements like headings, emphasis, lists, links, and code blocks without the overhead of complex formatting tools. In this course, you’ll use Markdown to document your models, write reports, and create reproducible workflows with tools like Quarto and Jupyter Notebooks.</p>
+<p><strong>Recommended resources to get started:</strong></p>
 <ul>
-<li>Understanding variability in patient responses</li>
-<li>Optimising drug dosing</li>
-<li>Evaluating drug-drug interactions</li>
+<li><a href="https://www.markdownguide.org/">Markdown Guide (beginner-friendly)</a></li>
+<li><a href="https://github.github.com/gfm/">GitHub Flavored Markdown cheatsheet</a></li>
+<li><a href="https://quarto.org/docs/authoring/markdown-basics.html">Quarto Markdown Reference</a></li>
 </ul>
-<p>Built with open technologies and aligned with best practices in digital health education, this course empowers you to become part of a growing community of learners and educators who believe in transparency, reproducibility, and innovation.</p>
-<p>Ready to begin? Dive in and transform the way you think about medicine.</p>
-<!--
-::: {layout-ncol=2}
+</section>
+<section id="version-control" class="level3">
+<h3 class="anchored" data-anchor-id="version-control">Version control</h3>
+<p>Version control is a system that tracks changes to files over time, enabling users to manage revisions, collaborate efficiently, and maintain a complete history of their work. It allows users to revert to previous versions, compare changes, and resolve conflicts when multiple contributors edit the same content. Version control is essential for collaborative projects, ensuring transparency, consistency, and reproducibility.</p>
+<p>In this course, all teaching materials are managed using version control through a GitHub repository: <a href="https://github.com/matthiaskoenig/dhpe-pkpd/" class="uri">https://github.com/matthiaskoenig/dhpe-pkpd/</a>. The content is written in Quarto QMD markdown files, and all updates made locally are systematically synchronized and pushed to the repository. This setup ensures that any changes to the course materials are tracked, making it easy to review updates, maintain a clean history of edits, and collaborate across contributors. Version control offers significant advantages for creating teaching materials: it supports iterative improvement, minimizes the risk of losing work, and provides a reliable way to roll back to previous versions if needed—all of which enhance the quality and reproducibility of educational content.</p>
+</section>
+<section id="continous-integration-ci" class="level3">
+<h3 class="anchored" data-anchor-id="continous-integration-ci">Continous integration (CI)</h3>
+<p>Continuous Integration (CI) is a development practice where changes to a project are automatically tested and integrated on a regular basis. CI helps identify issues early, ensures consistency across updates, and automates repetitive tasks such as building, testing, and deploying code. This leads to faster development cycles, higher quality output, and greater confidence in the stability of the project.</p>
+<p>For this course, CI is implemented using <a href="https://github.com/matthiaskoenig/dhpe-pkpd/actions">GitHub Actions</a> to automatically build and deploy the course content. Whenever changes are made to the repository, the content is rebuilt and published to the course webpage at <a href="https://matthiaskoenig.github.io/pkpd" class="uri">https://matthiaskoenig.github.io/pkpd</a>. This automated workflow ensures the site is always up to date with the latest teaching materials, improving reliability, reproducibility, and ease of maintenance.</p>
+</section>
+<section id="quarto" class="level3">
+<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
+<ul>
+<li>Notebook and markdown based publishing tools</li>
+<li>Quarto is an open-source scientific and technical publishing system available from <a href="https://quarto.org/" class="uri">https://quarto.org/</a>.</li>
+<li>Publish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.</li>
+<li>For a nice introduction to the features see: <a href="https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html" class="uri">https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html</a></li>
+</ul>
+<section id="interactivity" class="level4">
+<h4 class="anchored" data-anchor-id="interactivity">Interactivity</h4>
+<ul>
+<li>Quarto supports interactivity via different methods: <a href="https://quarto.org/docs/interactive/" class="uri">https://quarto.org/docs/interactive/</a></li>
+<li>Create custom JavaScript visualizations using Observable JS: <a href="https://quarto.org/docs/interactive/ojs/" class="uri">https://quarto.org/docs/interactive/ojs/</a></li>
+<li>Incorporate Jupyter Widgets: <a href="https://ipywidgets.readthedocs.io/en/latest/" class="uri">https://ipywidgets.readthedocs.io/en/latest/</a></li>
+<li>Shiny for Python integration: <a href="https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html" class="uri">https://quarto.org/docs/dashboards/interactivity/shiny-python/index.html</a></li>
+</ul>
+</section>
+</section>
+<section id="jupyter-notebooks" class="level3">
+<h3 class="anchored" data-anchor-id="jupyter-notebooks">Jupyter notebooks</h3>
+<p><a href="https://jupyter.org/">Jupyter</a> Notebooks are interactive documents that combine code, text, and visual outputs, making them ideal for exploring and teaching computational topics in an engaging and reproducible way.</p>
+<p>For this course, multiple sets of notebooks are generated to support different learning needs: content and teaching notebooks are rendered to the course webpage, while separate exercise notebooks offer hands-on practice, and solution notebooks provide detailed reference material.</p>
+<section id="course-structure" class="level4">
+<h4 class="anchored" data-anchor-id="course-structure">Course structure</h4>
+<p>The course is structured in sections, subsections and units. <img src="images/course_structure.png" class="img-fluid" alt="images/course_structure.png"> <!-- Create a figure with the actual content structure; use the meridian  --></p>
+</section>
+</section>
+<section id="generative-ai" class="level3">
+<h3 class="anchored" data-anchor-id="generative-ai">Generative AI</h3>
+<p>Generative AI refers to a type of artificial intelligence designed to create new content, such as text, images, music, or code, by learning patterns from existing data. It uses models like neural networks to generate outputs that resemble human creativity and reasoning.</p>
+<p>All course content is supported by <a href="https://chatgpt.com">ChatGPT</a>. Initial drafts are created, and materials are continuously updated and refined using generative AI.</p>
+</section>
+<section id="video-recording-obs-studio" class="level3">
+<h3 class="anchored" data-anchor-id="video-recording-obs-studio">Video recording (OBS Studio)</h3>
+<p><a href="https://obsproject.com/">OBS Studio</a> (Open Broadcaster Software) is a free, open-source software for video recording and live streaming. It allows users to capture and mix video/audio in real time with customizable scenes, sources, and transitions. Popular among streamers, educators, and content creators, OBS supports platforms like YouTube, Twitch, and Zoom.</p>
+<p>Videos in this course are recorded using OBS Studio and subsequently hosted on youtube.</p>
 
-![Individual responses to drugs.](./images/individuality.png ){#fig-individuality width=100%}
 
-:::
--->
-
-
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -750,15 +807,17 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./notebooks/course/11_pbpk_tutorial.html" class="pagination-link" aria-label="Physiologically based pharmacokinetic (PBPK)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Physiologically based pharmacokinetic (PBPK)</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01_introduction.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./02_project_outline.html" class="pagination-link" aria-label="Project Outline">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Project Outline</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
