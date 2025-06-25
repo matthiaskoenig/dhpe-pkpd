@@ -68,9 +68,9 @@ format:
   html:
     theme: cosmo
     # cover-image: images/banner.png
-  pdf:
-    documentclass: scrreprt
-    # cover-image: images/banner.png
+  # pdf:
+  #   documentclass: scrreprt
+  #   # cover-image: images/banner.png
 
   # epub:
   #   default
