@@ -6,7 +6,7 @@ The project was developed as a teaching project as part of the Digital Health Pr
 
 # Installation
 
-# uv
+## uv
 Using uv available from https://docs.astral.sh/uv/getting-started/installation/.
 Create a virtual environment and synchronize the dependencies
 ```bash
@@ -26,5 +26,9 @@ Start jupyter lab
 ```bash
 uv run --with jupyter jupyter lab
 ```
+
+## Quarto
+Install the latest version: https://quarto.org/docs/get-started/
+
 
 © 2024-2025 [Matthias König](https://livermetabolism.com)

@@ -5,18 +5,15 @@ project:
 # number-depth: 0
 
 book:
-  title: "Pharmacokinetic & pharmacodynamic modelling"
+  title: "Pharmacokinetic & Pharmacodynamic Modelling"
   author: "Matthias König"
-  date: "4/9/2025"
+  date: "6/25/2025"
   chapters:
     - index.qmd
-    - part: "Concept"
-      chapters:
-      - course_concept.qmd
+
     - part: "Course"
       chapters:
-      - course_overview.qmd
-      # - lecture_pkparameters.qmd
+      - ./01_introduction.qmd
       - ./notebooks/course/01_structural_models.ipynb
       - ./notebooks/course/02_ordinary_differential_equations.ipynb
       - ./notebooks/course/03_compartment_model.ipynb
@@ -29,18 +26,18 @@ book:
       - ./notebooks/course/10_pharmacodynamics.ipynb
       - ./notebooks/course/11_pbpk_tutorial.ipynb
 
+    - part: "Concept"
+      chapters:
+      - ./02_course_concept.qmd
+      - ./02_project_outline.qmd
+      - ./02_code_of_conduct.qmd
+
     - part: "Technology"
       chapters:
-      - install.qmd
-      - technology_review.qmd
+      - ./03_install.qmd
+      - ./03_technology_review.qmd
 
-    - part: "General information"
-      chapters:
-      - code_of_conduct.qmd
-
-    - part: "TODO"
-      chapters:
-      - todo.qmd
+    - about.qmd
 
 
   favicon: ./images/pkpd.png
@@ -65,15 +62,15 @@ book:
 comments:
  hypothesis: true
 
-bibliography: references.json
+# bibliography: references.json
 
 format:
   html:
     theme: cosmo
     # cover-image: images/banner.png
-  # pdf:
-  #   documentclass: scrreprt
-  #   # cover-image: images/banner.png
+  pdf:
+    documentclass: scrreprt
+    # cover-image: images/banner.png
 
   # epub:
   #   default
