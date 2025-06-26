@@ -1,0 +1,21 @@
+# Lecture: Absorption and Dosing {#sec-lecture-absorption-dosing}
+
+This lecture explores the principles of drug absorption and dosing, including routes of administration, bioavailability, absorption models, and how dosing strategies affect plasma concentrations and therapeutic outcomes.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Understand the principles of drug absorption and factors that influence it.
+- 🎯 Describe common routes of administration and their impact on absorption.
+- 🎯 Explain the concept of bioavailability and first-pass metabolism.
+- 🎯 Explore models of oral absorption (e.g., first-order, zero-order, lag time).
+- 🎯 Understand the relationship between dosing, absorption rate, and plasma concentration.
+- 🎯 Compare single vs. multiple dosing and their effects on drug levels.
+- 🎯 Apply absorption and dosing concepts to optimize drug therapy.
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRXgdxxAauydnNoZmYxKZE52kTKF86CF0NrGZaE-dlNgPNqfl62qN0onIIbHg2BBtk_XXU3q_DemZyG/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L04_Koenig_MB19_Absorption.Dosing.pdf](./L04_Koenig_MB19_Absorption.Dosing.pdf)

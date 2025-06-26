@@ -1,0 +1,19 @@
+# Lecture: Introduction Pharmacokinetics {#sec-lecture-introduction-pharmacokinetics}
+
+This lecture introduces the fundamentals of pharmacokinetics, covering the ADME processes, key PK parameters, and their relevance for individualized therapy and drug disposition.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Define pharmacokinetics (PK) and differentiate it from pharmacodynamics (PD).
+- 🎯 Explain the four ADME processes (Absorption, Distribution, Metabolism, Excretion).
+- 🎯 Understand the importance of PK in therapy optimization and personalized medicine.
+- 🎯 Identify key PK parameters (e.g., AUC, half-life, clearance, volume of distribution).
+- 🎯 Recognize factors influencing drug disposition (e.g., bodyweight, pharmacogenomics, organ function).
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS6p7ne1rm9HVNUn0C-GO4A5qaUxNJ99sfIe4fX23qfCjQ3OUfWbJBdppUMIidTgHeEcK12n9nb86hu/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L01_Koenig_MB19_Pharmacokinetics.pdf](./L01_Koenig_MB19_Pharmacokinetics.pdf)

@@ -1,0 +1,19 @@
+# Lecture: Reproducible Research & SBML {#sec-lecture-sbml}
+
+This lecture focuses on reproducible research in computational modeling, introducing SBML as a standard for model exchange, exploring tools for simulation, and emphasizing FAIR principles and open science practices to support transparency and collaboration.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Understand the role of reproducibility in computational modeling.
+- 🎯 Introduce the Systems Biology Markup Language (SBML) as a standard for model representation and exchange.
+- 🎯 Gain familiarity with tools for creating,and simulating SBML models (e.g., sbmlutils, cy3sbml).
+- 🎯 Discuss FAIR principles (Findable, Accessible, Interoperable, Reusable) and their application to model data and metadata.
+- 🎯 Highlight the importance of open science practices for transparent and collaborative research.
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQDykXO7mgcKtZw9Ijbz41diAewKcgbpsu1H0bqybpu0snGgdeMumXQjlpLiL6WX7dRrM3kNwXZ5dK5/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L09_Koenig_MB19_SBML.pdf](./L09_Koenig_MB19_SBML.pdf)

@@ -1,0 +1,23 @@
+# Lecture: Pharmacodynamics {#sec-lecture-pharmacodynamics}
+
+This lecture introduces pharmacodynamics, focusing on the relationship between drug concentration and effect, key PD concepts like receptor theory and dose-response models, and how PK/PD integration is used to predict therapeutic outcomes and variability in drug response.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Define pharmacodynamics and understand its role in drug action.
+- 🎯 Describe the relationship between drug concentration and effect.
+- 🎯 Understand receptor theory, including affinity, efficacy, and potency.
+- 🎯 Introduce dose-response relationships, including Emax and EC50.
+- 🎯 Understand types of PD models (e.g., direct effect models, indirect response models, sigmoidal Emax models).
+- 🎯 Explore variability in pharmacodynamic response (e.g., tolerance, sensitization).
+- 🎯 Learn how PD models are used to predict therapeutic and toxic effects.
+- 🎯 Understand the integration of PK and PD models to simulate time-course of drug effects.
+- 🎯 Introduce examples of PD modeling in drug development and clinical practice.
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRJJ8qNo5FK6cDZNPHHoeHY8i0y6rR2mQIUnVRTn3Am4rnnctg5zIB832er894mvwAT3JqeulGZkNwf/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L08_Koenig_MB19_Pharmacodynamics.pdf](./L08_Koenig_MB19_Pharmacodynamics.pdf)

@@ -1,0 +1,19 @@
+# Lecture: Ordinary Differential Equations (ODE) & Compartment Models {#sec-lecture-ode}
+
+This lecture introduces the use of ordinary differential equations (ODEs) in pharmacokinetic modeling, focusing on compartment models, numerical integration, and the simulation of drug concentration-time profiles.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Understand the role of ODEs in pharmacokinetic modeling to describe dynamic changes in drug concentration over time.
+- 🎯 Interpret ODEs used in simple compartment models.
+- 🎯 Gain basic intuition for numerical integration methods, such as Euler’s method methods.
+- 🎯 Apply numerical integration techniques to simulate drug concentration-time profiles.
+- 🎯 Understand how ODE-based models are implemented in simulation tools and programming environments (e.g., Python).
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTLqzJNB276N3E6Tsune6o56LT953uAXEBVv6EaiHbtpLteVVuU9gT44cyRmE9rexhYd-2txaqFqZcP/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L03_Koenig_MB19_ODE.Compartment.Models.pdf](./L03_Koenig_MB19_ODE.Compartment.Models.pdf)

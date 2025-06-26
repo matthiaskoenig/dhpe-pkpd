@@ -1,0 +1,20 @@
+# Lecture: Interindividual Variability {#sec-lecture-variability}
+
+This lecture examines interindividual variability in pharmacokinetics, exploring how genetic, physiological, and lifestyle factors influence ADME processes and highlighting the importance of variability for dose optimization and personalized medicine.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Understand the concept of interindividual variability and its relevance in pharmacokinetics.
+- 🎯 Identify key factors influencing variability in drug absorption, distribution, metabolism, and excretion (ADME).
+- 🎯 Explain the role of genetics, age, sex, body weight, and organ function in pharmacokinetic variability.
+- 🎯 Recognize the impact of drug-drug interactions and lifestyle factors (e.g. diet, smoking, alcohol) on pharmacokinetics.
+- 🎯 Interpret pharmacokinetic data from subpopulations (e.g., pediatric, elderly, renally impaired).
+- 🎯 Appreciate the importance of accounting for variability in dose optimization and personalized medicine.
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRBv-X7jmsJwGirbzjxMdbn1e1gPbDnG1P8tOCVVP8BsoWOa2YN7ZWpFuBuonbHlddw2RYsmcwj58Du/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L07_Koenig_MB19_Variability.pdf](./L07_Koenig_MB19_Variability.pdf)

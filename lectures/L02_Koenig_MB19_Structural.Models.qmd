@@ -1,0 +1,19 @@
+# Lecture: Structural Models {#sec-lecture-structural-models}
+
+This lecture explores structural pharmacokinetic models, focusing on the relationships between dose, clearance, and volume of distribution, and how physicochemical properties and parameter variability influence drug exposure.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Explain the relationship between Dose, Volume of Distribution (V), and Clearance (CL) using a simple algebraic model.
+- 🎯 Recognize variability in pharmacokinetic parameters (such as CL and V) between different drugs and how this impacts drug exposure.
+- 🎯 Develop a basic understanding of physicochemical properties (e.g., lipophilicity, molecular weight, solubility) and how they relate to pharmacokinetic behavior.
+- 🎯 Understand the concept and utility of a parameter scan in pharmacokinetic modeling.
+- 🎯 Explore the effects of changing V, Dose, or CL on drug concentration.
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSRWrF_1w1KGKN3a93umagazdfPt4FIlGyIwJXr_8qkd_FyKe4ub5i5q10rs7EC8gQ3C0diIDhhsgKi/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L02_Koenig_MB19_Structural.Models.pdf](./L02_Koenig_MB19_Structural.Models.pdf)

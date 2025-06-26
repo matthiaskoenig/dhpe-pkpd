@@ -1,0 +1,19 @@
+# Lecture: Physiologically-based pharmacokinetics models {#sec-lecture-pbpk}
+
+This lecture introduces physiologically based pharmacokinetic (PBPK) models, highlighting their structure, components, and ability to simulate ADME processes using physiological data, and explores their application in dose prediction, special populations, and drug-drug interaction studies.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Understand the structure and purpose of PBPK models in pharmacokinetics.
+- 🎯 Differentiate physiologically based models from traditional compartment models.
+- 🎯 Identify key components of PBPK models, including organs, tissues, blood flow, and drug-specific parameters (e.g., partition coefficients, clearance).
+- 🎯 Learn how PBPK models simulate ADME processes (Absorption, Distribution, Metabolism, Excretion) using physiological and physicochemical data.
+- 🎯 Explore key applications of PBPK modeling in dose prediction, special populations (e.g., pediatric, renal/hepatic impairment), and drug-drug interactions (DDIs).
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQaSiX7XNKG1Yy5r3R98okL_w5kSrlbDaCRUqhLhB8Ss6MQ6RbKv-moCQnYd208B2clChrwsDiufqqW/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L10_Koenig_MB19_PBPK.pdf](./L10_Koenig_MB19_PBPK.pdf)

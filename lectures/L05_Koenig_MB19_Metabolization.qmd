@@ -1,0 +1,21 @@
+# Lecture: Metabolism {#sec-lecture-metabolism}
+
+This lecture provides an overview of drug metabolism, covering phase I and II processes, enzyme variability, metabolic kinetics, prodrug activation, and the impact of enzyme interactions on drug clearance and drug-drug interactions.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Provide an overview of metabolic pathways relevant to drug metabolism.
+- 🎯 Understand phase I and phase II metabolism and their role in drug transformation.
+- 🎯 Explain the concept of prodrugs and their activation via metabolism.
+- 🎯 Recognize the variability in enzyme expression and the impact of isoforms (e.g., CYPs) on drug metabolism.
+- 🎯 Describe metabolic reaction kinetics using mass action, Michaelis-Menten, and Hill equations.
+- 🎯 Understand enzyme inhibition and activation, and how they affect drug clearance.
+- 🎯 Explore drug-drug interactions mediated by metabolic pathways.
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSiXagCut5gWzmr6QG4GKEaSwinjpPdKJVxxPvASrSiRhwgNnJ_9S7cB3EaR4jeLG91yzKMn81QB3DP/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L05_Koenig_MB19_Metabolization.pdf](./L05_Koenig_MB19_Metabolization.pdf)

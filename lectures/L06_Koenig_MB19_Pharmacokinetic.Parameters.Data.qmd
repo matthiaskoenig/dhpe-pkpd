@@ -1,0 +1,20 @@
+# Lecture: Pharmacokinetic Parameters & Pharmacokinetics Data {#sec-lecture-pharmacokinetic-parameters}
+
+This lecture covers key pharmacokinetic parameters, their derivation from concentration-time data, and their role in linking dose, exposure, and elimination, while also highlighting the importance of PK databases, data quality, and interindividual variability in model development.
+
+## Learning Objectives
+
+The main learning objectives are
+
+- 🎯 Understand key pharmacokinetic parameters: clearance (CL), volume of distribution (Vd), half-life (t₁/₂), bioavailability (F), and AUC.
+- 🎯 Learn how these parameters are derived from concentration-time data.
+- 🎯 Understand the relationship between dose, exposure, and elimination.
+- 🎯 Get an overview of the PK database (e.g., PK-DB) and their role in model development and data integration.
+- 🎯 Understand the importance of data quality, standardization, and metadata in PK modeling.
+- 🎯 Explore interindividual variability in pharmacokinetic parameters.
+
+## Lecture
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQNYOTJyw1zVDxLFYt2ljbg4CdfCRVkAr_BN-7bJ_nYHbhgDjne1HCTEOFNk92CRQZ5i4SFLXKbVy6H/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Download: [L06_Koenig_MB19_Pharmacokinetic.Parameters.Data.pdf](./L06_Koenig_MB19_Pharmacokinetic.Parameters.Data.pdf)

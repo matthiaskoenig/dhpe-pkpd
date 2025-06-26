@@ -14,16 +14,26 @@ book:
     - part: "Course"
       chapters:
       - ./01_introduction.qmd
+      - ./lectures/L01_Koenig_MB19_Pharmacokinetics.qmd
+      - ./lectures/L02_Koenig_MB19_Structural.Models.qmd
       - ./notebooks/course/01_structural_models.ipynb
+      - ./lectures/L03_Koenig_MB19_ODE.Compartment.Models.qmd
       - ./notebooks/course/02_ordinary_differential_equations.ipynb
       - ./notebooks/course/03_compartment_model.ipynb
+      - ./lectures/L04_Koenig_MB19_Absorption.Dosing.qmd
       - ./notebooks/course/04_absorption.ipynb
       - ./notebooks/course/05_multiple_dosing.ipynb
+      - ./lectures/L05_Koenig_MB19_Metabolization.qmd
       - ./notebooks/course/06_metabolism.ipynb
+      - ./lectures/L06_Koenig_MB19_Pharmacokinetic.Parameters.Data.qmd
       - ./notebooks/course/07_pharmacokinetic_parameters.ipynb
+      - ./lectures/L07_Koenig_MB19_Variability.qmd
       - ./notebooks/course/08_variability.ipynb
-      - ./notebooks/course/09_sbml.ipynb
+      - ./lectures/L08_Koenig_MB19_Pharmacodynamics.qmd
       - ./notebooks/course/10_pharmacodynamics.ipynb
+      - ./lectures/L09_Koenig_MB19_SBML.qmd
+      - ./notebooks/course/09_sbml.ipynb
+      - ./lectures/L10_Koenig_MB19_PBPK.qmd
       - ./notebooks/course/11_pbpk_tutorial.ipynb
 
     - part: "Concept"
