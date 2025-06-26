@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Code of Conduct – Pharmacokinetic &amp; Pharmacodynamic Modelling</title>
+<title>Lecture: Pharmacodynamics – Pharmacokinetic &amp; Pharmacodynamic Modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./03_install.html" rel="next">
-<link href="./02_project_outline.html" rel="prev">
-<link href="././images/pkpd.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-48fb113fea7c09ade55c8c495d57f66a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../notebooks/course/10_pharmacodynamics.html" rel="next">
+<link href="../notebooks/course/08_variability.html" rel="prev">
+<link href=".././images/pkpd.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-48fb113fea7c09ade55c8c495d57f66a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<meta name="twitter:title" content="Code of Conduct – Pharmacokinetic &amp; Pharmacodynamic Modelling">
+<meta name="twitter:title" content="Lecture: Pharmacodynamics – Pharmacokinetic &amp; Pharmacodynamic Modelling">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_course_concept.html">Concept</a></li><li class="breadcrumb-item"><a href="./02_code_of_conduct.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Code of Conduct</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01_introduction.html">Course</a></li><li class="breadcrumb-item"><a href="../lectures/L08_Koenig_MB19_Pharmacodynamics.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Lecture: Pharmacodynamics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -106,14 +106,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="././images/pkpd.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src=".././images/pkpd.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Pharmacokinetic &amp; Pharmacodynamic Modelling</a> 
+      <a href="../">Pharmacokinetic &amp; Pharmacodynamic Modelling</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/matthiaskoenig/dhpe-pkpd.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="./Pharmacokinetic---Pharmacodynamic-Modelling.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <a href="../Pharmacokinetic---Pharmacodynamic-Modelling.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
 </div>
     </div>
       </div>
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -141,133 +141,133 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_introduction.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L01_Koenig_MB19_Pharmacokinetics.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L01_Koenig_MB19_Pharmacokinetics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Lecture: Introduction Pharmacokinetics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L02_Koenig_MB19_Structural.Models.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L02_Koenig_MB19_Structural.Models.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lecture: Structural Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/01_structural_models.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/01_structural_models.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Structural Models as Algebraic Equations</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L03_Koenig_MB19_ODE.Compartment.Models.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L03_Koenig_MB19_ODE.Compartment.Models.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Lecture: Ordinary Differential Equations (ODE) &amp; Compartment Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/02_ordinary_differential_equations.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/02_ordinary_differential_equations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ordinary Differential Equations and Numerical Integration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/03_compartment_model.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/03_compartment_model.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Compartment Model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L04_Koenig_MB19_Absorption.Dosing.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L04_Koenig_MB19_Absorption.Dosing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Lecture: Absorption and Dosing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/04_absorption.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/04_absorption.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Absorption</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/05_multiple_dosing.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/05_multiple_dosing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Multiple dosing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L05_Koenig_MB19_Metabolization.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L05_Koenig_MB19_Metabolization.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Lecture: Metabolism</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/06_metabolism.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/06_metabolism.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Metabolization</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L06_Koenig_MB19_Pharmacokinetic.Parameters.Data.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L06_Koenig_MB19_Pharmacokinetic.Parameters.Data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Lecture: Pharmacokinetic Parameters &amp; Pharmacokinetics Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/07_pharmacokinetic_parameters.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/07_pharmacokinetic_parameters.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Pharmacokinetic parameters</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L07_Koenig_MB19_Variability.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L07_Koenig_MB19_Variability.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Lecture: Interindividual Variability</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/08_variability.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/08_variability.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Variability in pharmacokinetics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L08_Koenig_MB19_Pharmacodynamics.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L08_Koenig_MB19_Pharmacodynamics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Lecture: Pharmacodynamics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/10_pharmacodynamics.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/10_pharmacodynamics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pharmacodynamics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L09_Koenig_MB19_SBML.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L09_Koenig_MB19_SBML.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Lecture: Reproducible Research &amp; SBML</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/09_sbml.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/09_sbml.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">SBML Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/L10_Koenig_MB19_PBPK.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/L10_Koenig_MB19_PBPK.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Lecture: Physiologically-based pharmacokinetics models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/course/11_pbpk_tutorial.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/course/11_pbpk_tutorial.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Physiologically based pharmacokinetic (PBPK)</span></span></a>
   </div>
 </li>
@@ -284,19 +284,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_course_concept.html" class="sidebar-item-text sidebar-link">
+  <a href="../02_course_concept.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Course Concept</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_project_outline.html" class="sidebar-item-text sidebar-link">
+  <a href="../02_project_outline.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Project Outline</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_code_of_conduct.html" class="sidebar-item-text sidebar-link active">
+  <a href="../02_code_of_conduct.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Code of Conduct</span></span></a>
   </div>
 </li>
@@ -313,13 +313,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_install.html" class="sidebar-item-text sidebar-link">
+  <a href="../03_install.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Technology details</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_technology_review.html" class="sidebar-item-text sidebar-link">
+  <a href="../03_technology_review.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Technology Review</span></span></a>
   </div>
 </li>
@@ -327,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
@@ -341,21 +341,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#our-pledge" id="toc-our-pledge" class="nav-link active" data-scroll-target="#our-pledge">Our Pledge</a></li>
-  <li><a href="#our-standards" id="toc-our-standards" class="nav-link" data-scroll-target="#our-standards">Our Standards</a></li>
-  <li><a href="#enforcement-responsibilities" id="toc-enforcement-responsibilities" class="nav-link" data-scroll-target="#enforcement-responsibilities">Enforcement Responsibilities</a></li>
-  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a></li>
-  <li><a href="#enforcement" id="toc-enforcement" class="nav-link" data-scroll-target="#enforcement">Enforcement</a></li>
-  <li><a href="#attribution" id="toc-attribution" class="nav-link" data-scroll-target="#attribution">Attribution</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#lecture" id="toc-lecture" class="nav-link" data-scroll-target="#lecture">Lecture</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_course_concept.html">Concept</a></li><li class="breadcrumb-item"><a href="./02_code_of_conduct.html"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Code of Conduct</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01_introduction.html">Course</a></li><li class="breadcrumb-item"><a href="../lectures/L08_Koenig_MB19_Pharmacodynamics.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Lecture: Pharmacodynamics</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Code of Conduct</h1>
+<h1 class="title"><span id="sec-lecture-pharmacodynamics" class="quarto-section-identifier">Lecture: Pharmacodynamics</span></h1>
 </div>
 
 
@@ -372,47 +368,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="our-pledge" class="level2">
-<h2 class="anchored" data-anchor-id="our-pledge">Our Pledge</h2>
-<p>We as members, contributors, students and teachers pledge to make participation in our course and community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.</p>
-<p>We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.</p>
-</section>
-<section id="our-standards" class="level2">
-<h2 class="anchored" data-anchor-id="our-standards">Our Standards</h2>
-<p>Examples of behavior that contributes to a positive environment for our course and community include:</p>
+<p>This lecture introduces pharmacodynamics, focusing on the relationship between drug concentration and effect, key PD concepts like receptor theory and dose-response models, and how PK/PD integration is used to predict therapeutic outcomes and variability in drug response.</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>The main learning objectives are</p>
 <ul>
-<li>Demonstrating empathy and kindness toward other people</li>
-<li>Being respectful of differing opinions, viewpoints, and experiences</li>
-<li>Giving and gracefully accepting constructive feedback</li>
-<li>Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience</li>
-<li>Focusing on what is best not just for us as individuals, but for the overall community</li>
-</ul>
-<p>Examples of unacceptable behavior include:</p>
-<ul>
-<li>The use of sexualized language or imagery, and sexual attention or advances of any kind</li>
-<li>Trolling, insulting or derogatory comments, and personal or political attacks</li>
-<li>Public or private harassment</li>
-<li>Publishing others’ private information, such as a physical or email address, without their explicit permission</li>
-<li>Other conduct which could reasonably be considered inappropriate in a professional setting</li>
+<li>🎯 Define pharmacodynamics and understand its role in drug action.</li>
+<li>🎯 Describe the relationship between drug concentration and effect.</li>
+<li>🎯 Understand receptor theory, including affinity, efficacy, and potency.</li>
+<li>🎯 Introduce dose-response relationships, including Emax and EC50.</li>
+<li>🎯 Understand types of PD models (e.g., direct effect models, indirect response models, sigmoidal Emax models).</li>
+<li>🎯 Explore variability in pharmacodynamic response (e.g., tolerance, sensitization).</li>
+<li>🎯 Learn how PD models are used to predict therapeutic and toxic effects.</li>
+<li>🎯 Understand the integration of PK and PD models to simulate time-course of drug effects.</li>
+<li>🎯 Introduce examples of PD modeling in drug development and clinical practice.</li>
 </ul>
 </section>
-<section id="enforcement-responsibilities" class="level2">
-<h2 class="anchored" data-anchor-id="enforcement-responsibilities">Enforcement Responsibilities</h2>
-<p>Teachers are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.</p>
-<p>Teachers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.</p>
-</section>
-<section id="scope" class="level2">
-<h2 class="anchored" data-anchor-id="scope">Scope</h2>
-<p>This Code of Conduct applies within all learning and community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official email address, posting via an official social media account, or acting as an appointed representative at an online or offline event.</p>
-</section>
-<section id="enforcement" class="level2">
-<h2 class="anchored" data-anchor-id="enforcement">Enforcement</h2>
-<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at <a href="mailto:konigmatt@googlemail.com">konigmatt@googlemail.com</a>. All complaints will be reviewed and investigated promptly and fairly.</p>
-<p>All community leaders are obligated to respect the privacy and security of the reporter of any incident.</p>
-</section>
-<section id="attribution" class="level2">
-<h2 class="anchored" data-anchor-id="attribution">Attribution</h2>
-<p>This Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.</p>
+<section id="lecture" class="level2">
+<h2 class="anchored" data-anchor-id="lecture">Lecture</h2>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRJJ8qNo5FK6cDZNPHHoeHY8i0y6rR2mQIUnVRTn3Am4rnnctg5zIB832er894mvwAT3JqeulGZkNwf/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+</iframe>
+<p>Download: <a href="./L08_Koenig_MB19_Pharmacodynamics.pdf">L08_Koenig_MB19_Pharmacodynamics.pdf</a></p>
 
 
 </section>
@@ -819,13 +795,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./02_project_outline.html" class="pagination-link" aria-label="Project Outline">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Project Outline</span></span>
+      <a href="../notebooks/course/08_variability.html" class="pagination-link" aria-label="Variability in pharmacokinetics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Variability in pharmacokinetics</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./03_install.html" class="pagination-link" aria-label="Technology details">
-        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Technology details</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/course/10_pharmacodynamics.html" class="pagination-link" aria-label="Pharmacodynamics">
+        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Pharmacodynamics</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
